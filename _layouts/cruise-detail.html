@@ -16,8 +16,9 @@ layout: default
       <span style="opacity:0.8;">/1인</span>
     </div>
     <div class="cta-buttons" style="margin-top:20px;justify-content:flex-start;">
-      <button class="btn btn-primary btn-lg" onclick="openInquiry('{{ c.title }}','{{ c.departureDate }}','{{ c.priceFrom }}','{{ c.cruiseLineName }}','{{ c.ship }}','{{ c.ports | join: ", " }}')">문의하기</button>
-      
+      <button class="btn btn-primary btn-lg" onclick="openInquiry('{{ c.title }}','{{ c.departureDate }}','{{ c.priceFrom }}','{{ c.cruiseLineName }}','{{ c.ship }}','{{ c.ports | join: ", " }}')">📞 문의하기</button>
+      <a href="{{ site.brand.kakao }}" target="_blank" class="btn btn-kakao btn-lg">💬 카카오톡 상담</a>
+      <a href="tel:{{ site.brand.phone }}" class="btn btn-outline btn-lg" style="border-color:white;color:white;">☎️ {{ site.brand.phone }}</a>
     </div>
   </div>
 </div>
@@ -172,8 +173,9 @@ layout: default
     <h2>이 크루즈가 마음에 드셨나요?</h2>
     <p>크루즈링크 전문 상담원이 최적의 객실과 가격을 안내해드립니다.</p>
     <div class="cta-buttons">
-      <button class="btn btn-primary btn-lg" onclick="openInquiry('{{ c.title }}','{{ c.departureDate }}','{{ c.priceFrom }}','{{ c.cruiseLineName }}','{{ c.ship }}','{{ c.ports | join: ", " }}')">문의하기</button>
-      
+      <button class="btn btn-primary btn-lg" onclick="openInquiry('{{ c.title }}','{{ c.departureDate }}','{{ c.priceFrom }}','{{ c.cruiseLineName }}','{{ c.ship }}','{{ c.ports | join: ", " }}')">📞 문의하기</button>
+      <a href="{{ site.brand.kakao }}" target="_blank" class="btn btn-kakao btn-lg">💬 카카오톡 상담</a>
+      <a href="tel:{{ site.brand.phone }}" class="btn btn-outline btn-lg" style="border-color:white;color:white;">☎️ {{ site.brand.phone }}</a>
     </div>
   </div>
 </div>

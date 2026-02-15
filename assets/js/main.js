@@ -70,7 +70,7 @@ function submitInquiry(e) {
       btn.textContent = '문의하기 전송';
     }, function(err) {
       status.className = 'form-status error';
-      status.textContent = '전송에 실패했습니다. 잠시 후 다시 시도해주세요.';
+      status.textContent = '전송에 실패했습니다. 전화 또는 카카오톡으로 문의해주세요.';
       btn.disabled = false;
       btn.textContent = '문의하기 전송';
       console.error('EmailJS error:', err);

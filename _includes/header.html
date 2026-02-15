@@ -9,7 +9,8 @@
       <a href="{{ '/contact/' | relative_url }}">문의</a>
     </nav>
     <div class="header-cta">
-      <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary btn-sm">문의하기</a>
+      <a href="tel:{{ site.brand.phone }}" class="header-phone">☎️ {{ site.brand.phone }}</a>
+      <a href="{{ site.brand.kakao }}" target="_blank" class="btn btn-kakao btn-sm">카카오톡</a>
     </div>
     <button class="mobile-toggle" onclick="document.getElementById('navMenu').classList.toggle('open')">☰</button>
   </div>

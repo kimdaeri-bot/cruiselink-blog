@@ -5,7 +5,8 @@
         <h3>크루즈<span style="color:var(--orange)">링크</span></h3>
         <p>크루즈 여행의 모든 것,<br>크루즈링크와 함께하세요.</p>
         <p style="margin-top:12px;">
-          <a href="{{ '/contact/' | relative_url }}" style="color:white;">문의하기 →</a>
+          ☎️ {{ site.brand.phone }}<br>
+          ✉️ {{ site.brand.email }}
         </p>
       </div>
       <div class="footer-section">
@@ -27,6 +28,7 @@
         <h3>고객지원</h3>
         <a href="{{ '/about/' | relative_url }}">회사소개</a>
         <a href="{{ '/contact/' | relative_url }}">문의하기</a>
+        <a href="{{ site.brand.kakao }}" target="_blank">카카오톡 상담</a>
       </div>
     </div>
     <div class="footer-bottom">
