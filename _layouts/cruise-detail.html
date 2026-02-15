@@ -38,11 +38,28 @@ layout: default
   <div class="container">
     <h2 class="section-title">🗓️ 상세 일정</h2>
     <p class="section-subtitle">{{ c.nights }}박 {{ c.nights | plus: 1 }}일 크루즈 여정</p>
-    <div class="timeline">
-      {{ content }}
-    </div>
+    <div id="cruise-content-raw" style="display:none;">{{ content }}</div>
+    <div id="slider-area"></div>
+    <div class="timeline" id="timeline-area"></div>
   </div>
 </div>
+<script>
+(function(){
+  var raw = document.getElementById('cruise-content-raw');
+  var sliderArea = document.getElementById('slider-area');
+  var timelineArea = document.getElementById('timeline-area');
+  var tmp = document.createElement('div');
+  tmp.innerHTML = raw.innerHTML;
+  // Move slider out, keep timeline-days
+  var slider = tmp.querySelector('.ship-slider-section');
+  if(slider){ sliderArea.appendChild(slider); }
+  // Move remaining content to timeline
+  timelineArea.innerHTML = tmp.innerHTML;
+  // Remove the slider from timeline if it was cloned
+  var dup = timelineArea.querySelector('.ship-slider-section');
+  if(dup) dup.remove();
+})();
+</script>
 
 <!-- Ship Info -->
 {% if c.shipTonnage %}
