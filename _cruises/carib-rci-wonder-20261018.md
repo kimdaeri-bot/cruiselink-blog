@@ -112,7 +112,7 @@ excluded:
 - 음료 패키지(Deluxe Beverage Package) 구매 시 첫날 구매가 가장 저렴
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -152,7 +152,7 @@ excluded:
 - 선상 Wi-Fi가 필요하면 해상일에 당일 패스 구매 가능 (~$20/일)
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -193,7 +193,7 @@ US 버진 아일랜드의 수도 샬럿 아말리에. 에메랄드빛 바다, �
 - 10월은 비수기라 해변이 한가하고 가격도 저렴!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -234,7 +234,7 @@ US 버진 아일랜드의 수도 샬럿 아말리에. 에메랄드빛 바다, �
 - 수영복과 비치타월 챙기기 (선내 타월 반출 가능)
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -273,7 +273,7 @@ US 버진 아일랜드의 수도 샬럿 아말리에. 에메랄드빛 바다, �
 - 마지막 해상일에 수하물 태그가 객실에 배달됩니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -316,7 +316,7 @@ US 버진 아일랜드의 수도 샬럿 아말리에. 에메랄드빛 바다, �
 - 선내 음료 패키지는 코코 케이에서도 적용됩니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -356,7 +356,7 @@ US 버진 아일랜드의 수도 샬럿 아말리에. 에메랄드빛 바다, �
 - 로열캐리비안 로열티(Crown & Anchor) 포인트 확인!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -388,4 +388,4 @@ US 버진 아일랜드의 수도 샬럿 아말리에. 에메랄드빛 바다, �
 - 미국 입국 심사가 터미널에서 진행되므로 시간 여유를 두세요
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>

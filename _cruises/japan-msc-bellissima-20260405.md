@@ -89,7 +89,7 @@ excluded:
 - 여권 원본 필수! 선내에서 보관 후 하선 시 반환됩니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -128,7 +128,7 @@ excluded:
 - MSC 요트 클럽 게스트는 전용 풀과 선데크를 이용할 수 있습니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -171,7 +171,7 @@ excluded:
 - 출항이 20:00으로 늦으니 저녁까지 여유있게 관광 가능!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -214,7 +214,7 @@ excluded:
 - 텐몬칸 아케이드에서 쇼핑+맛집 투어가 한 번에 가능
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -256,7 +256,7 @@ excluded:
 - 4월 오키나와는 25°C 전후, 이미 반팔 날씨!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -299,7 +299,7 @@ excluded:
 - 한국인 승객은 여기서 잠깐 내려 친구/가족에게 부산 특산품 전달도 가능!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -342,7 +342,7 @@ excluded:
 - 4월 초 후쿠오카 벚꽃 명소: 마이즈루 공원, 니시 공원
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -381,7 +381,7 @@ excluded:
 - MSC 팁은 자동 청구(1인 1박 $14), 조정 원하면 게스트 서비스 방문
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 

@@ -290,14 +290,38 @@ function initDaySliders() {
 
 // --- DAY 더보기 toggle ---
 function toggleDay(btn) {
-  var content = btn.previousElementSibling;
+  // Find the closest .day-expandable sibling
+  var parent = btn.parentElement;
+  var content = parent ? parent.querySelector('.day-expandable') : null;
+  if (!content) {
+    // Try previous sibling
+    var prev = btn.previousElementSibling;
+    while (prev) {
+      if (prev.classList && prev.classList.contains('day-expandable')) { content = prev; break; }
+      prev = prev.previousElementSibling;
+    }
+  }
   if (!content) return;
   content.classList.toggle('expanded');
-  btn.textContent = content.classList.contains('expanded') ? '접기 ▲' : '더보기 ▼';
+  var arrow = btn.querySelector('.toggle-arrow');
+  if (arrow) {
+    arrow.textContent = content.classList.contains('expanded') ? '▲' : '▼';
+  }
 }
 
-// Init day sliders after DOM ready
-document.addEventListener('DOMContentLoaded', function(){ setTimeout(initDaySliders, 300); });
+// Auto-init: bind all toggle buttons and sliders after content is moved
+document.addEventListener('DOMContentLoaded', function(){
+  setTimeout(function(){
+    initDaySliders();
+    // Re-bind toggles that might have been moved by layout JS
+    document.querySelectorAll('.day-toggle').forEach(function(btn){
+      btn.addEventListener('click', function(e){
+        e.preventDefault();
+        toggleDay(btn);
+      });
+    });
+  }, 500);
+});
 
 // --- Logo Slider (duplicate for infinite loop) ---
 (function() {

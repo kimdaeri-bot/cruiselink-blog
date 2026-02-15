@@ -88,7 +88,7 @@ excluded:
 - 12월 마이애미 기온 24°C 전후, 여름 옷 준비!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -127,7 +127,7 @@ excluded:
 - 음료 패키지를 고민 중이라면 첫날 구매가 가장 저렴합니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -166,7 +166,7 @@ excluded:
 - 내일부터 기항지이니 일찍 자는 것도 전략!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -208,7 +208,7 @@ excluded:
 - 크루즈 항구에서 마호 비치까지 택시 약 15분
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -250,7 +250,7 @@ excluded:
 - 세인트존까지 가시면 국립공원이라 자연이 더 잘 보존되어 있어요
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -293,7 +293,7 @@ excluded:
 - 선크림은 산호초 보호를 위해 Reef-Safe 제품 권장
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -332,7 +332,7 @@ excluded:
 - RCI 팁은 자동 청구(1인 1박 $16), 조정 원하면 게스트 서비스 방문
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 

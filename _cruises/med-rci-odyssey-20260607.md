@@ -111,7 +111,7 @@ excluded:
 - 승선 첫날 스파 프로모션 확인! 항해 중 가장 저렴한 가격에 예약 가능
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -151,7 +151,7 @@ excluded:
 - 아말피 해안 투어는 멀미에 약하면 구불구불한 도로 주의
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -190,7 +190,7 @@ excluded:
 - 정장 디너(Formal Night)가 이날 진행되는 경우가 많으니 복장 체크!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -230,7 +230,7 @@ excluded:
 - 풍차 언덕 석양이 아름답지만 출항 시간 주의
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -272,7 +272,7 @@ excluded:
 - 출항이 20:00으로 늦어서 이아 석양(~20:30)은 시간이 빠듯할 수 있음 — 선내에서 보는 것도 추천
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -314,7 +314,7 @@ excluded:
 - 아크로폴리스 통합권(€30)으로 7개 유적지 입장 가능
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -352,7 +352,7 @@ excluded:
 - 선내 계좌(Seapass) 정산 내역을 TV 또는 앱에서 확인하세요
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -384,4 +384,4 @@ excluded:
 - 공항 이동: 치비타베키아→FCO 공항 셔틀 약 1.5시간 (~€15~25)
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>

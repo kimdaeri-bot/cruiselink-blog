@@ -89,7 +89,7 @@ excluded:
 - 여권 원본 필수! 선내에서 보관 후 하선 시 반환됩니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -127,7 +127,7 @@ excluded:
 - MSC 요트 클럽 게스트는 전용 풀과 선데크를 이용할 수 있습니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -167,7 +167,7 @@ excluded:
 - 여름에는 자외선이 매우 강하니 선크림 필수!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -202,7 +202,7 @@ excluded:
 - 현금 위주 가게가 많으니 엔화를 미리 준비하세요
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -242,7 +242,7 @@ excluded:
 - 텐몬칸 아케이드 거리에서 쇼핑 + 맛집 투어가 가능합니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -282,7 +282,7 @@ excluded:
 - 항구에서 시내까지 도보 10분, 택시 기본요금으로 이동 가능
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 

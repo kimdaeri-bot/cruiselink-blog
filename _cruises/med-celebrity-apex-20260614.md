@@ -88,7 +88,7 @@ excluded:
 - 6월 아테네는 35°C 이상! 선크림과 모자 필수
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -128,7 +128,7 @@ excluded:
 - 물가가 비싼 편이에요. 중심가보다 골목 안쪽이 저렴합니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -168,7 +168,7 @@ excluded:
 - 6월은 맑고 건조해서 관광 최적 시즌, 하지만 자외선 주의
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -207,7 +207,7 @@ excluded:
 - 내일 산토리니 텐더보트 하선에 대비해 일찍 자는 것도 전략!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -250,7 +250,7 @@ excluded:
 - 케이블카 줄이 길면 당나귀도 특별한 경험!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -291,7 +291,7 @@ excluded:
 - 크레타의 올리브오일은 세계 최고급! 선물용으로 추천
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -330,7 +330,7 @@ excluded:
 - 셀러브리티는 팁이 자동 청구(1인 1박 $18)되니 미리 확인하세요
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 

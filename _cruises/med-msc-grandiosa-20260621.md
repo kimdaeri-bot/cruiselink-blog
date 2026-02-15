@@ -90,7 +90,7 @@ excluded:
 - 여권 원본 필수! 선내에서 보관 후 하선 시 반환됩니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -130,7 +130,7 @@ excluded:
 - 6월은 라벤더 시즌 시작! 엑상프로방스에서 라벤더밭을 볼 수 있어요
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -170,7 +170,7 @@ excluded:
 - MSC 본사가 제노바에 있어 MSC 크루즈의 홈포트입니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -210,7 +210,7 @@ excluded:
 - 폼페이 입장료 €18, 가이드 투어가 훨씬 이해하기 쉽습니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -251,7 +251,7 @@ excluded:
 - 몬레알레 대성당은 오전에 방문하면 빛이 모자이크에 들어와 더욱 아름답습니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -291,7 +291,7 @@ excluded:
 - 영어가 공용어라 의사소통이 편리합니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -331,7 +331,7 @@ excluded:
 - 하선 시간대를 미리 예약하면 대기 없이 빠르게 내릴 수 있습니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 

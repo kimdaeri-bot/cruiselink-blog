@@ -602,21 +602,22 @@ ul { list-style: none; }
 
 /* 더보기 expand/collapse */
 .day-expandable {
-  max-height: 200px; overflow: hidden; position: relative;
-  transition: max-height .4s ease;
+  max-height: 0; overflow: hidden; position: relative;
+  transition: max-height .5s ease;
 }
-.day-expandable.expanded { max-height: 2000px; }
-.day-expandable:not(.expanded)::after {
-  content: ''; position: absolute; bottom: 0; left: 0; right: 0;
-  height: 60px; background: linear-gradient(transparent, white);
-  pointer-events: none;
-}
+.day-expandable.expanded { max-height: 3000px; }
 .day-toggle {
-  display: inline-block; margin-top: 8px; padding: 6px 16px;
-  background: var(--navy); color: #fff; border: none; border-radius: 20px;
-  font-size: 13px; font-weight: 600; cursor: pointer; transition: background .2s;
+  display: flex; align-items: center; justify-content: center;
+  margin: 12px auto 0; padding: 0;
+  background: none; border: none; cursor: pointer;
+  color: var(--gray-700); font-size: 13px; gap: 4px;
+  transition: color .2s;
 }
-.day-toggle:hover { background: var(--orange); }
+.day-toggle:hover { color: var(--navy); }
+.toggle-arrow {
+  font-size: 18px; transition: transform .3s;
+}
+.day-expandable.expanded + .day-toggle .toggle-arrow { transform: rotate(180deg); }
 
 /* Ship facility tab images — unified size */
 .facility-tab-content img,

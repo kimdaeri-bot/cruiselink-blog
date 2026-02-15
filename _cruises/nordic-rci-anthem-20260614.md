@@ -107,7 +107,7 @@ excluded:
 - 노르웨이 기항지는 물가가 매우 높으니 선내에서 간식/음료를 챙기세요
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -145,7 +145,7 @@ excluded:
 - 6월 노르웨이는 백야! 밤 11시에도 밝으니 수면 안대 챙기기
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -185,7 +185,7 @@ excluded:
 - 크루즈 터미널에서 브뤼겐까지 도보 10분
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -225,7 +225,7 @@ excluded:
 - 6월 백야라 저녁에도 밝아서 사진 찍기 좋습니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -266,7 +266,7 @@ excluded:
 - 피요르드 진입 시 갑판에 반드시 나가세요 — 양쪽 절벽과 폭포가 장관
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -307,7 +307,7 @@ excluded:
 - 플롬 마을은 매우 작아서 기차 제외 시 2~3시간이면 충분
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -347,7 +347,7 @@ excluded:
 - 하이킹이 부담되면 올드타운 + 석유박물관 + 리세피요르드 크루즈 조합 추천
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -387,7 +387,7 @@ excluded:
 - 사우스햄프턴 도착 후 런던까지 이동 계획을 미리 세우세요
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -419,4 +419,4 @@ excluded:
 - 영국 출국 시 VAT 환급 가능 (선내 면세점 구매는 해당 없음)
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>

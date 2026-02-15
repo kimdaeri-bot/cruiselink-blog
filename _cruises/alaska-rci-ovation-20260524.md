@@ -107,7 +107,7 @@ excluded:
 - 알래스카는 실내외 기온 차가 크므로 레이어링(겹겹이 입기)이 핵심!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -149,7 +149,7 @@ excluded:
 - 자쿠지에서 빙하 풍경을 감상하는 건 알래스카 크루즈만의 특권
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -190,7 +190,7 @@ excluded:
 - 다운타운은 도보 관광 가능, 멘든홀 빙하까지 셔틀버스 약 20분
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -231,7 +231,7 @@ excluded:
 - 야생 곰 출몰 지역! 하이킹 시 곰방울(Bear Bell) 착용
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -272,7 +272,7 @@ excluded:
 - 핫초콜릿을 들고 갑판에서 감상하는 것이 알래스카 크루즈의 정석
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -310,7 +310,7 @@ excluded:
 - 선내 계좌 정산 내역 확인
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -350,7 +350,7 @@ excluded:
 - 캐나다 달러(CAD) 필요하지만 대부분 USD도 받습니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -382,4 +382,4 @@ excluded:
 - 귀국편이 오후라면 파이크 플레이스 마켓에서 마지막 시애틀 커피 한 잔!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>

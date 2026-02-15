@@ -108,7 +108,7 @@ excluded:
 - 승선 전 호커 센터에서 치킨 라이스(~S$5)와 락사(~S$6) 꼭 드세요!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -148,7 +148,7 @@ excluded:
 - 일몰 시간에 갑판 14층에서 말라카 해협 선셋 감상 추천
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -189,7 +189,7 @@ excluded:
 - 크루즈 터미널에서 조지타운까지 무료 셔틀 또는 택시 10분 (RM 15~)
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -230,7 +230,7 @@ excluded:
 - 택시는 미터기 없음 — 미리 가격 흥정하세요 (스카이캡까지 ~RM 24)
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -272,7 +272,7 @@ excluded:
 - 타이 마사지 1시간 ฿300~500 (약 1만~1.7만원) — 꼭 체험하세요!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
 
 ---
 
