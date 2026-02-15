@@ -736,13 +736,16 @@ ul { list-style: none; }
   align-items: center;
   margin-top: 16px;
   gap: 8px;
+  overflow: visible;
 }
 .dest-slider {
   display: flex;
   gap: 20px;
   overflow-x: auto;
+  overflow-y: visible;
   scroll-behavior: smooth;
   flex: 1;
+  padding: 10px 0;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
