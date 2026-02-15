@@ -143,7 +143,7 @@ ul { list-style: none; }
 .cruise-item:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); border-color: var(--navy); }
 
 .cruise-item-image {
-  width: 200px; min-height: 160px; flex-shrink: 0;
+  width: 220px; height: 180px; flex-shrink: 0;
   background: var(--navy-light); position: relative; overflow: hidden;
 }
 .cruise-item-image img { width: 100%; height: 100%; object-fit: cover; }
@@ -153,7 +153,7 @@ ul { list-style: none; }
   color: var(--white); font-size: 40px;
 }
 
-.cruise-item-body { flex: 1; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; }
+.cruise-item-body { flex: 1; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; position: relative; }
 .cruise-item-meta { font-size: 14px; color: var(--gray-700); margin-bottom: 4px; }
 .cruise-item-title { font-size: 20px; font-weight: 700; margin-bottom: 8px; color: var(--gray-900); }
 .cruise-item-title a { color: inherit; }
@@ -161,9 +161,16 @@ ul { list-style: none; }
 .cruise-item-ports { font-size: 14px; color: var(--gray-700); margin-bottom: 12px; }
 .cruise-item-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
 .cruise-item-info { display: flex; gap: 16px; font-size: 15px; color: var(--gray-700); }
-.cruise-item-price { font-size: 22px; font-weight: 900; color: var(--orange); }
-.cruise-item-price small { font-size: 13px; font-weight: 400; color: var(--gray-700); }
+.cruise-item-price { font-size: 26px; font-weight: 900; color: var(--orange); }
+.cruise-item-price small { font-size: 14px; font-weight: 400; color: var(--gray-700); }
 .cruise-item-actions { display: flex; gap: 8px; }
+
+/* PC: 문의하기 버튼 우상단 배치 */
+@media (min-width: 769px) {
+  .cruise-item-actions {
+    position: absolute; top: 20px; right: 20px;
+  }
+}
 .cruise-item .tag {
   display: inline-block; padding: 2px 8px; border-radius: 4px;
   font-size: 11px; font-weight: 700; margin-right: 4px;
