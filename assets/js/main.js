@@ -256,6 +256,14 @@ function switchFacilityTab(btn, idx) {
   tabs.querySelector('.facility-panel[data-panel="'+idx+'"]').classList.add('active');
 }
 
+// --- Logo Slider (duplicate for infinite loop) ---
+(function() {
+  var track = document.getElementById('logoTrack');
+  if (!track) return;
+  var items = track.innerHTML;
+  track.innerHTML = items + items;
+})();
+
 // --- Destination Chip Slider ---
 function destSlide(dir) {
   var slider = document.getElementById('destSlider');

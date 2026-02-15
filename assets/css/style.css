@@ -702,6 +702,34 @@ ul { list-style: none; }
 }
 
 /* Destination Chip Slider */
+/* === Cruise Line Logo Slider === */
+.logo-slider-wrap {
+  margin: 32px 0 8px;
+  overflow: hidden;
+  position: relative;
+}
+.logo-slider-wrap::before, .logo-slider-wrap::after {
+  content: ''; position: absolute; top: 0; bottom: 0; width: 60px; z-index: 2; pointer-events: none;
+}
+.logo-slider-wrap::before { left: 0; background: linear-gradient(to right, white, transparent); }
+.logo-slider-wrap::after { right: 0; background: linear-gradient(to left, white, transparent); }
+.logo-slider { overflow: hidden; }
+.logo-slider-track {
+  display: flex; align-items: center; gap: 40px;
+  animation: logoScroll 30s linear infinite;
+  width: max-content;
+}
+.logo-slider-track img {
+  height: 40px; width: auto; opacity: 0.7;
+  transition: opacity .2s; flex-shrink: 0;
+}
+.logo-slider-track img:hover { opacity: 1; }
+@keyframes logoScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.logo-slider-wrap:hover .logo-slider-track { animation-play-state: paused; }
+
 .dest-slider-wrap {
   position: relative;
   display: flex;
