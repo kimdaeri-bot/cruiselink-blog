@@ -366,3 +366,17 @@ function destSlide(dir) {
   }, { passive: true });
   slider.style.cursor = 'grab';
 })();
+
+// Format cruise date ranges with day-of-week
+(function() {
+  var days = ['일','월','화','수','목','금','토'];
+  document.querySelectorAll('.cruise-date-range').forEach(function(el) {
+    var d = el.dataset.depart, r = el.dataset.return;
+    if (!d) return;
+    function fmt(s) {
+      var p = s.split('-'), dt = new Date(+p[0], +p[1]-1, +p[2]);
+      return p[0]+'.'+p[1]+'.'+p[2]+'('+days[dt.getDay()]+')';
+    }
+    el.textContent = '📅 ' + fmt(d) + (r ? ' ~ ' + fmt(r) : '');
+  });
+})();

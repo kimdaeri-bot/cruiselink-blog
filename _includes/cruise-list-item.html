@@ -33,7 +33,7 @@
     <div class="cruise-item-footer">
       <div class="cruise-item-row">
         <div class="cruise-item-info">
-          <span>📅 {{ cruise.departureDate }}</span>
+          <span class="cruise-date-range" data-depart="{{ cruise.departureDate }}" data-return="{{ cruise.returnDate }}">📅 {{ cruise.departureDate }} ~ {{ cruise.returnDate }}</span>
           <span>🌙 {{ cruise.nights }}박</span>
         </div>
         <div class="cruise-item-price">${{ cruise.priceFrom }}~ <small>/1인</small></div>
