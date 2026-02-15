@@ -277,7 +277,12 @@ ul { list-style: none; }
 }
 .cta-section h2 { font-size: 32px; font-weight: 900; margin-bottom: 12px; }
 .cta-section p { font-size: 16px; opacity: 0.9; margin-bottom: 28px; }
-.cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: nowrap; }
+.cta-buttons .btn { flex: 1; max-width: 220px; min-width: 0; text-align: center; padding: 16px 12px; font-size: 15px; }
+@media (max-width: 768px) {
+  .cta-buttons { flex-wrap: nowrap; gap: 8px; }
+  .cta-buttons .btn { padding: 12px 8px; font-size: 13px; max-width: none; }
+}
 
 /* === Detail Page === */
 .detail-hero {
