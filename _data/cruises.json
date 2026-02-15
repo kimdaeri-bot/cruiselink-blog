@@ -1,5 +1,37 @@
 [
   {
+    "id": "japan-msc-bellissima-20260809",
+    "title": "부산출발 일본 6박 오키나와·가고시마 크루즈",
+    "cruiseLine": "msc",
+    "cruiseLineName": "MSC",
+    "ship": "MSC 벨리시마",
+    "shipTonnage": "171,598톤",
+    "shipPassengers": "5,686명",
+    "shipYear": "2019",
+    "destination": "japan",
+    "destinationName": "일본",
+    "subDestination": "오키나와·규슈",
+    "departurePort": "부산",
+    "departureDate": "2026-08-09",
+    "returnDate": "2026-08-15",
+    "nights": 6,
+    "ports": [
+      "나하 (오키나와)",
+      "미야코지마",
+      "가고시마",
+      "사세보"
+    ],
+    "priceFrom": 549,
+    "currency": "USD",
+    "tags": [
+      "추천",
+      "한국출발",
+      "인기"
+    ],
+    "image": "japan/okinawa.jpg",
+    "featured": true
+  },
+  {
     "id": "med-rci-odyssey-20260607",
     "title": "서지중해 7박 이탈리아·그리스 크루즈",
     "cruiseLine": "royal-caribbean",
