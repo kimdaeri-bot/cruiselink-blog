@@ -15,9 +15,10 @@ layout: default
       <span style="font-size:32px;font-weight:900;">${{ c.priceFrom }}~</span>
       <span style="opacity:0.8;">/1인</span>
     </div>
-    <div style="margin-top:20px;">
+    <div class="cta-buttons" style="margin-top:20px;justify-content:flex-start;">
       <button class="btn btn-primary btn-lg" onclick="openInquiry('{{ c.title }}','{{ c.departureDate }}','{{ c.priceFrom }}','{{ c.cruiseLineName }}','{{ c.ship }}','{{ c.ports | join: ", " }}')">📞 문의하기</button>
       <a href="{{ site.brand.kakao }}" target="_blank" class="btn btn-kakao btn-lg">💬 카카오톡 상담</a>
+      <a href="tel:{{ site.brand.phone }}" class="btn btn-outline btn-lg" style="border-color:white;color:white;">☎️ {{ site.brand.phone }}</a>
     </div>
   </div>
 </div>

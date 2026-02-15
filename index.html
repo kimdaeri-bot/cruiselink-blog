@@ -9,8 +9,11 @@ description: "크루즈 여행의 모든 것, 크루즈링크와 함께하세요
   <div class="hero-content container">
     <h1>크루즈 여행, 크루즈링크와 함께</h1>
     <p>전 세계 크루즈를 한눈에 비교하고, 전문 상담원의 맞춤 안내를 받아보세요.</p>
-    <a href="{{ '/cruises/' | relative_url }}" class="btn btn-primary btn-lg">크루즈 상품 보기</a>
-    <a href="{{ site.brand.kakao }}" target="_blank" class="btn btn-kakao btn-lg">💬 카카오톡 상담</a>
+    <div class="cta-buttons" style="justify-content:center;">
+      <a href="{{ '/cruises/' | relative_url }}" class="btn btn-primary btn-lg">크루즈 상품 보기</a>
+      <a href="{{ site.brand.kakao }}" target="_blank" class="btn btn-kakao btn-lg">💬 카카오톡 상담</a>
+      <a href="tel:{{ site.brand.phone }}" class="btn btn-outline btn-lg" style="border-color:white;color:white;">☎️ {{ site.brand.phone }}</a>
+    </div>
   </div>
 </section>
 
