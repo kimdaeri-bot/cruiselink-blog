@@ -200,6 +200,9 @@ ul { list-style: none; }
   .cruise-item { flex-direction: column; height: auto; }
   .cruise-item-image { width: 100%; height: 180px; }
   .cruise-item-footer { flex-direction: column; align-items: flex-start; }
+  .cruise-item-actions { width: 100%; }
+  .cruise-item-actions a,
+  .cruise-item-actions button { flex: 1; text-align: center; justify-content: center; }
 }
 
 /* === Cruise Cards (for featured grid) === */
