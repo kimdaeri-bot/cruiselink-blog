@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<section class="hero">
+  <h1>크루즈링크 블로그</h1>
+  <p>전 세계 크루즈 여행 정보를 한눈에! 지중해, 알래스카, 카리브해, 북유럽, 동남아 크루즈 전문.</p>
+  <a href="https://cruiselink.co.kr" class="btn-cta" target="_blank">크루즈 상담받기</a>
+</section>
+
+<section class="posts-grid">
+  {% for post in site.posts %}
+  <article class="post-card">
+    {% if post.image %}
+    <a href="{{ post.url | relative_url }}">
+      <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+    </a>
+    {% endif %}
+    <div class="post-card-body">
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p class="post-meta">{{ post.date | date: "%Y년 %m월 %d일" }}</p>
+      <p>{{ post.description | truncate: 120 }}</p>
+      <a href="{{ post.url | relative_url }}" class="read-more">자세히 보기 →</a>
+    </div>
+  </article>
+  {% endfor %}
+</section>

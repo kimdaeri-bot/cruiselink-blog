@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cruiselink-blog.github.io/sitemap.xml
