@@ -260,6 +260,34 @@ function switchFacilityTab(btn, idx) {
 function destSlide(dir) {
   var slider = document.getElementById('destSlider');
   if (!slider) return;
-  var chipWidth = slider.querySelector('.dest-chip').offsetWidth + 12;
-  slider.scrollLeft += dir * chipWidth * 2;
+  var card = slider.querySelector('.dest-card-slide') || slider.querySelector('.dest-chip');
+  if (!card) return;
+  var cardWidth = card.offsetWidth + 20;
+  slider.scrollBy({ left: dir * cardWidth * 2, behavior: 'smooth' });
 }
+
+// Drag-to-scroll for dest slider
+(function() {
+  var slider = document.getElementById('destSlider');
+  if (!slider) return;
+  var isDown = false, startX, scrollLeft;
+  slider.addEventListener('mousedown', function(e) {
+    isDown = true; slider.style.cursor = 'grabbing';
+    startX = e.pageX - slider.offsetLeft; scrollLeft = slider.scrollLeft;
+    e.preventDefault();
+  });
+  slider.addEventListener('mouseleave', function() { isDown = false; slider.style.cursor = 'grab'; });
+  slider.addEventListener('mouseup', function() { isDown = false; slider.style.cursor = 'grab'; });
+  slider.addEventListener('mousemove', function(e) {
+    if (!isDown) return; e.preventDefault();
+    var x = e.pageX - slider.offsetLeft;
+    slider.scrollLeft = scrollLeft - (x - startX);
+  });
+  // Touch support
+  slider.addEventListener('touchstart', function(e) { startX = e.touches[0].pageX; scrollLeft = slider.scrollLeft; }, { passive: true });
+  slider.addEventListener('touchmove', function(e) {
+    var x = e.touches[0].pageX;
+    slider.scrollLeft = scrollLeft - (x - startX);
+  }, { passive: true });
+  slider.style.cursor = 'grab';
+})();

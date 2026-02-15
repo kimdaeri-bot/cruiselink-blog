@@ -712,10 +712,13 @@ ul { list-style: none; }
 .dest-slider {
   display: flex;
   gap: 20px;
-  overflow: hidden;
+  overflow-x: auto;
   scroll-behavior: smooth;
   flex: 1;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+.dest-slider::-webkit-scrollbar { display: none; }
 .dest-chip {
   display: flex;
   align-items: center;
