@@ -66,70 +66,50 @@ excluded:
 - 선내 팁 (1인 1박 $14.5)
 ---
 
-<div class="ship-slider-section">
-  <h2>🚢 스펙트럼 오브 더 씨즈</h2>
-  <div class="ship-slider" data-current="0">
-    <button class="slider-btn prev" onclick="slideMove(this, -1)">❮</button>
-    <div class="slider-track">
-    <div class="slide active"><img src="{{ '/assets/images/ships/spectrum-exterior.jpg' | relative_url }}" alt="스펙트럼 오브 더 씨즈 전경" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/ships/spectrum-singapore.jpg' | relative_url }}" alt="싱가포르에서의 스펙트럼" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/ships/spectrum-skypad.jpg' | relative_url }}" alt="스카이패드" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/ships/spectrum-sichuan.jpg' | relative_url }}" alt="쓰촨 레드 레스토랑" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/facilities/north-star.jpg' | relative_url }}" alt="노스 스타" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/facilities/balcony-stateroom.jpg' | relative_url }}" alt="발코니 객실" loading="lazy"></div>
-    </div>
-    <button class="slider-btn next" onclick="slideMove(this, 1)">❯</button>
-  </div>
-  <div class="slider-dots">
-    <span class="dot active" onclick="goSlide(this, 0)"></span> <span class="dot" onclick="goSlide(this, 1)"></span> <span class="dot" onclick="goSlide(this, 2)"></span> <span class="dot" onclick="goSlide(this, 3)"></span> <span class="dot" onclick="goSlide(this, 4)"></span> <span class="dot" onclick="goSlide(this, 5)"></span>
-  </div>
-  <div class="slider-counter"><span class="current-slide">1</span> / 6</div>
+## 📅 상세 일정
+
+### DAY 1 — 싱가포르
+🚢 **승선 & 출항**
+
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/southeast-asia/singapore.jpg' | relative_url }}" alt="싱가포르 마리나 베이" loading="lazy">
+<img src="{{ '/assets/images/ports/singapore-port.jpg' | relative_url }}" alt="마리나 베이 크루즈 센터" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
 </div>
 
-<div class="timeline-day">
-  <h3>DAY 1 - 싱가포르</h3>
-  <div class="port">🚢 승선</div>
-  <div class="time">출항 19:00</div>
-  <img src="{{ '/assets/images/southeast-asia/singapore.jpg' | relative_url }}" alt="싱가포르" class="port-image" loading="lazy">
-  <div class="desc">마리나 베이 크루즈 센터에서 승선. 마리나 베이 샌즈, 가든스 바이 더 베이 관광 후 승선을 추천합니다.</div>
-</div>
+동남아 크루즈의 허브 싱가포르! 마리나 베이 크루즈 센터에서 스펙트럼 오브 더 씨즈에 승선합니다. 야간 출항이라 싱가포르 관광을 충분히 즐길 수 있어요.
 
-<div class="timeline-day">
-  <h3>DAY 2 - 해상 운항</h3>
-  <div class="port">🌊 말라카 해협 항해</div>
-  <div class="desc">선내 시설 탐험의 날! 노스 스타, 스카이다이빙 시뮬레이터, 범퍼카 등을 즐기세요.</div>
-  <img src="{{ '/assets/images/ships/spectrum-sea.jpg' | relative_url }}" alt="말라카 해협 해상 항해" class="port-image" loading="lazy">
-</div>
+<div class="day-expandable">
 
-<div class="timeline-day">
-  <h3>DAY 3 - 페낭</h3>
-  <div class="port">📍 조지타운, 말레이시아</div>
-  <div class="time">입항 07:00 / 출항 19:00</div>
-  <img src="{{ '/assets/images/southeast-asia/penang.jpg' | relative_url }}" alt="페낭" class="port-image" loading="lazy">
-  <div class="desc">유네스코 세계유산 조지타운의 스트리트 아트와 다문화 매력을 만끽하세요. 말레이시아 최고의 길거리 음식 도시!</div>
-  <div class="tours">🎯 추천 투어: 조지타운 워킹 투어, 켁록시 사원, 페낭 힐</div>
-</div>
+**🕐 승선 일정**
+- 13:00~17:00 승선 수속
+- 18:00 안전 교육 (Muster Drill)
+- 19:00 출항
 
-<div class="timeline-day">
-  <h3>DAY 4 - 랑카위</h3>
-  <div class="port">📍 랑카위, 말레이시아</div>
-  <div class="time">입항 07:00 / 출항 16:00</div>
-  <img src="{{ '/assets/images/southeast-asia/langkawi.jpg' | relative_url }}" alt="랑카위" class="port-image" loading="lazy">
-  <div class="desc">에메랄드빛 바다와 열대우림의 면세 섬. 스카이브릿지, 맹그로브 투어를 즐기세요.</div>
-  <div class="tours">🎯 추천 투어: 스카이캡 케이블카, 맹그로브 카약, 면세 쇼핑</div>
-</div>
+**🗺️ 승선 전 추천 관광**
+- **마리나 베이 샌즈** — 옥상 인피니티 풀(숙박 시), 스카이파크 전망대(~S$26)
+- **가든스 바이 더 베이** (~S$28) — 슈퍼트리 그로브, 클라우드 포레스트, 플라워 돔
+- **호커 센터 투어** — 라우 파 삿, 차이나타운 맥스웰 푸드 센터에서 로컬 음식 체험
+- **리틀 인디아 & 아랍 스트리트** — 다문화 싱가포르의 진수
 
-<div class="timeline-day">
-  <h3>DAY 5 - 해상 운항</h3>
-  <div class="port">🌊 종일 해상</div>
-  <div class="desc">마지막 해상일을 즐기며 선내 쇼핑, 스파를 만끽하세요.</div>
-  <img src="{{ '/assets/images/ships/spectrum-sea.jpg' | relative_url }}" alt="해상 항해" class="port-image" loading="lazy">
-</div>
+**🍽️ 첫날 추천 활동**
+- 갑판에서 마리나 베이 야경 감상하며 출항 — 싱가포르 스카이라인이 점점 멀어지는 장면은 감동!
+- **쓰촨 레드** 사전 예약 — 스펙트럼 전용 아시안 스페셜티 레스토랑
+- 선내 탐험 — 노스 스타, 스카이패드 위치 파악
 
-<div class="timeline-day">
-  <h3>DAY 6 - 싱가포르</h3>
-  <div class="port">🚢 하선</div>
-  <div class="time">입항 06:00</div>
-  <div class="desc">싱가포르에 도착하여 하선합니다.</div>
-  <img src="{{ '/assets/images/ports/singapore-port.jpg' | relative_url }}" alt="싱가포르 귀항" class="port-image" loading="lazy">
+**💡 TIP**
+- 창이 공항에서 마리나 베이 크루즈 센터까지 택시 약 20분 (~S$25)
+- 싱가포르 MRT(지하철)도 편리 — 마리나 사우스 피어역에서 도보 5분
+- 11월 싱가포르는 우기이므로 접이식 우산 필수
+- 승선 전 호커 센터에서 치킨 라이스(~S$5)와 락사(~S$6) 꼭 드세요!
+
 </div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+
+---
+
+### DAY 2 — 해상

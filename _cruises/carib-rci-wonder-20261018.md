@@ -70,89 +70,322 @@ excluded:
 - 선내 팁 (1인 1박 $16)
 ---
 
-<div class="ship-slider-section">
-  <h2>🚢 원더 오브 더 씨즈</h2>
-  <div class="ship-slider" data-current="0">
-    <button class="slider-btn prev" onclick="slideMove(this, -1)">❮</button>
-    <div class="slider-track">
-    <div class="slide active"><img src="{{ '/assets/images/ships/wonder-exterior.jpg' | relative_url }}" alt="원더 오브 더 씨즈 전경" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/ships/wonder-pool.jpg' | relative_url }}" alt="풀 데크" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/ships/wonder-aquatheater.jpg' | relative_url }}" alt="아쿠아 극장" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/ships/wonder-zipline.jpg' | relative_url }}" alt="집라인 & 보드워크" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/ships/wonder-flowrider.jpg' | relative_url }}" alt="플로우라이더" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/ships/wonder-waterslide.jpg' | relative_url }}" alt="워터슬라이드" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/facilities/balcony-stateroom.jpg' | relative_url }}" alt="발코니 객실" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/facilities/suite-living.jpg' | relative_url }}" alt="스위트룸" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/facilities/chops-grille.jpg' | relative_url }}" alt="스페셜티 레스토랑" loading="lazy"></div>
-    </div>
-    <button class="slider-btn next" onclick="slideMove(this, 1)">❯</button>
-  </div>
-  <div class="slider-dots">
-    <span class="dot active" onclick="goSlide(this, 0)"></span> <span class="dot" onclick="goSlide(this, 1)"></span> <span class="dot" onclick="goSlide(this, 2)"></span> <span class="dot" onclick="goSlide(this, 3)"></span> <span class="dot" onclick="goSlide(this, 4)"></span> <span class="dot" onclick="goSlide(this, 5)"></span> <span class="dot" onclick="goSlide(this, 6)"></span> <span class="dot" onclick="goSlide(this, 7)"></span> <span class="dot" onclick="goSlide(this, 8)"></span>
-  </div>
-  <div class="slider-counter"><span class="current-slide">1</span> / 9</div>
+## 📅 상세 일정
+
+### DAY 1 — 포트 로더데일
+🚢 **승선 & 출항**
+
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/ports/fort-lauderdale.jpg' | relative_url }}" alt="포트 로더데일 항구" loading="lazy">
+<img src="{{ '/assets/images/ships/wonder-exterior.jpg' | relative_url }}" alt="원더 오브 더 씨즈" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
 </div>
 
-<div class="timeline-day">
-  <h3>DAY 1 - 포트 로더데일</h3>
-  <div class="port">🚢 승선</div>
-  <div class="time">출항 16:30</div>
-  <div class="desc">플로리다주 포트 로더데일에서 세계 최대급 크루즈 원더 오브 더 씨즈에 승선합니다.</div>
-  <img src="{{ '/assets/images/ports/fort-lauderdale.jpg' | relative_url }}" alt="포트 로더데일" class="port-image" loading="lazy">
+플로리다 포트 로더데일에서 세계 최대급 크루즈 원더 오브 더 씨즈(236,857톤!)에 승선합니다. 8개 네이버후드(구역)로 나뉜 해상 도시의 탐험이 시작됩니다!
+
+<div class="day-expandable">
+
+**🕐 승선 일정**
+- 11:00~15:00 승선 수속
+- 15:30 안전 교육 (Muster Drill)
+- 16:30 출항
+
+**🗺️ 승선 전 추천 관광**
+- **포트 로더데일 비치** — 3km의 황금빛 해변, 승선 전 마지막 해변 산책
+- **라스 올라스 블루바드** — 레스토랑, 부티크 쇼핑, 갤러리 거리
+- **에버글레이즈 투어** (~$30) — 에어보트로 악어 서식지 탐험
+
+**🍽️ 첫날 추천 활동**
+- **센트럴 파크** 산책 — 선상 정원에서 실제 나무와 꽃을 감상
+- **얼티밋 어비스** — 10층 높이의 드라이 슬라이드, 스릴 만점!
+- **아쿠아 극장** — 첫날 밤 다이빙 퍼포먼스 쇼 관람 (무료)
+- **윈저메어(뷔페)** 또는 메인 다이닝에서 첫 디너
+
+**💡 TIP**
+- 마이애미 공항(MIA)에서 포트 로더데일 터미널까지 약 40분
+- FLL 공항에서는 우버 약 10분으로 더 가깝습니다
+- 원더급은 워낙 크므로 크루즈 앱으로 시설 위치를 미리 파악하세요
+- 음료 패키지(Deluxe Beverage Package) 구매 시 첫날 구매가 가장 저렴
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+
+---
+
+### DAY 2 — 해상 운항
+🌊 **카리브해 종일 항해**
+
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/ships/wonder-pool.jpg' | relative_url }}" alt="원더 풀 데크" loading="lazy">
+<img src="{{ '/assets/images/ships/wonder-aquatheater.jpg' | relative_url }}" alt="아쿠아 극장" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
 </div>
 
-<div class="timeline-day">
-  <h3>DAY 2 - 해상 운항</h3>
-  <div class="port">🌊 종일 해상</div>
-  <div class="desc">세계 최대 크루즈선의 놀라운 시설들을 탐험하세요. 센트럴 파크 산책, 얼티밋 어비스 도전, 아쿠아 극장 공연 관람!</div>
-  <img src="{{ '/assets/images/ships/wonder-sea.jpg' | relative_url }}" alt="카리브해 해상 항해" class="port-image" loading="lazy">
+카리브해의 터키색 바다 위에서 세계 최대 크루즈의 놀라운 시설들을 탐험하는 날! 하루로는 부족할 정도입니다.
+
+<div class="day-expandable">
+
+**🎢 추천 액티비티**
+- **얼티밋 어비스** — 10층 높이의 건식 슬라이드, 세계 최장 선상 슬라이드
+- **집라인** — 보드워크 위 9층 높이에서 카리브해를 가르는 집라인
+- **플로우라이더** — 양쪽 2개 레인 동시 운영, 대기 시간 짧음
+- **워터슬라이드** — 퍼펙트 스톰, 3개의 워터슬라이드 동시 도전
+- **클라이밍 월** — 바다를 배경으로 암벽 등반
+- **센트럴 파크 조깅** — 실제 식물이 자라는 선상 정원에서 산책 또는 조깅
+
+**🌙 저녁 추천**
+- **아쿠아 극장 쇼** (무료) — 하이다이빙 + 수중 퍼포먼스의 압도적 공연
+- **찹스 그릴** (~$62) — USDA 프라임 드라이에이징 스테이크
+- **플레이메이커스 스포츠 바** — 대형 스크린으로 스포츠 경기 관람 + 맥주
+
+**💡 TIP**
+- 해상일에 시설이 가장 붐빕니다! 오전 일찍(08:00) 또는 점심시간에 이용 추천
+- 아쿠아 극장은 좌석이 빨리 차니 30분 전 착석
+- 선상 Wi-Fi가 필요하면 해상일에 당일 패스 구매 가능 (~$20/일)
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+
+---
+
+### DAY 3 — 세인트 토마스
+🏝️ **카리브해의 보석**
+
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/caribbean/st-thomas.jpg' | relative_url }}" alt="세인트 토마스" loading="lazy">
+<img src="{{ '/assets/images/caribbean/hero.jpg' | relative_url }}" alt="카리브해 해변" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
 </div>
 
-<div class="timeline-day">
-  <h3>DAY 3 - 세인트 토마스</h3>
-  <div class="port">📍 샬럿 아말리에, US 버진 아일랜드</div>
-  <div class="time">입항 08:00 / 출항 17:00</div>
-  <img src="{{ '/assets/images/caribbean/st-thomas.jpg' | relative_url }}" alt="세인트 토마스" class="port-image" loading="lazy">
-  <div class="desc">카리브해의 보석 세인트 토마스. 매건스 베이 비치에서 수영하고, 면세 쇼핑을 즐기세요.</div>
-  <div class="tours">🎯 추천 투어: 매건스 베이 비치, 스카이라이드 전망대, 스노클링</div>
+US 버진 아일랜드의 수도 샬럿 아말리에. 에메랄드빛 바다, 면세 쇼핑, 그리고 카리브해 최고의 비치가 기다립니다!
+
+<div class="day-expandable">
+
+**⏰ 입항/출항:** 08:00 입항 / 17:00 출항
+
+**🗺️ 추천 기항지 투어**
+- **매건스 베이 비치** (반나절, ~$30 택시) — 세계 10대 해변 선정, 하얀 모래와 투명한 바다
+- **스카이라이드(Paradise Point)** (~$25) — 케이블카로 올라가 섬 전체 파노라마 조망
+- **코럴 월드 해양공원** (~$25) — 해저 전망대, 바다거북 수영 체험
+- **세인트 존 섬 투어** (종일, ~$80) — 페리로 이동, 트렁크 베이(세계 최고 스노클링 스팟)
+- **면세 쇼핑** — 다운타운 메인 스트리트에서 보석, 시계, 주류 면세 구매
+
+**🍹 맛집 추천**
+- **그린하우스** — 샬럿 아말리에 항구뷰 레스토랑, 럼 펀치 칵테일 필수
+- **콩크 프리터(Conch Fritter)** — 카리브해 대표 소라튀김 간식
+- **버진 아일랜드 럼** — 크루잔 럼(Cruzan Rum) 시음 투어 가능
+
+**💡 TIP**
+- US 버진 아일랜드이므로 미국 달러 사용, 여권 불필요 (미국 시민)
+- 매건스 베이까지 택시 왕복 $10/인 (합승)
+- 10월은 비수기라 해변이 한가하고 가격도 저렴!
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+
+---
+
+### DAY 4 — 세인트 마틴
+🇫🇷🇳🇱 **두 나라가 공존하는 섬**
+
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/caribbean/st-martin.jpg' | relative_url }}" alt="세인트 마틴 마호 비치" loading="lazy">
+<img src="{{ '/assets/images/caribbean/miami.jpg' | relative_url }}" alt="카리브해 풍경" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
 </div>
 
-<div class="timeline-day">
-  <h3>DAY 4 - 세인트 마틴</h3>
-  <div class="port">📍 필립스버그, 세인트 마틴</div>
-  <div class="time">입항 08:00 / 출항 17:00</div>
-  <img src="{{ '/assets/images/caribbean/st-martin.jpg' | relative_url }}" alt="세인트 마틴" class="port-image" loading="lazy">
-  <div class="desc">프랑스와 네덜란드가 공존하는 세인트 마틴. 마호 비치에서 비행기 착륙 장면을 가까이서 볼 수 있습니다!</div>
-  <div class="tours">🎯 추천 투어: 마호 비치, 오리엔트 베이, 섬 투어</div>
+세계에서 가장 작은 땅에 두 나라(프랑스·네덜란드)가 공존하는 세인트 마틴! 머리 위로 비행기가 착륙하는 마호 비치로 세계적으로 유명합니다.
+
+<div class="day-expandable">
+
+**⏰ 입항/출항:** 08:00 입항 / 17:00 출항
+
+**🗺️ 추천 기항지 투어**
+- **마호 비치(Maho Beach)** (반나절, ~$20 택시) — 프린세스 줄리아나 공항 활주로 바로 옆! 비행기가 머리 위로 착륙하는 세계 유일의 해변
+- **오리엔트 베이(Orient Bay)** (~$25 택시) — '카리브해의 생트로페', 프랑스령의 아름다운 해변
+- **섬 일주 투어** (반나절, ~$50) — 프랑스령 마리고와 네덜란드령 필립스버그를 한 번에
+- **카타마란 스노클링 투어** (~$70) — 산호초와 열대어 천국에서 스노클링
+
+**🍽️ 맛집 추천**
+- **마호 비치 선셋 바** — 비행기가 지나갈 때마다 모래바람이 부는 전설적인 바
+- **그랑 카스(Grand Case)** — 프랑스령의 '미식 수도', 로로(BBQ) 스탠드에서 저렴한 크레올 요리
+- **기네스 월드 레코드 럼** — 네덜란드령에서 마시는 40가지 맛 럼 칵테일
+
+**💡 TIP**
+- 프랑스령은 유로(€), 네덜란드령은 길더(NAf)/USD 사용 — 대부분 USD도 OK
+- 마호 비치에서 비행기 착륙 시간은 FlightAware 앱으로 확인 가능
+- 프랑스령이 음식이 더 맛있고, 네덜란드령이 쇼핑이 더 저렴
+- 수영복과 비치타월 챙기기 (선내 타월 반출 가능)
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+
+---
+
+### DAY 5 — 해상 운항
+🌊 **카리브해 항해**
+
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/ships/wonder-zipline.jpg' | relative_url }}" alt="원더 집라인" loading="lazy">
+<img src="{{ '/assets/images/ships/wonder-waterslide.jpg' | relative_url }}" alt="워터슬라이드" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
 </div>
 
-<div class="timeline-day">
-  <h3>DAY 5 - 해상 운항</h3>
-  <div class="port">🌊 종일 해상</div>
-  <div class="desc">선내 스파에서 릴랙스하거나 브로드웨이 스타일 쇼를 관람하세요.</div>
-  <img src="{{ '/assets/images/ships/wonder-sea.jpg' | relative_url }}" alt="해상 항해" class="port-image" loading="lazy">
+코코 케이를 향해 항해하며 아직 즐기지 못한 선내 시설을 정복하는 날!
+
+<div class="day-expandable">
+
+**🎢 추천 액티비티**
+- **스파 & 바이탈리티 앳 씨** — 핫스톤 마사지, 카리브해를 바라보며 릴랙스 (~$150)
+- **카지노 로얄** — 슬롯머신, 블랙잭, 룰렛, 포커 — 바다 위 라스베가스
+- **에스케이프 룸** (~$20/인) — 팀원과 함께 미션을 풀어라!
+- **미니골프** — 선상 미니골프 코스 (무료)
+- **솔라리움** — 성인 전용 인피니티 풀에서 여유로운 시간
+
+**🌙 저녁 추천**
+- **브로드웨이 뮤지컬 공연** (무료) — 시카고, 헤어스프레이 등 실제 브로드웨이 타이틀
+- **이자카야** (~$45) — 일본식 스시 & 사시미 오마카세
+- **비앙코 레스토랑** (~$55) — 이탈리안 정통 파스타 & 오소부코
+
+**💡 TIP**
+- 내일은 코코 케이! 수영복, 선크림, 방수 폰케이스 미리 준비
+- 코코 케이 스릴 워터파크($) 또는 오버워터 카바나($$)를 원하면 사전 예약 필수
+- 마지막 해상일에 수하물 태그가 객실에 배달됩니다
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+
+---
+
+### DAY 6 — 코코 케이
+🏖️ **퍼펙트 데이 앳 코코 케이**
+
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/caribbean/cococay.jpg' | relative_url }}" alt="코코 케이" loading="lazy">
+<img src="{{ '/assets/images/destinations/caribbean.jpg' | relative_url }}" alt="카리브해 파라다이스" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
 </div>
 
-<div class="timeline-day">
-  <h3>DAY 6 - 코코 케이</h3>
-  <div class="port">📍 퍼펙트 데이 앳 코코 케이, 바하마</div>
-  <div class="time">입항 07:00 / 출항 17:00</div>
-  <img src="{{ '/assets/images/caribbean/cococay.jpg' | relative_url }}" alt="코코 케이" class="port-image" loading="lazy">
-  <div class="desc">로열캐리비안의 프라이빗 아일랜드! 스릴 워터파크, 오버워터 카바나, 에메랄드빛 바다를 즐기세요.</div>
-  <div class="tours">🎯 추천: 스릴 워터파크, 헬륨 풍선 전망대, 카바나 렌탈</div>
+로열캐리비안이 $250M을 투자한 프라이빗 아일랜드! 북미 최대 파도풀, 헬륨 풍선 전망대, 오버워터 카바나까지 — 하루가 모자란 카리브해 낙원입니다.
+
+<div class="day-expandable">
+
+**⏰ 입항/출항:** 07:00 입항 / 17:00 출항
+
+**🗺️ 추천 액티비티**
+- **스릴 워터파크** (~$80) — 드레드폴(135피트 높이 워터슬라이드!), 13개 슬라이드, 파도풀
+- **업, 업 앤 어웨이 풍선** (~$40) — 450피트 높이 헬륨 풍선에서 섬 전체 조망
+- **오버워터 카바나** (~$350~1,500) — 바다 위 프라이빗 카바나, 전용 슬라이드 포함
+- **칠 아일랜드 비치** (무료) — 조용한 에메랄드빛 해변에서 해먹에 누워 힐링
+- **스노클링** (~$35) — 산호초 지대에서 열대어 관찰
+- **제트스키** (~$110) — 코코 케이 해안을 돌아보는 스릴 만점 제트스키
+
+**🍽️ 먹거리**
+- **스내크 쉑(Snack Shack)** — 무료! 버거, 치킨, 핫독
+- **캡틴 잭스** — 신선한 해산물 바비큐
+- **코코 바** — 럼 칵테일과 피나콜라다
+
+**💡 TIP**
+- 기본 해변 이용은 무료! 워터파크와 카바나만 유료입니다
+- 선내 타월을 가져가세요 (섬에서도 타월 스테이션 있음)
+- 선크림 SPF50+ 필수! 카리브해 10월 자외선은 강력합니다
+- 선내 음료 패키지는 코코 케이에서도 적용됩니다
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+
+---
+
+### DAY 7 — 해상 운항
+🌊 **마지막 항해**
+
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/ships/wonder-flowrider.jpg' | relative_url }}" alt="플로우라이더" loading="lazy">
+<img src="{{ '/assets/images/ships/wonder-pool.jpg' | relative_url }}" alt="풀 데크 석양" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
 </div>
 
-<div class="timeline-day">
-  <h3>DAY 7 - 해상 운항</h3>
-  <div class="port">🌊 종일 해상</div>
-  <div class="desc">마지막 해상일. 짐 정리와 함께 남은 선내 시설을 만끽하세요.</div>
-  <img src="{{ '/assets/images/ships/wonder-sea.jpg' | relative_url }}" alt="카리브해 해상 항해" class="port-image" loading="lazy">
+포트 로더데일로 돌아가는 마지막 항해일. 원더 오브 더 씨즈에서의 마지막 하루를 아쉬움 없이 즐기세요.
+
+<div class="day-expandable">
+
+**🎢 추천 액티비티**
+- **놓친 시설 정복** — 얼티밋 어비스, 집라인, 클라이밍 월 등 마지막 기회!
+- **면세 쇼핑** — 선내 면세점 마지막 날 특별 할인
+- **포토 갤러리** — 항해 중 촬영된 사진 구매 (마지막 날 할인)
+- **비탈리티 스파** — 여행의 피로를 풀어주는 마지막 마사지
+
+**🌙 마지막 밤 추천**
+- **갈라 디너** — 정장 차림의 특별한 마지막 코스 요리
+- **브로드웨이 쇼** — 아직 안 본 공연이 있다면 마지막 기회
+- **풀 데크 무비 나이트** — 별 아래 영화 감상 (무료)
+- **라이징 타이드 바** — 3개 층을 오가는 움직이는 바에서 마지막 칵테일
+
+**💡 TIP**
+- 짐은 밤 10시까지 복도에! 수하물 태그를 꼭 부착하세요
+- 하선 시간대 선택 (앱에서 가능)
+- 선내 계좌 정산 내역 확인 — 분쟁은 선내에서 해결해야 합니다
+- 로열캐리비안 로열티(Crown & Anchor) 포인트 확인!
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+
+---
+
+### DAY 8 — 포트 로더데일 귀항
+🏠 **귀항**
+
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/ports/fort-lauderdale.jpg' | relative_url }}" alt="포트 로더데일 귀항" loading="lazy">
+<img src="{{ '/assets/images/caribbean/miami.jpg' | relative_url }}" alt="마이애미" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
 </div>
 
-<div class="timeline-day">
-  <h3>DAY 8 - 포트 로더데일</h3>
-  <div class="port">🚢 하선</div>
-  <div class="time">입항 06:00</div>
-  <div class="desc">포트 로더데일에 도착하여 하선합니다.</div>
-  <img src="{{ '/assets/images/ports/fort-lauderdale.jpg' | relative_url }}" alt="포트 로더데일 귀항" class="port-image" loading="lazy">
+이른 아침 포트 로더데일에 입항합니다. 7박의 카리브해 크루즈가 마무리됩니다.
+
+<div class="day-expandable">
+
+**🕐 하선 일정**
+- 06:00 입항
+- 07:00~10:00 하선 (그룹별)
+- Self-Assist 하선: 07:00부터
+
+**💡 TIP**
+- FLL 공항까지 우버 약 10분, MIA 공항까지 약 40분
+- 하선 후 사우스 비치(마이애미) 관광 추천 — 차로 30분
+- 미국 입국 심사가 터미널에서 진행되므로 시간 여유를 두세요
+
 </div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>

@@ -71,91 +71,317 @@ excluded:
 - 선내 팁 (1인 1박 $16)
 ---
 
-<div class="ship-slider-section">
-  <h2>🚢 오디세이 오브 더 씨즈</h2>
-  <div class="ship-slider" data-current="0">
-    <button class="slider-btn prev" onclick="slideMove(this, -1)">❮</button>
-    <div class="slider-track">
-    <div class="slide active"><img src="{{ '/assets/images/ships/odyssey-exterior.jpg' | relative_url }}" alt="오디세이 오브 더 씨즈 전경" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/ships/odyssey-pool.jpg' | relative_url }}" alt="오디세이 풀 데크" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/ships/odyssey-santorini.jpg' | relative_url }}" alt="산토리니에서의 오디세이" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/facilities/north-star.jpg' | relative_url }}" alt="노스 스타 전망 캡슐" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/facilities/flowrider.jpg' | relative_url }}" alt="플로우라이더 서핑" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/facilities/main-dining.jpg' | relative_url }}" alt="메인 다이닝" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/facilities/balcony-stateroom.jpg' | relative_url }}" alt="발코니 객실" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/facilities/suite-living.jpg' | relative_url }}" alt="스위트룸" loading="lazy"></div>
-    <div class="slide"><img src="{{ '/assets/images/facilities/solarium.jpg' | relative_url }}" alt="솔라리움" loading="lazy"></div>
-    </div>
-    <button class="slider-btn next" onclick="slideMove(this, 1)">❯</button>
-  </div>
-  <div class="slider-dots">
-    <span class="dot active" onclick="goSlide(this, 0)"></span> <span class="dot" onclick="goSlide(this, 1)"></span> <span class="dot" onclick="goSlide(this, 2)"></span> <span class="dot" onclick="goSlide(this, 3)"></span> <span class="dot" onclick="goSlide(this, 4)"></span> <span class="dot" onclick="goSlide(this, 5)"></span> <span class="dot" onclick="goSlide(this, 6)"></span> <span class="dot" onclick="goSlide(this, 7)"></span> <span class="dot" onclick="goSlide(this, 8)"></span>
-  </div>
-  <div class="slider-counter"><span class="current-slide">1</span> / 9</div>
+## 📅 상세 일정
+
+### DAY 1 — 로마 (치비타베키아)
+🚢 **승선 & 출항**
+
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/ports/rome.jpg' | relative_url }}" alt="로마 콜로세움" loading="lazy">
+<img src="{{ '/assets/images/ships/odyssey-exterior.jpg' | relative_url }}" alt="오디세이 오브 더 씨즈" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
 </div>
 
-<div class="timeline-day">
-  <h3>DAY 1 - 로마 (치비타베키아)</h3>
-  <div class="port">🚢 승선</div>
-  <div class="time">출항 17:00</div>
-  <div class="desc">이탈리아 로마의 관문 치비타베키아 항구에서 승선합니다. 콜로세움, 바티칸 등 로마 시내 관광 후 승선하는 일정을 추천합니다.</div>
-  <img src="{{ '/assets/images/ports/rome.jpg' | relative_url }}" alt="로마 콜로세움" class="port-image" loading="lazy">
+이탈리아 로마의 관문 치비타베키아 항구에서 오디세이 오브 더 씨즈에 승선합니다. 169,000톤급 퀀텀 울트라 클래스의 위용을 눈앞에서 확인하세요!
+
+<div class="day-expandable">
+
+**🕐 승선 일정**
+- 11:00~15:00 승선 수속
+- 15:30 안전 교육 (Muster Drill)
+- 17:00 출항
+
+**🗺️ 승선 전 추천 관광**
+- **콜로세움 & 포로 로마노** (~€20 입장료) — 로마의 상징, 사전 예약 필수
+- **바티칸 박물관 & 시스티나 예배당** (~€17) — 미켈란젤로의 천장화 감상
+- **트레비 분수 & 스페인 광장** — 도보 산책 코스, 무료
+
+**🍽️ 첫날 추천 활동**
+- 선내 탐험 투어 — 노스 스타, 플로우라이더, 270도 라운지를 미리 체크
+- 갑판에서 이탈리아 해안선 감상하며 출항
+- 메인 다이닝에서 첫 코스 디너 — 드레스 코드: 스마트 캐주얼
+
+**💡 TIP**
+- 로마 FCO 공항에서 치비타베키아까지 셔틀 약 1.5시간 (~€15)
+- 크루즈 앱(Royal Caribbean App)을 미리 다운로드하세요
+- 승선 첫날 스파 프로모션 확인! 항해 중 가장 저렴한 가격에 예약 가능
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+
+---
+
+### DAY 2 — 나폴리
+📍 **나폴리만의 보석**
+
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/med/img02.jpg' | relative_url }}" alt="나폴리 전경" loading="lazy">
+<img src="{{ '/assets/images/med/img03.jpg' | relative_url }}" alt="아말피 해안" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
 </div>
 
-<div class="timeline-day">
-  <h3>DAY 2 - 나폴리</h3>
-  <div class="port">📍 나폴리, 이탈리아</div>
-  <div class="time">입항 07:00 / 출항 19:00</div>
-  <img src="{{ '/assets/images/med/img02.jpg' | relative_url }}" alt="나폴리" class="port-image" loading="lazy">
-  <div class="desc">나폴리만의 아름다운 풍경과 함께 폼페이 유적지, 아말피 해안을 방문할 수 있습니다.</div>
-  <div class="tours">🎯 추천 투어: 폼페이 유적 투어, 아말피 해안 드라이브, 나폴리 피자 체험</div>
+나폴리만의 아름다운 풍경이 펼쳐집니다. 폼페이 유적부터 아말피 해안까지, 남이탈리아의 진수를 경험하세요.
+
+<div class="day-expandable">
+
+**⏰ 입항/출항:** 07:00 입항 / 19:00 출항
+
+**🗺️ 추천 기항지 투어**
+- **폼페이 유적 투어** (반나절, ~$90) — 서기 79년 베수비오 화산에 묻힌 고대 도시, 가이드 동행 추천
+- **아말피 해안 드라이브** (종일, ~$130) — 포지타노, 아말피, 라벨로를 잇는 세계에서 가장 아름다운 해안도로
+- **카프리 섬 투어** (종일, ~$150) — 블루 그로토(파란 동굴) + 카프리 시내 관광
+- **나폴리 시내 워킹 투어** (반나절, ~$50) — 스파카 나폴리, 산 세베로 예배당
+
+**🍕 맛집 추천**
+- **다 미켈레(L'Antica Pizzeria da Michele)** — 마르게리타 피자의 원조, 나폴리 피자 성지순례 필수
+- **스폴리아텔라** — 나폴리 전통 페이스트리, 리코타 치즈 속이 일품
+- **리몬첼로** — 아말피 레몬으로 만든 식후주, 작은 병으로 선물용 구매 추천
+
+**💡 TIP**
+- 폼페이 입장 시 물과 모자 필수! 그늘이 거의 없습니다
+- 나폴리 시내는 소매치기 주의 — 가방은 앞으로 매세요
+- 아말피 해안 투어는 멀미에 약하면 구불구불한 도로 주의
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+
+---
+
+### DAY 3 — 해상 운항
+🌊 **지중해 종일 항해**
+
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/ships/odyssey-pool.jpg' | relative_url }}" alt="오디세이 풀 데크" loading="lazy">
+<img src="{{ '/assets/images/ships/odyssey-sunset.jpg' | relative_url }}" alt="지중해 석양" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
 </div>
 
-<div class="timeline-day">
-  <h3>DAY 3 - 해상 운항</h3>
-  <div class="port">🌊 종일 해상</div>
-  <div class="desc">지중해의 푸른 바다 위에서 선내 시설을 마음껏 즐기세요. 플로우라이더, 노스스타, 수영장 등 다양한 액티비티가 기다립니다.</div>
-  <img src="{{ '/assets/images/ships/odyssey-sea.jpg' | relative_url }}" alt="오디세이 오브 더 씨즈 해상 항해" class="port-image" loading="lazy">
+이탈리아에서 그리스로 향하는 동안 지중해의 코발트블루 바다 위에서 선내 시설을 마음껏 즐기세요.
+
+<div class="day-expandable">
+
+**🎢 추천 액티비티**
+- **노스 스타** — 90m 높이에서 360도 지중해 파노라마 감상 (무료, 사전 예약 권장)
+- **플로우라이더** — 서핑 시뮬레이터, 초보자도 도전 가능
+- **솔라리움** — 성인 전용 실내 풀, 조용한 휴식에 최적
+- **270도 라운지** — 로봇이 칵테일을 만들어주는 바이오닉 바 체험
+
+**🌙 저녁 추천**
+- 메인 다이닝 코스 요리 (무료) — 매일 바뀌는 메뉴
+- 스페셜티 레스토랑 **찹스 그릴** (~$55) — USDA 프라임 스테이크
+- 브로드웨이 스타일 공연 관람 (메인 시어터, 무료)
+- 풀 데크 영화 상영 (무료)
+
+**💡 TIP**
+- 종일 항해일에 스파 할인 프로모션이 있는 경우가 많습니다
+- 다음 날 미코노스 준비 — 수영복, 선크림, 편한 워킹슈즈 챙기기
+- 정장 디너(Formal Night)가 이날 진행되는 경우가 많으니 복장 체크!
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+
+---
+
+### DAY 4 — 미코노스
+🏝️ **그리스의 파티 아일랜드**
+
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/med/img04.jpg' | relative_url }}" alt="미코노스 풍차" loading="lazy">
+<img src="{{ '/assets/images/med/img05.jpg' | relative_url }}" alt="미코노스 타운" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
 </div>
 
-<div class="timeline-day">
-  <h3>DAY 4 - 미코노스</h3>
-  <div class="port">📍 미코노스, 그리스</div>
-  <div class="time">입항 07:00 / 출항 18:00</div>
-  <img src="{{ '/assets/images/med/img04.jpg' | relative_url }}" alt="미코노스" class="port-image" loading="lazy">
-  <div class="desc">하얀 건물과 파란 지붕의 그리스 대표 관광지. 리틀 베니스, 풍차 언덕, 파라다이스 비치 등을 즐기세요.</div>
-  <div class="tours">🎯 추천 투어: 미코노스 타운 워킹 투어, 델로스 섬 투어, 비치 호핑</div>
+새하얀 건물과 파란 지붕, 에게해의 햇살이 빛나는 미코노스! 그리스를 대표하는 아름다운 섬입니다.
+
+<div class="day-expandable">
+
+**⏰ 입항/출항:** 07:00 입항 / 18:00 출항
+
+**🗺️ 추천 기항지 투어**
+- **미코노스 타운 워킹 투어** (반나절, ~$40) — 리틀 베니스, 풍차 언덕, 미로 같은 골목 산책
+- **델로스 섬 고대 유적 투어** (반나절, ~$80) — 아폴로 신전 유적, 유네스코 세계유산
+- **파라다이스 비치** (자유여행) — 미코노스 대표 해변, 비치 파티로 유명
+- **카타마란 세일링 투어** (~$120) — 요트를 타고 미코노스 해안선을 돌며 수영 & 스노클링
+
+**🍽️ 맛집 추천**
+- **리틀 베니스 해변 레스토랑** — 바다 바로 앞 테라스에서 해산물 모둠과 우조(그리스 술)
+- **수블라키 & 기로스** — 그리스식 케밥, 미코노스 타운 곳곳에서 €5~8
+- **바클라바** — 꿀과 견과류의 그리스 전통 디저트
+
+**💡 TIP**
+- 텐더보트 하선이므로 일찍 줄서세요 (오전 7시 전 대기 추천)
+- 미코노스 타운은 도보로 충분! 택시는 비쌉니다
+- 풍차 언덕 석양이 아름답지만 출항 시간 주의
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+
+---
+
+### DAY 5 — 산토리니
+🌅 **세계에서 가장 아름다운 일몰**
+
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/med/img06.jpg' | relative_url }}" alt="산토리니 이아 마을" loading="lazy">
+<img src="{{ '/assets/images/ships/odyssey-santorini.jpg' | relative_url }}" alt="산토리니에서의 오디세이" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
 </div>
 
-<div class="timeline-day">
-  <h3>DAY 5 - 산토리니</h3>
-  <div class="port">📍 산토리니, 그리스</div>
-  <div class="time">입항 07:00 / 출항 20:00</div>
-  <img src="{{ '/assets/images/med/img05.jpg' | relative_url }}" alt="산토리니" class="port-image" loading="lazy">
-  <div class="desc">세계에서 가장 아름다운 일몰로 유명한 산토리니. 피라 타운, 이아 마을의 블루돔 교회, 와이너리 투어를 즐기세요.</div>
-  <div class="tours">🎯 추천 투어: 이아 선셋 투어, 화산섬 온천 투어, 와인 테이스팅</div>
+칼데라 절벽 위 하얀 마을, 블루돔 교회, 그리고 전설적인 일몰. 꿈에 그리던 산토리니에 발을 딛는 날입니다!
+
+<div class="day-expandable">
+
+**⏰ 입항/출항:** 07:00 입항 / 20:00 출항 (긴 체류 시간!)
+
+**🗺️ 추천 기항지 투어**
+- **이아 마을 석양 투어** (반나절, ~$60) — 세계 3대 석양으로 불리는 이아의 일몰 감상
+- **화산섬 & 온천 투어** (반나절, ~$50) — 네아 카메니 화산 트레킹 + 해저 온천 수영
+- **와인 테이스팅 투어** (반나절, ~$70) — 산토리니 고유 품종 아시르티코 와인 시음
+- **아크로티리 고대 유적** (~$45) — '미노아 문명의 폼페이'로 불리는 3,600년 전 유적
+- **ATV 섬 일주** (~$90) — 사륜 바이크로 산토리니 구석구석 탐험
+
+**🍷 맛집 추천**
+- **칼데라뷰 레스토랑** (피라/이아) — 절벽 위 테라스에서 석양을 보며 디너, 예약 필수 (~€40~60/인)
+- **토마토 케프테데스** — 산토리니 특산 체리 토마토로 만든 프리터
+- **파바** — 산토리니산 노란 렌틸콩 퓨레, 소박하지만 깊은 맛
+- **비산토 와인** — 산토리니 디저트 와인, 선물용으로도 완벽
+
+**💡 TIP**
+- 텐더보트 하선 후 피라까지 케이블카(€6) 또는 당나귀(€6) 이용
+- 이아까지 버스 약 25분(€1.8), 여름 성수기에는 만석이니 일찍!
+- 출항이 20:00으로 늦어서 이아 석양(~20:30)은 시간이 빠듯할 수 있음 — 선내에서 보는 것도 추천
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+
+---
+
+### DAY 6 — 아테네 (피레우스)
+🏛️ **서양 문명의 발상지**
+
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/med/img07.jpg' | relative_url }}" alt="아테네 파르테논 신전" loading="lazy">
+<img src="{{ '/assets/images/med/img08.jpg' | relative_url }}" alt="아테네 플라카 지구" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
 </div>
 
-<div class="timeline-day">
-  <h3>DAY 6 - 아테네 (피레우스)</h3>
-  <div class="port">📍 아테네, 그리스</div>
-  <div class="time">입항 06:00 / 출항 18:00</div>
-  <img src="{{ '/assets/images/med/img06.jpg' | relative_url }}" alt="아테네" class="port-image" loading="lazy">
-  <div class="desc">서양 문명의 발상지 아테네. 파르테논 신전, 아크로폴리스, 플라카 지구를 둘러보세요.</div>
-  <div class="tours">🎯 추천 투어: 아크로폴리스 가이드 투어, 아테네 시내 투어</div>
+2,500년 역사의 아테네. 아크로폴리스 위 파르테논 신전에서 고대 그리스 문명의 위대함을 체감하세요.
+
+<div class="day-expandable">
+
+**⏰ 입항/출항:** 06:00 입항 / 18:00 출항
+
+**🗺️ 추천 기항지 투어**
+- **아크로폴리스 & 파르테논 신전** (반나절, ~$70) — 가이드 투어 추천, 아크로폴리스 박물관 포함
+- **아테네 시내 하이라이트** (반나절, ~$60) — 신타그마 광장, 근위병 교대식, 제우스 신전, 하드리안 도서관
+- **플라카 & 모나스티라키 지구** (자유여행) — 기념품 쇼핑, 카페, 길거리 음식의 천국
+- **수니온 곶 투어** (반나절, ~$80) — 포세이돈 신전에서 에게해 일몰 감상
+
+**🍽️ 맛집 추천**
+- **무사카** — 가지, 감자, 다진 고기의 그리스 대표 오븐 요리
+- **옥토퍼스 그릴** — 플라카 타베르나에서 꼭 먹어야 할 그리스식 문어구이
+- **프레도 에스프레소** — 그리스식 아이스 커피, 더운 날 필수
+- **루코마데스** — 그리스식 도넛에 꿀과 시나몬, 디저트로 완벽
+
+**💡 TIP**
+- 피레우스 항구에서 아크로폴리스까지 택시 약 30분 (~€25)
+- 지하철(M1) 이용 시 피레우스→모나스티라키 약 25분 (€1.2)
+- 여름 한낮은 40°C 이상! 아크로폴리스는 오전 일찍(08:00 오픈) 방문 추천
+- 아크로폴리스 통합권(€30)으로 7개 유적지 입장 가능
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+
+---
+
+### DAY 7 — 해상 운항
+🌊 **이오니아해 귀환 항해**
+
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/ships/odyssey-sea.jpg' | relative_url }}" alt="지중해 해상 항해" loading="lazy">
+<img src="{{ '/assets/images/med/img01.jpg' | relative_url }}" alt="지중해 풍경" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
 </div>
 
-<div class="timeline-day">
-  <h3>DAY 7 - 해상 운항</h3>
-  <div class="port">🌊 종일 해상</div>
-  <div class="desc">마지막 해상일을 즐기며 선내 쇼핑, 스파, 마지막 만찬을 즐기세요.</div>
-  <img src="{{ '/assets/images/ships/odyssey-sea.jpg' | relative_url }}" alt="지중해 해상 항해" class="port-image" loading="lazy">
+그리스에서 이탈리아로 돌아가는 마지막 항해일. 크루즈에서의 마지막 하루를 아쉬움 없이 즐기세요.
+
+<div class="day-expandable">
+
+**🎢 추천 액티비티**
+- **노스 스타** — 마지막 기회! 일몰 시간대에 탑승하면 지중해 석양을 독점
+- **면세 쇼핑** — 선내 면세점에서 마지막 날 특별 할인 행사
+- **스파 & 웰니스** — 여행의 피로를 풀어주는 핫스톤 마사지 추천
+- **포토 갤러리** — 항해 중 촬영된 사진 구매 (마지막 날 할인)
+
+**🌙 마지막 밤 추천**
+- **갈라 디너** — 정장 차림의 특별 디너 나이트, 랍스터 메뉴 등장
+- **270도 라운지 공연** — 마지막 밤 특별 쇼
+- **갑판 위 별 감상** — 지중해 한가운데 별빛, 도시에서는 볼 수 없는 은하수
+
+**💡 TIP**
+- 짐 정리는 이날 저녁! 큰 짐은 밤 10시까지 복도에 내놓으세요
+- 하선 시간대 선택 (Self-Assist vs 일반) 미리 결정
+- 선내 계좌(Seapass) 정산 내역을 TV 또는 앱에서 확인하세요
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
+
+---
+
+### DAY 8 — 로마 (치비타베키아) 귀항
+🏠 **귀항**
+
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/ports/rome.jpg' | relative_url }}" alt="로마 귀항" loading="lazy">
+<img src="{{ '/assets/images/destinations/mediterranean.jpg' | relative_url }}" alt="지중해 크루즈" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
 </div>
 
-<div class="timeline-day">
-  <h3>DAY 8 - 로마 (치비타베키아)</h3>
-  <div class="port">🚢 하선</div>
-  <div class="time">입항 05:00</div>
-  <div class="desc">치비타베키아 항구에 도착하여 하선합니다. 즐거운 크루즈 여행이 되셨길 바랍니다!</div>
-  <img src="{{ '/assets/images/ports/rome.jpg' | relative_url }}" alt="로마 귀항" class="port-image" loading="lazy">
+이른 아침 치비타베키아 항구에 입항합니다. 7박의 꿈같은 지중해 크루즈가 마무리됩니다.
+
+<div class="day-expandable">
+
+**🕐 하선 일정**
+- 05:00 입항
+- 06:30~09:00 하선 수속 (그룹별)
+- Self-Assist 하선: 06:30부터 (짐을 직접 들고 하선)
+
+**💡 TIP**
+- 하선 후 로마 시내 관광 계획이라면 짐 보관 서비스(~€5) 이용
+- 치비타베키아역에서 로마 테르미니역까지 기차 약 1시간
+- 공항 이동: 치비타베키아→FCO 공항 셔틀 약 1.5시간 (~€15~25)
+
 </div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
