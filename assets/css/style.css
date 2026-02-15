@@ -536,13 +536,34 @@ ul { list-style: none; }
   .detail-hero h1 { font-size: 1.4rem; }
 }
 
-/* Port images in detail timeline */
-.port-image {
+/* Port/Day images in detail timeline — unified size */
+.port-image,
+.timeline img,
+.timeline-day img,
+#timeline-area img {
   width: 100%;
-  max-width: 600px;
-  border-radius: 8px;
-  margin: 12px 0;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 16px 0;
   box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+/* Ship facility tab images — unified size */
+.facility-tab-content img,
+.facility-image img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Ship slider images — unified size */
+.slide img,
+.ship-slider-section .slide img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
 }
 
 /* Ship Image Slider */
