@@ -48,26 +48,40 @@ layout: default
         </span>
       </div>
     </div>
-    <div id="cruise-content-raw" style="display:none;">{{ content }}</div>
-    <div id="slider-area"></div>
-    <div class="timeline" id="timeline-area"></div>
+    <div class="timeline" id="timeline-area">
+      {{ content }}
+    </div>
   </div>
 </div>
 <script>
 (function(){
-  var raw = document.getElementById('cruise-content-raw');
-  var sliderArea = document.getElementById('slider-area');
-  var timelineArea = document.getElementById('timeline-area');
-  var tmp = document.createElement('div');
-  tmp.innerHTML = raw.innerHTML;
-  // Move slider out, keep timeline-days
-  var slider = tmp.querySelector('.ship-slider-section');
-  if(slider){ sliderArea.appendChild(slider); }
-  // Move remaining content to timeline
-  timelineArea.innerHTML = tmp.innerHTML;
-  // Remove the slider from timeline if it was cloned
-  var dup = timelineArea.querySelector('.ship-slider-section');
-  if(dup) dup.remove();
+  var timeline = document.getElementById('timeline-area');
+  // Move ship slider out if present
+  var slider = timeline.querySelector('.ship-slider-section');
+  if(slider){ timeline.parentNode.insertBefore(slider, timeline); }
+  // Init day sliders
+  if(typeof initDaySliders === 'function') initDaySliders();
+  // Rebind day toggles
+  timeline.querySelectorAll('.day-toggle').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      if(typeof toggleDay === 'function') toggleDay(btn);
+    });
+  });
+  // Rebind day slider buttons
+  timeline.querySelectorAll('.day-slider').forEach(function(sl){
+    var track = sl.querySelector('.day-slider-track');
+    var imgs = track ? track.querySelectorAll('img') : [];
+    if(imgs.length < 2) return;
+    var idx = 0;
+    var dots = sl.querySelectorAll('.dot');
+    function show(i){ idx=i; imgs.forEach(function(img,j){ img.style.display=j===i?'block':'none'; }); dots.forEach(function(d,j){ d.classList.toggle('active',j===i); }); }
+    show(0);
+    var prev = sl.querySelector('.prev'); var next = sl.querySelector('.next');
+    if(prev) prev.addEventListener('click',function(){ show((idx-1+imgs.length)%imgs.length); });
+    if(next) next.addEventListener('click',function(){ show((idx+1)%imgs.length); });
+    dots.forEach(function(d,j){ d.addEventListener('click',function(){ show(j); }); });
+  });
 })();
 </script>
 
