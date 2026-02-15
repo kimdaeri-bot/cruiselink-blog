@@ -30,8 +30,25 @@
           <input type="tel" id="f_phone" name="customer_phone" required placeholder="010-1234-5678">
         </div>
         <div class="form-group">
+          <label>인원 <span class="req">*</span></label>
+          <select id="f_pax" name="pax" required>
+            <option value="">인원을 선택하세요</option>
+            {% for i in (1..20) %}<option value="{{ i }}">{{ i }}명</option>{% endfor %}
+          </select>
+        </div>
+        <div class="form-group">
+          <label>객실 타입 <span class="req">*</span></label>
+          <select id="f_cabin" name="cabin_type" required>
+            <option value="">객실 타입을 선택하세요</option>
+            <option value="내측">내측 (Inside)</option>
+            <option value="오션뷰">오션뷰 (Ocean View)</option>
+            <option value="발코니">발코니 (Balcony)</option>
+            <option value="스위트">스위트 (Suite)</option>
+          </select>
+        </div>
+        <div class="form-group">
           <label>요청사항</label>
-          <textarea id="f_message" name="message" placeholder="객실 타입, 인원수, 특별 요청 등을 적어주세요."></textarea>
+          <textarea id="f_message" name="message" placeholder="다른 객실타입이나 기타 특별요청을 적어주세요."></textarea>
         </div>
         <div class="privacy-section">
           <div class="privacy-check">

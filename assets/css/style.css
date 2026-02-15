@@ -656,3 +656,20 @@ ul { list-style: none; }
   .facility-tab-nav { gap: 4px; }
   .facility-tab-btn { padding: 8px 12px; font-size: 13px; }
 }
+
+/* Form select */
+.form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--gray-300, #ddd);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--gray-900);
+  background: white;
+  appearance: auto;
+  cursor: pointer;
+}
+.form-group select:focus {
+  outline: none;
+  border-color: var(--navy);
+}
