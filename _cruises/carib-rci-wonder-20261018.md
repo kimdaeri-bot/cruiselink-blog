@@ -58,19 +58,19 @@ excluded:
 <div class="ship-gallery">
   <h2>🚢 원더 오브 더 씨즈</h2>
   <div class="gallery-grid">
-    <img src="/assets/images/ships/wonder-exterior.jpg" alt="원더 오브 더 씨즈 전경" class="ship-image" loading="lazy">
-    <img src="/assets/images/ships/wonder-pool.jpg" alt="풀 데크" class="ship-image" loading="lazy">
-    <img src="/assets/images/ships/wonder-aquatheater.jpg" alt="아쿠아 극장" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/wonder-exterior.jpg' | relative_url }}" alt="원더 오브 더 씨즈 전경" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/wonder-pool.jpg' | relative_url }}" alt="풀 데크" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/wonder-aquatheater.jpg' | relative_url }}" alt="아쿠아 극장" class="ship-image" loading="lazy">
   </div>
   <div class="gallery-grid">
-    <img src="/assets/images/ships/wonder-zipline.jpg" alt="집라인 & 보드워크" class="ship-image" loading="lazy">
-    <img src="/assets/images/ships/wonder-flowrider.jpg" alt="플로우라이더" class="ship-image" loading="lazy">
-    <img src="/assets/images/ships/wonder-waterslide.jpg" alt="워터슬라이드" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/wonder-zipline.jpg' | relative_url }}" alt="집라인 & 보드워크" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/wonder-flowrider.jpg' | relative_url }}" alt="플로우라이더" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/wonder-waterslide.jpg' | relative_url }}" alt="워터슬라이드" class="ship-image" loading="lazy">
   </div>
   <div class="gallery-grid">
-    <img src="/assets/images/facilities/balcony-stateroom.jpg" alt="발코니 객실" class="facility-image" loading="lazy">
-    <img src="/assets/images/facilities/suite-living.jpg" alt="스위트룸" class="facility-image" loading="lazy">
-    <img src="/assets/images/facilities/chops-grille.jpg" alt="스페셜티 레스토랑" class="facility-image" loading="lazy">
+    <img src="{{ '/assets/images/facilities/balcony-stateroom.jpg' | relative_url }}" alt="발코니 객실" class="facility-image" loading="lazy">
+    <img src="{{ '/assets/images/facilities/suite-living.jpg' | relative_url }}" alt="스위트룸" class="facility-image" loading="lazy">
+    <img src="{{ '/assets/images/facilities/chops-grille.jpg' | relative_url }}" alt="스페셜티 레스토랑" class="facility-image" loading="lazy">
   </div>
 </div>
 
@@ -79,12 +79,14 @@ excluded:
   <div class="port">🚢 승선</div>
   <div class="time">출항 16:30</div>
   <div class="desc">플로리다주 포트 로더데일에서 세계 최대급 크루즈 원더 오브 더 씨즈에 승선합니다.</div>
+  <img src="{{ '/assets/images/ports/fort-lauderdale.jpg' | relative_url }}" alt="포트 로더데일" class="port-image" loading="lazy">
 </div>
 
 <div class="timeline-day">
   <h3>DAY 2 - 해상 운항</h3>
   <div class="port">🌊 종일 해상</div>
   <div class="desc">세계 최대 크루즈선의 놀라운 시설들을 탐험하세요. 센트럴 파크 산책, 얼티밋 어비스 도전, 아쿠아 극장 공연 관람!</div>
+  <img src="{{ '/assets/images/ships/wonder-sea.jpg' | relative_url }}" alt="카리브해 해상 항해" class="port-image" loading="lazy">
 </div>
 
 <div class="timeline-day">
@@ -109,6 +111,7 @@ excluded:
   <h3>DAY 5 - 해상 운항</h3>
   <div class="port">🌊 종일 해상</div>
   <div class="desc">선내 스파에서 릴랙스하거나 브로드웨이 스타일 쇼를 관람하세요.</div>
+  <img src="{{ '/assets/images/ships/wonder-sea.jpg' | relative_url }}" alt="해상 항해" class="port-image" loading="lazy">
 </div>
 
 <div class="timeline-day">
@@ -124,6 +127,7 @@ excluded:
   <h3>DAY 7 - 해상 운항</h3>
   <div class="port">🌊 종일 해상</div>
   <div class="desc">마지막 해상일. 짐 정리와 함께 남은 선내 시설을 만끽하세요.</div>
+  <img src="{{ '/assets/images/ships/wonder-sea.jpg' | relative_url }}" alt="카리브해 해상 항해" class="port-image" loading="lazy">
 </div>
 
 <div class="timeline-day">
@@ -131,4 +135,5 @@ excluded:
   <div class="port">🚢 하선</div>
   <div class="time">입항 06:00</div>
   <div class="desc">포트 로더데일에 도착하여 하선합니다.</div>
+  <img src="{{ '/assets/images/ports/fort-lauderdale.jpg' | relative_url }}" alt="포트 로더데일 귀항" class="port-image" loading="lazy">
 </div>

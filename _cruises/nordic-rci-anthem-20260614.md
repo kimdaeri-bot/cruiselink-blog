@@ -57,14 +57,14 @@ excluded:
 <div class="ship-gallery">
   <h2>🚢 앤썸 오브 더 씨즈</h2>
   <div class="gallery-grid">
-    <img src="/assets/images/ships/anthem-exterior.jpg" alt="앤썸 오브 더 씨즈 전경" class="ship-image" loading="lazy">
-    <img src="/assets/images/ships/anthem-norway.jpg" alt="노르웨이 피요르드를 항해하는 앤썸" class="ship-image" loading="lazy">
-    <img src="/assets/images/ships/anthem-flowrider.jpg" alt="플로우라이더 & 아이플라이" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/anthem-exterior.jpg' | relative_url }}" alt="앤썸 오브 더 씨즈 전경" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/anthem-norway.jpg' | relative_url }}" alt="노르웨이 피요르드를 항해하는 앤썸" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/anthem-flowrider.jpg' | relative_url }}" alt="플로우라이더 & 아이플라이" class="ship-image" loading="lazy">
   </div>
   <div class="gallery-grid">
-    <img src="/assets/images/ships/anthem-wonderland.jpg" alt="원더랜드 레스토랑" class="ship-image" loading="lazy">
-    <img src="/assets/images/ships/anthem-show.jpg" alt="스펙트라스 카바레 쇼" class="ship-image" loading="lazy">
-    <img src="/assets/images/facilities/balcony-stateroom.jpg" alt="발코니 객실 (피요르드 감상 필수!)" class="facility-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/anthem-wonderland.jpg' | relative_url }}" alt="원더랜드 레스토랑" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/anthem-show.jpg' | relative_url }}" alt="스펙트라스 카바레 쇼" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/facilities/balcony-stateroom.jpg' | relative_url }}" alt="발코니 객실 (피요르드 감상 필수!)" class="facility-image" loading="lazy">
   </div>
 </div>
 
@@ -73,12 +73,14 @@ excluded:
   <div class="port">🚢 승선</div>
   <div class="time">출항 16:30</div>
   <div class="desc">영국 사우스햄프턴에서 승선합니다. 런던에서 기차로 약 1.5시간.</div>
+  <img src="{{ '/assets/images/ports/southampton.jpg' | relative_url }}" alt="사우스햄프턴" class="port-image" loading="lazy">
 </div>
 
 <div class="timeline-day">
   <h3>DAY 2-3 - 해상 운항</h3>
   <div class="port">🌊 북해 항해</div>
   <div class="desc">북해를 건너 노르웨이로 향합니다. 선내 시설과 액티비티를 즐기세요.</div>
+  <img src="{{ '/assets/images/ships/anthem-sea.jpg' | relative_url }}" alt="북해 해상 항해" class="port-image" loading="lazy">
 </div>
 
 <div class="timeline-day">
@@ -129,6 +131,7 @@ excluded:
   <h3>DAY 9-12 - 해상 운항</h3>
   <div class="port">🌊 귀환 항해</div>
   <div class="desc">노르웨이의 감동을 되새기며 여유롭게 귀환합니다.</div>
+  <img src="{{ '/assets/images/ships/anthem-sea.jpg' | relative_url }}" alt="대서양 해상 항해" class="port-image" loading="lazy">
 </div>
 
 <div class="timeline-day">
@@ -136,4 +139,5 @@ excluded:
   <div class="port">🚢 하선</div>
   <div class="time">입항 05:30</div>
   <div class="desc">사우스햄프턴에 도착하여 하선합니다.</div>
+  <img src="{{ '/assets/images/ports/southampton.jpg' | relative_url }}" alt="사우스햄프턴 귀항" class="port-image" loading="lazy">
 </div>

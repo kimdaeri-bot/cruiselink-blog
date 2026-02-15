@@ -57,14 +57,14 @@ excluded:
 <div class="ship-gallery">
   <h2>🚢 오베이션 오브 더 씨즈</h2>
   <div class="gallery-grid">
-    <img src="/assets/images/ships/ovation-exterior.jpg" alt="오베이션 오브 더 씨즈 전경" class="ship-image" loading="lazy">
-    <img src="/assets/images/ships/ovation-flowrider.jpg" alt="플로우라이더" class="ship-image" loading="lazy">
-    <img src="/assets/images/ships/odyssey-pool.jpg" alt="풀 데크" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/ovation-exterior.jpg' | relative_url }}" alt="오베이션 오브 더 씨즈 전경" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/ovation-flowrider.jpg' | relative_url }}" alt="플로우라이더" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/odyssey-pool.jpg' | relative_url }}" alt="풀 데크" class="ship-image" loading="lazy">
   </div>
   <div class="gallery-grid">
-    <img src="/assets/images/facilities/north-star.jpg" alt="노스 스타 전망 캡슐" class="facility-image" loading="lazy">
-    <img src="/assets/images/facilities/bumper-cars.jpg" alt="범퍼카" class="facility-image" loading="lazy">
-    <img src="/assets/images/facilities/balcony-stateroom.jpg" alt="발코니 객실 (빙하 감상에 최적)" class="facility-image" loading="lazy">
+    <img src="{{ '/assets/images/facilities/north-star.jpg' | relative_url }}" alt="노스 스타 전망 캡슐" class="facility-image" loading="lazy">
+    <img src="{{ '/assets/images/facilities/bumper-cars.jpg' | relative_url }}" alt="범퍼카" class="facility-image" loading="lazy">
+    <img src="{{ '/assets/images/facilities/balcony-stateroom.jpg' | relative_url }}" alt="발코니 객실 (빙하 감상에 최적)" class="facility-image" loading="lazy">
   </div>
 </div>
 
@@ -80,6 +80,7 @@ excluded:
   <h3>DAY 2 - 해상 운항</h3>
   <div class="port">🌊 인사이드 패시지 항해</div>
   <div class="desc">알래스카 인사이드 패시지의 장엄한 풍경을 감상하며 선내 시설을 즐기세요. 고래, 독수리 등 야생동물을 볼 수 있습니다.</div>
+  <img src="{{ '/assets/images/ships/ovation-sea.jpg' | relative_url }}" alt="알래스카 해상 항해" class="port-image" loading="lazy">
 </div>
 
 <div class="timeline-day">
@@ -111,6 +112,7 @@ excluded:
   <h3>DAY 6 - 해상 운항</h3>
   <div class="port">🌊 종일 해상</div>
   <div class="desc">알래스카의 절경을 뒤로하고 선내에서 여유로운 하루를 보내세요.</div>
+  <img src="{{ '/assets/images/ships/ovation-sea.jpg' | relative_url }}" alt="해상 항해" class="port-image" loading="lazy">
 </div>
 
 <div class="timeline-day">
@@ -127,4 +129,5 @@ excluded:
   <div class="port">🚢 하선</div>
   <div class="time">입항 06:00</div>
   <div class="desc">시애틀 항구에 도착하여 하선합니다.</div>
+  <img src="{{ '/assets/images/ports/seattle-port.jpg' | relative_url }}" alt="시애틀 귀항" class="port-image" loading="lazy">
 </div>

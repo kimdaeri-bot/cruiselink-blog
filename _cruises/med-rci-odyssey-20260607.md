@@ -58,19 +58,19 @@ excluded:
 <div class="ship-gallery">
   <h2>🚢 오디세이 오브 더 씨즈</h2>
   <div class="gallery-grid">
-    <img src="/assets/images/ships/odyssey-exterior.jpg" alt="오디세이 오브 더 씨즈 전경" class="ship-image" loading="lazy">
-    <img src="/assets/images/ships/odyssey-pool.jpg" alt="오디세이 풀 데크" class="ship-image" loading="lazy">
-    <img src="/assets/images/ships/odyssey-santorini.jpg" alt="산토리니에서의 오디세이" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/odyssey-exterior.jpg' | relative_url }}" alt="오디세이 오브 더 씨즈 전경" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/odyssey-pool.jpg' | relative_url }}" alt="오디세이 풀 데크" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/odyssey-santorini.jpg' | relative_url }}" alt="산토리니에서의 오디세이" class="ship-image" loading="lazy">
   </div>
   <div class="gallery-grid">
-    <img src="/assets/images/facilities/north-star.jpg" alt="노스 스타 전망 캡슐" class="facility-image" loading="lazy">
-    <img src="/assets/images/facilities/flowrider.jpg" alt="플로우라이더 서핑" class="facility-image" loading="lazy">
-    <img src="/assets/images/facilities/main-dining.jpg" alt="메인 다이닝" class="facility-image" loading="lazy">
+    <img src="{{ '/assets/images/facilities/north-star.jpg' | relative_url }}" alt="노스 스타 전망 캡슐" class="facility-image" loading="lazy">
+    <img src="{{ '/assets/images/facilities/flowrider.jpg' | relative_url }}" alt="플로우라이더 서핑" class="facility-image" loading="lazy">
+    <img src="{{ '/assets/images/facilities/main-dining.jpg' | relative_url }}" alt="메인 다이닝" class="facility-image" loading="lazy">
   </div>
   <div class="gallery-grid">
-    <img src="/assets/images/facilities/balcony-stateroom.jpg" alt="발코니 객실" class="facility-image" loading="lazy">
-    <img src="/assets/images/facilities/suite-living.jpg" alt="스위트룸" class="facility-image" loading="lazy">
-    <img src="/assets/images/facilities/solarium.jpg" alt="솔라리움" class="facility-image" loading="lazy">
+    <img src="{{ '/assets/images/facilities/balcony-stateroom.jpg' | relative_url }}" alt="발코니 객실" class="facility-image" loading="lazy">
+    <img src="{{ '/assets/images/facilities/suite-living.jpg' | relative_url }}" alt="스위트룸" class="facility-image" loading="lazy">
+    <img src="{{ '/assets/images/facilities/solarium.jpg' | relative_url }}" alt="솔라리움" class="facility-image" loading="lazy">
   </div>
 </div>
 
@@ -79,6 +79,7 @@ excluded:
   <div class="port">🚢 승선</div>
   <div class="time">출항 17:00</div>
   <div class="desc">이탈리아 로마의 관문 치비타베키아 항구에서 승선합니다. 콜로세움, 바티칸 등 로마 시내 관광 후 승선하는 일정을 추천합니다.</div>
+  <img src="{{ '/assets/images/ports/rome.jpg' | relative_url }}" alt="로마 콜로세움" class="port-image" loading="lazy">
 </div>
 
 <div class="timeline-day">
@@ -94,6 +95,7 @@ excluded:
   <h3>DAY 3 - 해상 운항</h3>
   <div class="port">🌊 종일 해상</div>
   <div class="desc">지중해의 푸른 바다 위에서 선내 시설을 마음껏 즐기세요. 플로우라이더, 노스스타, 수영장 등 다양한 액티비티가 기다립니다.</div>
+  <img src="{{ '/assets/images/ships/odyssey-sea.jpg' | relative_url }}" alt="오디세이 오브 더 씨즈 해상 항해" class="port-image" loading="lazy">
 </div>
 
 <div class="timeline-day">
@@ -127,6 +129,7 @@ excluded:
   <h3>DAY 7 - 해상 운항</h3>
   <div class="port">🌊 종일 해상</div>
   <div class="desc">마지막 해상일을 즐기며 선내 쇼핑, 스파, 마지막 만찬을 즐기세요.</div>
+  <img src="{{ '/assets/images/ships/odyssey-sea.jpg' | relative_url }}" alt="지중해 해상 항해" class="port-image" loading="lazy">
 </div>
 
 <div class="timeline-day">
@@ -134,4 +137,5 @@ excluded:
   <div class="port">🚢 하선</div>
   <div class="time">입항 05:00</div>
   <div class="desc">치비타베키아 항구에 도착하여 하선합니다. 즐거운 크루즈 여행이 되셨길 바랍니다!</div>
+  <img src="{{ '/assets/images/ports/rome.jpg' | relative_url }}" alt="로마 귀항" class="port-image" loading="lazy">
 </div>

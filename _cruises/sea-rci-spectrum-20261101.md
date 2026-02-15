@@ -57,14 +57,14 @@ excluded:
 <div class="ship-gallery">
   <h2>🚢 스펙트럼 오브 더 씨즈</h2>
   <div class="gallery-grid">
-    <img src="/assets/images/ships/spectrum-exterior.jpg" alt="스펙트럼 오브 더 씨즈 전경" class="ship-image" loading="lazy">
-    <img src="/assets/images/ships/spectrum-singapore.jpg" alt="싱가포르에서의 스펙트럼" class="ship-image" loading="lazy">
-    <img src="/assets/images/ships/spectrum-skypad.jpg" alt="스카이패드" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/spectrum-exterior.jpg' | relative_url }}" alt="스펙트럼 오브 더 씨즈 전경" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/spectrum-singapore.jpg' | relative_url }}" alt="싱가포르에서의 스펙트럼" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/spectrum-skypad.jpg' | relative_url }}" alt="스카이패드" class="ship-image" loading="lazy">
   </div>
   <div class="gallery-grid">
-    <img src="/assets/images/ships/spectrum-sichuan.jpg" alt="쓰촨 레드 레스토랑" class="ship-image" loading="lazy">
-    <img src="/assets/images/facilities/north-star.jpg" alt="노스 스타" class="facility-image" loading="lazy">
-    <img src="/assets/images/facilities/balcony-stateroom.jpg" alt="발코니 객실" class="facility-image" loading="lazy">
+    <img src="{{ '/assets/images/ships/spectrum-sichuan.jpg' | relative_url }}" alt="쓰촨 레드 레스토랑" class="ship-image" loading="lazy">
+    <img src="{{ '/assets/images/facilities/north-star.jpg' | relative_url }}" alt="노스 스타" class="facility-image" loading="lazy">
+    <img src="{{ '/assets/images/facilities/balcony-stateroom.jpg' | relative_url }}" alt="발코니 객실" class="facility-image" loading="lazy">
   </div>
 </div>
 
@@ -80,6 +80,7 @@ excluded:
   <h3>DAY 2 - 해상 운항</h3>
   <div class="port">🌊 말라카 해협 항해</div>
   <div class="desc">선내 시설 탐험의 날! 노스 스타, 스카이다이빙 시뮬레이터, 범퍼카 등을 즐기세요.</div>
+  <img src="{{ '/assets/images/ships/spectrum-sea.jpg' | relative_url }}" alt="말라카 해협 해상 항해" class="port-image" loading="lazy">
 </div>
 
 <div class="timeline-day">
@@ -104,6 +105,7 @@ excluded:
   <h3>DAY 5 - 해상 운항</h3>
   <div class="port">🌊 종일 해상</div>
   <div class="desc">마지막 해상일을 즐기며 선내 쇼핑, 스파를 만끽하세요.</div>
+  <img src="{{ '/assets/images/ships/spectrum-sea.jpg' | relative_url }}" alt="해상 항해" class="port-image" loading="lazy">
 </div>
 
 <div class="timeline-day">
@@ -111,4 +113,5 @@ excluded:
   <div class="port">🚢 하선</div>
   <div class="time">입항 06:00</div>
   <div class="desc">싱가포르에 도착하여 하선합니다.</div>
+  <img src="{{ '/assets/images/ports/singapore-port.jpg' | relative_url }}" alt="싱가포르 귀항" class="port-image" loading="lazy">
 </div>
