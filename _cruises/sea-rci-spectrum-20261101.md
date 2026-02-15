@@ -54,6 +54,20 @@ excluded:
   - "선내 팁 (1인 1박 $14.5)"
 ---
 
+<div class="ship-gallery">
+  <h2>🚢 스펙트럼 오브 더 씨즈</h2>
+  <div class="gallery-grid">
+    <img src="/assets/images/ships/spectrum-exterior.jpg" alt="스펙트럼 오브 더 씨즈 전경" class="ship-image" loading="lazy">
+    <img src="/assets/images/ships/spectrum-singapore.jpg" alt="싱가포르에서의 스펙트럼" class="ship-image" loading="lazy">
+    <img src="/assets/images/ships/spectrum-skypad.jpg" alt="스카이패드" class="ship-image" loading="lazy">
+  </div>
+  <div class="gallery-grid">
+    <img src="/assets/images/ships/spectrum-sichuan.jpg" alt="쓰촨 레드 레스토랑" class="ship-image" loading="lazy">
+    <img src="/assets/images/facilities/north-star.jpg" alt="노스 스타" class="facility-image" loading="lazy">
+    <img src="/assets/images/facilities/balcony-stateroom.jpg" alt="발코니 객실" class="facility-image" loading="lazy">
+  </div>
+</div>
+
 <div class="timeline-day">
   <h3>DAY 1 - 싱가포르</h3>
   <div class="port">🚢 승선</div>

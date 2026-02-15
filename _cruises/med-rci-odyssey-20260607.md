@@ -55,6 +55,25 @@ excluded:
   - "선내 팁 (1인 1박 $16)"
 ---
 
+<div class="ship-gallery">
+  <h2>🚢 오디세이 오브 더 씨즈</h2>
+  <div class="gallery-grid">
+    <img src="/assets/images/ships/odyssey-exterior.jpg" alt="오디세이 오브 더 씨즈 전경" class="ship-image" loading="lazy">
+    <img src="/assets/images/ships/odyssey-pool.jpg" alt="오디세이 풀 데크" class="ship-image" loading="lazy">
+    <img src="/assets/images/ships/odyssey-santorini.jpg" alt="산토리니에서의 오디세이" class="ship-image" loading="lazy">
+  </div>
+  <div class="gallery-grid">
+    <img src="/assets/images/facilities/north-star.jpg" alt="노스 스타 전망 캡슐" class="facility-image" loading="lazy">
+    <img src="/assets/images/facilities/flowrider.jpg" alt="플로우라이더 서핑" class="facility-image" loading="lazy">
+    <img src="/assets/images/facilities/main-dining.jpg" alt="메인 다이닝" class="facility-image" loading="lazy">
+  </div>
+  <div class="gallery-grid">
+    <img src="/assets/images/facilities/balcony-stateroom.jpg" alt="발코니 객실" class="facility-image" loading="lazy">
+    <img src="/assets/images/facilities/suite-living.jpg" alt="스위트룸" class="facility-image" loading="lazy">
+    <img src="/assets/images/facilities/solarium.jpg" alt="솔라리움" class="facility-image" loading="lazy">
+  </div>
+</div>
+
 <div class="timeline-day">
   <h3>DAY 1 - 로마 (치비타베키아)</h3>
   <div class="port">🚢 승선</div>

@@ -54,6 +54,20 @@ excluded:
   - "선내 팁 (1인 1박 $16)"
 ---
 
+<div class="ship-gallery">
+  <h2>🚢 오베이션 오브 더 씨즈</h2>
+  <div class="gallery-grid">
+    <img src="/assets/images/ships/ovation-exterior.jpg" alt="오베이션 오브 더 씨즈 전경" class="ship-image" loading="lazy">
+    <img src="/assets/images/ships/ovation-flowrider.jpg" alt="플로우라이더" class="ship-image" loading="lazy">
+    <img src="/assets/images/ships/odyssey-pool.jpg" alt="풀 데크" class="ship-image" loading="lazy">
+  </div>
+  <div class="gallery-grid">
+    <img src="/assets/images/facilities/north-star.jpg" alt="노스 스타 전망 캡슐" class="facility-image" loading="lazy">
+    <img src="/assets/images/facilities/bumper-cars.jpg" alt="범퍼카" class="facility-image" loading="lazy">
+    <img src="/assets/images/facilities/balcony-stateroom.jpg" alt="발코니 객실 (빙하 감상에 최적)" class="facility-image" loading="lazy">
+  </div>
+</div>
+
 <div class="timeline-day">
   <h3>DAY 1 - 시애틀</h3>
   <div class="port">🚢 승선</div>

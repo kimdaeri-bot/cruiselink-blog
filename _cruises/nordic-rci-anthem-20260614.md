@@ -54,6 +54,20 @@ excluded:
   - "선내 팁 (1인 1박 $16)"
 ---
 
+<div class="ship-gallery">
+  <h2>🚢 앤썸 오브 더 씨즈</h2>
+  <div class="gallery-grid">
+    <img src="/assets/images/ships/anthem-exterior.jpg" alt="앤썸 오브 더 씨즈 전경" class="ship-image" loading="lazy">
+    <img src="/assets/images/ships/anthem-norway.jpg" alt="노르웨이 피요르드를 항해하는 앤썸" class="ship-image" loading="lazy">
+    <img src="/assets/images/ships/anthem-flowrider.jpg" alt="플로우라이더 & 아이플라이" class="ship-image" loading="lazy">
+  </div>
+  <div class="gallery-grid">
+    <img src="/assets/images/ships/anthem-wonderland.jpg" alt="원더랜드 레스토랑" class="ship-image" loading="lazy">
+    <img src="/assets/images/ships/anthem-show.jpg" alt="스펙트라스 카바레 쇼" class="ship-image" loading="lazy">
+    <img src="/assets/images/facilities/balcony-stateroom.jpg" alt="발코니 객실 (피요르드 감상 필수!)" class="facility-image" loading="lazy">
+  </div>
+</div>
+
 <div class="timeline-day">
   <h3>DAY 1 - 사우스햄프턴</h3>
   <div class="port">🚢 승선</div>

@@ -55,6 +55,25 @@ excluded:
   - "선내 팁 (1인 1박 $16)"
 ---
 
+<div class="ship-gallery">
+  <h2>🚢 원더 오브 더 씨즈</h2>
+  <div class="gallery-grid">
+    <img src="/assets/images/ships/wonder-exterior.jpg" alt="원더 오브 더 씨즈 전경" class="ship-image" loading="lazy">
+    <img src="/assets/images/ships/wonder-pool.jpg" alt="풀 데크" class="ship-image" loading="lazy">
+    <img src="/assets/images/ships/wonder-aquatheater.jpg" alt="아쿠아 극장" class="ship-image" loading="lazy">
+  </div>
+  <div class="gallery-grid">
+    <img src="/assets/images/ships/wonder-zipline.jpg" alt="집라인 & 보드워크" class="ship-image" loading="lazy">
+    <img src="/assets/images/ships/wonder-flowrider.jpg" alt="플로우라이더" class="ship-image" loading="lazy">
+    <img src="/assets/images/ships/wonder-waterslide.jpg" alt="워터슬라이드" class="ship-image" loading="lazy">
+  </div>
+  <div class="gallery-grid">
+    <img src="/assets/images/facilities/balcony-stateroom.jpg" alt="발코니 객실" class="facility-image" loading="lazy">
+    <img src="/assets/images/facilities/suite-living.jpg" alt="스위트룸" class="facility-image" loading="lazy">
+    <img src="/assets/images/facilities/chops-grille.jpg" alt="스페셜티 레스토랑" class="facility-image" loading="lazy">
+  </div>
+</div>
+
 <div class="timeline-day">
   <h3>DAY 1 - 포트 로더데일</h3>
   <div class="port">🚢 승선</div>
