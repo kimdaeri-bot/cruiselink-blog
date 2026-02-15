@@ -521,6 +521,8 @@ ul { list-style: none; }
 .ship-slider-section {
   margin: 30px 0;
   text-align: center;
+  margin-left: -32px;
+  padding-left: 0;
 }
 .ship-slider-section h2 {
   color: var(--navy);
