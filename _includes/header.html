@@ -1,10 +1,17 @@
 <header class="site-header">
-  <div class="container header-inner">
-    <a href="{{ '/' | relative_url }}" class="logo">🚢 크루즈링크</a>
-    <nav>
-      <a href="{{ '/' | relative_url }}">블로그</a>
-      <a href="https://cruiselink.co.kr" target="_blank">홈페이지</a>
-      <a href="tel:02-3788-9119" class="btn-cta-sm">📞 상담</a>
+  <div class="header-inner">
+    <a href="{{ '/' | relative_url }}" class="logo">크루즈<span>링크</span></a>
+    <nav class="nav-menu" id="navMenu">
+      <a href="{{ '/cruises/' | relative_url }}">크루즈 상품</a>
+      <a href="{{ '/deals/' | relative_url }}">특가</a>
+      <a href="{{ '/destinations/mediterranean/' | relative_url }}">목적지</a>
+      <a href="{{ '/about/' | relative_url }}">회사소개</a>
+      <a href="{{ '/contact/' | relative_url }}">문의</a>
     </nav>
+    <div class="header-cta">
+      <a href="tel:{{ site.brand.phone }}" class="header-phone">☎️ {{ site.brand.phone }}</a>
+      <a href="{{ site.brand.kakao }}" target="_blank" class="btn btn-kakao btn-sm">카카오톡</a>
+    </div>
+    <button class="mobile-toggle" onclick="document.getElementById('navMenu').classList.toggle('open')">☰</button>
   </div>
 </header>

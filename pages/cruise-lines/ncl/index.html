@@ -1,0 +1,13 @@
+---
+layout: default
+title: "노르웨이전 크루즈 라인 (NCL) 크루즈 | 크루즈링크"
+description: "노르웨이전 크루즈 라인 (NCL) 크루즈 상품을 비교하세요."
+permalink: /cruise-lines/ncl/
+---
+<div class="page-header"><div class="container"><h1>노르웨이전 크루즈 라인 (NCL)</h1></div></div>
+<div class="section"><div class="container">
+<p style="font-size:16px;line-height:1.8;margin-bottom:32px;">자유로운 크루즈 스타일의 선구자. 프리스타일 크루징 컨셉으로 정해진 식사 시간 없이 자유롭게 즐기는 크루즈 여행을 제공합니다.</p>
+<h2 class="section-title">노르웨이전 크루즈 라인 (NCL) 크루즈 상품</h2>
+<div class="cruise-list">
+{% for cruise in site.data.cruises %}{% if cruise.cruiseLine == "ncl" %}{% include cruise-list-item.html cruise=cruise %}{% endif %}{% endfor %}
+</div></div></div>

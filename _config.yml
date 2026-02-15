@@ -1,28 +1,40 @@
-title: "크루즈링크 블로그 - 크루즈 여행 전문"
-description: "크루즈 전문 여행사 크루즈링크의 공식 블로그. 지중해, 알래스카, 카리브해, 북유럽, 동남아 크루즈 정보와 최저가 상담."
-url: "https://kimdaeri-bot.github.io"
-baseurl: "/cruiselink-blog"
-lang: "ko"
-timezone: Asia/Seoul
+title: "크루즈링크 - 크루즈 여행 전문"
+description: "크루즈 여행의 모든 것, 크루즈링크와 함께하세요. 지중해, 알래스카, 카리브해, 북유럽, 동남아 크루즈 상품을 만나보세요."
+url: "https://cruiselink.co.kr"
+baseurl: ""
+lang: ko
 
-author:
+brand:
   name: "크루즈링크"
-  url: "https://cruiselink.co.kr"
+  phone: "02-3788-9119"
+  email: "info@cruiselink.co.kr"
+  kakao: "https://pf.kakao.com/_xgYbJG"
 
-permalink: /:categories/:title/
+# EmailJS Configuration (placeholder - 실제 값으로 교체 필요)
+# 1. https://www.emailjs.com 에서 무료 계정 생성
+# 2. Email Service 추가 (Gmail 등)
+# 3. Email Template 생성 (변수: product_name, cruise_line, ship, departure_date, ports, price, customer_name, customer_email, customer_phone, message)
+# 4. 아래 값을 실제 값으로 교체
+emailjs:
+  service_id: "YOUR_SERVICE_ID"
+  template_id: "YOUR_TEMPLATE_ID"
+  public_key: "YOUR_PUBLIC_KEY"
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
+collections:
+  cruises:
+    output: true
+    permalink: /cruise/:path/
 
 defaults:
   - scope:
       path: ""
-      type: "posts"
+      type: "cruises"
     values:
-      layout: "post"
-      author: "크루즈링크"
+      layout: "cruise-detail"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
   - Gemfile

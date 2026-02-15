@@ -1,0 +1,55 @@
+<div class="modal-overlay" id="inquiryModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2>🚢 크루즈 문의하기</h2>
+      <button class="modal-close" onclick="closeInquiry()">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-product-info" id="modalProductInfo">
+        <strong id="modalProductName"></strong><br>
+        <span id="modalProductDetail"></span>
+      </div>
+      <div class="form-status" id="formStatus"></div>
+      <form id="inquiryForm" onsubmit="submitInquiry(event)">
+        <input type="hidden" id="f_product" name="product_name">
+        <input type="hidden" id="f_cruiseline" name="cruise_line">
+        <input type="hidden" id="f_ship" name="ship">
+        <input type="hidden" id="f_date" name="departure_date">
+        <input type="hidden" id="f_ports" name="ports">
+        <input type="hidden" id="f_price" name="price">
+        <div class="form-group">
+          <label>영문 이름 (여권 기재명) <span class="req">*</span></label>
+          <input type="text" id="f_name" name="customer_name" required placeholder="HONG GILDONG">
+        </div>
+        <div class="form-group">
+          <label>이메일 <span class="req">*</span></label>
+          <input type="email" id="f_email" name="customer_email" required placeholder="example@email.com">
+        </div>
+        <div class="form-group">
+          <label>연락처 <span class="req">*</span></label>
+          <input type="tel" id="f_phone" name="customer_phone" required placeholder="010-1234-5678">
+        </div>
+        <div class="form-group">
+          <label>요청사항</label>
+          <textarea id="f_message" name="message" placeholder="객실 타입, 인원수, 특별 요청 등을 적어주세요."></textarea>
+        </div>
+        <div class="privacy-section">
+          <div class="privacy-check">
+            <input type="checkbox" id="privacyAgree" required>
+            <label for="privacyAgree">개인정보 수집·이용에 동의합니다. (필수)</label>
+          </div>
+          <button type="button" class="privacy-toggle" onclick="document.getElementById('privacyDetail').classList.toggle('open')">약관 보기 ▼</button>
+          <div class="privacy-detail" id="privacyDetail">
+            <strong>수집항목:</strong> 이름, 이메일, 연락처<br>
+            <strong>수집목적:</strong> 크루즈 상담 및 예약 안내<br>
+            <strong>보유기간:</strong> 상담 완료 후 1년<br><br>
+            위 개인정보 수집·이용에 동의하지 않을 수 있으며, 동의하지 않을 경우 문의 접수가 불가합니다.
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="submit" form="inquiryForm" class="btn btn-primary btn-lg" id="submitBtn">문의하기 전송</button>
+    </div>
+  </div>
+</div>

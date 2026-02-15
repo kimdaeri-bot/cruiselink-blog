@@ -1,0 +1,57 @@
+---
+layout: default
+title: "문의하기 | 크루즈링크"
+description: "크루즈 여행에 대해 궁금한 점이 있으시면 언제든 문의해주세요."
+permalink: /contact/
+---
+<div class="page-header">
+  <div class="container">
+    <h1>문의하기</h1>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <h2 style="font-size:24px;font-weight:700;color:var(--navy);margin-bottom:16px;">크루즈 상담 문의</h2>
+        <p style="font-size:15px;line-height:1.8;margin-bottom:24px;">
+          크루즈 여행에 대해 궁금한 점이 있으시면 언제든 연락해주세요.<br>
+          전문 상담원이 친절하게 안내해드리겠습니다.
+        </p>
+        <button class="btn btn-primary btn-lg" onclick="openInquiry('일반 문의','','','','','')">✉️ 온라인 문의하기</button>
+      </div>
+      <div>
+        <div class="contact-info-card">
+          <h3>연락처</h3>
+          <div class="contact-info-item">
+            <span class="icon">☎️</span>
+            <div><strong>전화</strong><br><a href="tel:{{ site.brand.phone }}">{{ site.brand.phone }}</a></div>
+          </div>
+          <div class="contact-info-item">
+            <span class="icon">💬</span>
+            <div><strong>카카오톡</strong><br><a href="{{ site.brand.kakao }}" target="_blank">크루즈링크 카카오 채널</a></div>
+          </div>
+          <div class="contact-info-item">
+            <span class="icon">✉️</span>
+            <div><strong>이메일</strong><br><a href="mailto:{{ site.brand.email }}">{{ site.brand.email }}</a></div>
+          </div>
+          <div class="contact-info-item">
+            <span class="icon">🕐</span>
+            <div><strong>상담 시간</strong><br>평일 09:00 ~ 18:00 (점심 12:00~13:00)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-section">
+  <div class="container">
+    <h2>빠른 상담을 원하시나요?</h2>
+    <p>카카오톡으로 실시간 상담을 받아보세요.</p>
+    <div class="cta-buttons">
+      <a href="{{ site.brand.kakao }}" target="_blank" class="btn btn-kakao btn-lg">💬 카카오톡 상담</a>
+      <a href="tel:{{ site.brand.phone }}" class="btn btn-primary btn-lg">☎️ {{ site.brand.phone }}</a>
+    </div>
+  </div>
+</div>

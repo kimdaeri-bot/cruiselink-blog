@@ -1,0 +1,100 @@
+---
+layout: default
+title: "크루즈 상품 | 크루즈링크"
+description: "전 세계 크루즈 상품을 한눈에 비교하세요. 지중해, 알래스카, 카리브해, 북유럽, 동남아 크루즈."
+---
+
+<div class="page-header">
+  <div class="container">
+    <h1>크루즈 상품</h1>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <!-- Filter Bar -->
+    <div class="filter-bar" style="margin-top:0;box-shadow:none;border:1px solid var(--gray-200);">
+      <div class="filter-group">
+        <label>목적지</label>
+        <select id="f-dest" onchange="filterCruises()">
+          <option value="">전체</option>
+          <option value="mediterranean">지중해</option>
+          <option value="alaska">알래스카</option>
+          <option value="caribbean">카리브해</option>
+          <option value="northern-europe">북유럽</option>
+          <option value="southeast-asia">동남아</option>
+          <option value="hawaii">하와이</option>
+          <option value="japan">일본</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>선사</label>
+        <select id="f-line" onchange="filterCruises()">
+          <option value="">전체</option>
+          <option value="royal-caribbean">로열캐리비안</option>
+          <option value="msc">MSC</option>
+          <option value="ncl">NCL</option>
+          <option value="celebrity">셀러브리티</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>출발월</label>
+        <select id="f-month" onchange="filterCruises()">
+          <option value="">전체</option>
+          <option value="2026-04">2026년 4월</option>
+          <option value="2026-05">2026년 5월</option>
+          <option value="2026-06">2026년 6월</option>
+          <option value="2026-07">2026년 7월</option>
+          <option value="2026-08">2026년 8월</option>
+          <option value="2026-09">2026년 9월</option>
+          <option value="2026-10">2026년 10월</option>
+          <option value="2026-11">2026년 11월</option>
+          <option value="2026-12">2026년 12월</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>기간</label>
+        <select id="f-nights" onchange="filterCruises()">
+          <option value="">전체</option>
+          <option value="short">7박 이하</option>
+          <option value="medium">8~10박</option>
+          <option value="long">11박 이상</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>가격대</label>
+        <select id="f-price" onchange="filterCruises()">
+          <option value="">전체</option>
+          <option value="0-700">~$700</option>
+          <option value="700-1000">$700~$1,000</option>
+          <option value="1000-1500">$1,000~$1,500</option>
+          <option value="1500-9999">$1,500~</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="list-controls">
+      <div class="result-count"><span id="resultCount">{{ site.data.cruises.size }}</span>개 상품</div>
+      <select class="sort-select" id="sortSelect" onchange="filterCruises()">
+        <option value="featured">추천순</option>
+        <option value="price-asc">가격 낮은순</option>
+        <option value="price-desc">가격 높은순</option>
+        <option value="date">출발일순</option>
+      </select>
+    </div>
+
+    <!-- Cruise List -->
+    <div class="cruise-list" id="cruiseList">
+      {% for cruise in site.data.cruises %}
+        {% include cruise-list-item.html cruise=cruise %}
+      {% endfor %}
+    </div>
+
+    <div class="no-results hidden" id="noResults">
+      <div class="icon">🔍</div>
+      <h3>검색 결과가 없습니다</h3>
+      <p>필터 조건을 변경해보세요.</p>
+    </div>
+  </div>
+</div>

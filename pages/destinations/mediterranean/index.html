@@ -1,0 +1,13 @@
+---
+layout: default
+title: "지중해 크루즈 | 크루즈링크"
+description: "지중해 크루즈 상품을 비교하고 최적의 일정을 찾아보세요."
+permalink: /destinations/mediterranean/
+---
+<div class="page-header"><div class="container"><h1>🏛️ 지중해 크루즈</h1></div></div>
+<div class="section"><div class="container">
+<p style="font-size:16px;line-height:1.8;margin-bottom:32px;">이탈리아, 그리스, 스페인, 크로아티아 등 유럽의 아름다운 해안 도시들을 방문하는 지중해 크루즈. 고대 유적, 맛있는 음식, 아름다운 해변이 기다립니다.</p>
+<h2 class="section-title">지중해 크루즈 상품</h2>
+<div class="cruise-list">
+{% for cruise in site.data.cruises %}{% if cruise.destination == "mediterranean" %}{% include cruise-list-item.html cruise=cruise %}{% endif %}{% endfor %}
+</div></div></div>

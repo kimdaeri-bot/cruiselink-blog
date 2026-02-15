@@ -1,5 +1,206 @@
 ---
-layout: home
-title: "크루즈링크 블로그 - 크루즈 여행 전문 정보"
-description: "크루즈 전문 여행사 크루즈링크의 공식 블로그. 지중해, 알래스카, 카리브해, 북유럽, 동남아 크루즈 여행 정보와 최저가 상담."
+layout: default
+title: "크루즈링크 - 크루즈 여행 전문 예약"
+description: "크루즈 여행의 모든 것, 크루즈링크와 함께하세요. 지중해, 알래스카, 카리브해, 북유럽, 동남아 크루즈를 한눈에 비교하고 문의하세요."
 ---
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content container">
+    <h1>크루즈 여행, 크루즈링크와 함께</h1>
+    <p>전 세계 크루즈를 한눈에 비교하고, 전문 상담원의 맞춤 안내를 받아보세요.</p>
+    <a href="{{ '/cruises/' | relative_url }}" class="btn btn-primary btn-lg">크루즈 상품 보기</a>
+    <a href="{{ site.brand.kakao }}" target="_blank" class="btn btn-kakao btn-lg">💬 카카오톡 상담</a>
+  </div>
+</section>
+
+<!-- Search Filter -->
+<div class="container">
+  <div class="filter-bar" id="homeFilter">
+    <div class="filter-group">
+      <label>목적지</label>
+      <select id="hf-dest">
+        <option value="">전체</option>
+        <option value="mediterranean">지중해</option>
+        <option value="alaska">알래스카</option>
+        <option value="caribbean">카리브해</option>
+        <option value="northern-europe">북유럽</option>
+        <option value="southeast-asia">동남아</option>
+        <option value="hawaii">하와이</option>
+        <option value="japan">일본</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>선사</label>
+      <select id="hf-line">
+        <option value="">전체</option>
+        <option value="royal-caribbean">로열캐리비안</option>
+        <option value="msc">MSC</option>
+        <option value="ncl">NCL</option>
+        <option value="celebrity">셀러브리티</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>출발월</label>
+      <select id="hf-month">
+        <option value="">전체</option>
+        <option value="2026-04">2026년 4월</option>
+        <option value="2026-05">2026년 5월</option>
+        <option value="2026-06">2026년 6월</option>
+        <option value="2026-07">2026년 7월</option>
+        <option value="2026-08">2026년 8월</option>
+        <option value="2026-09">2026년 9월</option>
+        <option value="2026-10">2026년 10월</option>
+        <option value="2026-11">2026년 11월</option>
+        <option value="2026-12">2026년 12월</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>기간</label>
+      <select id="hf-nights">
+        <option value="">전체</option>
+        <option value="short">7박 이하</option>
+        <option value="medium">8~10박</option>
+        <option value="long">11박 이상</option>
+      </select>
+    </div>
+    <a href="{{ '/cruises/' | relative_url }}" class="btn btn-primary" id="homeSearchBtn">검색</a>
+  </div>
+</div>
+
+<!-- Promo Slider -->
+<section class="section">
+  <div class="container">
+    <div class="promo-slider">
+      <div class="promo-slides" id="promoSlides">
+        <div class="promo-slide" style="background:linear-gradient(135deg,#1a237e,#283593);">
+          <div>
+            <h3>🌊 2026 얼리버드 특가</h3>
+            <p>지중해·알래스카 크루즈 최대 30% 할인</p>
+            <a href="{{ '/deals/' | relative_url }}" class="btn btn-primary">특가 보기</a>
+          </div>
+        </div>
+        <div class="promo-slide" style="background:linear-gradient(135deg,#e65100,#ff6f00);">
+          <div>
+            <h3>🌸 일본 벚꽃 크루즈</h3>
+            <p>MSC 벨리시마로 떠나는 8박 일본 크루즈</p>
+            <a href="{{ '/cruises/' | relative_url }}" class="btn btn-secondary">자세히 보기</a>
+          </div>
+        </div>
+        <div class="promo-slide" style="background:linear-gradient(135deg,#1b5e20,#43a047);">
+          <div>
+            <h3>👨‍👩‍👧‍👦 가족 크루즈 추천</h3>
+            <p>아이와 함께하는 크루즈 여행, 크루즈링크가 도와드립니다</p>
+            <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary">상담 신청</a>
+          </div>
+        </div>
+      </div>
+      <div class="promo-dots" id="promoDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Cruises -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">추천 크루즈</h2>
+      <p class="section-subtitle">크루즈링크가 엄선한 인기 상품</p>
+    </div>
+    <div class="cruise-grid">
+      {% for cruise in site.data.cruises %}
+        {% if cruise.featured %}
+        <div class="cruise-card">
+          <div class="cruise-card-image">
+            {% if cruise.image and cruise.image != "default-cruise.jpg" %}
+            <img src="{{ '/assets/images/' | append: cruise.image | relative_url }}" alt="{{ cruise.title }}" loading="lazy">
+            {% else %}
+            <div class="placeholder">🚢</div>
+            {% endif %}
+            <div class="cruise-card-tags">
+              {% for tag in cruise.tags %}
+              <span class="tag tag-{{ tag }}">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="cruise-card-body">
+            <div class="cruise-card-meta">{{ cruise.cruiseLineName }} · {{ cruise.ship }}</div>
+            <div class="cruise-card-title">{{ cruise.title }}</div>
+            <div class="cruise-card-ports">📍 {{ cruise.ports | join: " → " }}</div>
+            <div style="font-size:13px;color:var(--gray-700);margin-bottom:12px;">
+              📅 {{ cruise.departureDate }} · 🌙 {{ cruise.nights }}박
+            </div>
+            <div class="cruise-card-footer">
+              <div class="cruise-card-price">${{ cruise.priceFrom }}~ <small>/1인</small></div>
+              <button class="btn btn-primary btn-sm" onclick="openInquiry('{{ cruise.title }}','{{ cruise.departureDate }}','{{ cruise.priceFrom }}','{{ cruise.cruiseLineName }}','{{ cruise.ship }}','{{ cruise.ports | join: ", " }}')">문의하기</button>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="text-center mt-40">
+      <a href="{{ '/cruises/' | relative_url }}" class="btn btn-secondary btn-lg">전체 상품 보기 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Destinations -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">목적지별 크루즈</h2>
+      <p class="section-subtitle">꿈꾸는 여행지를 선택하세요</p>
+    </div>
+    <div class="dest-grid">
+      <a href="{{ '/destinations/mediterranean/' | relative_url }}" class="dest-card">
+        <div class="icon">🏛️</div>
+        <h3>지중해</h3>
+        <p>이탈리아·그리스·스페인</p>
+      </a>
+      <a href="{{ '/destinations/alaska/' | relative_url }}" class="dest-card">
+        <div class="icon">🏔️</div>
+        <h3>알래스카</h3>
+        <p>빙하·피요르드·야생</p>
+      </a>
+      <a href="{{ '/destinations/caribbean/' | relative_url }}" class="dest-card">
+        <div class="icon">🏖️</div>
+        <h3>카리브해</h3>
+        <p>에메랄드빛 바다·백사장</p>
+      </a>
+      <a href="{{ '/destinations/northern-europe/' | relative_url }}" class="dest-card">
+        <div class="icon">⚓</div>
+        <h3>북유럽</h3>
+        <p>피요르드·발틱·백야</p>
+      </a>
+      <a href="{{ '/destinations/southeast-asia/' | relative_url }}" class="dest-card">
+        <div class="icon">🌴</div>
+        <h3>동남아</h3>
+        <p>싱가포르·태국·베트남</p>
+      </a>
+      <a href="{{ '/destinations/japan/' | relative_url }}" class="dest-card">
+        <div class="icon">🗾</div>
+        <h3>일본</h3>
+        <p>벚꽃·온천·미식</p>
+      </a>
+      <a href="{{ '/destinations/hawaii/' | relative_url }}" class="dest-card">
+        <div class="icon">🌺</div>
+        <h3>하와이</h3>
+        <p>열대 파라다이스</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>크루즈 여행, 어디서부터 시작해야 할지 모르겠다면?</h2>
+    <p>크루즈링크 전문 상담원이 고객님께 딱 맞는 크루즈를 추천해드립니다.</p>
+    <div class="cta-buttons">
+      <a href="{{ site.brand.kakao }}" target="_blank" class="btn btn-kakao btn-lg">💬 카카오톡 상담</a>
+      <a href="tel:{{ site.brand.phone }}" class="btn btn-primary btn-lg">☎️ {{ site.brand.phone }}</a>
+      <a href="{{ '/contact/' | relative_url }}" class="btn btn-outline btn-lg" style="border-color:white;color:white;">✉️ 문의하기</a>
+    </div>
+  </div>
+</section>

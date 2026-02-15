@@ -1,0 +1,13 @@
+---
+layout: default
+title: "동남아 크루즈 | 크루즈링크"
+description: "동남아 크루즈 상품을 비교하고 최적의 일정을 찾아보세요."
+permalink: /destinations/southeast-asia/
+---
+<div class="page-header"><div class="container"><h1>🌴 동남아 크루즈</h1></div></div>
+<div class="section"><div class="container">
+<p style="font-size:16px;line-height:1.8;margin-bottom:32px;">싱가포르, 태국, 베트남, 말레이시아 등 다양한 문화와 열대 해변을 만끽하는 동남아 크루즈. 합리적인 가격이 매력적입니다.</p>
+<h2 class="section-title">동남아 크루즈 상품</h2>
+<div class="cruise-list">
+{% for cruise in site.data.cruises %}{% if cruise.destination == "southeast-asia" %}{% include cruise-list-item.html cruise=cruise %}{% endif %}{% endfor %}
+</div></div></div>

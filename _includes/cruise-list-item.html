@@ -1,0 +1,42 @@
+{% comment %}Pass cruise data as 'cruise' variable{% endcomment %}
+<div class="cruise-item" data-destination="{{ cruise.destination }}" data-cruiseline="{{ cruise.cruiseLine }}" data-month="{{ cruise.departureDate | date: '%Y-%m' }}" data-nights="{{ cruise.nights }}" data-price="{{ cruise.priceFrom }}" data-tags="{{ cruise.tags | join: ',' }}" data-featured="{{ cruise.featured }}">
+  <div class="cruise-item-image">
+    {% if cruise.image and cruise.image != "default-cruise.jpg" %}
+    <img src="{{ '/assets/images/' | append: cruise.image | relative_url }}" alt="{{ cruise.title }}" loading="lazy">
+    {% else %}
+    <div class="placeholder">🚢</div>
+    {% endif %}
+  </div>
+  <div class="cruise-item-body">
+    <div>
+      <div style="margin-bottom:6px;">
+        {% for tag in cruise.tags %}
+        <span class="tag tag-{{ tag }}">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      <div class="cruise-item-meta">{{ cruise.cruiseLineName }} · {{ cruise.ship }}</div>
+      <div class="cruise-item-title">
+        {% assign detail_page = site.cruises | where: "cruise_id", cruise.id | first %}
+        {% if detail_page %}
+        <a href="{{ detail_page.url | relative_url }}">{{ cruise.title }}</a>
+        {% else %}
+        {{ cruise.title }}
+        {% endif %}
+      </div>
+      <div class="cruise-item-ports">📍 {{ cruise.ports | join: " → " }}</div>
+    </div>
+    <div class="cruise-item-footer">
+      <div class="cruise-item-info">
+        <span>📅 {{ cruise.departureDate }}</span>
+        <span>🌙 {{ cruise.nights }}박</span>
+      </div>
+      <div class="cruise-item-price">${{ cruise.priceFrom }}~ <small>/1인</small></div>
+      <div class="cruise-item-actions">
+        {% if detail_page %}
+        <a href="{{ detail_page.url | relative_url }}" class="btn btn-outline btn-sm">상세보기</a>
+        {% endif %}
+        <button class="btn btn-primary btn-sm" onclick="openInquiry('{{ cruise.title }}','{{ cruise.departureDate }}','{{ cruise.priceFrom }}','{{ cruise.cruiseLineName }}','{{ cruise.ship }}','{{ cruise.ports | join: ", " }}')">문의하기</button>
+      </div>
+    </div>
+  </div>
+</div>

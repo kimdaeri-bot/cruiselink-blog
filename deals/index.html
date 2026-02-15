@@ -1,0 +1,26 @@
+---
+layout: default
+title: "특가 크루즈 | 크루즈링크"
+description: "크루즈링크 특가 & 라스트미닛 크루즈 상품. 놓치면 후회할 특별 가격!"
+permalink: /deals/
+---
+<div class="page-header">
+  <div class="container">
+    <h1>🔥 특가 크루즈</h1>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    <div class="deals-banner">
+      <h2>🎉 놓치면 후회할 특별 가격!</h2>
+      <p>한정 수량, 선착순 마감</p>
+    </div>
+    <div class="cruise-list">
+      {% for cruise in site.data.cruises %}
+        {% if cruise.tags contains "특가" or cruise.tags contains "라스트미닛" %}
+          {% include cruise-list-item.html cruise=cruise %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

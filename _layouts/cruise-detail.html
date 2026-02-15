@@ -1,0 +1,123 @@
+---
+layout: default
+---
+{% assign c = page %}
+
+<!-- Hero -->
+<div class="detail-hero">
+  <div class="container">
+    <p style="font-size:14px;opacity:0.8;margin-bottom:8px;">{{ c.cruiseLineName }} · {{ c.ship }}</p>
+    <h1>{{ c.title }}</h1>
+    <div class="meta">
+      📅 {{ c.departureDate }} 출발 · 🌙 {{ c.nights }}박 · 📍 {{ c.departurePort }} 출발
+    </div>
+    <div style="margin-top:20px;">
+      <span style="font-size:32px;font-weight:900;">${{ c.priceFrom }}~</span>
+      <span style="opacity:0.8;">/1인</span>
+    </div>
+    <div style="margin-top:20px;">
+      <button class="btn btn-primary btn-lg" onclick="openInquiry('{{ c.title }}','{{ c.departureDate }}','{{ c.priceFrom }}','{{ c.cruiseLineName }}','{{ c.ship }}','{{ c.ports | join: ", " }}')">📞 문의하기</button>
+      <a href="{{ site.brand.kakao }}" target="_blank" class="btn btn-kakao btn-lg">💬 카카오톡 상담</a>
+    </div>
+  </div>
+</div>
+
+<!-- Info Bar -->
+<div class="container">
+  <div class="info-bar">
+    <div class="info-bar-item"><div class="label">선사</div><div class="value">{{ c.cruiseLineName }}</div></div>
+    <div class="info-bar-item"><div class="label">선박</div><div class="value">{{ c.ship }}</div></div>
+    <div class="info-bar-item"><div class="label">출발항</div><div class="value">{{ c.departurePort }}</div></div>
+    <div class="info-bar-item"><div class="label">기간</div><div class="value">{{ c.nights }}박 {{ c.nights | plus: 1 }}일</div></div>
+    <div class="info-bar-item"><div class="label">가격</div><div class="value" style="color:var(--orange);">${{ c.priceFrom }}~</div></div>
+  </div>
+</div>
+
+<!-- Itinerary -->
+<div class="section">
+  <div class="container">
+    <h2 class="section-title">🗓️ 상세 일정</h2>
+    <p class="section-subtitle">{{ c.nights }}박 {{ c.nights | plus: 1 }}일 크루즈 여정</p>
+    <div class="timeline">
+      {{ content }}
+    </div>
+  </div>
+</div>
+
+<!-- Ship Info -->
+{% if c.shipTonnage %}
+<div class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">🚢 선박 소개 - {{ c.ship }}</h2>
+    <div class="ship-specs">
+      <div class="ship-spec"><div class="label">톤수</div><div class="value">{{ c.shipTonnage }}</div></div>
+      <div class="ship-spec"><div class="label">승객 수</div><div class="value">{{ c.shipPassengers }}</div></div>
+      <div class="ship-spec"><div class="label">취항년도</div><div class="value">{{ c.shipYear }}</div></div>
+    </div>
+    {% if c.shipFacilities %}
+    <h3 style="margin-top:24px;font-size:18px;font-weight:700;color:var(--navy);">주요 시설</h3>
+    <ul style="margin-top:12px;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px;">
+      {% for f in c.shipFacilities %}
+      <li style="padding:8px 0;font-size:14px;padding-left:24px;position:relative;list-style:none;"><span style="position:absolute;left:0;">✦</span> {{ f }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+
+<!-- Cabin Prices -->
+{% if c.cabins %}
+<div class="section">
+  <div class="container">
+    <h2 class="section-title">🛏️ 객실 & 가격</h2>
+    <p class="section-subtitle">1인 기준, 2인 1실 기준 요금</p>
+    <table class="cabin-table">
+      <thead>
+        <tr><th>객실 타입</th><th>설명</th><th>1인 가격 (USD)</th></tr>
+      </thead>
+      <tbody>
+        {% for cabin in c.cabins %}
+        <tr>
+          <td><strong>{{ cabin.type }}</strong></td>
+          <td>{{ cabin.desc }}</td>
+          <td class="price-cell">${{ cabin.price }}~</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+
+<!-- Inclusions -->
+{% if c.included %}
+<div class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">📋 포함 / 불포함 사항</h2>
+    <div class="inclusions">
+      <div class="inclusion-list included">
+        <h3>✅ 포함 사항</h3>
+        <ul>{% for item in c.included %}<li>{{ item }}</li>{% endfor %}</ul>
+      </div>
+      <div class="inclusion-list excluded">
+        <h3>❌ 불포함 사항</h3>
+        <ul>{% for item in c.excluded %}<li>{{ item }}</li>{% endfor %}</ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="container">
+    <h2>이 크루즈가 마음에 드셨나요?</h2>
+    <p>크루즈링크 전문 상담원이 최적의 객실과 가격을 안내해드립니다.</p>
+    <div class="cta-buttons">
+      <button class="btn btn-primary btn-lg" onclick="openInquiry('{{ c.title }}','{{ c.departureDate }}','{{ c.priceFrom }}','{{ c.cruiseLineName }}','{{ c.ship }}','{{ c.ports | join: ", " }}')">📞 문의하기</button>
+      <a href="{{ site.brand.kakao }}" target="_blank" class="btn btn-kakao btn-lg">💬 카카오톡 상담</a>
+      <a href="tel:{{ site.brand.phone }}" class="btn btn-outline btn-lg" style="border-color:white;color:white;">☎️ {{ site.brand.phone }}</a>
+    </div>
+  </div>
+</div>
