@@ -704,7 +704,7 @@ ul { list-style: none; }
 /* Destination Chip Slider */
 /* === Cruise Line Logo Slider === */
 .logo-slider-wrap {
-  margin: 32px 0 8px;
+  margin: 32px 0 32px;
   overflow: hidden;
   position: relative;
 }
