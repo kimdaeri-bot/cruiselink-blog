@@ -89,7 +89,7 @@ excluded:
 - 여권 원본 필수! 선내에서 보관 후 하선 시 반환됩니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -127,7 +127,7 @@ excluded:
 - MSC 요트 클럽 게스트는 전용 풀과 선데크를 이용할 수 있습니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -163,7 +163,7 @@ excluded:
 **💡 TIP:** 8월 오키나와는 자외선이 매우 강합니다. 선크림·모자 필수!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -198,7 +198,7 @@ excluded:
 **💡 TIP:** 텐더보트 하선이라 일찍 줄서세요. 마린슈즈 필수, 현금(엔화) 미리 준비!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -233,7 +233,7 @@ excluded:
 **💡 TIP:** 화산재가 날릴 수 있으니 모자·마스크 챙기세요!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -268,7 +268,7 @@ excluded:
 **💡 TIP:** 하우스텐보스는 반나절이면 충분. 나머지 시간은 시내에서 사세보 버거+레몬 스테이크!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 

@@ -107,7 +107,7 @@ excluded:
 - 알래스카는 실내외 기온 차가 크므로 레이어링(겹겹이 입기)이 핵심!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -149,7 +149,7 @@ excluded:
 - 자쿠지에서 빙하 풍경을 감상하는 건 알래스카 크루즈만의 특권
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -184,7 +184,7 @@ excluded:
 **💡 TIP:** 고래 투어 사전 예약 필수! 방수 재킷 필수(주노 연간 강수일 230일).
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -219,7 +219,7 @@ excluded:
 **💡 TIP:** 인구 1,000명 작은 마을, 현금 준비 추천. 곰 출몰 지역이라 하이킹 시 곰방울 착용!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -260,7 +260,7 @@ excluded:
 - 핫초콜릿을 들고 갑판에서 감상하는 것이 알래스카 크루즈의 정석
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -298,7 +298,7 @@ excluded:
 - 선내 계좌 정산 내역 확인
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -332,7 +332,7 @@ excluded:
 **💡 TIP:** 야간 기항이라 시간 짧습니다! 부차트 가든 또는 이너 하버 중 하나만 선택. 대부분 USD 통용.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -364,4 +364,4 @@ excluded:
 - 귀국편이 오후라면 파이크 플레이스 마켓에서 마지막 시애틀 커피 한 잔!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>

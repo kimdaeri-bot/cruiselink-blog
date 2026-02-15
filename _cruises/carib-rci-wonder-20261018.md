@@ -112,7 +112,7 @@ excluded:
 - 음료 패키지(Deluxe Beverage Package) 구매 시 첫날 구매가 가장 저렴
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -152,7 +152,7 @@ excluded:
 - 선상 Wi-Fi가 필요하면 해상일에 당일 패스 구매 가능 (~$20/일)
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -186,7 +186,7 @@ US 버진 아일랜드의 수도 샬럿 아말리에. 에메랄드빛 바다, �
 **💡 TIP:** 미국 달러 사용. 10월 비수기라 해변 한가하고 가격 저렴!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -220,7 +220,7 @@ US 버진 아일랜드의 수도 샬럿 아말리에. 에메랄드빛 바다, �
 **💡 TIP:** 프랑스령은 EUR, 네덜란드령은 USD 사용 — 대부분 둘 다 OK. 국경 자유 이동.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -259,7 +259,7 @@ US 버진 아일랜드의 수도 샬럿 아말리에. 에메랄드빛 바다, �
 - 마지막 해상일에 수하물 태그가 객실에 배달됩니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -293,7 +293,7 @@ US 버진 아일랜드의 수도 샬럿 아말리에. 에메랄드빛 바다, �
 **💡 TIP:** 기본 해변·식사·짚라인은 무료! 워터파크와 카바나만 유료. 선크림 SPF50+ 필수.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -333,7 +333,7 @@ US 버진 아일랜드의 수도 샬럿 아말리에. 에메랄드빛 바다, �
 - 로열캐리비안 로열티(Crown & Anchor) 포인트 확인!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -365,4 +365,4 @@ US 버진 아일랜드의 수도 샬럿 아말리에. 에메랄드빛 바다, �
 - 미국 입국 심사가 터미널에서 진행되므로 시간 여유를 두세요
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>

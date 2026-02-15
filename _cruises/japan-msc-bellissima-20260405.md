@@ -89,7 +89,7 @@ excluded:
 - 여권 원본 필수! 선내에서 보관 후 하선 시 반환됩니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -128,7 +128,7 @@ excluded:
 - MSC 요트 클럽 게스트는 전용 풀과 선데크를 이용할 수 있습니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -162,7 +162,7 @@ excluded:
 **💡 TIP:** 출항 20:00 — 저녁까지 여유! 포트라이너로 산노미야 20분. 4월 벚꽃 명소: 소라쿠엔 정원.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -196,7 +196,7 @@ excluded:
 **💡 TIP:** 화산재 주의 — 모자·마스크 챙기기. 4월 벚꽃 명소: 센간엔, 요시노공원.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -230,7 +230,7 @@ excluded:
 **💡 TIP:** 4월 오키나와 25°C — 이미 반팔 날씨! 츄라우미 수족관은 오전 일찍 출발 필수(편도 2시간).
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -264,7 +264,7 @@ excluded:
 **💡 TIP:** 터미널→남포동 택시 10분(₩5,000). 4월 벚꽃: 삼락공원, 온천천 벚꽃길.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -298,7 +298,7 @@ excluded:
 **💡 TIP:** 21:00 출항 — 나카스 야타이 저녁 가능! 항구→하카타역 버스 15분. 벚꽃: 마이즈루 공원.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -337,7 +337,7 @@ excluded:
 - MSC 팁은 자동 청구(1인 1박 $14), 조정 원하면 게스트 서비스 방문
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 

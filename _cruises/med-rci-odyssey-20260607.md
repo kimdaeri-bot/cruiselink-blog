@@ -111,7 +111,7 @@ excluded:
 - 승선 첫날 스파 프로모션 확인! 항해 중 가장 저렴한 가격에 예약 가능
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -146,7 +146,7 @@ excluded:
 **💡 TIP:** 폼페이는 그늘이 없으니 물·모자 필수. 나폴리 시내 소매치기 주의!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -185,7 +185,7 @@ excluded:
 - 정장 디너(Formal Night)가 이날 진행되는 경우가 많으니 복장 체크!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -220,7 +220,7 @@ excluded:
 **💡 TIP:** 텐더보트 하선이라 일찍 줄서세요. 타운은 도보 충분, 택시는 비쌉니다.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -255,7 +255,7 @@ excluded:
 **💡 TIP:** 출항 20:00이라 이아 석양(~20:30)은 빠듯합니다. 선내 갑판에서 감상도 추천!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -290,7 +290,7 @@ excluded:
 **💡 TIP:** 6월 한낮 40°C! 아크로폴리스는 오전 8시 오픈 직후 방문 추천.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -328,7 +328,7 @@ excluded:
 - 선내 계좌(Seapass) 정산 내역을 TV 또는 앱에서 확인하세요
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -360,4 +360,4 @@ excluded:
 - 공항 이동: 치비타베키아→FCO 공항 셔틀 약 1.5시간 (~€15~25)
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>

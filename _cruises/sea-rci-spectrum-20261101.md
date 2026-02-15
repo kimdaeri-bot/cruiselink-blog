@@ -108,7 +108,7 @@ excluded:
 - 승선 전 호커 센터에서 치킨 라이스(~S$5)와 락사(~S$6) 꼭 드세요!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -148,7 +148,7 @@ excluded:
 - 일몰 시간에 갑판 14층에서 말라카 해협 선셋 감상 추천
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -182,7 +182,7 @@ excluded:
 **💡 TIP:** 호커 센터는 현금(링깃) 전용 대부분. 조지타운은 도보로 충분!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -216,7 +216,7 @@ excluded:
 **💡 TIP:** 텐더보트 하선 — 일찍 대기. 택시 미터기 없으니 미리 흥정(스카이캡까지 ~RM24).
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -250,7 +250,7 @@ excluded:
 **💡 TIP:** 딥씨 포트에서 파통 비치 45분. 그랩(Grab) 앱이 택시보다 저렴+안전.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 

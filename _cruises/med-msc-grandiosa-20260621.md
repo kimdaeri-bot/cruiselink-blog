@@ -90,7 +90,7 @@ excluded:
 - 여권 원본 필수! 선내에서 보관 후 하선 시 반환됩니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -125,7 +125,7 @@ excluded:
 **💡 TIP:** 구항구 소매치기 주의! 6월은 라벤더 시즌 시작이라 프로방스 투어 강추.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -160,7 +160,7 @@ excluded:
 **💡 TIP:** 친퀘테레 가려면 기차역(Piazza Principe)까지 항구에서 도보 15분. 일찍 출발!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -195,7 +195,7 @@ excluded:
 **💡 TIP:** 폼페이와 아말피 둘 다 하루에 하기엔 빡빡합니다. 하나만 선택하세요!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -230,7 +230,7 @@ excluded:
 **💡 TIP:** 시에스타(13~16시)에 가게 문 닫을 수 있어요. 오전에 시장 투어 추천!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -265,7 +265,7 @@ excluded:
 **💡 TIP:** 발레타는 반나절이면 충분. 남은 시간에 블루 그로토나 므디나 추가! 영어 통용.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -305,7 +305,7 @@ excluded:
 - 하선 시간대를 미리 예약하면 대기 없이 빠르게 내릴 수 있습니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 

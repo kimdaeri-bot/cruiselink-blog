@@ -88,7 +88,7 @@ excluded:
 - 6월 아테네는 35°C 이상! 선크림과 모자 필수
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -123,7 +123,7 @@ excluded:
 **💡 TIP:** 텐더보트 하선이라 일찍 줄서세요. 미코노스 타운은 미로처럼 복잡 — 오프라인 지도 필수!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -158,7 +158,7 @@ excluded:
 **💡 TIP:** 항구에서 구시가지 도보 10분, 택시 불필요. 6월 자외선 주의!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -197,7 +197,7 @@ excluded:
 - 내일 산토리니 텐더보트 하선에 대비해 일찍 자는 것도 전략!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -232,7 +232,7 @@ excluded:
 **💡 TIP:** 21:00 출항이라 이아 석양 감상 가능! 석양 시간대 버스 혼잡하니 여유 있게.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -267,7 +267,7 @@ excluded:
 **💡 TIP:** 크노소스는 오전 일찍 방문 추천. 크레타 올리브오일은 세계 최고급 — 선물용 강추!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -306,7 +306,7 @@ excluded:
 - 셀러브리티는 팁이 자동 청구(1인 1박 $18)되니 미리 확인하세요
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 

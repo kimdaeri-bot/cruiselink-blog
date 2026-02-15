@@ -88,7 +88,7 @@ excluded:
 - 12월 마이애미 기온 24°C 전후, 여름 옷 준비!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -127,7 +127,7 @@ excluded:
 - 음료 패키지를 고민 중이라면 첫날 구매가 가장 저렴합니다
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -166,7 +166,7 @@ excluded:
 - 내일부터 기항지이니 일찍 자는 것도 전략!
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -200,7 +200,7 @@ excluded:
 **💡 TIP:** 양쪽 국경 자유 이동. 네덜란드쪽 USD, 프랑스쪽 EUR — 대부분 둘 다 OK.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -234,7 +234,7 @@ excluded:
 **💡 TIP:** 미국령 — USD 사용. 면세 한도가 높아 쇼핑에 유리.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -268,7 +268,7 @@ excluded:
 **💡 TIP:** 기본 해변·식사·짚라인 무료! Reef-Safe 선크림 권장. 음료 패키지 섬에서도 적용.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -307,7 +307,7 @@ excluded:
 - RCI 팁은 자동 청구(1인 1박 $16), 조정 원하면 게스트 서비스 방문
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 

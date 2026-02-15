@@ -107,7 +107,7 @@ excluded:
 - 노르웨이 기항지는 물가가 매우 높으니 선내에서 간식/음료를 챙기세요
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -145,7 +145,7 @@ excluded:
 - 6월 노르웨이는 백야! 밤 11시에도 밝으니 수면 안대 챙기기
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -179,7 +179,7 @@ excluded:
 **💡 TIP:** 노르웨이 물가 높음(커피 ~$5, 맥주 ~$10). 연 240일 비 — 우비 필수.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -213,7 +213,7 @@ excluded:
 **💡 TIP:** 터미널에서 시내 도보 5분. 6월 백야로 밤에도 밝아 사진 찍기 최적.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -247,7 +247,7 @@ excluded:
 **💡 TIP:** 텐더보트 하선 — 일찍 줄서기. 마을 인구 250명, ATM 없으니 카드 준비.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -281,7 +281,7 @@ excluded:
 **💡 TIP:** 플롬 철도는 크루즈 기항일 매진! visitflam.com 또는 선사 투어 사전 예약 필수. 기차 좌석 왼쪽이 계곡뷰.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -315,7 +315,7 @@ excluded:
 **💡 TIP:** 프레케스톨렌 하이킹 시 항구→시작점 버스+페리 40분. 날씨 변동 주의, 우비 필수.
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -355,7 +355,7 @@ excluded:
 - 사우스햄프턴 도착 후 런던까지 이동 계획을 미리 세우세요
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>
 
 ---
 
@@ -387,4 +387,4 @@ excluded:
 - 영국 출국 시 VAT 환급 가능 (선내 면세점 구매는 해당 없음)
 
 </div>
-<button class="day-toggle" onclick="toggleDay(this)"><span class="toggle-arrow">▼</span></button>
+<button class="day-toggle" onclick="toggleDay(this)">📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span></button>

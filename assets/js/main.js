@@ -303,9 +303,13 @@ function toggleDay(btn) {
   }
   if (!content) return;
   content.classList.toggle('expanded');
+  var isExpanded = content.classList.contains('expanded');
   var arrow = btn.querySelector('.toggle-arrow');
-  if (arrow) {
-    arrow.textContent = content.classList.contains('expanded') ? '▲' : '▼';
+  if (arrow) arrow.textContent = isExpanded ? '▲' : '▼';
+  // Update button text
+  var textNodes = Array.from(btn.childNodes).filter(function(n){ return n.nodeType === 3; });
+  if (textNodes.length > 0) {
+    textNodes[0].textContent = isExpanded ? '접기 ' : '📋 기항지 투어·자유여행 보기 ';
   }
 }
 
