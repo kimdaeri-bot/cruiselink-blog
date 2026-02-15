@@ -1,7 +1,7 @@
 title: "크루즈링크 - 크루즈 여행 전문"
 description: "크루즈 여행의 모든 것, 크루즈링크와 함께하세요. 지중해, 알래스카, 카리브해, 북유럽, 동남아 크루즈 상품을 만나보세요."
-url: "https://cruiselink.co.kr"
-baseurl: ""
+url: "https://kimdaeri-bot.github.io"
+baseurl: "/cruiselink-blog"
 lang: ko
 
 brand:
