@@ -715,7 +715,7 @@ ul { list-style: none; }
 .logo-slider-wrap::after { right: 0; background: linear-gradient(to left, white, transparent); }
 .logo-slider { overflow: hidden; }
 .logo-slider-track {
-  display: flex; align-items: center; gap: 40px;
+  display: flex; align-items: center; gap: 72px;
   animation: logoScroll 30s linear infinite;
   width: max-content;
 }
