@@ -255,3 +255,11 @@ function switchFacilityTab(btn, idx) {
   btn.classList.add('active');
   tabs.querySelector('.facility-panel[data-panel="'+idx+'"]').classList.add('active');
 }
+
+// --- Destination Chip Slider ---
+function destSlide(dir) {
+  var slider = document.getElementById('destSlider');
+  if (!slider) return;
+  var chipWidth = slider.querySelector('.dest-chip').offsetWidth + 12;
+  slider.scrollLeft += dir * chipWidth * 2;
+}

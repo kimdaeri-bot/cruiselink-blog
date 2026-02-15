@@ -673,3 +673,54 @@ ul { list-style: none; }
   outline: none;
   border-color: var(--navy);
 }
+
+/* Destination Chip Slider */
+.dest-slider-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  gap: 8px;
+}
+.dest-slider {
+  display: flex;
+  gap: 12px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  flex: 1;
+}
+.dest-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 30px;
+  text-decoration: none;
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  transition: transform .2s, box-shadow .2s;
+}
+.dest-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  color: var(--orange);
+}
+.dest-icon { font-size: 20px; }
+.dest-slider-btn {
+  background: rgba(255,255,255,.9);
+  border: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--navy);
+  box-shadow: 0 2px 6px rgba(0,0,0,.1);
+  flex-shrink: 0;
+  z-index: 2;
+}
+.dest-slider-btn:hover { background: white; box-shadow: 0 4px 10px rgba(0,0,0,.15); }
