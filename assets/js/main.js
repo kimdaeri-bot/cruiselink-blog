@@ -289,12 +289,22 @@ function initDaySliders() {
 }
 
 // --- DAY 더보기 toggle ---
+// Day detail modal
+(function(){
+  var overlay = document.createElement('div');
+  overlay.className = 'day-modal-overlay';
+  overlay.innerHTML = '<div class="day-modal"><div class="day-modal-header"><h3 id="dayModalTitle"></h3><button class="day-modal-close">&times;</button></div><div class="day-modal-body" id="dayModalBody"></div></div>';
+  document.body.appendChild(overlay);
+  overlay.addEventListener('click', function(e){ if(e.target===overlay) overlay.classList.remove('active'); });
+  overlay.querySelector('.day-modal-close').addEventListener('click', function(){ overlay.classList.remove('active'); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') overlay.classList.remove('active'); });
+  window._dayModal = overlay;
+})();
+
 function toggleDay(btn) {
-  // Find the closest .day-expandable sibling
   var parent = btn.parentElement;
   var content = parent ? parent.querySelector('.day-expandable') : null;
   if (!content) {
-    // Try previous sibling
     var prev = btn.previousElementSibling;
     while (prev) {
       if (prev.classList && prev.classList.contains('day-expandable')) { content = prev; break; }
@@ -302,15 +312,26 @@ function toggleDay(btn) {
     }
   }
   if (!content) return;
-  content.classList.toggle('expanded');
-  var isExpanded = content.classList.contains('expanded');
-  var arrow = btn.querySelector('.toggle-arrow');
-  if (arrow) arrow.textContent = isExpanded ? '▲' : '▼';
-  // Update button text
-  var textNodes = Array.from(btn.childNodes).filter(function(n){ return n.nodeType === 3; });
-  if (textNodes.length > 0) {
-    textNodes[0].textContent = isExpanded ? '접기 ' : '📋 기항지 투어·자유여행 보기 ';
+  // Find DAY title
+  var section = btn.closest('.timeline') || btn.parentElement;
+  var h3 = null;
+  var prev = btn.previousElementSibling;
+  while (prev) {
+    if (prev.tagName === 'H3' || prev.querySelector && prev.querySelector('h3')) {
+      h3 = prev.tagName === 'H3' ? prev : prev.querySelector('h3');
+      break;
+    }
+    prev = prev.previousElementSibling;
   }
+  // Also search parent
+  if (!h3) {
+    var allH3 = btn.parentElement.querySelectorAll('h3');
+    if (allH3.length) h3 = allH3[allH3.length - 1];
+  }
+  var title = h3 ? h3.textContent.trim() : '상세 정보';
+  document.getElementById('dayModalTitle').textContent = title;
+  document.getElementById('dayModalBody').innerHTML = content.innerHTML;
+  window._dayModal.classList.add('active');
 }
 
 // Auto-init: bind all toggle buttons and sliders after content is moved
