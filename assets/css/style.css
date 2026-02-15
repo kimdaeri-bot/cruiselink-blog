@@ -558,11 +558,10 @@ ul { list-style: none; }
   border-radius: 12px;
 }
 
-/* Ship slider images — unified size */
-.slide img,
-.ship-slider-section .slide img {
+/* Ship slider images — original full size */
+.slide img {
   width: 100%;
-  height: 360px;
+  height: 100%;
   object-fit: cover;
 }
 
