@@ -1,58 +1,74 @@
 ---
-cruise_id: "med-rci-odyssey-20260607"
-title: "서지중해 7박 이탈리아·그리스 크루즈"
-cruiseLine: "royal-caribbean"
-cruiseLineName: "로열캐리비안"
-ship: "오디세이 오브 더 씨즈"
-shipTonnage: "169,000톤"
-shipPassengers: "4,180명"
-shipYear: "2021"
-destination: "mediterranean"
-destinationName: "지중해"
-departurePort: "로마 (치비타베키아)"
-departureDate: "2026-06-07"
-returnDate: "2026-06-14"
+cruise_id: med-rci-odyssey-20260607
+title: 서지중해 7박 이탈리아·그리스 크루즈
+cruiseLine: royal-caribbean
+cruiseLineName: 로열캐리비안
+ship: 오디세이 오브 더 씨즈
+shipTonnage: 169,000톤
+shipPassengers: 4,180명
+shipYear: '2021'
+destination: mediterranean
+destinationName: 지중해
+departurePort: 로마 (치비타베키아)
+departureDate: '2026-06-07'
+returnDate: '2026-06-14'
 nights: 7
-ports: ["나폴리", "미코노스", "산토리니", "아테네"]
+ports:
+- 나폴리
+- 미코노스
+- 산토리니
+- 아테네
 priceFrom: 899
-currency: "USD"
-tags: ["추천", "인기"]
-image: "med/img01.jpg"
+currency: USD
+tags:
+- 추천
+- 인기
+image: med/img01.jpg
 shipFacilities:
-  - "노스 스타 (North Star) - 90m 높이 전망 캡슐"
-  - "플로우라이더 서핑 시뮬레이터"
-  - "범퍼카 & 롤러스케이트장"
-  - "270도 파노라마 라운지"
-  - "비트 앤 바이트 로봇 바"
-  - "스파 & 피트니스 센터"
-  - "4개 수영장 & 솔라리움"
-  - "브로드웨이 뮤지컬 극장"
+- name: 노스 스타
+  image: facilities/north-star.jpg
+  desc: 바다 위 90m 높이의 유리 캡슐 전망대. 360도 파노라마로 지중해의 절경을 감상하세요.
+- name: 플로우라이더
+  image: facilities/flowrider.jpg
+  desc: 선상에서 즐기는 서핑 시뮬레이터. 초보자도 안전하게 파도 위를 달릴 수 있습니다.
+- name: 270도 라운지
+  image: ships/odyssey-sunset.jpg
+  desc: 270도 통유리 라운지에서 공연과 칵테일을 즐기며 바다 풍경을 만끽하세요.
+- name: 메인 다이닝
+  image: facilities/main-dining.jpg
+  desc: 코스 요리부터 뷔페까지, 세계 각국의 미식을 무료로 즐길 수 있는 메인 레스토랑.
+- name: 수영장 & 솔라리움
+  image: facilities/solarium.jpg
+  desc: 4개의 수영장과 성인 전용 솔라리움. 지중해 햇살 아래 여유로운 휴식.
+- name: 발코니 객실
+  image: facilities/balcony-stateroom.jpg
+  desc: 프라이빗 발코니에서 매일 아침 바다를 바라보며 커피 한 잔의 여유를.
 cabins:
-  - type: "인사이드"
-    desc: "창문 없는 내부 객실, 14㎡"
-    price: 899
-  - type: "오션뷰"
-    desc: "바다 전망 창문, 17㎡"
-    price: 1099
-  - type: "발코니"
-    desc: "프라이빗 발코니, 20㎡"
-    price: 1399
-  - type: "스위트"
-    desc: "거실+침실 분리, 32㎡~"
-    price: 2499
+- type: 인사이드
+  desc: 창문 없는 내부 객실, 14㎡
+  price: 899
+- type: 오션뷰
+  desc: 바다 전망 창문, 17㎡
+  price: 1099
+- type: 발코니
+  desc: 프라이빗 발코니, 20㎡
+  price: 1399
+- type: 스위트
+  desc: 거실+침실 분리, 32㎡~
+  price: 2499
 included:
-  - "크루즈 승선 (7박)"
-  - "메인 다이닝 & 뷔페 식사"
-  - "선내 엔터테인먼트"
-  - "수영장 & 피트니스 이용"
-  - "기본 객실 서비스"
+- 크루즈 승선 (7박)
+- 메인 다이닝 & 뷔페 식사
+- 선내 엔터테인먼트
+- 수영장 & 피트니스 이용
+- 기본 객실 서비스
 excluded:
-  - "항공편"
-  - "스페셜티 레스토랑"
-  - "음료 패키지"
-  - "기항지 관광 (Shore Excursion)"
-  - "여행자보험"
-  - "선내 팁 (1인 1박 $16)"
+- 항공편
+- 스페셜티 레스토랑
+- 음료 패키지
+- 기항지 관광 (Shore Excursion)
+- 여행자보험
+- 선내 팁 (1인 1박 $16)
 ---
 
 <div class="ship-slider-section">

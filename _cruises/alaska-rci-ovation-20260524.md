@@ -1,57 +1,70 @@
 ---
-cruise_id: "alaska-rci-ovation-20260524"
-title: "알래스카 7박 글레이셔 크루즈"
-cruiseLine: "royal-caribbean"
-cruiseLineName: "로열캐리비안"
-ship: "오베이션 오브 더 씨즈"
-shipTonnage: "168,666톤"
-shipPassengers: "4,180명"
-shipYear: "2016"
-destination: "alaska"
-destinationName: "알래스카"
-departurePort: "시애틀"
-departureDate: "2026-05-24"
-returnDate: "2026-05-31"
+cruise_id: alaska-rci-ovation-20260524
+title: 알래스카 7박 글레이셔 크루즈
+cruiseLine: royal-caribbean
+cruiseLineName: 로열캐리비안
+ship: 오베이션 오브 더 씨즈
+shipTonnage: 168,666톤
+shipPassengers: 4,180명
+shipYear: '2016'
+destination: alaska
+destinationName: 알래스카
+departurePort: 시애틀
+departureDate: '2026-05-24'
+returnDate: '2026-05-31'
 nights: 7
-ports: ["주노", "스캐그웨이", "빅토리아", "트레이시 암 피요르드"]
+ports:
+- 주노
+- 스캐그웨이
+- 빅토리아
+- 트레이시 암 피요르드
 priceFrom: 799
-currency: "USD"
-tags: ["추천", "인기"]
-image: "alaska/hero.jpg"
+currency: USD
+tags:
+- 추천
+- 인기
+image: alaska/hero.jpg
 shipFacilities:
-  - "노스 스타 전망 캡슐"
-  - "범퍼카 & 롤러스케이트"
-  - "플로우라이더 서핑"
-  - "시뮬레이터 스카이다이빙 (RipCord)"
-  - "투 70 다이닝 & 쇼"
-  - "비트로닉 로봇 바"
-  - "솔라리움 실내 수영장"
-  - "로얄 극장"
+- name: 노스 스타
+  image: facilities/north-star.jpg
+  desc: 90m 높이에서 알래스카 빙하와 산맥을 360도 파노라마로 감상하는 전망대.
+- name: 플로우라이더
+  image: ships/ovation-flowrider.jpg
+  desc: 알래스카의 바람을 맞으며 선상 서핑! 초보자도 도전 가능합니다.
+- name: 범퍼카
+  image: facilities/bumper-cars.jpg
+  desc: 바다 위 범퍼카 레이싱과 롤러스케이트장. 온 가족이 즐기는 액티비티.
+- name: 풀 데크
+  image: ships/odyssey-pool.jpg
+  desc: 실내외 수영장과 자쿠지. 빙하를 바라보며 따뜻한 자쿠지를 즐기세요.
+- name: 발코니 객실
+  image: facilities/balcony-stateroom.jpg
+  desc: 알래스카는 발코니 필수! 객실에서 빙하와 야생동물을 바로 감상하세요.
 cabins:
-  - type: "인사이드"
-    desc: "창문 없는 내부 객실"
-    price: 799
-  - type: "오션뷰"
-    desc: "바다 전망 창문"
-    price: 999
-  - type: "발코니"
-    desc: "프라이빗 발코니 (빙하 감상에 최적)"
-    price: 1299
-  - type: "스위트"
-    desc: "넓은 스위트룸"
-    price: 2199
+- type: 인사이드
+  desc: 창문 없는 내부 객실
+  price: 799
+- type: 오션뷰
+  desc: 바다 전망 창문
+  price: 999
+- type: 발코니
+  desc: 프라이빗 발코니 (빙하 감상에 최적)
+  price: 1299
+- type: 스위트
+  desc: 넓은 스위트룸
+  price: 2199
 included:
-  - "크루즈 승선 (7박)"
-  - "메인 다이닝 & 뷔페 식사"
-  - "선내 엔터테인먼트"
-  - "수영장 & 피트니스 이용"
+- 크루즈 승선 (7박)
+- 메인 다이닝 & 뷔페 식사
+- 선내 엔터테인먼트
+- 수영장 & 피트니스 이용
 excluded:
-  - "항공편"
-  - "스페셜티 레스토랑"
-  - "음료 패키지"
-  - "기항지 관광"
-  - "여행자보험"
-  - "선내 팁 (1인 1박 $16)"
+- 항공편
+- 스페셜티 레스토랑
+- 음료 패키지
+- 기항지 관광
+- 여행자보험
+- 선내 팁 (1인 1박 $16)
 ---
 
 <div class="ship-slider-section">

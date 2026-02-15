@@ -1,58 +1,73 @@
 ---
-cruise_id: "carib-rci-wonder-20261018"
-title: "동카리브해 7박 크루즈"
-cruiseLine: "royal-caribbean"
-cruiseLineName: "로열캐리비안"
-ship: "원더 오브 더 씨즈"
-shipTonnage: "236,857톤"
-shipPassengers: "5,734명"
-shipYear: "2022"
-destination: "caribbean"
-destinationName: "카리브해"
-departurePort: "포트 로더데일"
-departureDate: "2026-10-18"
-returnDate: "2026-10-25"
+cruise_id: carib-rci-wonder-20261018
+title: 동카리브해 7박 크루즈
+cruiseLine: royal-caribbean
+cruiseLineName: 로열캐리비안
+ship: 원더 오브 더 씨즈
+shipTonnage: 236,857톤
+shipPassengers: 5,734명
+shipYear: '2022'
+destination: caribbean
+destinationName: 카리브해
+departurePort: 포트 로더데일
+departureDate: '2026-10-18'
+returnDate: '2026-10-25'
 nights: 7
-ports: ["세인트 토마스", "세인트 마틴", "코코 케이"]
+ports:
+- 세인트 토마스
+- 세인트 마틴
+- 코코 케이
 priceFrom: 849
-currency: "USD"
-tags: ["추천", "인기"]
-image: "caribbean/hero.jpg"
+currency: USD
+tags:
+- 추천
+- 인기
+image: caribbean/hero.jpg
 shipFacilities:
-  - "센트럴 파크 (실제 나무가 있는 야외 정원)"
-  - "보드워크 (회전목마 포함)"
-  - "얼티밋 어비스 (10층 높이 슬라이드)"
-  - "FlowRider 서핑 시뮬레이터"
-  - "집라인"
-  - "아쿠아 극장 다이빙 쇼"
-  - "16개 이상 레스토랑"
-  - "스파 & 피트니스"
+- name: 아쿠아 극장
+  image: ships/wonder-aquatheater.jpg
+  desc: 바다를 배경으로 펼쳐지는 다이빙 & 수중 퍼포먼스. 세계 유일 선상 수중극장.
+- name: 집라인
+  image: ships/wonder-zipline.jpg
+  desc: 9층 높이에서 바다 위를 가르는 스릴 만점 집라인! 카리브해를 한눈에.
+- name: 워터슬라이드
+  image: ships/wonder-waterslide.jpg
+  desc: 10층 높이의 초대형 워터슬라이드. 카리브해 태양 아래 짜릿한 물놀이.
+- name: 플로우라이더
+  image: ships/wonder-flowrider.jpg
+  desc: 열대 바람을 맞으며 즐기는 서핑 시뮬레이터. 양쪽 2개 레인 운영.
+- name: 풀 데크
+  image: ships/wonder-pool.jpg
+  desc: 여러 구역의 수영장과 자쿠지. 카리브해 햇살 아래 완벽한 휴식.
+- name: 스페셜티 레스토랑
+  image: facilities/chops-grille.jpg
+  desc: 찹스 그릴 등 다양한 스페셜티 레스토랑에서 미식 경험을 즐기세요.
 cabins:
-  - type: "인사이드"
-    desc: "아늑한 내부 객실"
-    price: 849
-  - type: "센트럴파크뷰"
-    desc: "센트럴파크 전망 발코니"
-    price: 1199
-  - type: "오션뷰 발코니"
-    desc: "바다 전망 프라이빗 발코니"
-    price: 1399
-  - type: "스위트"
-    desc: "럭셔리 스위트룸"
-    price: 2999
+- type: 인사이드
+  desc: 아늑한 내부 객실
+  price: 849
+- type: 센트럴파크뷰
+  desc: 센트럴파크 전망 발코니
+  price: 1199
+- type: 오션뷰 발코니
+  desc: 바다 전망 프라이빗 발코니
+  price: 1399
+- type: 스위트
+  desc: 럭셔리 스위트룸
+  price: 2999
 included:
-  - "크루즈 승선 (7박)"
-  - "메인 다이닝 & 뷔페 식사"
-  - "선내 엔터테인먼트 & 쇼"
-  - "수영장, 워터슬라이드 이용"
-  - "피트니스 센터"
+- 크루즈 승선 (7박)
+- 메인 다이닝 & 뷔페 식사
+- 선내 엔터테인먼트 & 쇼
+- 수영장, 워터슬라이드 이용
+- 피트니스 센터
 excluded:
-  - "항공편"
-  - "스페셜티 레스토랑"
-  - "음료 패키지"
-  - "기항지 관광"
-  - "여행자보험"
-  - "선내 팁 (1인 1박 $16)"
+- 항공편
+- 스페셜티 레스토랑
+- 음료 패키지
+- 기항지 관광
+- 여행자보험
+- 선내 팁 (1인 1박 $16)
 ---
 
 <div class="ship-slider-section">

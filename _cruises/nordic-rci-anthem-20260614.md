@@ -1,57 +1,70 @@
 ---
-cruise_id: "nordic-rci-anthem-20260614"
-title: "북유럽 12박 피요르드 크루즈"
-cruiseLine: "royal-caribbean"
-cruiseLineName: "로열캐리비안"
-ship: "앤썸 오브 더 씨즈"
-shipTonnage: "168,666톤"
-shipPassengers: "4,180명"
-shipYear: "2015"
-destination: "northern-europe"
-destinationName: "북유럽"
-departurePort: "사우스햄프턴"
-departureDate: "2026-06-14"
-returnDate: "2026-06-26"
+cruise_id: nordic-rci-anthem-20260614
+title: 북유럽 12박 피요르드 크루즈
+cruiseLine: royal-caribbean
+cruiseLineName: 로열캐리비안
+ship: 앤썸 오브 더 씨즈
+shipTonnage: 168,666톤
+shipPassengers: 4,180명
+shipYear: '2015'
+destination: northern-europe
+destinationName: 북유럽
+departurePort: 사우스햄프턴
+departureDate: '2026-06-14'
+returnDate: '2026-06-26'
 nights: 12
-ports: ["베르겐", "올레순", "게이랑에르", "플롬", "스타방에르"]
+ports:
+- 베르겐
+- 올레순
+- 게이랑에르
+- 플롬
+- 스타방에르
 priceFrom: 1599
-currency: "USD"
-tags: ["추천"]
-image: "nordic/hero.jpg"
+currency: USD
+tags:
+- 추천
+image: nordic/hero.jpg
 shipFacilities:
-  - "노스 스타 전망 캡슐"
-  - "범퍼카 & 롤러스케이트"
-  - "플로우라이더 서핑"
-  - "스카이다이빙 시뮬레이터"
-  - "투 70 다이닝"
-  - "바이오닉 바"
-  - "솔라리움"
-  - "로얄 극장"
+- name: 플로우라이더
+  image: ships/anthem-flowrider.jpg
+  desc: 서핑 시뮬레이터와 스카이다이빙 시뮬레이터를 한 배에서!
+- name: 원더랜드 레스토랑
+  image: ships/anthem-wonderland.jpg
+  desc: 이상한 나라의 앨리스 테마 몰입형 다이닝. 오감을 자극하는 코스 요리.
+- name: 스펙트라스 쇼
+  image: ships/anthem-show.jpg
+  desc: 최첨단 기술과 라이브 퍼포먼스가 결합된 몰입형 쇼. 매일 밤 새로운 공연.
+- name: 피요르드 항해
+  image: ships/anthem-norway.jpg
+  desc: 1,000m 절벽 사이를 지나는 시닉 크루징. 갑판에서 즐기는 대자연.
+- name: 발코니 객실
+  image: facilities/balcony-stateroom.jpg
+  desc: 피요르드 크루즈는 발코니 필수! 객실에서 바로 절경을 감상하세요.
 cabins:
-  - type: "인사이드"
-    desc: "내부 객실"
-    price: 1599
-  - type: "오션뷰"
-    desc: "바다 전망"
-    price: 1899
-  - type: "발코니"
-    desc: "프라이빗 발코니 (피요르드 감상 필수!)"
-    price: 2299
-  - type: "스위트"
-    desc: "럭셔리 스위트"
-    price: 3799
+- type: 인사이드
+  desc: 내부 객실
+  price: 1599
+- type: 오션뷰
+  desc: 바다 전망
+  price: 1899
+- type: 발코니
+  desc: 프라이빗 발코니 (피요르드 감상 필수!)
+  price: 2299
+- type: 스위트
+  desc: 럭셔리 스위트
+  price: 3799
 included:
-  - "크루즈 승선 (12박)"
-  - "메인 다이닝 & 뷔페 식사"
-  - "선내 엔터테인먼트"
-  - "수영장 & 피트니스"
+- 크루즈 승선 (12박)
+- 메인 다이닝 & 뷔페 식사
+- 선내 엔터테인먼트
+- 수영장 & 피트니스
 excluded:
-  - "항공편"
-  - "스페셜티 레스토랑"
-  - "음료 패키지"
-  - "기항지 관광"
-  - "여행자보험"
-  - "선내 팁 (1인 1박 $16)"
+- 항공편
+- 스페셜티 레스토랑
+- 음료 패키지
+- 기항지 관광
+- 여행자보험
+- 선내 팁 (1인 1박 $16)
 ---
 
 <div class="ship-slider-section">

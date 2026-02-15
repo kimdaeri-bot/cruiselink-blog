@@ -73,11 +73,28 @@ layout: default
     </div>
     {% if c.shipFacilities %}
     <h3 style="margin-top:24px;font-size:18px;font-weight:700;color:var(--navy);">주요 시설</h3>
-    <ul style="margin-top:12px;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px;">
-      {% for f in c.shipFacilities %}
-      <li style="padding:8px 0;font-size:14px;padding-left:24px;position:relative;list-style:none;"><span style="position:absolute;left:0;">✦</span> {{ f }}</li>
-      {% endfor %}
-    </ul>
+    <div class="facility-tabs">
+      <div class="facility-tab-nav">
+        {% for f in c.shipFacilities %}
+        <button class="facility-tab-btn{% if forloop.first %} active{% endif %}" onclick="switchFacilityTab(this, {{forloop.index0}})">{{ f.name }}</button>
+        {% endfor %}
+      </div>
+      <div class="facility-tab-panels">
+        {% for f in c.shipFacilities %}
+        <div class="facility-panel{% if forloop.first %} active{% endif %}" data-panel="{{forloop.index0}}">
+          <div class="facility-panel-inner">
+            <div class="facility-panel-image">
+              <img src="{{ '/assets/images/' | append: f.image | relative_url }}" alt="{{ f.name }}" loading="lazy">
+            </div>
+            <div class="facility-panel-text">
+              <h4>{{ f.name }}</h4>
+              <p>{{ f.desc }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
     {% endif %}
   </div>
 </div>

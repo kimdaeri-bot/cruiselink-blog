@@ -244,3 +244,12 @@ function goSlide(dot, idx) {
   if (counter) counter.textContent = idx + 1;
   slider.dataset.current = idx;
 }
+
+// --- Facility Tabs ---
+function switchFacilityTab(btn, idx) {
+  const tabs = btn.closest('.facility-tabs');
+  tabs.querySelectorAll('.facility-tab-btn').forEach(b => b.classList.remove('active'));
+  tabs.querySelectorAll('.facility-panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  tabs.querySelector('.facility-panel[data-panel="'+idx+'"]').classList.add('active');
+}
