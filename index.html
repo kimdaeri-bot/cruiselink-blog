@@ -203,7 +203,7 @@ description: "크루즈 여행의 모든 것, 크루즈링크와 함께하세요
           {% if c.cruise_id == cruise.id %}{% assign detail_page = c %}{% endif %}
         {% endfor %}
         <div class="cruise-card">
-          <a href="{% if detail_page %}{{ detail_page.url | relative_url }}{% else %}javascript:openInquiry('{{ cruise.title }}','{{ cruise.departureDate }}','{{ cruise.priceFrom }}','{{ cruise.cruiseLineName }}','{{ cruise.ship }}','{{ cruise.ports | join: ", " }}'){% endif %}" class="cruise-card-link">
+          <a href="{% if detail_page %}{{ detail_page.url | relative_url }}{% else %}{{ '/cruises/' | relative_url }}{% endif %}" class="cruise-card-link">
             <div class="cruise-card-image">
               {% if cruise.image and cruise.image != "default-cruise.jpg" %}
               <img src="{{ '/assets/images/' | append: cruise.image | relative_url }}" alt="{{ cruise.title }}" loading="lazy">
