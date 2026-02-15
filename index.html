@@ -85,6 +85,9 @@ description: "크루즈 여행의 모든 것, 크루즈링크와 함께하세요
   <div class="dest-slider-wrap">
     <button class="dest-slider-btn dest-prev" onclick="destSlide(-1)">❮</button>
     <div class="dest-slider" id="destSlider">
+      <a href="{{ '/cruises/' | relative_url }}?dest=korea" class="dest-chip">
+        <span class="dest-icon">🇰🇷</span><span>한국출발</span>
+      </a>
       <a href="{{ '/destinations/mediterranean/' | relative_url }}" class="dest-chip">
         <span class="dest-icon">🏛️</span><span>지중해</span>
       </a>
