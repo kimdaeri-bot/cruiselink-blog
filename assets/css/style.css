@@ -519,7 +519,7 @@ ul { list-style: none; }
 
 /* Ship Image Slider */
 .ship-slider-section {
-  margin: 30px 0;
+  margin: 0 0 20px;
   text-align: center;
 }
 .ship-slider-section h2 {
@@ -529,11 +529,11 @@ ul { list-style: none; }
 }
 .ship-slider {
   position: relative;
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0;
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,.12);
+  border-radius: 0;
+  box-shadow: none;
 }
 .slider-track {
   position: relative;
