@@ -197,7 +197,57 @@ description: "크루즈 여행의 모든 것, 크루즈링크와 함께하세요
   </div>
 </section>
 
-<!-- Destinations (moved to after search bar via CSS/position) -->
+<!-- Destinations Grid -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">목적지별 크루즈</h2>
+      <p class="section-subtitle">꿈꾸는 여행지를 선택하세요</p>
+    </div>
+    <div class="dest-grid">
+      <a href="{{ '/cruises/' | relative_url }}?dest=korea" class="dest-card">
+        <div class="icon">🇰🇷</div>
+        <h3>한국출발</h3>
+        <p>부산 · 인천 · 제주</p>
+      </a>
+      <a href="{{ '/destinations/mediterranean/' | relative_url }}" class="dest-card">
+        <div class="icon">🏛️</div>
+        <h3>지중해</h3>
+        <p>이탈리아 · 그리스 · 스페인</p>
+      </a>
+      <a href="{{ '/destinations/alaska/' | relative_url }}" class="dest-card">
+        <div class="icon">⛰️</div>
+        <h3>알래스카</h3>
+        <p>빙하 · 피요르드 · 야생</p>
+      </a>
+      <a href="{{ '/destinations/caribbean/' | relative_url }}" class="dest-card">
+        <div class="icon">🏖️</div>
+        <h3>카리브해</h3>
+        <p>에메랄드빛 바다 · 백사장</p>
+      </a>
+      <a href="{{ '/destinations/northern-europe/' | relative_url }}" class="dest-card">
+        <div class="icon">⚓</div>
+        <h3>북유럽</h3>
+        <p>피요르드 · 발틱 · 백야</p>
+      </a>
+      <a href="{{ '/destinations/southeast-asia/' | relative_url }}" class="dest-card">
+        <div class="icon">🌴</div>
+        <h3>동남아</h3>
+        <p>싱가포르 · 태국 · 베트남</p>
+      </a>
+      <a href="{{ '/destinations/japan/' | relative_url }}" class="dest-card">
+        <div class="icon">🗾</div>
+        <h3>일본</h3>
+        <p>벚꽃 · 온천 · 미식</p>
+      </a>
+      <a href="{{ '/destinations/hawaii/' | relative_url }}" class="dest-card">
+        <div class="icon">🌺</div>
+        <h3>하와이</h3>
+        <p>열대 파라다이스</p>
+      </a>
+    </div>
+  </div>
+</section>
 
 <!-- CTA -->
 <section class="cta-section">

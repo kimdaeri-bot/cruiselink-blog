@@ -212,17 +212,21 @@ ul { list-style: none; }
 .cruise-card-price { font-size: 20px; font-weight: 900; color: var(--orange); }
 .cruise-card-price small { font-size: 12px; color: var(--gray-700); font-weight: 400; }
 
-/* === Destination Icons === */
-.dest-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; }
+/* === Destination Grid === */
+.dest-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; }
+@media (max-width: 1024px) { .dest-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 768px) { .dest-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 480px) { .dest-grid { grid-template-columns: repeat(2, 1fr); } }
 .dest-card {
-  text-align: center; padding: 36px 20px; border-radius: var(--radius);
-  background: var(--white); box-shadow: var(--shadow); transition: all .2s;
-  border: 2px solid #cfd8dc;
+  text-align: center; padding: 40px 16px 32px; border-radius: var(--radius);
+  background: var(--white); transition: all .2s; text-decoration: none;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
 }
-.dest-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); border-color: var(--navy); }
-.dest-card .icon { font-size: 60px; margin-bottom: 14px; }
-.dest-card h3 { font-size: 19px; font-weight: 700; color: var(--navy); }
-.dest-card p { font-size: 14px; color: var(--gray-700); }
+.dest-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,.12); transform: translateY(-4px); border-color: var(--navy); }
+.dest-card .icon { font-size: 56px; margin-bottom: 16px; display: block; }
+.dest-card h3 { font-size: 18px; font-weight: 800; color: var(--navy); margin-bottom: 6px; }
+.dest-card p { font-size: 13px; color: var(--gray-700); line-height: 1.4; }
 
 /* === Promo Slider === */
 .promo-slider { position: relative; overflow: hidden; border-radius: var(--radius); }
