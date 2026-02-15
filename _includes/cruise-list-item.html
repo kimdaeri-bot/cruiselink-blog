@@ -34,6 +34,8 @@
       <div class="cruise-item-actions">
         {% if detail_page %}
         <a href="{{ detail_page.url | relative_url }}" class="btn btn-outline btn-sm">상세보기</a>
+        {% else %}
+        <button class="btn btn-outline btn-sm" onclick="openInquiry('{{ cruise.title }}','{{ cruise.departureDate }}','{{ cruise.priceFrom }}','{{ cruise.cruiseLineName }}','{{ cruise.ship }}','{{ cruise.ports | join: ", " }}')">상세보기</button>
         {% endif %}
         <button class="btn btn-primary btn-sm" onclick="openInquiry('{{ cruise.title }}','{{ cruise.departureDate }}','{{ cruise.priceFrom }}','{{ cruise.cruiseLineName }}','{{ cruise.ship }}','{{ cruise.ports | join: ", " }}')">문의하기</button>
       </div>
