@@ -507,3 +507,12 @@ ul { list-style: none; }
   .ship-specs { flex-direction: column; gap: 16px; }
   .detail-hero h1 { font-size: 1.4rem; }
 }
+
+/* Port images in detail timeline */
+.port-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  margin: 12px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}

@@ -58,7 +58,7 @@ excluded:
   <h3>DAY 1 - 싱가포르</h3>
   <div class="port">🚢 승선</div>
   <div class="time">출항 19:00</div>
-  <img src="/assets/images/southeast-asia/singapore.jpg" alt="싱가포르" class="port-image" loading="lazy">
+  <img src="{{ '/assets/images/southeast-asia/singapore.jpg' | relative_url }}" alt="싱가포르" class="port-image" loading="lazy">
   <div class="desc">마리나 베이 크루즈 센터에서 승선. 마리나 베이 샌즈, 가든스 바이 더 베이 관광 후 승선을 추천합니다.</div>
 </div>
 
@@ -72,7 +72,7 @@ excluded:
   <h3>DAY 3 - 페낭</h3>
   <div class="port">📍 조지타운, 말레이시아</div>
   <div class="time">입항 07:00 / 출항 19:00</div>
-  <img src="/assets/images/southeast-asia/penang.jpg" alt="페낭" class="port-image" loading="lazy">
+  <img src="{{ '/assets/images/southeast-asia/penang.jpg' | relative_url }}" alt="페낭" class="port-image" loading="lazy">
   <div class="desc">유네스코 세계유산 조지타운의 스트리트 아트와 다문화 매력을 만끽하세요. 말레이시아 최고의 길거리 음식 도시!</div>
   <div class="tours">🎯 추천 투어: 조지타운 워킹 투어, 켁록시 사원, 페낭 힐</div>
 </div>
@@ -81,7 +81,7 @@ excluded:
   <h3>DAY 4 - 랑카위</h3>
   <div class="port">📍 랑카위, 말레이시아</div>
   <div class="time">입항 07:00 / 출항 16:00</div>
-  <img src="/assets/images/southeast-asia/langkawi.jpg" alt="랑카위" class="port-image" loading="lazy">
+  <img src="{{ '/assets/images/southeast-asia/langkawi.jpg' | relative_url }}" alt="랑카위" class="port-image" loading="lazy">
   <div class="desc">에메랄드빛 바다와 열대우림의 면세 섬. 스카이브릿지, 맹그로브 투어를 즐기세요.</div>
   <div class="tours">🎯 추천 투어: 스카이캡 케이블카, 맹그로브 카약, 면세 쇼핑</div>
 </div>

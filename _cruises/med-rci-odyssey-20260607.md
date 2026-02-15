@@ -66,7 +66,7 @@ excluded:
   <h3>DAY 2 - 나폴리</h3>
   <div class="port">📍 나폴리, 이탈리아</div>
   <div class="time">입항 07:00 / 출항 19:00</div>
-  <img src="/assets/images/med/img02.jpg" alt="나폴리" class="port-image" loading="lazy">
+  <img src="{{ '/assets/images/med/img02.jpg' | relative_url }}" alt="나폴리" class="port-image" loading="lazy">
   <div class="desc">나폴리만의 아름다운 풍경과 함께 폼페이 유적지, 아말피 해안을 방문할 수 있습니다.</div>
   <div class="tours">🎯 추천 투어: 폼페이 유적 투어, 아말피 해안 드라이브, 나폴리 피자 체험</div>
 </div>
@@ -81,7 +81,7 @@ excluded:
   <h3>DAY 4 - 미코노스</h3>
   <div class="port">📍 미코노스, 그리스</div>
   <div class="time">입항 07:00 / 출항 18:00</div>
-  <img src="/assets/images/med/img04.jpg" alt="미코노스" class="port-image" loading="lazy">
+  <img src="{{ '/assets/images/med/img04.jpg' | relative_url }}" alt="미코노스" class="port-image" loading="lazy">
   <div class="desc">하얀 건물과 파란 지붕의 그리스 대표 관광지. 리틀 베니스, 풍차 언덕, 파라다이스 비치 등을 즐기세요.</div>
   <div class="tours">🎯 추천 투어: 미코노스 타운 워킹 투어, 델로스 섬 투어, 비치 호핑</div>
 </div>
@@ -90,7 +90,7 @@ excluded:
   <h3>DAY 5 - 산토리니</h3>
   <div class="port">📍 산토리니, 그리스</div>
   <div class="time">입항 07:00 / 출항 20:00</div>
-  <img src="/assets/images/med/img05.jpg" alt="산토리니" class="port-image" loading="lazy">
+  <img src="{{ '/assets/images/med/img05.jpg' | relative_url }}" alt="산토리니" class="port-image" loading="lazy">
   <div class="desc">세계에서 가장 아름다운 일몰로 유명한 산토리니. 피라 타운, 이아 마을의 블루돔 교회, 와이너리 투어를 즐기세요.</div>
   <div class="tours">🎯 추천 투어: 이아 선셋 투어, 화산섬 온천 투어, 와인 테이스팅</div>
 </div>
@@ -99,7 +99,7 @@ excluded:
   <h3>DAY 6 - 아테네 (피레우스)</h3>
   <div class="port">📍 아테네, 그리스</div>
   <div class="time">입항 06:00 / 출항 18:00</div>
-  <img src="/assets/images/med/img06.jpg" alt="아테네" class="port-image" loading="lazy">
+  <img src="{{ '/assets/images/med/img06.jpg' | relative_url }}" alt="아테네" class="port-image" loading="lazy">
   <div class="desc">서양 문명의 발상지 아테네. 파르테논 신전, 아크로폴리스, 플라카 지구를 둘러보세요.</div>
   <div class="tours">🎯 추천 투어: 아크로폴리스 가이드 투어, 아테네 시내 투어</div>
 </div>

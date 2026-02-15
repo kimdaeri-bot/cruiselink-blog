@@ -72,7 +72,7 @@ excluded:
   <h3>DAY 3 - 세인트 토마스</h3>
   <div class="port">📍 샬럿 아말리에, US 버진 아일랜드</div>
   <div class="time">입항 08:00 / 출항 17:00</div>
-  <img src="/assets/images/caribbean/st-thomas.jpg" alt="세인트 토마스" class="port-image" loading="lazy">
+  <img src="{{ '/assets/images/caribbean/st-thomas.jpg' | relative_url }}" alt="세인트 토마스" class="port-image" loading="lazy">
   <div class="desc">카리브해의 보석 세인트 토마스. 매건스 베이 비치에서 수영하고, 면세 쇼핑을 즐기세요.</div>
   <div class="tours">🎯 추천 투어: 매건스 베이 비치, 스카이라이드 전망대, 스노클링</div>
 </div>
@@ -81,7 +81,7 @@ excluded:
   <h3>DAY 4 - 세인트 마틴</h3>
   <div class="port">📍 필립스버그, 세인트 마틴</div>
   <div class="time">입항 08:00 / 출항 17:00</div>
-  <img src="/assets/images/caribbean/st-martin.jpg" alt="세인트 마틴" class="port-image" loading="lazy">
+  <img src="{{ '/assets/images/caribbean/st-martin.jpg' | relative_url }}" alt="세인트 마틴" class="port-image" loading="lazy">
   <div class="desc">프랑스와 네덜란드가 공존하는 세인트 마틴. 마호 비치에서 비행기 착륙 장면을 가까이서 볼 수 있습니다!</div>
   <div class="tours">🎯 추천 투어: 마호 비치, 오리엔트 베이, 섬 투어</div>
 </div>
@@ -96,7 +96,7 @@ excluded:
   <h3>DAY 6 - 코코 케이</h3>
   <div class="port">📍 퍼펙트 데이 앳 코코 케이, 바하마</div>
   <div class="time">입항 07:00 / 출항 17:00</div>
-  <img src="/assets/images/caribbean/cococay.jpg" alt="코코 케이" class="port-image" loading="lazy">
+  <img src="{{ '/assets/images/caribbean/cococay.jpg' | relative_url }}" alt="코코 케이" class="port-image" loading="lazy">
   <div class="desc">로열캐리비안의 프라이빗 아일랜드! 스릴 워터파크, 오버워터 카바나, 에메랄드빛 바다를 즐기세요.</div>
   <div class="tours">🎯 추천: 스릴 워터파크, 헬륨 풍선 전망대, 카바나 렌탈</div>
 </div>
