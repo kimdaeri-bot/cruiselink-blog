@@ -94,6 +94,7 @@ var EMAILJS_CONFIG = {
 // --- Cruise List Filtering ---
 function filterCruises() {
   const dest = (document.getElementById('f-dest') || {}).value || '';
+  const port = (document.getElementById('f-port') || {}).value || '';
   const line = (document.getElementById('f-line') || {}).value || '';
   const month = (document.getElementById('f-month') || {}).value || '';
   const nights = (document.getElementById('f-nights') || {}).value || '';
@@ -107,6 +108,7 @@ function filterCruises() {
   arr.forEach(item => {
     let show = true;
     if (dest && item.dataset.destination !== dest) show = false;
+    if (port && !(item.dataset.port || '').includes(port)) show = false;
     if (line && item.dataset.cruiseline !== line) show = false;
     if (month && !item.dataset.month.startsWith(month)) show = false;
     if (nights) {
