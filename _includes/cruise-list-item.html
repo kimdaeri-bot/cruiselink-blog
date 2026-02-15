@@ -26,11 +26,13 @@
       <div class="cruise-item-ports">📍 {{ cruise.ports | join: " → " }}</div>
     </div>
     <div class="cruise-item-footer">
-      <div class="cruise-item-info">
-        <span>📅 {{ cruise.departureDate }}</span>
-        <span>🌙 {{ cruise.nights }}박</span>
+      <div class="cruise-item-row">
+        <div class="cruise-item-info">
+          <span>📅 {{ cruise.departureDate }}</span>
+          <span>🌙 {{ cruise.nights }}박</span>
+        </div>
+        <div class="cruise-item-price">${{ cruise.priceFrom }}~ <small>/1인</small></div>
       </div>
-      <div class="cruise-item-price">${{ cruise.priceFrom }}~ <small>/1인</small></div>
       <div class="cruise-item-actions">
         {% if detail_page %}
         <a href="{{ detail_page.url | relative_url }}" class="btn btn-outline btn-sm">상세보기</a>
