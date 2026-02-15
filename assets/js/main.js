@@ -256,6 +256,49 @@ function switchFacilityTab(btn, idx) {
   tabs.querySelector('.facility-panel[data-panel="'+idx+'"]').classList.add('active');
 }
 
+// --- DAY Mini Slider ---
+function initDaySliders() {
+  document.querySelectorAll('.day-slider').forEach(function(slider) {
+    var track = slider.querySelector('.day-slider-track');
+    var imgs = track.querySelectorAll('img');
+    var dots = slider.querySelector('.day-slider-dots');
+    var current = 0;
+    if (imgs.length <= 1) {
+      var btns = slider.querySelectorAll('.day-slider-btn');
+      btns.forEach(function(b){ b.style.display='none'; });
+      if(dots) dots.style.display='none';
+      return;
+    }
+    function goTo(i) {
+      current = (i + imgs.length) % imgs.length;
+      track.style.transform = 'translateX(-' + (current * 100) + '%)';
+      if(dots) {
+        dots.querySelectorAll('.dot').forEach(function(d,idx){
+          d.classList.toggle('active', idx===current);
+        });
+      }
+    }
+    slider.querySelector('.prev').addEventListener('click', function(){ goTo(current-1); });
+    slider.querySelector('.next').addEventListener('click', function(){ goTo(current+1); });
+    if(dots) {
+      dots.querySelectorAll('.dot').forEach(function(d,idx){
+        d.addEventListener('click', function(){ goTo(idx); });
+      });
+    }
+  });
+}
+
+// --- DAY 더보기 toggle ---
+function toggleDay(btn) {
+  var content = btn.previousElementSibling;
+  if (!content) return;
+  content.classList.toggle('expanded');
+  btn.textContent = content.classList.contains('expanded') ? '접기 ▲' : '더보기 ▼';
+}
+
+// Init day sliders after DOM ready
+document.addEventListener('DOMContentLoaded', function(){ setTimeout(initDaySliders, 300); });
+
 // --- Logo Slider (duplicate for infinite loop) ---
 (function() {
   var track = document.getElementById('logoTrack');
