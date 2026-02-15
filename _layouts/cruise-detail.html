@@ -38,6 +38,15 @@ layout: default
   <div class="container">
     <h2 class="section-title">🗓️ 상세 일정</h2>
     <p class="section-subtitle">{{ c.nights }}박 {{ c.nights | plus: 1 }}일 크루즈 여정</p>
+    <div class="itinerary-summary">
+      <div class="itinerary-summary-inner">
+        <span class="itinerary-route">
+          📍 {{ c.departurePort }}
+          {% for port in c.ports %} → {{ port }}{% endfor %}
+          → {{ c.departurePort }}
+        </span>
+      </div>
+    </div>
     <div id="cruise-content-raw" style="display:none;">{{ content }}</div>
     <div id="slider-area"></div>
     <div class="timeline" id="timeline-area"></div>

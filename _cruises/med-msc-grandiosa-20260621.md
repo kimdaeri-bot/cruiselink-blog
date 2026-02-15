@@ -57,74 +57,287 @@ excluded:
 
 ### DAY 1 — 바르셀로나 (스페인)
 🇪🇸 **승선 & 출항**
-가우디의 도시 바르셀로나에서 승선합니다. 사그라다 파밀리아, 람블라스 거리를 미리 둘러보세요. 오후 출항하며 지중해 크루즈가 시작됩니다.
 
-<img src="{{ '/assets/images/med/img01.jpg' | relative_url }}" alt="바르셀로나" loading="lazy" style="width:100%;border-radius:12px;margin:16px 0;">
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/med/img01.jpg' | relative_url }}" alt="바르셀로나 항구" loading="lazy">
+<img src="{{ '/assets/images/med/img02.jpg' | relative_url }}" alt="MSC 그란디오사" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
+</div>
 
-💡 **TIP:** 바르셀로나 크루즈 터미널은 시내에서 택시 15분. 오전에 도착해 시내 관광 후 승선하세요.
+가우디의 도시 바르셀로나에서 181,000톤급 MSC 그란디오사에 승선합니다. 사그라다 파밀리아와 람블라스 거리의 열기를 뒤로하고, 지중해 크루즈가 시작됩니다.
+
+<div class="day-expandable">
+
+**🕐 승선 일정**
+- 12:00~15:30 승선 수속 (바르셀로나 크루즈 터미널)
+- 15:30 안전 교육 (Muster Drill)
+- 18:00 출항
+
+**🍽️ 첫날 추천 활동**
+- 선내 탐험 — 181,000톤급 메가십의 5개 수영장, 12개 레스토랑을 둘러보세요
+- MSC 아우레아 스파 사전 예약 — 첫날 할인 프로모션이 자주 있습니다
+- 갑판에서 바르셀로나 야경 감상 — 몬주익 언덕과 항구의 불빛이 장관
+- 메인 다이닝에서 이탈리안 코스 디너 — 첫 저녁은 정식으로!
+
+**💡 TIP**
+- 바르셀로나 크루즈 터미널은 시내에서 택시 15분(€15~20)
+- 오전에 도착해 사그라다 파밀리아(사전예약 필수, €26), 구엘공원(€10)을 먼저 관광하세요
+- MSC for Me 앱을 미리 다운로드하면 선내 시설 예약과 일정 확인이 편리합니다
+- 여권 원본 필수! 선내에서 보관 후 하선 시 반환됩니다
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
 
 ---
 
 ### DAY 2 — 마르세유 (프랑스)
 🇫🇷 **프로방스의 관문**
-프랑스 제2의 도시 마르세유에 입항합니다. 노트르담 드 라 가르드 대성당, 구항구, 카랑크 국립공원이 하이라이트. 부야베스도 꼭 맛보세요.
 
-<img src="{{ '/assets/images/destinations/mediterranean.jpg' | relative_url }}" alt="마르세유" loading="lazy" style="width:100%;border-radius:12px;margin:16px 0;">
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/med/img03.jpg' | relative_url }}" alt="마르세유 구항구" loading="lazy">
+<img src="{{ '/assets/images/destinations/mediterranean.jpg' | relative_url }}" alt="프로방스 풍경" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
+</div>
 
-💡 **TIP:** 마르세유에서 엑상프로방스까지 버스 30분! 프로방스 라벤더 투어도 가능합니다.
+프랑스 제2의 도시이자 프로방스의 관문 마르세유에 입항합니다. 2,600년 역사의 항구도시에서 부야베스와 라벤더 향기를 만끽하세요.
+
+<div class="day-expandable">
+
+**⏰ 입항/출항:** 09:00 입항 / 18:00 출항
+
+**🗺️ 추천 기항지 투어**
+- **노트르담 드 라 가르드 대성당 + 구항구** (반나절, ~$50) — 마르세유 최고 전망대에서 지중해 파노라마 + 구항구 산책
+- **카랑크 국립공원 보트 투어** (반나절, ~$70) — 석회암 절벽 사이 에메랄드빛 만을 보트로 탐험
+- **엑상프로방스 당일치기** (종일, ~$90) — 세잔의 고향, 플라타너스 거리와 분수의 도시. 버스 30분
+- **카시스 마을 + 와인 투어** (반나절, ~$80) — 프로방스 로제 와인 시음과 그림 같은 해안마을
+
+**🍽️ 맛집 추천**
+- **부야베스** — 마르세유 원조 해산물 스튜, 구항구 주변 '셰 풍퐁(Chez Fonfon)' 추천 (€40~)
+- **파니스(Panisse)** — 마르세유식 병아리콩 튀김, 길거리 간식으로 완벽
+- **파스티스** — 아니스 향 식전주, 구항구 카페에서 한 잔
+
+**💡 TIP**
+- 구항구 주변에 소매치기가 많으니 가방 조심!
+- 마르세유 시내버스+트램이 잘 되어있어 개별 관광도 편리합니다
+- 6월은 라벤더 시즌 시작! 엑상프로방스에서 라벤더밭을 볼 수 있어요
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
 
 ---
 
 ### DAY 3 — 제노바 (이탈리아)
 🇮🇹 **지중해 무역의 중심**
-콜럼버스의 고향 제노바. 세계 최대 규모의 수족관, 구시가지 카루지, 페라리 광장을 둘러보세요. 제노바식 페스토 파스타는 본고장의 맛!
 
-<img src="{{ '/assets/images/med/img03.jpg' | relative_url }}" alt="제노바" loading="lazy" style="width:100%;border-radius:12px;margin:16px 0;">
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/med/img04.jpg' | relative_url }}" alt="제노바 구시가지" loading="lazy">
+<img src="{{ '/assets/images/med/img05.jpg' | relative_url }}" alt="제노바 항구" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
+</div>
 
-💡 **TIP:** 제노바에서 친퀘테레까지 기차 1시간! 시간이 되면 당일치기를 추천합니다.
+콜럼버스의 고향이자 지중해 무역의 중심지 제노바에 입항합니다. 유럽 최대 구시가지 카루지와 페스토 파스타의 본고장!
+
+<div class="day-expandable">
+
+**⏰ 입항/출항:** 08:00 입항 / 18:00 출항
+
+**🗺️ 추천 기항지 투어**
+- **제노바 구시가지 워킹 투어** (반나절, ~$40) — 카루지(유네스코 유산), 산 로렌초 대성당, 페라리 광장
+- **친퀘테레 당일치기** (종일, ~$100) — 기차 1시간! 다섯 마을의 파스텔 풍경과 해안 트레킹
+- **제노바 수족관** (2시간, ~$30) — 유럽 최대 규모, 돌고래·상어·펭귄 등 600종
+- **포르토피노 보트 투어** (반나절, ~$85) — 이탈리아 리비에라의 보석, 럭셔리 항구마을
+
+**🍽️ 맛집 추천**
+- **페스토 제노베제 파스타** — 본고장 바질 페스토의 진짜 맛! 트로피에 면과 함께
+- **포카치아 디 레코** — 치즈가 흘러넘치는 제노바식 포카치아
+- **프리토 미스토** — 해산물 모둠 튀김, 항구 근처 트라토리아에서
+
+**💡 TIP**
+- 친퀘테레 가실 분은 기차역(Genova Piazza Principe)까지 항구에서 도보 15분
+- 제노바 카드(€12/1일)로 박물관+대중교통 무제한 이용
+- MSC 본사가 제노바에 있어 MSC 크루즈의 홈포트입니다
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
 
 ---
 
 ### DAY 4 — 나폴리 (이탈리아)
 🍕 **피자의 본고장**
-나폴리에 입항합니다. 폼페이 유적, 아말피 해안, 카프리섬 등 남이탈리아의 보물이 가득합니다. 마르게리타 피자 원조집 방문은 필수!
 
-<img src="{{ '/assets/images/med/img04.jpg' | relative_url }}" alt="나폴리" loading="lazy" style="width:100%;border-radius:12px;margin:16px 0;">
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/med/img06.jpg' | relative_url }}" alt="나폴리 베수비오 화산" loading="lazy">
+<img src="{{ '/assets/images/ports/rome.jpg' | relative_url }}" alt="폼페이 유적" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
+</div>
 
-💡 **TIP:** 폼페이+아말피 하루 투어보다 하나만 선택하는 게 여유롭습니다.
+베수비오 화산이 보이는 나폴리에 입항합니다. 폼페이 고대 유적부터 아말피 해안의 절경까지, 남이탈리아 최고의 하루!
+
+<div class="day-expandable">
+
+**⏰ 입항/출항:** 07:00 입항 / 19:00 출항
+
+**🗺️ 추천 기항지 투어**
+- **폼페이 유적 투어** (반나절, ~$70) — 2천 년 전 화산재에 묻힌 도시, 가이드 투어 강력 추천
+- **아말피 해안 드라이브** (종일, ~$120) — 포지타노·아말피·라벨로 해안 절벽 드라이브
+- **카프리섬 + 블루 그로토** (종일, ~$150) — 페리로 45분, 푸른 동굴과 리조트 섬 탐험
+- **나폴리 시내 워킹 투어** (반나절, ~$35) — 스파카나폴리, 산타루치아 해변, 누오보성
+
+**🍽️ 맛집 추천**
+- **마르게리타 피자** — 원조 'L'Antica Pizzeria da Michele'(€5~8), 줄이 길지만 가치 있음
+- **스폴리아텔라** — 나폴리식 조개 모양 페이스트리, 리코타 크림이 가득
+- **리몬첼로** — 레몬 리큐어, 아말피 해안의 레몬으로 만든 식후주
+
+**💡 TIP**
+- 폼페이와 아말피 둘 다 하루에 하기엔 빡빡합니다. 하나만 선택하세요
+- 나폴리 시내는 소매치기 주의! 귀중품은 선내 금고에
+- 폼페이 입장료 €18, 가이드 투어가 훨씬 이해하기 쉽습니다
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
 
 ---
 
 ### DAY 5 — 팔레르모 (시칠리아)
 🏛️ **시칠리아의 수도**
-시칠리아 섬의 중심 팔레르모. 대성당, 노르만 궁전, 발라로 시장의 활기를 느껴보세요. 아란치니(라이스볼)와 카놀리는 시칠리아 필수 간식!
 
-<img src="{{ '/assets/images/destinations/mediterranean.jpg' | relative_url }}" alt="팔레르모" loading="lazy" style="width:100%;border-radius:12px;margin:16px 0;">
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/med/img07.jpg' | relative_url }}" alt="팔레르모 대성당" loading="lazy">
+<img src="{{ '/assets/images/med/img08.jpg' | relative_url }}" alt="시칠리아 풍경" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
+</div>
 
-💡 **TIP:** 팔레르모 구시가지는 도보로 충분합니다. 몬레알레 대성당도 버스로 20분!
+아랍·노르만·비잔틴 문화가 융합된 시칠리아의 수도 팔레르모. 활기 넘치는 시장, 화려한 성당, 그리고 시칠리아 스트리트 푸드의 성지!
+
+<div class="day-expandable">
+
+**⏰ 입항/출항:** 08:00 입항 / 17:00 출항
+
+**🗺️ 추천 기항지 투어**
+- **팔레르모 구시가지 워킹 투어** (반나절, ~$40) — 대성당, 노르만 궁전(팔라틴 예배당), 콰트로 칸티
+- **몬레알레 대성당** (반나절, ~$50) — 버스 20분, 6,340㎡의 황금 모자이크가 숨 막히는 걸작
+- **체팔루 당일치기** (종일, ~$70) — 해변과 중세 마을이 어우러진 포토제닉 마을
+- **발라로 & 부치리아 시장 푸드 투어** (2시간, ~$45) — 시칠리아 길거리 음식 먹방 투어
+
+**🍽️ 맛집 추천**
+- **아란치니** — 고기 라구+모짜렐라가 들어간 라이스볼 튀김 (€2~3)
+- **카놀리** — 리코타 크림이 가득한 시칠리아 대표 디저트
+- **판넬레** — 병아리콩 고로케, 발라로 시장에서 갓 튀긴 것으로!
+- **그라니타 + 브리오슈** — 시칠리아식 빙수와 빵, 아침 식사로 최고
+
+**💡 TIP**
+- 팔레르모 구시가지는 도보 관광이 최고, 좁은 골목이 매력적
+- 낮 기온이 높으니 선크림+모자 필수, 시에스타 시간(13~16시)에는 가게가 문을 닫을 수 있어요
+- 몬레알레 대성당은 오전에 방문하면 빛이 모자이크에 들어와 더욱 아름답습니다
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
 
 ---
 
 ### DAY 6 — 발레타 (몰타)
 🏰 **기사단의 요새**
-유네스코 세계문화유산 도시 발레타. 성 요한 대성당, 어퍼 바라카 가든의 대포 발사 세리머니, 푸른 바다의 블루 그로토가 압권입니다.
 
-<img src="{{ '/assets/images/med/img06.jpg' | relative_url }}" alt="발레타" loading="lazy" style="width:100%;border-radius:12px;margin:16px 0;">
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/med/img02.jpg' | relative_url }}" alt="발레타 항구 전경" loading="lazy">
+<img src="{{ '/assets/images/destinations/mediterranean.jpg' | relative_url }}" alt="몰타 블루 그로토" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
+</div>
 
-💡 **TIP:** 발레타는 소도시라 반나절이면 충분. 나머지 시간에 블루 그로토 보트 투어를!
+도시 전체가 유네스코 세계문화유산인 발레타. 성 요한 기사단이 건설한 요새 도시에서 역사와 절경을 동시에 만끽하세요.
+
+<div class="day-expandable">
+
+**⏰ 입항/출항:** 07:00 입항 / 18:00 출항
+
+**🗺️ 추천 기항지 투어**
+- **발레타 구시가지 워킹 투어** (반나절, ~$35) — 성 요한 대성당(카라바조 명화!), 그랜드 마스터 궁전, 어퍼 바라카 가든
+- **블루 그로토 보트 투어** (반나절, ~$50) — 바다 동굴을 보트로 탐험, 코발트빛 바다가 환상적
+- **므디나(옛 수도) 투어** (반나절, ~$45) — '침묵의 도시', 중세 성벽 안 미로 같은 골목
+- **고조섬 종일 투어** (종일, ~$80) — 페리 25분, 치타델라+소금 평원+깨끗한 해변
+
+**🍽️ 맛집 추천**
+- **파스티치(Pastizzi)** — 리코타 or 완두콩 속 페이스트리, €0.5! 몰타의 국민 간식
+- **토끼 스튜(Fenkata)** — 몰타 전통 요리, 현지 레스토랑에서 도전
+- **킨니(Kinnie)** — 오렌지+허브 맛 몰타 탄산음료, 독특한 맛
+
+**💡 TIP**
+- 어퍼 바라카 가든에서 12:00 대포 발사 세리머니가 있으니 시간 맞춰가세요
+- 발레타는 소도시라 반나절이면 충분, 남은 시간에 블루 그로토나 므디나를 추가하세요
+- 영어가 공용어라 의사소통이 편리합니다
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
 
 ---
 
 ### DAY 7 — 해상 운항
 🌊 **종일 항해**
-바르셀로나로 돌아가는 마지막 항해일. 면세점 쇼핑, 스파, 풀파티로 크루즈의 마지막을 알차게 보내세요.
 
-<img src="{{ '/assets/images/ships/odyssey-sea.jpg' | relative_url }}" alt="해상 운항" loading="lazy" style="width:100%;border-radius:12px;margin:16px 0;">
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/ships/odyssey-sea.jpg' | relative_url }}" alt="MSC 그란디오사 항해" loading="lazy">
+<img src="{{ '/assets/images/ships/odyssey-pool.jpg' | relative_url }}" alt="선상 수영장" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
+</div>
+
+바르셀로나로 돌아가는 마지막 항해일. MSC 그란디오사의 모든 시설을 아낌없이 즐기세요!
+
+<div class="day-expandable">
+
+**🎢 추천 액티비티**
+- **MSC 아우레아 스파** — 발리네시안 마사지, 터키식 해맘, 종일 항해 할인 프로모션
+- **F1 시뮬레이터 & VR 체험** — 첨단 가상현실 어트랙션
+- **갤러리아 뮤지카** — 스와로브스키 크리스탈 계단과 LED 돔 천장의 프롬나드
+- **수영장 & 슬라이드** — 5개 수영장 + 2개 워터슬라이드 + 선탠 데크
+- **면세점 쇼핑** — 마지막 날 특가 세일이 자주 있습니다
+
+**🌙 마지막 밤 추천**
+- 브로드웨이 스타일 공연 (메인 시어터, 무료)
+- 갈라 디너 — 정장 드레스코드, 코스 요리의 마지막 밤
+- 스페셜티 레스토랑 체험 — 오션 케이(해산물), 부처스 컷(스테이크)
+- 짐 패킹 — 전날 밤 문 앞에 짐을 내놓으면 하선 시 수령
+
+**💡 TIP**
+- 종일 항해일에는 스파 할인이 있는 경우가 많으니 오전에 체크!
+- 마지막 밤 정산서(Settlement)를 확인하세요. 분쟁은 선내에서 해결이 빠릅니다
+- 하선 시간대를 미리 예약하면 대기 없이 빠르게 내릴 수 있습니다
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
 
 ---
 
 ### DAY 8 — 바르셀로나 귀항
 🏠 **귀항**
-아침 바르셀로나 항에 입항합니다. 아침 식사 후 하선. 7박의 지중해 크루즈가 마무리됩니다.
 
-💡 **TIP:** 하선 후 바르셀로나에서 1-2일 더 머물며 관광하는 것을 추천합니다!
+아침 바르셀로나 항에 입항합니다. 조식 후 하선 수속을 진행하며, 7박의 꿈같은 지중해 크루즈가 마무리됩니다.
+
+💡 **TIP:** 하선은 보통 오전 8~10시 사이 진행됩니다. 전날 밤 짐을 문 앞에 내놓으면 하선 시 수령합니다. 바르셀로나에서 1~2일 더 머물며 관광하는 것을 추천합니다!

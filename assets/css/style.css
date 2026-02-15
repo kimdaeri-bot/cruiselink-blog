@@ -130,6 +130,19 @@ ul { list-style: none; }
 .section-alt { background: var(--gray-50); }
 .section-title { font-size: 28px; font-weight: 900; color: var(--navy); margin-bottom: 8px; }
 .section-subtitle { font-size: 16px; color: var(--gray-700); margin-bottom: 32px; }
+
+/* Itinerary summary route */
+.itinerary-summary {
+  background: var(--gray-50, #f5f5f5); border-radius: var(--radius);
+  padding: 20px 24px; margin-bottom: 32px;
+  border-left: 4px solid var(--navy);
+}
+.itinerary-summary-inner {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+}
+.itinerary-route {
+  font-size: 15px; font-weight: 600; color: var(--navy); line-height: 1.8;
+}
 .section-header { text-align: center; margin-bottom: 40px; }
 
 /* === Cruise List View === */
