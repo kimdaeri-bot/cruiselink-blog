@@ -58,6 +58,7 @@ excluded:
   <h3>DAY 1 - 시애틀</h3>
   <div class="port">🚢 승선</div>
   <div class="time">출항 16:00</div>
+  <img src="/assets/images/alaska/seattle.jpg" alt="시애틀" class="port-image" loading="lazy">
   <div class="desc">워싱턴주 시애틀에서 승선. 파이크 플레이스 마켓, 스페이스 니들 등 시애틀 관광 후 승선을 추천합니다.</div>
 </div>
 
@@ -71,6 +72,7 @@ excluded:
   <h3>DAY 3 - 주노</h3>
   <div class="port">📍 주노, 알래스카 주도</div>
   <div class="time">입항 07:00 / 출항 21:00</div>
+  <img src="/assets/images/alaska/juneau.jpg" alt="주노" class="port-image" loading="lazy">
   <div class="desc">알래스카의 주도 주노. 멘든홀 빙하 방문, 고래 관찰 투어, 트램웨이 등 다양한 액티비티를 즐기세요.</div>
   <div class="tours">🎯 추천 투어: 멘든홀 빙하 트레킹, 혹등고래 관찰 투어, 독수리 체험</div>
 </div>
@@ -79,6 +81,7 @@ excluded:
   <h3>DAY 4 - 스캐그웨이</h3>
   <div class="port">📍 스캐그웨이</div>
   <div class="time">입항 07:00 / 출항 20:30</div>
+  <img src="/assets/images/alaska/skagway.jpg" alt="스캐그웨이" class="port-image" loading="lazy">
   <div class="desc">골드러시 시대의 역사가 살아있는 스캐그웨이. 화이트 패스 열차를 타고 장엄한 산악 경치를 감상하세요.</div>
   <div class="tours">🎯 추천 투어: 화이트 패스 & 유콘 루트 열차, 개썰매 체험, 카약</div>
 </div>
@@ -86,6 +89,7 @@ excluded:
 <div class="timeline-day">
   <h3>DAY 5 - 트레이시 암 피요르드</h3>
   <div class="port">📍 트레이시 암 (시닉 크루징)</div>
+  <img src="/assets/images/alaska/glacier-bay.jpg" alt="트레이시 암 피요르드" class="port-image" loading="lazy">
   <div class="desc">좁은 피요르드를 따라 거대한 소여 빙하를 가까이서 감상합니다. 빙하가 바다로 떨어지는 장관을 놓치지 마세요! 발코니 객실 강력 추천.</div>
 </div>
 
@@ -99,6 +103,7 @@ excluded:
   <h3>DAY 7 - 빅토리아</h3>
   <div class="port">📍 빅토리아, 캐나다</div>
   <div class="time">입항 19:00 / 출항 23:59</div>
+  <img src="/assets/images/alaska/victoria.jpg" alt="빅토리아" class="port-image" loading="lazy">
   <div class="desc">영국풍 매력이 넘치는 캐나다 빅토리아. 부차트 가든, 이너 하버를 산책하세요.</div>
   <div class="tours">🎯 추천 투어: 부차트 가든, 이너 하버 워킹, 애프터눈 티</div>
 </div>

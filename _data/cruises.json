@@ -15,10 +15,18 @@
     "departureDate": "2026-06-07",
     "returnDate": "2026-06-14",
     "nights": 7,
-    "ports": ["나폴리", "미코노스", "산토리니", "아테네"],
+    "ports": [
+      "나폴리",
+      "미코노스",
+      "산토리니",
+      "아테네"
+    ],
     "priceFrom": 899,
     "currency": "USD",
-    "tags": ["추천", "인기"],
+    "tags": [
+      "추천",
+      "인기"
+    ],
     "image": "med/img01.jpg",
     "featured": true
   },
@@ -38,10 +46,18 @@
     "departureDate": "2026-06-21",
     "returnDate": "2026-06-28",
     "nights": 7,
-    "ports": ["마르세유", "제노바", "나폴리", "팔레르모", "발레타"],
+    "ports": [
+      "마르세유",
+      "제노바",
+      "나폴리",
+      "팔레르모",
+      "발레타"
+    ],
     "priceFrom": 749,
     "currency": "USD",
-    "tags": ["추천"],
+    "tags": [
+      "추천"
+    ],
     "image": "med/img02.jpg",
     "featured": true
   },
@@ -61,10 +77,19 @@
     "departureDate": "2026-07-05",
     "returnDate": "2026-07-15",
     "nights": 10,
-    "ports": ["코토르", "두브로브니크", "코르푸", "산토리니", "미코노스", "아테네"],
+    "ports": [
+      "코토르",
+      "두브로브니크",
+      "코르푸",
+      "산토리니",
+      "미코노스",
+      "아테네"
+    ],
     "priceFrom": 1299,
     "currency": "USD",
-    "tags": ["인기"],
+    "tags": [
+      "인기"
+    ],
     "image": "med/img03.jpg",
     "featured": false
   },
@@ -84,10 +109,17 @@
     "departureDate": "2026-06-14",
     "returnDate": "2026-06-21",
     "nights": 7,
-    "ports": ["미코노스", "로도스", "산토리니", "크레타"],
+    "ports": [
+      "미코노스",
+      "로도스",
+      "산토리니",
+      "크레타"
+    ],
     "priceFrom": 1099,
     "currency": "USD",
-    "tags": ["추천"],
+    "tags": [
+      "추천"
+    ],
     "image": "med/img04.jpg",
     "featured": true
   },
@@ -107,7 +139,13 @@
     "departureDate": "2026-08-02",
     "returnDate": "2026-08-11",
     "nights": 9,
-    "ports": ["나폴리", "산토리니", "이스탄불", "미코노스", "아테네"],
+    "ports": [
+      "나폴리",
+      "산토리니",
+      "이스탄불",
+      "미코노스",
+      "아테네"
+    ],
     "priceFrom": 1199,
     "currency": "USD",
     "tags": [],
@@ -130,10 +168,18 @@
     "departureDate": "2026-07-12",
     "returnDate": "2026-07-19",
     "nights": 7,
-    "ports": ["나폴리", "팔레르모", "발레타", "바르셀로나", "마르세유"],
+    "ports": [
+      "나폴리",
+      "팔레르모",
+      "발레타",
+      "바르셀로나",
+      "마르세유"
+    ],
     "priceFrom": 699,
     "currency": "USD",
-    "tags": ["특가"],
+    "tags": [
+      "특가"
+    ],
     "image": "med/img06.jpg",
     "featured": false
   },
@@ -153,10 +199,18 @@
     "departureDate": "2026-05-24",
     "returnDate": "2026-05-31",
     "nights": 7,
-    "ports": ["주노", "스캐그웨이", "빅토리아", "트레이시 암 피요르드"],
+    "ports": [
+      "주노",
+      "스캐그웨이",
+      "빅토리아",
+      "트레이시 암 피요르드"
+    ],
     "priceFrom": 799,
     "currency": "USD",
-    "tags": ["추천", "인기"],
+    "tags": [
+      "추천",
+      "인기"
+    ],
     "image": "alaska/hero.jpg",
     "featured": true
   },
@@ -176,11 +230,16 @@
     "departureDate": "2026-06-07",
     "returnDate": "2026-06-14",
     "nights": 7,
-    "ports": ["케치칸", "주노", "스캐그웨이", "빅토리아"],
+    "ports": [
+      "케치칸",
+      "주노",
+      "스캐그웨이",
+      "빅토리아"
+    ],
     "priceFrom": 849,
     "currency": "USD",
     "tags": [],
-    "image": "default-cruise.jpg",
+    "image": "alaska/juneau.jpg",
     "featured": false
   },
   {
@@ -199,11 +258,19 @@
     "departureDate": "2026-06-14",
     "returnDate": "2026-06-21",
     "nights": 7,
-    "ports": ["케치칸", "아이시 스트레이트 포인트", "주노", "스캐그웨이", "허버드 빙하"],
+    "ports": [
+      "케치칸",
+      "아이시 스트레이트 포인트",
+      "주노",
+      "스캐그웨이",
+      "허버드 빙하"
+    ],
     "priceFrom": 999,
     "currency": "USD",
-    "tags": ["추천"],
-    "image": "default-cruise.jpg",
+    "tags": [
+      "추천"
+    ],
+    "image": "alaska/glacier-bay.jpg",
     "featured": false
   },
   {
@@ -222,11 +289,18 @@
     "departureDate": "2026-06-21",
     "returnDate": "2026-06-28",
     "nights": 7,
-    "ports": ["주노", "케치칸", "그레이셔 베이", "빅토리아"],
+    "ports": [
+      "주노",
+      "케치칸",
+      "그레이셔 베이",
+      "빅토리아"
+    ],
     "priceFrom": 679,
     "currency": "USD",
-    "tags": ["특가"],
-    "image": "default-cruise.jpg",
+    "tags": [
+      "특가"
+    ],
+    "image": "alaska/ketchikan.jpg",
     "featured": false
   },
   {
@@ -245,10 +319,17 @@
     "departureDate": "2026-10-18",
     "returnDate": "2026-10-25",
     "nights": 7,
-    "ports": ["세인트 토마스", "세인트 마틴", "코코 케이"],
+    "ports": [
+      "세인트 토마스",
+      "세인트 마틴",
+      "코코 케이"
+    ],
     "priceFrom": 849,
     "currency": "USD",
-    "tags": ["추천", "인기"],
+    "tags": [
+      "추천",
+      "인기"
+    ],
     "image": "caribbean/hero.jpg",
     "featured": true
   },
@@ -268,11 +349,18 @@
     "departureDate": "2026-11-01",
     "returnDate": "2026-11-08",
     "nights": 7,
-    "ports": ["코수멜", "조지타운", "오초리오스", "오션 케이"],
+    "ports": [
+      "코수멜",
+      "조지타운",
+      "오초리오스",
+      "오션 케이"
+    ],
     "priceFrom": 599,
     "currency": "USD",
-    "tags": ["특가"],
-    "image": "default-cruise.jpg",
+    "tags": [
+      "특가"
+    ],
+    "image": "caribbean/cozumel.jpg",
     "featured": false
   },
   {
@@ -291,11 +379,16 @@
     "departureDate": "2026-11-15",
     "returnDate": "2026-11-22",
     "nights": 7,
-    "ports": ["로아탄", "벨리즈시티", "코수멜", "하베스트 케이"],
+    "ports": [
+      "로아탄",
+      "벨리즈시티",
+      "코수멜",
+      "하베스트 케이"
+    ],
     "priceFrom": 699,
     "currency": "USD",
     "tags": [],
-    "image": "default-cruise.jpg",
+    "image": "caribbean/roatan.jpg",
     "featured": false
   },
   {
@@ -314,11 +407,18 @@
     "departureDate": "2026-12-06",
     "returnDate": "2026-12-13",
     "nights": 7,
-    "ports": ["필립스버그", "샬럿 아말리에", "코코 케이"],
+    "ports": [
+      "필립스버그",
+      "샬럿 아말리에",
+      "코코 케이"
+    ],
     "priceFrom": 1299,
     "currency": "USD",
-    "tags": ["신규", "인기"],
-    "image": "default-cruise.jpg",
+    "tags": [
+      "신규",
+      "인기"
+    ],
+    "image": "caribbean/st-thomas.jpg",
     "featured": true
   },
   {
@@ -337,11 +437,17 @@
     "departureDate": "2026-12-20",
     "returnDate": "2026-12-27",
     "nights": 7,
-    "ports": ["산후안", "세인트 토마스", "오션 케이"],
+    "ports": [
+      "산후안",
+      "세인트 토마스",
+      "오션 케이"
+    ],
     "priceFrom": 1099,
     "currency": "USD",
-    "tags": ["인기"],
-    "image": "default-cruise.jpg",
+    "tags": [
+      "인기"
+    ],
+    "image": "caribbean/st-martin.jpg",
     "featured": false
   },
   {
@@ -360,10 +466,18 @@
     "departureDate": "2026-06-14",
     "returnDate": "2026-06-26",
     "nights": 12,
-    "ports": ["베르겐", "올레순", "게이랑에르", "플롬", "스타방에르"],
+    "ports": [
+      "베르겐",
+      "올레순",
+      "게이랑에르",
+      "플롬",
+      "스타방에르"
+    ],
     "priceFrom": 1599,
     "currency": "USD",
-    "tags": ["추천"],
+    "tags": [
+      "추천"
+    ],
     "image": "nordic/hero.jpg",
     "featured": true
   },
@@ -383,11 +497,18 @@
     "departureDate": "2026-07-05",
     "returnDate": "2026-07-12",
     "nights": 7,
-    "ports": ["탈린", "상트페테르부르크", "헬싱키", "스톡홀름"],
+    "ports": [
+      "탈린",
+      "상트페테르부르크",
+      "헬싱키",
+      "스톡홀름"
+    ],
     "priceFrom": 899,
     "currency": "USD",
-    "tags": ["추천"],
-    "image": "default-cruise.jpg",
+    "tags": [
+      "추천"
+    ],
+    "image": "nordic/copenhagen.jpg",
     "featured": false
   },
   {
@@ -406,11 +527,16 @@
     "departureDate": "2026-06-28",
     "returnDate": "2026-07-08",
     "nights": 10,
-    "ports": ["레이캬비크", "아쿠레이리", "베르겐", "플롬"],
+    "ports": [
+      "레이캬비크",
+      "아쿠레이리",
+      "베르겐",
+      "플롬"
+    ],
     "priceFrom": 1799,
     "currency": "USD",
     "tags": [],
-    "image": "default-cruise.jpg",
+    "image": "nordic/reykjavik.jpg",
     "featured": false
   },
   {
@@ -429,11 +555,17 @@
     "departureDate": "2026-07-19",
     "returnDate": "2026-07-29",
     "nights": 10,
-    "ports": ["코펜하겐", "스톡홀름", "탈린", "상트페테르부르크", "헬싱키"],
+    "ports": [
+      "코펜하겐",
+      "스톡홀름",
+      "탈린",
+      "상트페테르부르크",
+      "헬싱키"
+    ],
     "priceFrom": 1499,
     "currency": "USD",
     "tags": [],
-    "image": "default-cruise.jpg",
+    "image": "nordic/stockholm.jpg",
     "featured": false
   },
   {
@@ -452,10 +584,17 @@
     "departureDate": "2026-11-01",
     "returnDate": "2026-11-06",
     "nights": 5,
-    "ports": ["페낭", "랑카위", "푸켓"],
+    "ports": [
+      "페낭",
+      "랑카위",
+      "푸켓"
+    ],
     "priceFrom": 549,
     "currency": "USD",
-    "tags": ["추천", "인기"],
+    "tags": [
+      "추천",
+      "인기"
+    ],
     "image": "southeast-asia/hero.jpg",
     "featured": true
   },
@@ -475,11 +614,15 @@
     "departureDate": "2026-11-15",
     "returnDate": "2026-11-22",
     "nights": 7,
-    "ports": ["호치민", "나트랑", "방콕 (레임차방)"],
+    "ports": [
+      "호치민",
+      "나트랑",
+      "방콕 (레임차방)"
+    ],
     "priceFrom": 649,
     "currency": "USD",
     "tags": [],
-    "image": "default-cruise.jpg",
+    "image": "southeast-asia/phuket.jpg",
     "featured": false
   },
   {
@@ -498,11 +641,17 @@
     "departureDate": "2026-12-01",
     "returnDate": "2026-12-11",
     "nights": 10,
-    "ports": ["마닐라", "보라카이", "호치민", "나트랑", "다낭"],
+    "ports": [
+      "마닐라",
+      "보라카이",
+      "호치민",
+      "나트랑",
+      "다낭"
+    ],
     "priceFrom": 899,
     "currency": "USD",
     "tags": [],
-    "image": "default-cruise.jpg",
+    "image": "southeast-asia/boracay.jpg",
     "featured": false
   },
   {
@@ -521,11 +670,17 @@
     "departureDate": "2026-12-20",
     "returnDate": "2026-12-24",
     "nights": 4,
-    "ports": ["페낭", "랑카위"],
+    "ports": [
+      "페낭",
+      "랑카위"
+    ],
     "priceFrom": 399,
     "currency": "USD",
-    "tags": ["특가", "라스트미닛"],
-    "image": "default-cruise.jpg",
+    "tags": [
+      "특가",
+      "라스트미닛"
+    ],
+    "image": "southeast-asia/langkawi.jpg",
     "featured": false
   },
   {
@@ -544,11 +699,19 @@
     "departureDate": "2026-09-06",
     "returnDate": "2026-09-13",
     "nights": 7,
-    "ports": ["마우이", "힐로", "코나", "카우아이", "나팔리 코스트"],
+    "ports": [
+      "마우이",
+      "힐로",
+      "코나",
+      "카우아이",
+      "나팔리 코스트"
+    ],
     "priceFrom": 1399,
     "currency": "USD",
-    "tags": ["추천"],
-    "image": "default-cruise.jpg",
+    "tags": [
+      "추천"
+    ],
+    "image": "hawaii/hero.jpg",
     "featured": false
   },
   {
@@ -567,11 +730,16 @@
     "departureDate": "2026-10-04",
     "returnDate": "2026-10-14",
     "nights": 10,
-    "ports": ["호놀룰루", "마우이", "힐로", "코나"],
+    "ports": [
+      "호놀룰루",
+      "마우이",
+      "힐로",
+      "코나"
+    ],
     "priceFrom": 1199,
     "currency": "USD",
     "tags": [],
-    "image": "default-cruise.jpg",
+    "image": "hawaii/maui.jpg",
     "featured": false
   },
   {
@@ -590,11 +758,20 @@
     "departureDate": "2026-04-05",
     "returnDate": "2026-04-13",
     "nights": 8,
-    "ports": ["고베", "가고시마", "오키나와", "부산", "후쿠오카"],
+    "ports": [
+      "고베",
+      "가고시마",
+      "오키나와",
+      "부산",
+      "후쿠오카"
+    ],
     "priceFrom": 799,
     "currency": "USD",
-    "tags": ["추천", "인기"],
-    "image": "default-cruise.jpg",
+    "tags": [
+      "추천",
+      "인기"
+    ],
+    "image": "japan/hero.jpg",
     "featured": true
   },
   {
@@ -613,11 +790,17 @@
     "departureDate": "2026-05-03",
     "returnDate": "2026-05-13",
     "nights": 10,
-    "ports": ["아오모리", "하코다테", "오타루", "아키타", "카나자와"],
+    "ports": [
+      "아오모리",
+      "하코다테",
+      "오타루",
+      "아키타",
+      "카나자와"
+    ],
     "priceFrom": 1099,
     "currency": "USD",
     "tags": [],
-    "image": "default-cruise.jpg",
+    "image": "japan/kobe.jpg",
     "featured": false
   }
 ]
