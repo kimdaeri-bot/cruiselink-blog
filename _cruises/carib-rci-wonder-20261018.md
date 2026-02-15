@@ -55,23 +55,27 @@ excluded:
   - "선내 팁 (1인 1박 $16)"
 ---
 
-<div class="ship-gallery">
+<div class="ship-slider-section">
   <h2>🚢 원더 오브 더 씨즈</h2>
-  <div class="gallery-grid">
-    <img src="{{ '/assets/images/ships/wonder-exterior.jpg' | relative_url }}" alt="원더 오브 더 씨즈 전경" class="ship-image" loading="lazy">
-    <img src="{{ '/assets/images/ships/wonder-pool.jpg' | relative_url }}" alt="풀 데크" class="ship-image" loading="lazy">
-    <img src="{{ '/assets/images/ships/wonder-aquatheater.jpg' | relative_url }}" alt="아쿠아 극장" class="ship-image" loading="lazy">
+  <div class="ship-slider" data-current="0">
+    <button class="slider-btn prev" onclick="slideMove(this, -1)">❮</button>
+    <div class="slider-track">
+    <div class="slide active"><img src="{{ '/assets/images/ships/wonder-exterior.jpg' | relative_url }}" alt="원더 오브 더 씨즈 전경" loading="lazy"></div>
+    <div class="slide"><img src="{{ '/assets/images/ships/wonder-pool.jpg' | relative_url }}" alt="풀 데크" loading="lazy"></div>
+    <div class="slide"><img src="{{ '/assets/images/ships/wonder-aquatheater.jpg' | relative_url }}" alt="아쿠아 극장" loading="lazy"></div>
+    <div class="slide"><img src="{{ '/assets/images/ships/wonder-zipline.jpg' | relative_url }}" alt="집라인 & 보드워크" loading="lazy"></div>
+    <div class="slide"><img src="{{ '/assets/images/ships/wonder-flowrider.jpg' | relative_url }}" alt="플로우라이더" loading="lazy"></div>
+    <div class="slide"><img src="{{ '/assets/images/ships/wonder-waterslide.jpg' | relative_url }}" alt="워터슬라이드" loading="lazy"></div>
+    <div class="slide"><img src="{{ '/assets/images/facilities/balcony-stateroom.jpg' | relative_url }}" alt="발코니 객실" loading="lazy"></div>
+    <div class="slide"><img src="{{ '/assets/images/facilities/suite-living.jpg' | relative_url }}" alt="스위트룸" loading="lazy"></div>
+    <div class="slide"><img src="{{ '/assets/images/facilities/chops-grille.jpg' | relative_url }}" alt="스페셜티 레스토랑" loading="lazy"></div>
+    </div>
+    <button class="slider-btn next" onclick="slideMove(this, 1)">❯</button>
   </div>
-  <div class="gallery-grid">
-    <img src="{{ '/assets/images/ships/wonder-zipline.jpg' | relative_url }}" alt="집라인 & 보드워크" class="ship-image" loading="lazy">
-    <img src="{{ '/assets/images/ships/wonder-flowrider.jpg' | relative_url }}" alt="플로우라이더" class="ship-image" loading="lazy">
-    <img src="{{ '/assets/images/ships/wonder-waterslide.jpg' | relative_url }}" alt="워터슬라이드" class="ship-image" loading="lazy">
+  <div class="slider-dots">
+    <span class="dot active" onclick="goSlide(this, 0)"></span> <span class="dot" onclick="goSlide(this, 1)"></span> <span class="dot" onclick="goSlide(this, 2)"></span> <span class="dot" onclick="goSlide(this, 3)"></span> <span class="dot" onclick="goSlide(this, 4)"></span> <span class="dot" onclick="goSlide(this, 5)"></span> <span class="dot" onclick="goSlide(this, 6)"></span> <span class="dot" onclick="goSlide(this, 7)"></span> <span class="dot" onclick="goSlide(this, 8)"></span>
   </div>
-  <div class="gallery-grid">
-    <img src="{{ '/assets/images/facilities/balcony-stateroom.jpg' | relative_url }}" alt="발코니 객실" class="facility-image" loading="lazy">
-    <img src="{{ '/assets/images/facilities/suite-living.jpg' | relative_url }}" alt="스위트룸" class="facility-image" loading="lazy">
-    <img src="{{ '/assets/images/facilities/chops-grille.jpg' | relative_url }}" alt="스페셜티 레스토랑" class="facility-image" loading="lazy">
-  </div>
+  <div class="slider-counter"><span class="current-slide">1</span> / 9</div>
 </div>
 
 <div class="timeline-day">

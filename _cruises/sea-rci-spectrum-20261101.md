@@ -54,18 +54,24 @@ excluded:
   - "선내 팁 (1인 1박 $14.5)"
 ---
 
-<div class="ship-gallery">
+<div class="ship-slider-section">
   <h2>🚢 스펙트럼 오브 더 씨즈</h2>
-  <div class="gallery-grid">
-    <img src="{{ '/assets/images/ships/spectrum-exterior.jpg' | relative_url }}" alt="스펙트럼 오브 더 씨즈 전경" class="ship-image" loading="lazy">
-    <img src="{{ '/assets/images/ships/spectrum-singapore.jpg' | relative_url }}" alt="싱가포르에서의 스펙트럼" class="ship-image" loading="lazy">
-    <img src="{{ '/assets/images/ships/spectrum-skypad.jpg' | relative_url }}" alt="스카이패드" class="ship-image" loading="lazy">
+  <div class="ship-slider" data-current="0">
+    <button class="slider-btn prev" onclick="slideMove(this, -1)">❮</button>
+    <div class="slider-track">
+    <div class="slide active"><img src="{{ '/assets/images/ships/spectrum-exterior.jpg' | relative_url }}" alt="스펙트럼 오브 더 씨즈 전경" loading="lazy"></div>
+    <div class="slide"><img src="{{ '/assets/images/ships/spectrum-singapore.jpg' | relative_url }}" alt="싱가포르에서의 스펙트럼" loading="lazy"></div>
+    <div class="slide"><img src="{{ '/assets/images/ships/spectrum-skypad.jpg' | relative_url }}" alt="스카이패드" loading="lazy"></div>
+    <div class="slide"><img src="{{ '/assets/images/ships/spectrum-sichuan.jpg' | relative_url }}" alt="쓰촨 레드 레스토랑" loading="lazy"></div>
+    <div class="slide"><img src="{{ '/assets/images/facilities/north-star.jpg' | relative_url }}" alt="노스 스타" loading="lazy"></div>
+    <div class="slide"><img src="{{ '/assets/images/facilities/balcony-stateroom.jpg' | relative_url }}" alt="발코니 객실" loading="lazy"></div>
+    </div>
+    <button class="slider-btn next" onclick="slideMove(this, 1)">❯</button>
   </div>
-  <div class="gallery-grid">
-    <img src="{{ '/assets/images/ships/spectrum-sichuan.jpg' | relative_url }}" alt="쓰촨 레드 레스토랑" class="ship-image" loading="lazy">
-    <img src="{{ '/assets/images/facilities/north-star.jpg' | relative_url }}" alt="노스 스타" class="facility-image" loading="lazy">
-    <img src="{{ '/assets/images/facilities/balcony-stateroom.jpg' | relative_url }}" alt="발코니 객실" class="facility-image" loading="lazy">
+  <div class="slider-dots">
+    <span class="dot active" onclick="goSlide(this, 0)"></span> <span class="dot" onclick="goSlide(this, 1)"></span> <span class="dot" onclick="goSlide(this, 2)"></span> <span class="dot" onclick="goSlide(this, 3)"></span> <span class="dot" onclick="goSlide(this, 4)"></span> <span class="dot" onclick="goSlide(this, 5)"></span>
   </div>
+  <div class="slider-counter"><span class="current-slide">1</span> / 6</div>
 </div>
 
 <div class="timeline-day">

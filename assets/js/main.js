@@ -208,3 +208,39 @@ function initPromoSlider() {
 
   setInterval(() => goTo((current + 1) % count), 5000);
 }
+
+// --- Ship Image Slider ---
+function slideMove(btn, dir) {
+  const slider = btn.closest('.ship-slider-section').querySelector('.ship-slider');
+  const slides = slider.querySelectorAll('.slide');
+  const dots = btn.closest('.ship-slider-section').querySelectorAll('.dot');
+  const counter = btn.closest('.ship-slider-section').querySelector('.current-slide');
+  let current = parseInt(slider.dataset.current || 0);
+  
+  slides[current].classList.remove('active');
+  if (dots[current]) dots[current].classList.remove('active');
+  
+  current = (current + dir + slides.length) % slides.length;
+  
+  slides[current].classList.add('active');
+  if (dots[current]) dots[current].classList.add('active');
+  if (counter) counter.textContent = current + 1;
+  slider.dataset.current = current;
+}
+
+function goSlide(dot, idx) {
+  const section = dot.closest('.ship-slider-section');
+  const slider = section.querySelector('.ship-slider');
+  const slides = slider.querySelectorAll('.slide');
+  const dots = section.querySelectorAll('.dot');
+  const counter = section.querySelector('.current-slide');
+  let current = parseInt(slider.dataset.current || 0);
+  
+  slides[current].classList.remove('active');
+  if (dots[current]) dots[current].classList.remove('active');
+  
+  slides[idx].classList.add('active');
+  if (dots[idx]) dots[idx].classList.add('active');
+  if (counter) counter.textContent = idx + 1;
+  slider.dataset.current = idx;
+}

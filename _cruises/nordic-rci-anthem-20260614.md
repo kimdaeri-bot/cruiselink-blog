@@ -54,18 +54,24 @@ excluded:
   - "선내 팁 (1인 1박 $16)"
 ---
 
-<div class="ship-gallery">
+<div class="ship-slider-section">
   <h2>🚢 앤썸 오브 더 씨즈</h2>
-  <div class="gallery-grid">
-    <img src="{{ '/assets/images/ships/anthem-exterior.jpg' | relative_url }}" alt="앤썸 오브 더 씨즈 전경" class="ship-image" loading="lazy">
-    <img src="{{ '/assets/images/ships/anthem-norway.jpg' | relative_url }}" alt="노르웨이 피요르드를 항해하는 앤썸" class="ship-image" loading="lazy">
-    <img src="{{ '/assets/images/ships/anthem-flowrider.jpg' | relative_url }}" alt="플로우라이더 & 아이플라이" class="ship-image" loading="lazy">
+  <div class="ship-slider" data-current="0">
+    <button class="slider-btn prev" onclick="slideMove(this, -1)">❮</button>
+    <div class="slider-track">
+    <div class="slide active"><img src="{{ '/assets/images/ships/anthem-exterior.jpg' | relative_url }}" alt="앤썸 오브 더 씨즈 전경" loading="lazy"></div>
+    <div class="slide"><img src="{{ '/assets/images/ships/anthem-norway.jpg' | relative_url }}" alt="노르웨이 피요르드를 항해하는 앤썸" loading="lazy"></div>
+    <div class="slide"><img src="{{ '/assets/images/ships/anthem-flowrider.jpg' | relative_url }}" alt="플로우라이더 & 아이플라이" loading="lazy"></div>
+    <div class="slide"><img src="{{ '/assets/images/ships/anthem-wonderland.jpg' | relative_url }}" alt="원더랜드 레스토랑" loading="lazy"></div>
+    <div class="slide"><img src="{{ '/assets/images/ships/anthem-show.jpg' | relative_url }}" alt="스펙트라스 카바레 쇼" loading="lazy"></div>
+    <div class="slide"><img src="{{ '/assets/images/facilities/balcony-stateroom.jpg' | relative_url }}" alt="발코니 객실 (피요르드 감상 필수!)" loading="lazy"></div>
+    </div>
+    <button class="slider-btn next" onclick="slideMove(this, 1)">❯</button>
   </div>
-  <div class="gallery-grid">
-    <img src="{{ '/assets/images/ships/anthem-wonderland.jpg' | relative_url }}" alt="원더랜드 레스토랑" class="ship-image" loading="lazy">
-    <img src="{{ '/assets/images/ships/anthem-show.jpg' | relative_url }}" alt="스펙트라스 카바레 쇼" class="ship-image" loading="lazy">
-    <img src="{{ '/assets/images/facilities/balcony-stateroom.jpg' | relative_url }}" alt="발코니 객실 (피요르드 감상 필수!)" class="facility-image" loading="lazy">
+  <div class="slider-dots">
+    <span class="dot active" onclick="goSlide(this, 0)"></span> <span class="dot" onclick="goSlide(this, 1)"></span> <span class="dot" onclick="goSlide(this, 2)"></span> <span class="dot" onclick="goSlide(this, 3)"></span> <span class="dot" onclick="goSlide(this, 4)"></span> <span class="dot" onclick="goSlide(this, 5)"></span>
   </div>
+  <div class="slider-counter"><span class="current-slide">1</span> / 6</div>
 </div>
 
 <div class="timeline-day">
