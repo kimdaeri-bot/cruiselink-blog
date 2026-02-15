@@ -55,72 +55,290 @@ excluded:
 
 ### DAY 1 — 마이애미 출발
 🌴 **승선 & 출항**
-세계 크루즈의 수도 마이애미에서 역대 최대 크루즈선 아이콘 오브 더 씨즈에 승선합니다. 8개 네이버후드(구역)로 이루어진 해상 도시를 탐험하세요!
 
-<img src="{{ '/assets/images/caribbean/hero.jpg' | relative_url }}" alt="마이애미" loading="lazy" style="width:100%;border-radius:12px;margin:16px 0;">
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/caribbean/miami.jpg' | relative_url }}" alt="마이애미 크루즈 터미널" loading="lazy">
+<img src="{{ '/assets/images/caribbean/hero.jpg' | relative_url }}" alt="아이콘 오브 더 씨즈" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
+</div>
 
-💡 **TIP:** 마이애미 공항에서 크루즈 터미널까지 택시 20분. 전날 사우스비치에서 1박을 추천합니다.
+세계 크루즈의 수도 마이애미에서 역대 최대 크루즈선 아이콘 오브 더 씨즈(250,800톤!)에 승선합니다. 8개 네이버후드로 이루어진 해상 도시의 모험이 시작됩니다.
+
+<div class="day-expandable">
+
+**🕐 승선 일정**
+- 11:00~15:00 승선 수속 (마이애미 크루즈 터미널)
+- 15:30 안전 교육 (Muster Drill)
+- 17:00 출항
+
+**🍽️ 첫날 추천 활동**
+- 선내 탐험 — 8개 네이버후드(서프사이드, 센트럴파크, 스릴 아일랜드 등)를 둘러보세요
+- 아쿠아돔 — 세계 최초 해상 돔형 수영장, 오션뷰가 압권
+- 서프사이드 — 가족 전용 구역, 키즈풀+스플래쉬패드
+- 갑판에서 마이애미 스카이라인 & 석양 감상
+
+**💡 TIP**
+- 마이애미 공항에서 크루즈 터미널까지 택시/우버 약 20분($20~30)
+- 전날 사우스비치에서 1박 + 오션드라이브 산책을 강력 추천
+- RCI 앱을 미리 다운로드하고 선내 시설(스페셜티 레스토랑, 쇼)을 사전 예약하세요
+- 12월 마이애미 기온 24°C 전후, 여름 옷 준비!
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
 
 ---
 
 ### DAY 2 — 해상 운항
-🌊 **아이콘의 하루**
-세계 최초 카테고리 6 크루즈의 놀라운 시설을 만끽하세요. 서프사이드(가족 수영장), 스릴 아일랜드(짚라인), 아쿠아돔 등 역대급 시설이 기다립니다.
+🌊 **아이콘의 하루 ①**
 
-<img src="{{ '/assets/images/ships/wonder-sea.jpg' | relative_url }}" alt="아이콘 해상 운항" loading="lazy" style="width:100%;border-radius:12px;margin:16px 0;">
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/ships/wonder-sea.jpg' | relative_url }}" alt="아이콘 해상 운항" loading="lazy">
+<img src="{{ '/assets/images/ships/wonder-pool.jpg' | relative_url }}" alt="아이콘 수영장" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
+</div>
 
-💡 **TIP:** 첫 번째 항해일에 선내 시설을 미리 파악하면 이후 일정이 훨씬 효율적!
+250,800톤 세계 최대 크루즈의 놀라운 시설을 만끽하는 첫 번째 종일 항해일입니다.
+
+<div class="day-expandable">
+
+**🎢 추천 액티비티**
+- **카테고리 6 워터파크** — 세계 최초 카테고리 6 워터슬라이드! 6개 슬라이드 풀코스
+- **크라운즈 엣지(Crown's Edge)** — 선체 밖으로 돌출된 스카이워크, 154피트 높이에서 짚라인
+- **플로우라이더** — 서핑 시뮬레이터, 초보자도 도전 가능
+- **아쿠아돔** — 세계 최대 해상 수영장, 열대 식물 가든과 함께
+- **센트럴파크** — 실제 나무와 꽃이 자라는 해상 공원에서 산책
+
+**🌙 저녁 추천**
+- AquaTheater 수중 쇼 — 다이빙+서커스+분수 퍼포먼스 (무료, 사전예약)
+- 스릴 아일랜드 야간 모드 — 네온 조명 아래 짚라인 체험
+- 스페셜티 레스토랑: 원더랜드(분자요리), 이자카야(일식)
+
+**💡 TIP**
+- 첫 항해일에 선내 시설을 모두 파악하면 이후 일정이 훨씬 효율적!
+- 인기 시설(크라운즈 엣지, AquaTheater)은 앱으로 시간대 예약 필수
+- 음료 패키지를 고민 중이라면 첫날 구매가 가장 저렴합니다
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
 
 ---
 
 ### DAY 3 — 해상 운항
-🎭 **엔터테인먼트 데이**
-AquaTheater 수중 공연, 센트럴파크의 라이브 음악, 로얄 프롬나드의 퍼레이드까지. 하루가 모자랄 만큼 다양한 즐길 거리.
+🎭 **아이콘의 하루 ②**
 
-<img src="{{ '/assets/images/ships/wonder-sea.jpg' | relative_url }}" alt="선상 엔터테인먼트" loading="lazy" style="width:100%;border-radius:12px;margin:16px 0;">
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/ships/wonder-exterior.jpg' | relative_url }}" alt="아이콘 오브 더 씨즈 외관" loading="lazy">
+<img src="{{ '/assets/images/destinations/caribbean.jpg' | relative_url }}" alt="카리브해 항해" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
+</div>
+
+두 번째 종일 항해일. 어제 못 한 시설을 즐기고, 엔터테인먼트에 집중하는 하루입니다.
+
+<div class="day-expandable">
+
+**🎢 추천 액티비티**
+- **바이탈리티 스파** — 핫스톤 마사지, 아로마테라피. 종일 항해 할인 체크!
+- **어드벤처 오션(키즈 프로그램)** — 3~17세 연령별 프로그램, 부모는 자유시간
+- **카지노 로얄** — 슬롯, 블랙잭, 포커, 룰렛. 종일 항해일에 특별 토너먼트
+- **아이스 스케이팅 링크** — 카리브해 한가운데서 스케이팅!
+- **클라이밍 월** — 40피트 암벽 등반 + 번지 트램폴린
+
+**🌙 저녁 추천**
+- 로얄 프롬나드 퍼레이드 — 화려한 퍼포먼스 퍼레이드
+- 스타 모먼트 쇼 — 메인 시어터 브로드웨이 스타일 공연 (무료)
+- 비앙코(Bianco) — 이탈리안 파인다이닝 ($55/인)
+
+**💡 TIP**
+- 종일 항해일 2일차에는 여유롭게 선탠+독서도 좋은 선택
+- 솔라리움(성인전용 풀)은 조용히 쉬기에 최적
+- 내일부터 기항지이니 일찍 자는 것도 전략!
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
 
 ---
 
 ### DAY 4 — 필립스버그 (세인트마틴)
 🏖️ **반은 프랑스, 반은 네덜란드**
-카리브해의 독특한 섬, 하나의 섬에 두 나라! 마호 비치에서 비행기 착륙 장면 구경, 오리엔트 비치에서 스노클링을 즐기세요.
 
-<img src="{{ '/assets/images/caribbean/hero.jpg' | relative_url }}" alt="필립스버그" loading="lazy" style="width:100%;border-radius:12px;margin:16px 0;">
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/caribbean/st-martin.jpg' | relative_url }}" alt="세인트마틴 마호 비치" loading="lazy">
+<img src="{{ '/assets/images/caribbean/st-thomas.jpg' | relative_url }}" alt="필립스버그 해변" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
+</div>
 
-💡 **TIP:** 마호 비치는 크루즈 터미널에서 택시 15분. 비행기 도착 시간을 미리 체크하세요!
+하나의 섬에 프랑스와 네덜란드 두 나라! 마호 비치에서 비행기 착륙 장면을 보고, 프랑스령 그랑카즈에서 미식을 즐기세요.
+
+<div class="day-expandable">
+
+**⏰ 입항/출항:** 08:00 입항 / 17:00 출항
+
+**🗺️ 추천 기항지 투어**
+- **마호 비치 비행기 구경** (자유여행, 택시 $15) — 프린세스 줄리아나 공항 착륙 비행기가 머리 위로! 세계에서 가장 스릴 넘치는 해변
+- **그랑카즈(프랑스령) 미식 투어** (반나절, ~$80) — 카리브해 최고 프랑스 레스토랑 밀집 지구
+- **오리엔트 비치 스노클링** (반나절, ~$60) — 프랑스령 누드비치 + 산호초 스노클링
+- **12 미터 아메리카스컵 요트 레이스** (~$100) — 실제 아메리카스컵 요트를 타고 레이스 체험
+- **섬 일주 투어** (반나절, ~$50) — 네덜란드+프랑스 양쪽을 모두 둘러보는 투어
+
+**🍽️ 맛집 추천**
+- **그랑카즈 프렌치 비스트로** — 카리브해에서 파리 수준의 프렌치 요리 (€30~50)
+- **조니 콘치(Johnny Conch)** — 해변에서 갓 튀긴 소라 프리터
+- **건버드 리키(Guavaberry Colada)** — 세인트마틴 고유 과일주 기반 칵테일
+
+**💡 TIP**
+- 마호 비치에서 비행기 스케줄을 미리 확인하세요 (SXM Airport 앱)
+- 양쪽 국경 통과에 여권 불필요 (자유 이동 가능)
+- 네덜란드쪽은 USD, 프랑스쪽은 EUR — 하지만 대부분 둘 다 받습니다
+- 크루즈 항구에서 마호 비치까지 택시 약 15분
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
 
 ---
 
 ### DAY 5 — 샬럿 아말리에 (세인트토마스)
-🏝️ **카리브해의 보석**
-미국령 버진아일랜드의 수도. 맥겐 비치의 투명한 바다, 스카이라이드(곤돌라)의 파노라마 전망이 인상적입니다.
+🏝️ **카리브해의 면세 천국**
 
-<img src="{{ '/assets/images/destinations/caribbean.jpg' | relative_url }}" alt="샬럿 아말리에" loading="lazy" style="width:100%;border-radius:12px;margin:16px 0;">
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/caribbean/st-thomas.jpg' | relative_url }}" alt="세인트토마스 파노라마" loading="lazy">
+<img src="{{ '/assets/images/caribbean/cococay.jpg' | relative_url }}" alt="카리브해 해변" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
+</div>
 
-💡 **TIP:** 면세 쇼핑의 천국! 보석, 주류, 향수를 미국 본토보다 저렴하게 구매 가능.
+미국령 버진아일랜드의 수도 샬럿 아말리에. 면세 쇼핑의 천국이자 투명한 카리브해를 만끽할 수 있는 섬입니다.
+
+<div class="day-expandable">
+
+**⏰ 입항/출항:** 07:00 입항 / 16:00 출항
+
+**🗺️ 추천 기항지 투어**
+- **맥겐 비치(Magens Bay)** (자유여행, 택시 $10) — 내셔널지오그래픽 선정 세계 최고 해변 중 하나
+- **스카이라이드(곤돌라)** (~$25) — 700피트 높이에서 항구와 카리브해 파노라마 전망
+- **코랄 월드 해양공원** (~$25) — 해저 전망대+스노클링+바다거북 체험
+- **세인트존 섬 페리 투어** (반나절, ~$70) — 페리 20분, 트렁크 베이(세계 10대 해변) 스노클링
+- **카약 & 스노클링 에코 투어** (~$80) — 맹그로브 숲+산호초 탐험
+
+**🍽️ 맛집 추천**
+- **콘치 프리터(Conch Fritter)** — 카리브해 명물 소라 튀김
+- **럼 펀치** — 세인트토마스 현지 럼으로 만든 트로피컬 칵테일
+- **저크 치킨** — 카리브해식 양념 구이 치킨, 현지 BBQ 가판대에서
+
+**💡 TIP**
+- 미국령이라 USD 사용, 미국 시민은 여권 불필요
+- 면세 한도가 높아 보석, 주류, 향수 쇼핑에 유리 (1인당 $1,600 면세)
+- 메인 스트리트와 드론닝겐스 가드(Dronningens Gade)가 쇼핑 거리
+- 세인트존까지 가시면 국립공원이라 자연이 더 잘 보존되어 있어요
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
 
 ---
 
 ### DAY 6 — 코코 케이 (퍼펙트 데이)
-🎢 **로열캐리비안 전용 섬**
-RCI의 프라이빗 아일랜드 퍼펙트 데이. 북미 최고 높이 워터슬라이드 드레드폴 타워, 짚라인, 열기구 체험이 모두 무료!
+🎢 **로열캐리비안 전용 프라이빗 섬**
 
-<img src="{{ '/assets/images/destinations/caribbean.jpg' | relative_url }}" alt="코코 케이" loading="lazy" style="width:100%;border-radius:12px;margin:16px 0;">
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/caribbean/cococay.jpg' | relative_url }}" alt="코코 케이 워터파크" loading="lazy">
+<img src="{{ '/assets/images/caribbean/miami.jpg' | relative_url }}" alt="코코 케이 해변" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
+</div>
 
-💡 **TIP:** 오버워터 카바나는 사전 예약 필수! 선착순이라 승선 당일 앱에서 바로 예약하세요.
+로열캐리비안의 프라이빗 아일랜드, 퍼펙트 데이 앳 코코 케이! 북미 최고 높이 워터슬라이드, 짚라인, 열기구, 그리고 터키색 카리브해가 기다립니다.
+
+<div class="day-expandable">
+
+**⏰ 입항/출항:** 07:00 입항 / 17:00 출항
+
+**🗺️ 추천 액티비티 (섬 시설)**
+- **스릴 워터파크** (포함 or ~$50 업그레이드) — 드레드폴 타워(135피트 높이), 13개 워터슬라이드
+- **업 업 & 어웨이 열기구** (~$40) — 400피트 높이에서 바하마 군도 파노라마 전망
+- **짚라인** (포함) — 해변 위를 가로지르는 1,600피트 짚라인
+- **오버워터 카바나** (~$350~900/일) — 바다 위 프라이빗 카바나, 슬라이드 딸린 VIP 공간
+- **사우스 비치 & 칠 아일랜드** (무료) — 해먹+파라솔+투명한 바다, 무료로 충분히 즐거움
+
+**🍽️ 섬 내 식사**
+- **캡틴 잭스** — 섬 내 뷔페, 크루즈 탑승객 무료
+- **스낵 쉐크** — 버거, 핫도그, 치킨 (무료)
+- **코코 바** — 트로피컬 칵테일, 음료 패키지 적용
+- **BBQ 스테이션** — 해변에서 갓 구운 BBQ (무료)
+
+**💡 TIP**
+- 오버워터 카바나는 사전 예약 필수! 승선 당일 앱에서 바로 예약하세요
+- 선내 타월을 가져가세요 — 섬에서도 사용 가능
+- 무료 시설만으로도 하루가 부족할 만큼 충분합니다
+- 선크림은 산호초 보호를 위해 Reef-Safe 제품 권장
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
 
 ---
 
 ### DAY 7 — 해상 운항
 🌊 **마지막 항해**
-마이애미로 돌아가는 항해. 마지막 밤 갈라 디너, 면세점 쇼핑, 풀파티로 크루즈를 마무리하세요.
 
-<img src="{{ '/assets/images/ships/wonder-sea.jpg' | relative_url }}" alt="해상 운항" loading="lazy" style="width:100%;border-radius:12px;margin:16px 0;">
+<div class="day-slider">
+<button class="day-slider-btn prev">❮</button>
+<div class="day-slider-track">
+<img src="{{ '/assets/images/ships/wonder-sea.jpg' | relative_url }}" alt="아이콘 마지막 항해" loading="lazy">
+<img src="{{ '/assets/images/destinations/caribbean.jpg' | relative_url }}" alt="카리브해 석양" loading="lazy">
+</div>
+<button class="day-slider-btn next">❯</button>
+<div class="day-slider-dots"><span class="dot active"></span><span class="dot"></span></div>
+</div>
+
+마이애미로 돌아가는 마지막 항해일. 7박의 카리브해 크루즈를 마무리하는 특별한 하루입니다.
+
+<div class="day-expandable">
+
+**🎢 추천 액티비티**
+- **못 했던 시설 도전** — 크라운즈 엣지, 플로우라이더 등 마지막 기회!
+- **바이탈리티 스파** — 마지막 날 릴렉스, 할인 프로모션
+- **면세점 쇼핑** — 마지막 날 특가 세일, 카리브해 럼 기념품
+- **포토 갤러리** — 여행 중 촬영된 사진 구매
+
+**🌙 마지막 밤 추천**
+- 갈라 디너 — 정장 드레스코드, 메인 다이닝 풀코스
+- AquaTheater 파이널 쇼 — 물+불+서커스의 피날레
+- 로얄 프롬나드 페어웰 파티 — 마지막 밤 축제 분위기
+- 짐 패킹 — 전날 밤 10시까지 문 앞에 짐을 내놓으면 하선 시 수령
+
+**💡 TIP**
+- 마지막 밤 정산서를 확인하세요. 미니바, 스페셜티 레스토랑 등 추가 비용 체크
+- 하선 시간대를 미리 앱에서 선택하면 대기 시간 단축
+- RCI 팁은 자동 청구(1인 1박 $16), 조정 원하면 게스트 서비스 방문
+
+</div>
+<button class="day-toggle" onclick="toggleDay(this)">더보기 ▼</button>
 
 ---
 
 ### DAY 8 — 마이애미 귀항
 🏠 **귀항**
-아침 마이애미 항 입항. 하선 후 공항으로 이동하거나 마이애미에서 추가 여행을 즐기세요.
 
-💡 **TIP:** 하선 후 사우스비치에서 브런치로 여행을 마무리하는 건 어떨까요?
+아침 마이애미 항에 입항합니다. 조식 후 하선 수속을 진행하며, 7박의 카리브해 크루즈가 마무리됩니다.
+
+💡 **TIP:** 하선은 보통 오전 7~10시 사이 진행됩니다. 마이애미 공항까지 택시/우버 약 20분. 하선 후 사우스비치에서 브런치로 여행을 마무리하는 건 어떨까요?
