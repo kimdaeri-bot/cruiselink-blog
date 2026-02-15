@@ -29,7 +29,15 @@
       "인기"
     ],
     "image": "japan/okinawa.jpg",
-    "featured": true
+    "featured": true,
+    "hashtags": [
+      "#한국출발",
+      "#오키나와",
+      "#가족여행",
+      "#여름휴가",
+      "#일본맛집",
+      "#면세쇼핑"
+    ]
   },
   {
     "id": "med-rci-odyssey-20260607",
@@ -60,7 +68,15 @@
       "인기"
     ],
     "image": "med/img01.jpg",
-    "featured": true
+    "featured": true,
+    "hashtags": [
+      "#신혼여행",
+      "#그리스",
+      "#산토리니",
+      "#유럽크루즈",
+      "#커플추천",
+      "#지중해맛집"
+    ]
   },
   {
     "id": "med-msc-grandiosa-20260621",
@@ -91,7 +107,15 @@
       "추천"
     ],
     "image": "med/img02.jpg",
-    "featured": true
+    "featured": true,
+    "hashtags": [
+      "#스페인",
+      "#프랑스",
+      "#이탈리아",
+      "#미식여행",
+      "#와인투어",
+      "#유럽문화"
+    ]
   },
   {
     "id": "med-ncl-epic-20260705",
@@ -123,7 +147,14 @@
       "인기"
     ],
     "image": "med/img03.jpg",
-    "featured": false
+    "featured": false,
+    "hashtags": [
+      "#베네치아",
+      "#크로아티아",
+      "#자유여행",
+      "#올인클루시브",
+      "#유럽역사"
+    ]
   },
   {
     "id": "med-celebrity-apex-20260614",
@@ -153,7 +184,14 @@
       "추천"
     ],
     "image": "med/img04.jpg",
-    "featured": true
+    "featured": true,
+    "hashtags": [
+      "#그리스섬투어",
+      "#럭셔리",
+      "#미코노스",
+      "#허니문",
+      "#프리미엄"
+    ]
   },
   {
     "id": "med-rci-brilliance-20260802",
@@ -182,7 +220,13 @@
     "currency": "USD",
     "tags": [],
     "image": "med/img05.jpg",
-    "featured": false
+    "featured": false,
+    "hashtags": [
+      "#소형선박",
+      "#여유로운",
+      "#지중해",
+      "#클래식크루즈"
+    ]
   },
   {
     "id": "med-msc-seaview-20260712",
@@ -213,7 +257,11 @@
       "특가"
     ],
     "image": "med/img06.jpg",
-    "featured": false
+    "featured": false,
+    "hashtags": [
+      "#크루즈여행",
+      "#해외여행"
+    ]
   },
   {
     "id": "alaska-rci-ovation-20260524",
@@ -244,7 +292,14 @@
       "인기"
     ],
     "image": "alaska/hero.jpg",
-    "featured": true
+    "featured": true,
+    "hashtags": [
+      "#빙하투어",
+      "#자연탐험",
+      "#야생동물",
+      "#사진여행",
+      "#버킷리스트"
+    ]
   },
   {
     "id": "alaska-ncl-bliss-20260607",
@@ -272,7 +327,11 @@
     "currency": "USD",
     "tags": [],
     "image": "alaska/juneau.jpg",
-    "featured": false
+    "featured": false,
+    "hashtags": [
+      "#크루즈여행",
+      "#해외여행"
+    ]
   },
   {
     "id": "alaska-celebrity-millennium-20260614",
@@ -303,7 +362,11 @@
       "추천"
     ],
     "image": "alaska/glacier-bay.jpg",
-    "featured": false
+    "featured": false,
+    "hashtags": [
+      "#크루즈여행",
+      "#해외여행"
+    ]
   },
   {
     "id": "alaska-msc-poesia-20260621",
@@ -333,7 +396,11 @@
       "특가"
     ],
     "image": "alaska/ketchikan.jpg",
-    "featured": false
+    "featured": false,
+    "hashtags": [
+      "#크루즈여행",
+      "#해외여행"
+    ]
   },
   {
     "id": "carib-rci-wonder-20261018",
@@ -363,7 +430,14 @@
       "인기"
     ],
     "image": "caribbean/hero.jpg",
-    "featured": true
+    "featured": true,
+    "hashtags": [
+      "#가족여행",
+      "#워터슬라이드",
+      "#열대해변",
+      "#스노클링",
+      "#올겨울"
+    ]
   },
   {
     "id": "carib-msc-seaside-20261101",
@@ -393,7 +467,11 @@
       "특가"
     ],
     "image": "caribbean/cozumel.jpg",
-    "featured": false
+    "featured": false,
+    "hashtags": [
+      "#크루즈여행",
+      "#해외여행"
+    ]
   },
   {
     "id": "carib-ncl-getaway-20261115",
@@ -421,7 +499,11 @@
     "currency": "USD",
     "tags": [],
     "image": "caribbean/roatan.jpg",
-    "featured": false
+    "featured": false,
+    "hashtags": [
+      "#크루즈여행",
+      "#해외여행"
+    ]
   },
   {
     "id": "carib-rci-icon-20261206",
@@ -451,7 +533,14 @@
       "인기"
     ],
     "image": "caribbean/st-thomas.jpg",
-    "featured": true
+    "featured": true,
+    "hashtags": [
+      "#세계최대크루즈",
+      "#코코케이",
+      "#겨울탈출",
+      "#카리브해변",
+      "#럭셔리"
+    ]
   },
   {
     "id": "carib-msc-seascape-20261220",
@@ -480,7 +569,12 @@
       "인기"
     ],
     "image": "caribbean/st-martin.jpg",
-    "featured": false
+    "featured": false,
+    "hashtags": [
+      "#크리스마스크루즈",
+      "#가족휴가",
+      "#겨울여행"
+    ]
   },
   {
     "id": "nordic-rci-anthem-20260614",
@@ -511,7 +605,15 @@
       "추천"
     ],
     "image": "nordic/hero.jpg",
-    "featured": true
+    "featured": true,
+    "hashtags": [
+      "#피요르드",
+      "#백야",
+      "#북유럽문화",
+      "#노르웨이",
+      "#자연경관",
+      "#버킷리스트"
+    ]
   },
   {
     "id": "nordic-msc-euribia-20260705",
@@ -541,7 +643,12 @@
       "추천"
     ],
     "image": "nordic/copenhagen.jpg",
-    "featured": false
+    "featured": false,
+    "hashtags": [
+      "#친환경크루즈",
+      "#북유럽여름",
+      "#피요르드"
+    ]
   },
   {
     "id": "nordic-ncl-star-20260628",
@@ -569,7 +676,11 @@
     "currency": "USD",
     "tags": [],
     "image": "nordic/reykjavik.jpg",
-    "featured": false
+    "featured": false,
+    "hashtags": [
+      "#크루즈여행",
+      "#해외여행"
+    ]
   },
   {
     "id": "nordic-celebrity-silhouette-20260719",
@@ -598,7 +709,11 @@
     "currency": "USD",
     "tags": [],
     "image": "nordic/stockholm.jpg",
-    "featured": false
+    "featured": false,
+    "hashtags": [
+      "#크루즈여행",
+      "#해외여행"
+    ]
   },
   {
     "id": "sea-rci-spectrum-20261101",
@@ -628,7 +743,14 @@
       "인기"
     ],
     "image": "southeast-asia/hero.jpg",
-    "featured": true
+    "featured": true,
+    "hashtags": [
+      "#동남아맛집",
+      "#면세쇼핑",
+      "#열대휴양",
+      "#태국마사지",
+      "#가성비최고"
+    ]
   },
   {
     "id": "sea-msc-bellissima-20261115",
@@ -655,7 +777,11 @@
     "currency": "USD",
     "tags": [],
     "image": "southeast-asia/phuket.jpg",
-    "featured": false
+    "featured": false,
+    "hashtags": [
+      "#크루즈여행",
+      "#해외여행"
+    ]
   },
   {
     "id": "sea-ncl-jewel-20261201",
@@ -684,7 +810,11 @@
     "currency": "USD",
     "tags": [],
     "image": "southeast-asia/boracay.jpg",
-    "featured": false
+    "featured": false,
+    "hashtags": [
+      "#크루즈여행",
+      "#해외여행"
+    ]
   },
   {
     "id": "sea-msc-splendida-20261220",
@@ -713,7 +843,11 @@
       "라스트미닛"
     ],
     "image": "southeast-asia/langkawi.jpg",
-    "featured": false
+    "featured": false,
+    "hashtags": [
+      "#크루즈여행",
+      "#해외여행"
+    ]
   },
   {
     "id": "hawaii-ncl-pride-20260906",
@@ -744,7 +878,11 @@
       "추천"
     ],
     "image": "hawaii/hero.jpg",
-    "featured": false
+    "featured": false,
+    "hashtags": [
+      "#크루즈여행",
+      "#해외여행"
+    ]
   },
   {
     "id": "hawaii-rci-radiance-20261004",
@@ -772,7 +910,11 @@
     "currency": "USD",
     "tags": [],
     "image": "hawaii/maui.jpg",
-    "featured": false
+    "featured": false,
+    "hashtags": [
+      "#크루즈여행",
+      "#해외여행"
+    ]
   },
   {
     "id": "japan-msc-bellissima-20260405",
@@ -804,7 +946,14 @@
       "인기"
     ],
     "image": "japan/hero.jpg",
-    "featured": true
+    "featured": true,
+    "hashtags": [
+      "#벚꽃크루즈",
+      "#봄여행",
+      "#일본온천",
+      "#미식투어",
+      "#부산기항"
+    ]
   },
   {
     "id": "japan-ncl-spirit-20260503",
@@ -833,6 +982,10 @@
     "currency": "USD",
     "tags": [],
     "image": "japan/kobe.jpg",
-    "featured": false
+    "featured": false,
+    "hashtags": [
+      "#크루즈여행",
+      "#해외여행"
+    ]
   }
 ]

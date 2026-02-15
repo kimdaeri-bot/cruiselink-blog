@@ -24,6 +24,11 @@
         {% endif %}
       </div>
       <div class="cruise-item-ports">📍 {{ cruise.ports | join: " → " }}</div>
+      {% if cruise.hashtags %}
+      <div class="cruise-item-hashtags">
+        {% for ht in cruise.hashtags %}<span class="hashtag">{{ ht }}</span>{% endfor %}
+      </div>
+      {% endif %}
     </div>
     <div class="cruise-item-footer">
       <div class="cruise-item-row">
