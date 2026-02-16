@@ -59,7 +59,8 @@ title: 크루즈 상세보기
   <div class="container">
     <h2 class="section-title">🛏️ 객실 & 요금</h2>
     <p class="section-subtitle">1인 기준 요금 (2인 1실 기준)</p>
-    <div id="cd-cabins" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin-top:20px;"></div>
+    <div class="cabin-tabs" id="cd-cabin-tabs"></div>
+    <div class="cabin-detail" id="cd-cabin-detail"></div>
     <p style="margin-top:16px;font-size:13px;color:#888;">※ 요금은 예고 없이 변동될 수 있습니다. 정확한 요금은 문의해주세요.</p>
   </div>
 </div>
@@ -138,14 +139,25 @@ title: 크루즈 상세보기
 .sea-activities { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:10px; }
 .sea-activity { background:#e8eaf6; border-radius:10px; padding:12px; text-align:center; font-size:13px; color:#1a237e; font-weight:600; }
 
-/* Cabin cards */
-.cabin-card { background:#fff; border:2px solid #cfd8dc; border-radius:12px; padding:20px; text-align:center; transition:border-color .2s; }
-.cabin-card:hover { border-color:#1a237e; }
-.cabin-card.unavailable { opacity:.5; }
-.cabin-type { font-size:15px; font-weight:700; color:#1a237e; }
-.cabin-type-en { font-size:12px; color:#888; }
-.cabin-price { font-size:22px; font-weight:900; color:#ff6f00; margin-top:10px; }
-.cabin-price.na { font-size:14px; color:#aaa; }
+/* Cabin tabs + detail */
+.cabin-tabs { display:flex; gap:0; border-bottom:2px solid #e8eaf6; margin:20px 0; overflow-x:auto; }
+.cabin-tab { padding:10px 20px; font-size:14px; font-weight:600; color:#888; cursor:pointer; border-bottom:3px solid transparent; white-space:nowrap; transition:all .2s; }
+.cabin-tab:hover { color:#1a237e; }
+.cabin-tab.active { color:#1a237e; border-bottom-color:#ff6f00; }
+.cabin-tab.unavailable { opacity:.5; text-decoration:line-through; }
+.cabin-detail { display:flex; gap:24px; align-items:flex-start; margin-top:16px; flex-wrap:wrap; }
+.cabin-detail-img { flex:0 0 50%; max-width:50%; border-radius:12px; overflow:hidden; }
+.cabin-detail-img img { width:100%; height:auto; display:block; border-radius:12px; }
+.cabin-detail-info { flex:1; min-width:240px; }
+.cabin-detail-info h4 { font-size:20px; font-weight:800; color:#1a237e; margin:0 0 4px; }
+.cabin-detail-info .cabin-en { font-size:13px; color:#888; margin-bottom:12px; }
+.cabin-detail-info .cabin-desc { font-size:14px; color:#555; line-height:1.7; margin-bottom:16px; }
+.cabin-detail-info .cabin-price-big { font-size:28px; font-weight:900; color:#ff6f00; }
+.cabin-detail-info .cabin-price-big.na { font-size:16px; color:#aaa; }
+
+@media (max-width:768px) {
+  .cabin-detail-img { flex:0 0 100%; max-width:100%; }
+}
 
 /* Include/Exclude */
 .include-list { list-style:none; padding:0; }
@@ -174,21 +186,24 @@ title: 크루즈 상세보기
 <script>
 var portsDB = {};
 var shipsDB = {};
+var cabinTypesDB = {};
 
 (function(){
   var params = new URLSearchParams(window.location.search);
   var cruiseId = params.get('id');
   if (!cruiseId) { showError(); return; }
 
-  // Load cruise data, ports DB, and ships DB
+  // Load cruise data, ports DB, ships DB, cabin types DB
   Promise.all([
     fetch('/cruiselink-blog/assets/data/cruises.json').then(function(r){ return r.json(); }),
     fetch('/cruiselink-blog/assets/data/ports.json').then(function(r){ return r.json(); }).catch(function(){ return {}; }),
-    fetch('/cruiselink-blog/assets/data/ships.json').then(function(r){ return r.json(); }).catch(function(){ return {}; })
+    fetch('/cruiselink-blog/assets/data/ships.json').then(function(r){ return r.json(); }).catch(function(){ return {}; }),
+    fetch('/cruiselink-blog/assets/data/cabin-types.json').then(function(r){ return r.json(); }).catch(function(){ return {}; })
   ]).then(function(results){
     var data = results[0];
     portsDB = results[1];
     shipsDB = results[2];
+    cabinTypesDB = results[3];
     var c = null;
     for (var i = 0; i < data.length; i++) {
       if (data[i].id === cruiseId) { c = data[i]; break; }
@@ -358,28 +373,21 @@ var shipsDB = {};
       document.getElementById('cd-itinerary-detail').innerHTML = html;
     }
 
-    // Cabins
+    // Cabins - tab design with images
     var cabins = c.cabins || [];
+    var lineCabinDB = cabinTypesDB[c.cruiseLine] || {};
     if (cabins.length > 0) {
       document.getElementById('cd-cabins-section').style.display = '';
-      var cabinHtml = '';
-      cabins.forEach(function(cab){
+      var tabsHtml = '';
+      cabins.forEach(function(cab, i) {
         var avail = cab.available !== false;
-        var csym = cab.currency === 'EUR' ? '€' : '$';
-        cabinHtml += '<div class="cabin-card' + (!avail ? ' unavailable' : '') + '">';
-        cabinHtml += '<div class="cabin-type">' + (cab.type || cab.typeEn || '') + '</div>';
-        if (cab.typeEn && cab.type) cabinHtml += '<div class="cabin-type-en">' + cab.typeEn + '</div>';
-        if (cab.desc) cabinHtml += '<div style="font-size:12px;color:#888;margin-top:4px;">' + cab.desc + '</div>';
-        if (avail && cab.priceFrom) {
-          cabinHtml += '<div class="cabin-price">' + csym + Number(cab.priceFrom).toLocaleString() + '~</div>';
-        } else if (!avail) {
-          cabinHtml += '<div class="cabin-price na">매진</div>';
-        } else {
-          cabinHtml += '<div class="cabin-price na">가격문의</div>';
-        }
-        cabinHtml += '</div>';
+        tabsHtml += '<div class="cabin-tab' + (i === 0 ? ' active' : '') + (avail ? '' : ' unavailable') + '" data-cidx="' + i + '" onclick="switchCabin(this)">' + (cab.type || cab.typeEn || '') + '</div>';
       });
-      document.getElementById('cd-cabins').innerHTML = cabinHtml;
+      document.getElementById('cd-cabin-tabs').innerHTML = tabsHtml;
+      window._cabinsData = cabins;
+      window._lineCabinDB = lineCabinDB;
+      window._cabinSym = sym;
+      showCabin(0);
     }
 
     // Included / Excluded
@@ -440,6 +448,37 @@ var shipsDB = {};
     document.getElementById('cruise-detail-content').style.display = '';
   }
 })();
+
+function showCabin(idx) {
+  var cab = window._cabinsData[idx];
+  if (!cab) return;
+  var db = window._lineCabinDB[cab.type] || window._lineCabinDB[cab.typeEn] || {};
+  var avail = cab.available !== false;
+  var csym = window._cabinSym;
+  var imgHtml = db.image ? '<div class="cabin-detail-img"><img src="' + db.image + '" alt="' + (cab.type||'') + '" loading="lazy"></div>' : '';
+  var desc = cab.desc || db.desc || '';
+  var priceHtml = '';
+  if (avail && cab.priceFrom) {
+    priceHtml = '<div class="cabin-price-big">' + csym + Number(cab.priceFrom).toLocaleString() + '~ <small style="font-size:14px;font-weight:400;color:#888;">/1인</small></div>';
+  } else if (!avail) {
+    priceHtml = '<div class="cabin-price-big na">매진</div>';
+  } else {
+    priceHtml = '<div class="cabin-price-big na">가격문의</div>';
+  }
+  document.getElementById('cd-cabin-detail').innerHTML = imgHtml +
+    '<div class="cabin-detail-info">' +
+    '<h4>' + (cab.type || cab.typeEn || '') + '</h4>' +
+    (cab.typeEn && cab.type ? '<div class="cabin-en">' + cab.typeEn + '</div>' : '') +
+    (desc ? '<div class="cabin-desc">' + desc + '</div>' : '') +
+    priceHtml +
+    '</div>';
+}
+
+function switchCabin(tab) {
+  document.querySelectorAll('.cabin-tab').forEach(function(t){ t.classList.remove('active'); });
+  tab.classList.add('active');
+  showCabin(parseInt(tab.getAttribute('data-cidx')));
+}
 
 function showFacility(f) {
   var html = '<div class="facility-desc"><h4>' + f.name + '</h4><p>' + (f.desc || '') + '</p></div>';
