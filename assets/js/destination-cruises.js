@@ -27,6 +27,12 @@ function loadDestinationCruises(config) {
         filtered = cruises.filter(c => destinations.includes(c.destination));
       }
 
+      // Filter: departure date at least 3 months from now
+      var minDate = new Date();
+      minDate.setMonth(minDate.getMonth() + 3);
+      var minDateStr = minDate.toISOString().slice(0, 10);
+      filtered = filtered.filter(function(c) { return (c.departureDate || '') >= minDateStr; });
+
       // Filter by allowed cruise lines
       if (allowedLines && allowedLines.length) {
         filtered = filtered.filter(c => allowedLines.includes(c.cruiseLine));
