@@ -28,6 +28,13 @@ title: 크루즈 상세보기
   </div>
 </div>
 
+<!-- Main Image -->
+<div class="container" style="margin-top:-60px;position:relative;z-index:2;">
+  <div id="cd-main-image" style="display:none;border-radius:16px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.15);margin-bottom:24px;">
+    <img id="cd-main-img" src="" alt="" style="width:100%;max-height:400px;object-fit:cover;display:block;" loading="lazy">
+  </div>
+</div>
+
 <!-- Info Bar -->
 <div class="container">
   <div class="info-bar" id="cd-info-bar"></div>
@@ -105,6 +112,7 @@ title: 크루즈 상세보기
 .day-port-name { font-size:20px; font-weight:800; color:#1a237e; }
 .day-card.sea .day-port-name { color:#5c6bc0; }
 .day-type-badge { font-size:11px; padding:3px 10px; border-radius:10px; background:#e8eaf6; color:#1a237e; font-weight:600; }
+.day-card-image { width:100%; max-height:280px; object-fit:cover; display:block; }
 .day-card-body { padding:24px; }
 .day-headline { font-size:15px; color:#333; margin-bottom:16px; line-height:1.6; }
 .day-section-title { font-size:14px; font-weight:700; color:#1a237e; margin:16px 0 8px; }
@@ -197,10 +205,18 @@ var portsDB = {};
     document.getElementById('cd-meta').innerHTML = '📅 ' + (c.departureDate || '') + ' 출발 · 🌙 ' + nights + '박 · 📍 ' + (c.departurePort || '') + ' 출발';
     document.getElementById('cd-price-hero').textContent = c.priceFrom ? sym + Number(c.priceFrom).toLocaleString() + '~' : '가격문의';
 
-    // Hero image
+    // Hero background image
+    var shipImgUrl = '';
     if (c.image && c.image !== 'default-cruise.jpg') {
-      var imgUrl = (c.image.indexOf('http') === 0) ? c.image : '/cruiselink-blog/assets/images/' + c.image;
-      document.getElementById('cd-hero').style.backgroundImage = 'linear-gradient(rgba(0,20,60,0.55),rgba(0,20,60,0.75)), url(' + imgUrl + ')';
+      shipImgUrl = (c.image.indexOf('http') === 0) ? c.image : '/cruiselink-blog/assets/images/' + c.image;
+      document.getElementById('cd-hero').style.backgroundImage = 'linear-gradient(rgba(0,20,60,0.55),rgba(0,20,60,0.75)), url(' + shipImgUrl + ')';
+    }
+
+    // Main representative image (below hero)
+    if (shipImgUrl) {
+      document.getElementById('cd-main-img').src = shipImgUrl;
+      document.getElementById('cd-main-img').alt = (c.ship || '') + ' - ' + (c.title || '');
+      document.getElementById('cd-main-image').style.display = 'block';
     }
 
     // Tags
@@ -247,6 +263,14 @@ var portsDB = {};
         html += '<span class="day-port-name">' + (isSea ? '🌊 종일 항해' : (portInfo ? (portInfo.emoji || '📍') + ' ' : '📍 ') + (d.port || '미정')) + '</span>';
         if (d.type && !isSea) html += '<span class="day-type-badge">' + d.type + '</span>';
         html += '</div>';
+
+        // Port image
+        if (isSea) {
+          // Sea day: use ship image
+          if (shipImgUrl) html += '<img class="day-card-image" src="' + shipImgUrl + '" alt="종일 항해" loading="lazy">';
+        } else if (portInfo && portInfo.image) {
+          html += '<img class="day-card-image" src="' + portInfo.image + '" alt="' + (d.port || '') + '" loading="lazy">';
+        }
 
         // Body
         html += '<div class="day-card-body">';
