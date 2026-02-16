@@ -20,17 +20,9 @@ emailjs:
   template_id: "YOUR_TEMPLATE_ID"
   public_key: "YOUR_PUBLIC_KEY"
 
-collections:
-  cruises:
-    output: true
-    permalink: /cruise/:path/
+collections: {}
 
-defaults:
-  - scope:
-      path: ""
-      type: "cruises"
-    values:
-      layout: "cruise-detail"
+defaults: []
 
 plugins:
   - jekyll-seo-tag

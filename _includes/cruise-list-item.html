@@ -20,12 +20,7 @@
       </div>
       <div class="cruise-item-meta">{{ cruise.cruiseLineName }} · {{ cruise.ship }}</div>
       <div class="cruise-item-title">
-        {% assign detail_page = site.cruises | where: "cruise_id", cruise.id | first %}
-        {% if detail_page %}
-        <a href="{{ detail_page.url | relative_url }}">{{ cruise.title }}</a>
-        {% else %}
-        {{ cruise.title }}
-        {% endif %}
+        <a href="{{ '/cruise-view/?id=' | append: cruise.id | relative_url }}">{{ cruise.title }}</a>
       </div>
       <div class="cruise-item-ports">📍 {{ cruise.ports | join: " → " }}</div>
       {% if cruise.hashtags %}
@@ -43,11 +38,7 @@
         <div class="cruise-item-price">${{ cruise.priceFrom }}~ <small>/1인</small></div>
       </div>
       <div class="cruise-item-actions">
-        {% if detail_page %}
-        <a href="{{ detail_page.url | relative_url }}" class="btn btn-outline btn-sm">상세보기</a>
-        {% else %}
         <a href="{{ '/cruise-view/?id=' | append: cruise.id | relative_url }}" class="btn btn-outline btn-sm">상세보기</a>
-        {% endif %}
         <button class="btn btn-primary btn-sm" onclick="openInquiry('{{ cruise.title }}','{{ cruise.departureDate }}','{{ cruise.priceFrom }}','{{ cruise.cruiseLineName }}','{{ cruise.ship }}','{{ cruise.ports | join: ", " }}')">문의하기</button>
       </div>
     </div>
