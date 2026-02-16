@@ -614,34 +614,9 @@ ul { list-style: none; }
 }
 .day-toggle:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
 
-/* Day Detail Modal */
-.day-modal-overlay {
-  display: none; position: fixed; inset: 0; background: rgba(0,0,0,.55);
-  z-index: 9999; align-items: center; justify-content: center; padding: 20px;
-}
-.day-modal-overlay.active { display: flex; }
-.day-modal {
-  background: #fff; border-radius: 16px; max-width: 560px; width: 100%;
-  max-height: 85vh; overflow-y: auto; position: relative;
-  box-shadow: 0 20px 60px rgba(0,0,0,.3); animation: dayModalIn .25s ease;
-}
-@keyframes dayModalIn { from { opacity:0; transform: translateY(30px); } to { opacity:1; transform: translateY(0); } }
-.day-modal-header {
-  position: sticky; top: 0; background: var(--navy); color: #fff;
-  padding: 16px 20px; border-radius: 16px 16px 0 0;
-  display: flex; justify-content: space-between; align-items: center; z-index: 1;
-}
-.day-modal-header h3 { margin: 0; font-size: 17px; font-weight: 700; }
-.day-modal-close {
-  background: none; border: none; color: #fff; font-size: 24px; cursor: pointer;
-  width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;
-  border-radius: 50%; transition: background .2s;
-}
-.day-modal-close:hover { background: rgba(255,255,255,.2); }
-.day-modal-body { padding: 20px; line-height: 1.7; }
-.day-modal-body strong { color: var(--navy); }
-.day-modal-body ul { padding-left: 0; list-style: none; }
-.day-modal-body li { padding: 4px 0; }
+/* Day expandable (inline toggle) */
+.day-expandable { display: none; }
+.day-expandable.open { display: block; }
 
 /* Ship facility tab images — unified size */
 .facility-tab-content img,

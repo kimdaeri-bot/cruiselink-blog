@@ -288,19 +288,7 @@ function initDaySliders() {
   });
 }
 
-// --- DAY 더보기 toggle ---
-// Day detail modal
-(function(){
-  var overlay = document.createElement('div');
-  overlay.className = 'day-modal-overlay';
-  overlay.innerHTML = '<div class="day-modal"><div class="day-modal-header"><h3 id="dayModalTitle"></h3><button class="day-modal-close">&times;</button></div><div class="day-modal-body" id="dayModalBody"></div></div>';
-  document.body.appendChild(overlay);
-  overlay.addEventListener('click', function(e){ if(e.target===overlay) overlay.classList.remove('active'); });
-  overlay.querySelector('.day-modal-close').addEventListener('click', function(){ overlay.classList.remove('active'); });
-  document.addEventListener('keydown', function(e){ if(e.key==='Escape') overlay.classList.remove('active'); });
-  window._dayModal = overlay;
-})();
-
+// --- DAY 더보기 toggle (펼치기/접기) ---
 function toggleDay(btn) {
   var parent = btn.parentElement;
   var content = parent ? parent.querySelector('.day-expandable') : null;
@@ -312,39 +300,16 @@ function toggleDay(btn) {
     }
   }
   if (!content) return;
-  // Find DAY title
-  var section = btn.closest('.timeline') || btn.parentElement;
-  var h3 = null;
-  var prev = btn.previousElementSibling;
-  while (prev) {
-    if (prev.tagName === 'H3' || prev.querySelector && prev.querySelector('h3')) {
-      h3 = prev.tagName === 'H3' ? prev : prev.querySelector('h3');
-      break;
-    }
-    prev = prev.previousElementSibling;
-  }
-  // Also search parent
-  if (!h3) {
-    var allH3 = btn.parentElement.querySelectorAll('h3');
-    if (allH3.length) h3 = allH3[allH3.length - 1];
-  }
-  var title = h3 ? h3.textContent.trim() : '상세 정보';
-  document.getElementById('dayModalTitle').textContent = title;
-  document.getElementById('dayModalBody').innerHTML = content.innerHTML;
-  window._dayModal.classList.add('active');
+  var isOpen = content.classList.contains('open');
+  content.classList.toggle('open');
+  var arrow = btn.querySelector('.toggle-arrow');
+  if (arrow) arrow.textContent = isOpen ? '▼' : '▲';
+  btn.innerHTML = isOpen ? '📋 기항지 투어·자유여행 보기 <span class="toggle-arrow">▼</span>' : '📋 접기 <span class="toggle-arrow">▲</span>';
 }
 
-// Auto-init: bind all toggle buttons and sliders after content is moved
 document.addEventListener('DOMContentLoaded', function(){
   setTimeout(function(){
     initDaySliders();
-    // Re-bind toggles that might have been moved by layout JS
-    document.querySelectorAll('.day-toggle').forEach(function(btn){
-      btn.addEventListener('click', function(e){
-        e.preventDefault();
-        toggleDay(btn);
-      });
-    });
   }, 500);
 });
 
