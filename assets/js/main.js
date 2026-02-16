@@ -149,27 +149,214 @@ function filterCruises() {
   }
 }
 
+// --- Multi-Select Dropdown ---
+var destPorts = {
+  '': ['부산','도쿄(요코하마)','나하(오키나와)','킬','로마(치비타베키아)','바르셀로나','마르세유','제노바','나폴리','베네치아','팔레르모','바리','피레우스(아테네)','시애틀','밴쿠버','앵커리지','마이애미','포트로더데일','포트카나베랄','뉴올리언스','탬파','갤버스턴','산후안','사우스햄프턴','코펜하겐','함부르크','암스테르담','킬(독일)','싱가포르','홍콩','상하이','방콕','오사카','후쿠오카','고베','호놀룰루','로스앤젤레스'],
+  'korea': ['부산','도쿄(요코하마)','나하(오키나와)','킬'],
+  'mediterranean': ['로마(치비타베키아)','바르셀로나','마르세유','제노바','나폴리','베네치아','팔레르모','바리','피레우스(아테네)'],
+  'alaska': ['시애틀','밴쿠버','앵커리지'],
+  'caribbean': ['마이애미','포트로더데일','포트카나베랄','뉴올리언스','탬파','갤버스턴','산후안'],
+  'northern-europe': ['사우스햄프턴','코펜하겐','함부르크','암스테르담','킬(독일)'],
+  'southeast-asia': ['싱가포르','홍콩','상하이','방콕'],
+  'japan': ['도쿄(요코하마)','오사카','나하(오키나와)','후쿠오카','고베'],
+  'hawaii': ['호놀룰루','로스앤젤레스','밴쿠버']
+};
+
+var portAliases = {
+  '부산': ['busan','부산'],
+  '도쿄(요코하마)': ['tokyo','yokohama','도쿄','요코하마'],
+  '나하(오키나와)': ['naha','okinawa','나하','오키나와'],
+  '킬': ['kiel','킬'],
+  '로마(치비타베키아)': ['rome','civitavecchia','로마','치비타베키아'],
+  '바르셀로나': ['barcelona','바르셀로나'],
+  '마르세유': ['marseille','마르세유'],
+  '제노바': ['genoa','제노바'],
+  '나폴리': ['naples','나폴리'],
+  '베네치아': ['venice','venezia','베네치아'],
+  '팔레르모': ['palermo','팔레르모'],
+  '바리': ['bari','바리'],
+  '피레우스(아테네)': ['piraeus','athens','피레우스','아테네'],
+  '시애틀': ['seattle','시애틀'],
+  '밴쿠버': ['vancouver','밴쿠버'],
+  '앵커리지': ['anchorage','앵커리지'],
+  '마이애미': ['miami','마이애미'],
+  '포트로더데일': ['lauderdale','포트로더데일','ft. lauderdale','fort lauderdale'],
+  '포트카나베랄': ['canaveral','포트카나베랄'],
+  '뉴올리언스': ['new orleans','뉴올리언스'],
+  '탬파': ['tampa','탬파'],
+  '갤버스턴': ['galveston','갤버스턴'],
+  '산후안': ['san juan','산후안'],
+  '사우스햄프턴': ['southampton','사우스햄프턴'],
+  '코펜하겐': ['copenhagen','코펜하겐'],
+  '함부르크': ['hamburg','함부르크'],
+  '암스테르담': ['amsterdam','암스테르담'],
+  '킬(독일)': ['kiel','킬'],
+  '싱가포르': ['singapore','싱가포르'],
+  '홍콩': ['hong kong','홍콩'],
+  '상하이': ['shanghai','상하이'],
+  '방콕': ['bangkok','방콕'],
+  '오사카': ['osaka','오사카'],
+  '후쿠오카': ['fukuoka','후쿠오카'],
+  '고베': ['kobe','고베'],
+  '호놀룰루': ['honolulu','호놀룰루'],
+  '로스앤젤레스': ['los angeles','로스앤젤레스','la']
+};
+
+var lineAliases = {
+  'msc': ['msc','엠에스씨'],
+  'ncl': ['ncl','norwegian','노르웨이안'],
+  'royal-caribbean': ['royal caribbean','로열캐리비안','로열','rci'],
+  'celebrity': ['celebrity','셀레브리티'],
+  'princess': ['princess','프린세스'],
+  'carnival': ['carnival','카니발']
+};
+
+var lineDisplayNames = {
+  'msc': 'MSC',
+  'ncl': 'Norwegian (NCL)',
+  'royal-caribbean': 'Royal Caribbean',
+  'celebrity': 'Celebrity',
+  'princess': 'Princess',
+  'carnival': 'Carnival'
+};
+
+function toggleMultiSelect(id) {
+  var el = document.getElementById(id);
+  var dd = el.querySelector('.ms-dropdown');
+  var isOpen = dd.style.display !== 'none';
+  closeAllMultiSelects();
+  if (!isOpen) {
+    dd.style.display = '';
+    var searchInput = dd.querySelector('.ms-search');
+    if (searchInput) { searchInput.value = ''; filterMultiSelectOptions(id, ''); searchInput.focus(); }
+  }
+}
+
+function closeAllMultiSelects() {
+  document.querySelectorAll('.multi-select .ms-dropdown').forEach(function(dd) { dd.style.display = 'none'; });
+}
+
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.multi-select')) closeAllMultiSelects();
+});
+
+function getMultiSelectValues(id) {
+  var el = document.getElementById(id);
+  var checked = el.querySelectorAll('.ms-options input[type="checkbox"]:checked');
+  return Array.from(checked).map(function(cb) { return cb.value; });
+}
+
+function updateMultiSelectDisplay(id) {
+  var el = document.getElementById(id);
+  var selected = el.querySelector('.ms-selected');
+  var vals = getMultiSelectValues(id);
+  // Remove existing tags
+  selected.querySelectorAll('.ms-tag').forEach(function(t) { t.remove(); });
+  var placeholder = selected.querySelector('.ms-placeholder');
+  if (vals.length === 0) {
+    placeholder.style.display = '';
+  } else {
+    placeholder.style.display = 'none';
+    vals.forEach(function(v) {
+      var tag = document.createElement('span');
+      tag.className = 'ms-tag';
+      // Display name
+      var displayName = v;
+      if (id === 'ms-line' && lineDisplayNames[v]) displayName = lineDisplayNames[v];
+      tag.innerHTML = displayName + '<span class="ms-remove" onclick="event.stopPropagation();removeMultiSelectValue(\'' + id + '\',\'' + v + '\')">×</span>';
+      selected.insertBefore(tag, placeholder);
+    });
+  }
+}
+
+function removeMultiSelectValue(id, val) {
+  var el = document.getElementById(id);
+  var cb = el.querySelector('.ms-options input[value="' + val + '"]');
+  if (cb) { cb.checked = false; }
+  updateMultiSelectDisplay(id);
+}
+
+function filterMultiSelectOptions(id, query) {
+  var el = document.getElementById(id);
+  var labels = el.querySelectorAll('.ms-options label');
+  var q = query.toLowerCase().trim();
+  labels.forEach(function(label) {
+    var val = label.querySelector('input').value;
+    var text = label.textContent.toLowerCase();
+    if (!q) { label.style.display = ''; return; }
+    // Check label text
+    if (text.indexOf(q) >= 0) { label.style.display = ''; return; }
+    // Check aliases
+    var aliases = (id === 'ms-port') ? (portAliases[val] || []) : (lineAliases[val] || []);
+    var match = aliases.some(function(a) { return a.toLowerCase().indexOf(q) >= 0; });
+    label.style.display = match ? '' : 'none';
+  });
+}
+
+function populatePortOptions(dest) {
+  var ports = destPorts[dest] || destPorts[''];
+  var container = document.querySelector('#ms-port .ms-options');
+  container.innerHTML = '';
+  ports.forEach(function(p) {
+    var label = document.createElement('label');
+    var cb = document.createElement('input');
+    cb.type = 'checkbox'; cb.value = p;
+    cb.addEventListener('change', function() { updateMultiSelectDisplay('ms-port'); });
+    label.appendChild(cb);
+    label.appendChild(document.createTextNode(' ' + p));
+    container.appendChild(label);
+  });
+  updateMultiSelectDisplay('ms-port');
+}
+
+function portMatchesCruise(portName, cruiseDeparturePort) {
+  var dp = (cruiseDeparturePort || '').toLowerCase();
+  var aliases = portAliases[portName] || [portName.toLowerCase()];
+  return aliases.some(function(a) { return dp.indexOf(a.toLowerCase()) >= 0; });
+}
+
 // --- Home Search Button ---
 document.addEventListener('DOMContentLoaded', function() {
+  // Init port options
+  populatePortOptions('');
+
+  // Destination change → update port options
+  var destSelect = document.getElementById('hf-dest');
+  if (destSelect) {
+    destSelect.addEventListener('change', function() { populatePortOptions(this.value); });
+  }
+
+  // Multi-select search inputs
+  document.querySelectorAll('.multi-select .ms-search').forEach(function(input) {
+    var msId = input.closest('.multi-select').id;
+    input.addEventListener('input', function() { filterMultiSelectOptions(msId, this.value); });
+  });
+
+  // Line checkboxes change handler
+  document.querySelectorAll('#ms-line .ms-options input[type="checkbox"]').forEach(function(cb) {
+    cb.addEventListener('change', function() { updateMultiSelectDisplay('ms-line'); });
+  });
+
   var homeBtn = document.getElementById('homeSearchBtn');
   var _homeData = null, _homeFiltered = [], _homePage = 0;
   if (homeBtn) {
     homeBtn.addEventListener('click', function(e) {
       e.preventDefault();
       var dest = document.getElementById('hf-dest').value;
-      var port = document.getElementById('hf-port').value;
-      var line = document.getElementById('hf-line').value;
+      var ports = getMultiSelectValues('ms-port');
+      var lines = getMultiSelectValues('ms-line');
       var month = document.getElementById('hf-month').value;
       var nights = document.getElementById('hf-nights').value;
       function doFilter(data) {
         var today = new Date().toISOString().slice(0,10);
         var r = data.filter(function(c){ return (c.departureDate||'') >= today; });
         if (dest) r = r.filter(function(c){ return c.destination === dest; });
-        if (port) {
-          var portAliases = port.toLowerCase().split(',');
-          r = r.filter(function(c){ var dp=(c.departurePort||'').toLowerCase(); return portAliases.some(function(a){ return dp.indexOf(a.trim()) >= 0; }); });
+        if (ports.length > 0) {
+          r = r.filter(function(c) {
+            return ports.some(function(p) { return portMatchesCruise(p, c.departurePort); });
+          });
         }
-        if (line) r = r.filter(function(c){ return c.cruiseLine === line; });
+        if (lines.length > 0) r = r.filter(function(c){ return lines.indexOf(c.cruiseLine) >= 0; });
         if (month) r = r.filter(function(c){ return (c.departureDate||'').substring(0,7) === month; });
         if (nights === 'short') r = r.filter(function(c){ return c.nights <= 7; });
         else if (nights === 'medium') r = r.filter(function(c){ return c.nights >= 8 && c.nights <= 10; });

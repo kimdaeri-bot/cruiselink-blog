@@ -24,49 +24,46 @@ description: "크루즈 여행의 모든 것, 크루즈링크와 함께하세요
       <label>목적지</label>
       <select id="hf-dest">
         <option value="">전체</option>
+        <option value="korea">한국·일본출발</option>
         <option value="mediterranean">지중해</option>
         <option value="alaska">알래스카</option>
         <option value="caribbean">카리브해</option>
         <option value="northern-europe">북유럽</option>
         <option value="southeast-asia">동남아</option>
-        <option value="hawaii">하와이</option>
         <option value="japan">일본</option>
+        <option value="hawaii">하와이</option>
       </select>
     </div>
     <div class="filter-group">
       <label>출발항구</label>
-      <select id="hf-port">
-        <option value="">전체</option>
-        <option value="miami,마이애미">마이애미</option>
-        <option value="barcelona,바르셀로나">바르셀로나</option>
-        <option value="rome,로마,civitavecchia">로마</option>
-        <option value="seattle,시애틀">시애틀</option>
-        <option value="lauderdale,포트로더데일,포트 로더데일">포트로더데일</option>
-        <option value="canaveral,포트카나베랄">포트카나베랄</option>
-        <option value="marseille,마르세유">마르세유</option>
-        <option value="제노바,genoa">제노바</option>
-        <option value="naples,나폴리">나폴리</option>
-        <option value="vancouver,밴쿠버">밴쿠버</option>
-        <option value="honolulu,호놀룰루">호놀룰루</option>
-        <option value="yokohama,요코하마,도쿄">도쿄(요코하마)</option>
-        <option value="부산,busan">부산</option>
-        <option value="singapore,싱가포르">싱가포르</option>
-        <option value="southampton,사우스햄프턴">사우스햄프턴</option>
-        <option value="copenhagen,코펜하겐">코펜하겐</option>
-        <option value="los angeles,로스앤젤레스">로스앤젤레스</option>
-      </select>
+      <div class="multi-select" id="ms-port">
+        <div class="ms-selected" onclick="toggleMultiSelect('ms-port')">
+          <span class="ms-placeholder">전체</span>
+        </div>
+        <div class="ms-dropdown" style="display:none;">
+          <input type="text" class="ms-search" placeholder="항구 검색..." onclick="event.stopPropagation();">
+          <div class="ms-options"></div>
+        </div>
+      </div>
     </div>
     <div class="filter-group">
       <label>선사</label>
-      <select id="hf-line">
-        <option value="">전체</option>
-        <option value="royal-caribbean">로열캐리비안</option>
-        <option value="msc">MSC</option>
-        <option value="ncl">Norwegian</option>
-        <option value="celebrity">Celebrity</option>
-        <option value="princess">Princess</option>
-        <option value="carnival">Carnival</option>
-      </select>
+      <div class="multi-select" id="ms-line">
+        <div class="ms-selected" onclick="toggleMultiSelect('ms-line')">
+          <span class="ms-placeholder">전체</span>
+        </div>
+        <div class="ms-dropdown" style="display:none;">
+          <input type="text" class="ms-search" placeholder="선사 검색..." onclick="event.stopPropagation();">
+          <div class="ms-options">
+            <label><input type="checkbox" value="msc"> MSC</label>
+            <label><input type="checkbox" value="ncl"> Norwegian (NCL)</label>
+            <label><input type="checkbox" value="royal-caribbean"> Royal Caribbean</label>
+            <label><input type="checkbox" value="celebrity"> Celebrity</label>
+            <label><input type="checkbox" value="princess"> Princess</label>
+            <label><input type="checkbox" value="carnival"> Carnival</label>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="filter-group">
       <label>출발월</label>
