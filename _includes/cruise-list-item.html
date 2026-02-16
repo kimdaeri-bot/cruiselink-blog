@@ -2,7 +2,11 @@
 <div class="cruise-item" data-destination="{{ cruise.destination }}" data-cruiseline="{{ cruise.cruiseLine }}" data-port="{{ cruise.departurePort }}" data-month="{{ cruise.departureDate | date: '%Y-%m' }}" data-nights="{{ cruise.nights }}" data-price="{{ cruise.priceFrom }}" data-tags="{{ cruise.tags | join: ',' }}" data-featured="{{ cruise.featured }}">
   <div class="cruise-item-image">
     {% if cruise.image and cruise.image != "default-cruise.jpg" %}
+    {% if cruise.image contains 'http' %}
+    <img src="{{ cruise.image }}" alt="{{ cruise.title }}" loading="lazy">
+    {% else %}
     <img src="{{ '/assets/images/' | append: cruise.image | relative_url }}" alt="{{ cruise.title }}" loading="lazy">
+    {% endif %}
     {% else %}
     <div class="placeholder">🚢</div>
     {% endif %}
