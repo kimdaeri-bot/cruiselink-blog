@@ -240,7 +240,7 @@ description: "크루즈 여행의 모든 것, 크루즈링크와 함께하세요
             <div class="cruise-card-body">
               <div class="cruise-card-meta">{{ cruise.cruiseLineName }} · {{ cruise.ship }}</div>
               <div class="cruise-card-title">{{ cruise.title }}</div>
-              <div class="cruise-card-ports">📍 {% assign port_names = "" %}{% for p in cruise.ports %}{% if p.name %}{% if port_names != "" %}{% assign port_names = port_names | append: " → " %}{% endif %}{% assign port_names = port_names | append: p.name %}{% endif %}{% endfor %}{{ port_names }}</div>
+              <div class="cruise-card-ports">📍 {% assign port_names = "" %}{% for p in cruise.ports %}{% if p.name %}{% assign pn = p.name %}{% else %}{% assign pn = p %}{% endif %}{% if pn and pn != "" %}{% if port_names != "" %}{% assign port_names = port_names | append: " → " %}{% endif %}{% assign port_names = port_names | append: pn %}{% endif %}{% endfor %}{{ port_names }}</div>
               <div style="font-size:13px;color:var(--gray-700);margin-bottom:12px;">
                 📅 {{ cruise.departureDate }} · 🌙 {{ cruise.nights }}박
               </div>
