@@ -201,17 +201,23 @@ description: "크루즈 여행의 모든 것, 크루즈링크와 함께하세요
       <p class="section-subtitle">크루즈링크가 엄선한 인기 상품</p>
     </div>
     <div class="cruise-grid">
+      {% assign featured_order = "japan-msc-bellissima-20260809,asia-msc-be-20260928,asia-msc-be-20260504,asia-msc-be-20260510,alaska-ncl-bliss-20260502,alaska-ncl-encore-20260503,mediterranean-msc-gr-20260701,mediterranean-msc-sx-20260704,northern-europe-msc-er-20260606" | split: "," %}
+      {% for fid in featured_order %}
       {% for cruise in site.data.cruises %}
-        {% if cruise.featured %}
+        {% if cruise.id == fid %}
         {% assign detail_page = nil %}
         {% for c in site.cruises %}
           {% if c.cruise_id == cruise.id %}{% assign detail_page = c %}{% endif %}
         {% endfor %}
         <div class="cruise-card">
-          <a href="{% if detail_page %}{{ detail_page.url | relative_url }}{% else %}{{ '/cruises/' | relative_url }}{% endif %}" class="cruise-card-link">
+          <a href="{% if detail_page %}{{ detail_page.url | relative_url }}{% else %}{{ '/cruise-view/?id=' | append: cruise.id | relative_url }}{% endif %}" class="cruise-card-link">
             <div class="cruise-card-image">
               {% if cruise.image and cruise.image != "default-cruise.jpg" %}
+              {% if cruise.image contains 'http' %}
+              <img src="{{ cruise.image }}" alt="{{ cruise.title }}" loading="lazy">
+              {% else %}
               <img src="{{ '/assets/images/' | append: cruise.image | relative_url }}" alt="{{ cruise.title }}" loading="lazy">
+              {% endif %}
               {% else %}
               <div class="placeholder">🚢</div>
               {% endif %}
@@ -224,12 +230,12 @@ description: "크루즈 여행의 모든 것, 크루즈링크와 함께하세요
             <div class="cruise-card-body">
               <div class="cruise-card-meta">{{ cruise.cruiseLineName }} · {{ cruise.ship }}</div>
               <div class="cruise-card-title">{{ cruise.title }}</div>
-              <div class="cruise-card-ports">📍 {{ cruise.ports | join: " → " }}</div>
+              <div class="cruise-card-ports">📍 {% assign port_names = "" %}{% for p in cruise.ports %}{% if p.name %}{% if port_names != "" %}{% assign port_names = port_names | append: " → " %}{% endif %}{% assign port_names = port_names | append: p.name %}{% endif %}{% endfor %}{{ port_names }}</div>
               <div style="font-size:13px;color:var(--gray-700);margin-bottom:12px;">
                 📅 {{ cruise.departureDate }} · 🌙 {{ cruise.nights }}박
               </div>
               <div class="cruise-card-footer">
-                <div class="cruise-card-price">${{ cruise.priceFrom }}~ <small>/1인</small></div>
+                <div class="cruise-card-price">{% if cruise.currency == "EUR" %}€{% else %}${% endif %}{{ cruise.priceFrom }}~ <small>/1인</small></div>
                 <span class="btn btn-primary btn-sm">자세히 보기</span>
               </div>
             </div>
@@ -237,9 +243,7 @@ description: "크루즈 여행의 모든 것, 크루즈링크와 함께하세요
         </div>
         {% endif %}
       {% endfor %}
-    </div>
-    <div class="text-center mt-40">
-      <a href="{{ '/cruises/' | relative_url }}" class="btn btn-secondary btn-lg">전체 상품 보기 →</a>
+      {% endfor %}
     </div>
   </div>
 </section>
