@@ -54,27 +54,7 @@ title: 크루즈 상세보기
   </div>
 </div>
 
-<!-- Cabins -->
-<div class="section section-alt" id="cd-cabins-section" style="display:none;">
-  <div class="container">
-    <h2 class="section-title">🛏️ 객실 & 요금</h2>
-    <p class="section-subtitle">1인 기준 요금 (2인 1실 기준)</p>
-    <div class="cabin-tabs" id="cd-cabin-tabs"></div>
-    <div class="cabin-detail" id="cd-cabin-detail"></div>
-    <p style="margin-top:16px;font-size:13px;color:#888;">※ 요금은 예고 없이 변동될 수 있습니다. 정확한 요금은 문의해주세요.</p>
-  </div>
-</div>
-
-<!-- Included/Excluded -->
-<div class="section" id="cd-include-section" style="display:none;">
-  <div class="container">
-    <h2 class="section-title">📋 포함 / 불포함 사항</h2>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:20px;" id="cd-include-grid">
-    </div>
-  </div>
-</div>
-
-<!-- Ship Info -->
+<!-- Ship Info (includes Cabins) -->
 <div class="section section-alt" id="cd-ship-section" style="display:none;">
   <div class="container">
     <h2 class="section-title" id="cd-ship-title"></h2>
@@ -83,6 +63,23 @@ title: 크루즈 상세보기
       <h3 style="font-size:18px;font-weight:700;color:#1a237e;margin-bottom:16px;">주요 시설</h3>
       <div class="facility-tabs" id="cd-facility-tabs"></div>
       <div class="facility-content" id="cd-facility-content"></div>
+    </div>
+    <!-- Cabins inside Ship section -->
+    <div id="cd-cabins-section" style="display:none;margin-top:40px;">
+      <h3 style="font-size:20px;font-weight:700;color:#1a237e;margin-bottom:8px;">🛏️ 객실 & 요금</h3>
+      <p class="section-subtitle">1인 기준 요금 (2인 1실 기준)</p>
+      <div class="cabin-tabs" id="cd-cabin-tabs"></div>
+      <div class="cabin-detail" id="cd-cabin-detail"></div>
+      <p style="margin-top:16px;font-size:13px;color:#888;">※ 요금은 예고 없이 변동될 수 있습니다. 정확한 요금은 문의해주세요.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Included/Excluded -->
+<div class="section" id="cd-include-section" style="display:none;">
+  <div class="container">
+    <h2 class="section-title">📋 포함 / 불포함 사항</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:20px;" id="cd-include-grid">
     </div>
   </div>
 </div>
