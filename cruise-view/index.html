@@ -78,6 +78,11 @@ title: 크루즈 상세보기
   <div class="container">
     <h2 class="section-title" id="cd-ship-title"></h2>
     <div class="ship-specs" id="cd-ship-specs"></div>
+    <div id="cd-ship-facilities" style="margin-top:32px;display:none;">
+      <h3 style="font-size:18px;font-weight:700;color:#1a237e;margin-bottom:16px;">주요 시설</h3>
+      <div class="facility-tabs" id="cd-facility-tabs"></div>
+      <div class="facility-content" id="cd-facility-content"></div>
+    </div>
   </div>
 </div>
 
@@ -149,6 +154,16 @@ title: 크루즈 상세보기
 .include-list.included li::before { content:'✅'; }
 .include-list.excluded li::before { content:'❌'; }
 
+/* Facility tabs */
+.facility-tabs { display:flex; gap:0; border-bottom:2px solid #e8eaf6; margin-bottom:20px; overflow-x:auto; }
+.facility-tab { padding:10px 20px; font-size:14px; font-weight:600; color:#888; cursor:pointer; border-bottom:3px solid transparent; white-space:nowrap; transition:all .2s; }
+.facility-tab:hover { color:#1a237e; }
+.facility-tab.active { color:#1a237e; border-bottom-color:#ff6f00; }
+.facility-content { display:flex; gap:24px; align-items:flex-start; }
+.facility-desc { flex:1; }
+.facility-desc h4 { font-size:18px; font-weight:700; color:#1a237e; margin-bottom:8px; }
+.facility-desc p { font-size:14px; color:#555; line-height:1.7; }
+
 @media (max-width:768px) {
   .day-card-header { flex-wrap:wrap; gap:8px; padding:16px; }
   .day-card-body { padding:16px; }
@@ -158,19 +173,22 @@ title: 크루즈 상세보기
 
 <script>
 var portsDB = {};
+var shipsDB = {};
 
 (function(){
   var params = new URLSearchParams(window.location.search);
   var cruiseId = params.get('id');
   if (!cruiseId) { showError(); return; }
 
-  // Load both cruise data and ports DB
+  // Load cruise data, ports DB, and ships DB
   Promise.all([
     fetch('/cruiselink-blog/assets/data/cruises.json').then(function(r){ return r.json(); }),
-    fetch('/cruiselink-blog/assets/data/ports.json').then(function(r){ return r.json(); }).catch(function(){ return {}; })
+    fetch('/cruiselink-blog/assets/data/ports.json').then(function(r){ return r.json(); }).catch(function(){ return {}; }),
+    fetch('/cruiselink-blog/assets/data/ships.json').then(function(r){ return r.json(); }).catch(function(){ return {}; })
   ]).then(function(results){
     var data = results[0];
     portsDB = results[1];
+    shipsDB = results[2];
     var c = null;
     for (var i = 0; i < data.length; i++) {
       if (data[i].id === cruiseId) { c = data[i]; break; }
@@ -376,15 +394,36 @@ var portsDB = {};
       excluded.map(function(i){ return '<li>' + i + '</li>'; }).join('') +
       '</ul></div>';
 
-    // Ship
-    if (c.shipTonnage || c.shipPassengers || c.shipYear) {
+    // Ship - use shipsDB for enhanced info
+    var shipInfo = shipsDB[c.ship] || {};
+    var tonnage = c.shipTonnage || shipInfo.tonnage || '';
+    var passengers = c.shipPassengers || shipInfo.passengers || '';
+    var shipYear = c.shipYear || shipInfo.year || '';
+    var facilities = shipInfo.facilities || [];
+
+    if (tonnage || passengers || shipYear || facilities.length) {
       document.getElementById('cd-ship-section').style.display = '';
       document.getElementById('cd-ship-title').textContent = '🚢 선박 소개 - ' + (c.ship || '');
       var specs = '';
-      if (c.shipTonnage) specs += '<div class="ship-spec"><div class="label">톤수</div><div class="value">' + c.shipTonnage + '</div></div>';
-      if (c.shipPassengers) specs += '<div class="ship-spec"><div class="label">승객 수</div><div class="value">' + c.shipPassengers + '</div></div>';
-      if (c.shipYear) specs += '<div class="ship-spec"><div class="label">취항년도</div><div class="value">' + c.shipYear + '</div></div>';
+      if (tonnage) specs += '<div class="ship-spec"><div class="label">톤수</div><div class="value">' + tonnage + '</div></div>';
+      if (passengers) specs += '<div class="ship-spec"><div class="label">승객 수</div><div class="value">' + passengers + '</div></div>';
+      if (shipYear) specs += '<div class="ship-spec"><div class="label">취항년도</div><div class="value">' + shipYear + '</div></div>';
       document.getElementById('cd-ship-specs').innerHTML = specs;
+
+      // Facilities tabs
+      if (facilities.length > 0) {
+        var facSection = document.getElementById('cd-ship-facilities');
+        facSection.style.display = '';
+        var tabsHtml = '';
+        facilities.forEach(function(f, i) {
+          tabsHtml += '<div class="facility-tab' + (i === 0 ? ' active' : '') + '" data-idx="' + i + '" onclick="switchFacility(this)">' + f.name + '</div>';
+        });
+        document.getElementById('cd-facility-tabs').innerHTML = tabsHtml;
+
+        // Show first facility
+        showFacility(facilities[0]);
+        window._facilities = facilities;
+      }
     }
 
     // Inquiry
@@ -401,6 +440,21 @@ var portsDB = {};
     document.getElementById('cruise-detail-content').style.display = '';
   }
 })();
+
+function showFacility(f) {
+  var html = '<div class="facility-desc"><h4>' + f.name + '</h4><p>' + (f.desc || '') + '</p></div>';
+  document.getElementById('cd-facility-content').innerHTML = html;
+}
+
+function switchFacility(tab) {
+  var tabs = document.querySelectorAll('.facility-tab');
+  tabs.forEach(function(t){ t.classList.remove('active'); });
+  tab.classList.add('active');
+  var idx = parseInt(tab.getAttribute('data-idx'));
+  if (window._facilities && window._facilities[idx]) {
+    showFacility(window._facilities[idx]);
+  }
+}
 
 function toggleDayCard(btn) {
   var card = btn.closest('.day-card');
