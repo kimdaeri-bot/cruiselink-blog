@@ -15,6 +15,7 @@ title: 크루즈 상세보기
     <p style="font-size:14px;opacity:0.8;margin-bottom:8px;" id="cd-hero-sub"></p>
     <h1 id="cd-title"></h1>
     <div class="meta" id="cd-meta"></div>
+    <div id="cd-tags-area"></div>
     <div style="margin-top:20px;">
       <span style="font-size:32px;font-weight:900;" id="cd-price-hero"></span>
       <span style="opacity:0.8;">/1인</span>
@@ -42,7 +43,7 @@ title: 크루즈 상세보기
         <span class="itinerary-route" id="cd-route"></span>
       </div>
     </div>
-    <div id="cd-itinerary-detail" style="margin-top:24px;"></div>
+    <div id="cd-itinerary-detail" style="margin-top:32px;"></div>
   </div>
 </div>
 
@@ -56,8 +57,17 @@ title: 크루즈 상세보기
   </div>
 </div>
 
+<!-- Included/Excluded -->
+<div class="section" id="cd-include-section" style="display:none;">
+  <div class="container">
+    <h2 class="section-title">📋 포함 / 불포함 사항</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:20px;" id="cd-include-grid">
+    </div>
+  </div>
+</div>
+
 <!-- Ship Info -->
-<div class="section" id="cd-ship-section" style="display:none;">
+<div class="section section-alt" id="cd-ship-section" style="display:none;">
   <div class="container">
     <h2 class="section-title" id="cd-ship-title"></h2>
     <div class="ship-specs" id="cd-ship-specs"></div>
@@ -86,18 +96,36 @@ title: 크루즈 상세보기
 </div>
 
 <style>
-.itin-timeline { position:relative; padding-left:40px; }
-.itin-day { position:relative; padding-bottom:24px; }
-.itin-day:last-child { padding-bottom:0; }
-.itin-day::before { content:''; position:absolute; left:-28px; top:6px; width:12px; height:12px; border-radius:50%; background:#1a237e; border:2px solid #fff; box-shadow:0 0 0 2px #1a237e; z-index:1; }
-.itin-day.sea::before { background:#90caf9; box-shadow:0 0 0 2px #90caf9; }
-.itin-day::after { content:''; position:absolute; left:-23px; top:20px; width:2px; height:calc(100%); background:#cfd8dc; }
-.itin-day:last-child::after { display:none; }
-.itin-day-num { font-size:12px; color:#888; font-weight:700; text-transform:uppercase; }
-.itin-day-port { font-size:16px; font-weight:700; color:#1a237e; margin-top:2px; }
-.itin-day-type { display:inline-block; font-size:11px; padding:2px 8px; border-radius:10px; background:#e8eaf6; color:#1a237e; margin-left:8px; }
-.itin-day.sea .itin-day-port { color:#5c6bc0; }
+/* Day card styles */
+.day-card { background:#fff; border:2px solid #e8eaf6; border-radius:16px; margin-bottom:24px; overflow:hidden; transition:border-color .2s; }
+.day-card:hover { border-color:#1a237e; }
+.day-card-header { display:flex; align-items:center; gap:16px; padding:20px 24px; background:linear-gradient(135deg,#e8eaf6,#f5f5f5); }
+.day-num { background:#1a237e; color:#fff; border-radius:10px; padding:6px 14px; font-weight:900; font-size:13px; white-space:nowrap; }
+.day-card.sea .day-num { background:#5c6bc0; }
+.day-port-name { font-size:20px; font-weight:800; color:#1a237e; }
+.day-card.sea .day-port-name { color:#5c6bc0; }
+.day-type-badge { font-size:11px; padding:3px 10px; border-radius:10px; background:#e8eaf6; color:#1a237e; font-weight:600; }
+.day-card-body { padding:24px; }
+.day-headline { font-size:15px; color:#333; margin-bottom:16px; line-height:1.6; }
+.day-section-title { font-size:14px; font-weight:700; color:#1a237e; margin:16px 0 8px; }
+.tour-item { background:#f8f9fa; border-radius:10px; padding:14px; margin-bottom:10px; }
+.tour-name { font-weight:700; color:#333; }
+.tour-meta { font-size:12px; color:#ff6f00; font-weight:600; margin-top:2px; }
+.tour-desc { font-size:13px; color:#666; margin-top:4px; line-height:1.5; }
+.free-item { padding:6px 0; font-size:13px; color:#555; }
+.free-item::before { content:'🚶 '; }
+.tip-box { background:#fff8e1; border-radius:10px; padding:14px; margin-top:12px; font-size:13px; color:#666; line-height:1.6; }
+.tip-box::before { content:'💡 '; font-weight:700; }
+.dining-box { background:#fce4ec; border-radius:10px; padding:12px 14px; margin-top:10px; font-size:13px; color:#666; }
+.dining-box::before { content:'🍽️ '; font-weight:700; }
+.day-toggle { display:block; width:100%; padding:12px; background:#f5f5f5; border:none; border-top:1px solid #e8eaf6; cursor:pointer; font-size:13px; color:#1a237e; font-weight:600; }
+.day-toggle:hover { background:#e8eaf6; }
+.day-expandable { display:none; padding:0 24px 16px; }
+.day-expandable.open { display:block; }
+.sea-activities { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:10px; }
+.sea-activity { background:#e8eaf6; border-radius:10px; padding:12px; text-align:center; font-size:13px; color:#1a237e; font-weight:600; }
 
+/* Cabin cards */
 .cabin-card { background:#fff; border:2px solid #cfd8dc; border-radius:12px; padding:20px; text-align:center; transition:border-color .2s; }
 .cabin-card:hover { border-color:#1a237e; }
 .cabin-card.unavailable { opacity:.5; }
@@ -105,29 +133,56 @@ title: 크루즈 상세보기
 .cabin-type-en { font-size:12px; color:#888; }
 .cabin-price { font-size:22px; font-weight:900; color:#ff6f00; margin-top:10px; }
 .cabin-price.na { font-size:14px; color:#aaa; }
+
+/* Include/Exclude */
+.include-list { list-style:none; padding:0; }
+.include-list li { padding:6px 0; font-size:14px; }
+.include-list li::before { margin-right:8px; }
+.include-list.included li::before { content:'✅'; }
+.include-list.excluded li::before { content:'❌'; }
+
+@media (max-width:768px) {
+  .day-card-header { flex-wrap:wrap; gap:8px; padding:16px; }
+  .day-card-body { padding:16px; }
+  #cd-include-grid { grid-template-columns:1fr; }
+}
 </style>
 
 <script>
+var portsDB = {};
+
 (function(){
   var params = new URLSearchParams(window.location.search);
   var cruiseId = params.get('id');
   if (!cruiseId) { showError(); return; }
 
-  fetch('/cruiselink-blog/assets/data/cruises.json')
-    .then(function(r){ return r.json(); })
-    .then(function(data){
-      var c = null;
-      for (var i = 0; i < data.length; i++) {
-        if (data[i].id === cruiseId) { c = data[i]; break; }
-      }
-      if (!c) { showError(); return; }
-      render(c);
-    })
-    .catch(function(){ showError(); });
+  // Load both cruise data and ports DB
+  Promise.all([
+    fetch('/cruiselink-blog/assets/data/cruises.json').then(function(r){ return r.json(); }),
+    fetch('/cruiselink-blog/assets/data/ports.json').then(function(r){ return r.json(); }).catch(function(){ return {}; })
+  ]).then(function(results){
+    var data = results[0];
+    portsDB = results[1];
+    var c = null;
+    for (var i = 0; i < data.length; i++) {
+      if (data[i].id === cruiseId) { c = data[i]; break; }
+    }
+    if (!c) { showError(); return; }
+    render(c);
+  }).catch(function(){ showError(); });
 
   function showError(){
     document.getElementById('cruise-detail-loading').style.display = 'none';
     document.getElementById('cruise-detail-error').style.display = 'block';
+  }
+
+  function lookupPort(portName) {
+    if (portsDB[portName]) return portsDB[portName];
+    // Try partial match
+    for (var key in portsDB) {
+      if (portName.indexOf(key) >= 0 || key.indexOf(portName) >= 0) return portsDB[key];
+    }
+    return null;
   }
 
   function render(c){
@@ -148,6 +203,21 @@ title: 크루즈 상세보기
       document.getElementById('cd-hero').style.backgroundImage = 'linear-gradient(rgba(0,20,60,0.55),rgba(0,20,60,0.75)), url(' + imgUrl + ')';
     }
 
+    // Tags
+    if (c.tags && c.tags.length) {
+      var tagHtml = '<div style="margin-top:12px;">';
+      c.tags.forEach(function(t){ tagHtml += '<span class="tag">' + t + '</span> '; });
+      tagHtml += '</div>';
+      document.getElementById('cd-tags-area').innerHTML = tagHtml;
+    }
+    // Hashtags
+    if (c.hashtags && c.hashtags.length) {
+      var htHtml = '<div style="margin-top:8px;">';
+      c.hashtags.forEach(function(h){ htHtml += '<span style="display:inline-block;background:#e8eaf6;color:#1a237e;padding:4px 10px;border-radius:15px;font-size:12px;font-weight:600;margin:2px 4px;">' + h + '</span>'; });
+      htHtml += '</div>';
+      document.getElementById('cd-tags-area').innerHTML += htHtml;
+    }
+
     // Info bar
     document.getElementById('cd-info-bar').innerHTML =
       '<div class="info-bar-item"><div class="label">선사</div><div class="value">' + (c.cruiseLineName||'') + '</div></div>' +
@@ -156,36 +226,94 @@ title: 크루즈 상세보기
       '<div class="info-bar-item"><div class="label">기간</div><div class="value">' + nights + '박 ' + days + '일</div></div>' +
       '<div class="info-bar-item"><div class="label">가격</div><div class="value" style="color:var(--orange);">' + (c.priceFrom ? sym + Number(c.priceFrom).toLocaleString() + '~' : '문의') + '</div></div>';
 
-    // Itinerary summary route
+    // Itinerary
     document.getElementById('cd-itin-sub').textContent = nights + '박 ' + days + '일 크루즈 여정';
-    
     var itinerary = c.itinerary || [];
-    
+
     if (itinerary.length > 0) {
-      // Build route from itinerary port names
-      var routePorts = itinerary.map(function(d){ return d.port; }).filter(function(p){ return p !== '종일항해'; });
+      var routePorts = itinerary.map(function(d){ return d.port; }).filter(function(p){ return p !== '종일항해' && p !== 'Day at Sea'; });
       document.getElementById('cd-route').textContent = '📍 ' + routePorts.join(' → ');
 
-      // Build detailed timeline
-      var html = '<div class="itin-timeline">';
+      var html = '';
       itinerary.forEach(function(d){
-        var isSea = (d.type === '항해' || d.port === '종일항해');
-        html += '<div class="itin-day' + (isSea ? ' sea' : '') + '">';
-        html += '<div class="itin-day-num">Day ' + d.day + '</div>';
-        html += '<div class="itin-day-port">' + (d.port || '미정');
-        if (d.type) html += '<span class="itin-day-type">' + d.type + '</span>';
+        var isSea = (d.type === '항해' || d.port === '종일항해' || d.port === 'Day at Sea');
+        var portInfo = isSea ? null : lookupPort(d.port);
+
+        html += '<div class="day-card' + (isSea ? ' sea' : '') + '">';
+        
+        // Header
+        html += '<div class="day-card-header">';
+        html += '<span class="day-num">DAY ' + d.day + '</span>';
+        html += '<span class="day-port-name">' + (isSea ? '🌊 종일 항해' : (portInfo ? (portInfo.emoji || '📍') + ' ' : '📍 ') + (d.port || '미정')) + '</span>';
+        if (d.type && !isSea) html += '<span class="day-type-badge">' + d.type + '</span>';
         html += '</div>';
-        if (d.description) html += '<div style="font-size:13px;color:#666;margin-top:4px;">' + d.description + '</div>';
-        html += '</div>';
+
+        // Body
+        html += '<div class="day-card-body">';
+        
+        if (isSea) {
+          // Sea day content
+          html += '<div class="day-headline">바다 위에서 보내는 여유로운 하루. 선내 시설을 마음껏 즐기세요!</div>';
+          html += '<div class="sea-activities">';
+          html += '<div class="sea-activity">🏊 수영장 & 풀데크</div>';
+          html += '<div class="sea-activity">💆 스파 & 웰니스</div>';
+          html += '<div class="sea-activity">🎭 쇼 & 공연</div>';
+          html += '<div class="sea-activity">🛍️ 면세 쇼핑</div>';
+          html += '</div>';
+        } else if (portInfo) {
+          // Rich port content
+          html += '<div class="day-headline">' + portInfo.description + '</div>';
+          
+          // Expandable section
+          html += '<div class="day-expandable" id="expand-day-' + d.day + '">';
+          
+          // Tours
+          if (portInfo.tours && portInfo.tours.length) {
+            html += '<div class="day-section-title">🎯 추천 기항지 투어</div>';
+            portInfo.tours.forEach(function(t){
+              html += '<div class="tour-item">';
+              html += '<div class="tour-name">' + t.name + '</div>';
+              html += '<div class="tour-meta">' + (t.price||'') + ' · ' + (t.duration||'') + '</div>';
+              html += '<div class="tour-desc">' + (t.desc||'') + '</div>';
+              html += '</div>';
+            });
+          }
+
+          // Free activities
+          if (portInfo.freeActivities && portInfo.freeActivities.length) {
+            html += '<div class="day-section-title">🚶 자유여행 추천</div>';
+            portInfo.freeActivities.forEach(function(a){
+              html += '<div class="free-item">' + a + '</div>';
+            });
+          }
+
+          // Dining
+          if (portInfo.dining) {
+            html += '<div class="dining-box">' + portInfo.dining + '</div>';
+          }
+
+          // Tips
+          if (portInfo.tips && portInfo.tips.length) {
+            portInfo.tips.forEach(function(tip){
+              html += '<div class="tip-box">' + tip + '</div>';
+            });
+          }
+
+          html += '</div>'; // end expandable
+          html += '</div>'; // end body before toggle
+          html += '<button class="day-toggle" onclick="toggleDayCard(this)">📋 기항지 투어·자유여행 보기 <span style="font-size:11px;">▼</span></button>';
+          html += '</div>'; // end day-card
+          return; // skip closing below
+        } else {
+          // No port info - basic content
+          html += '<div class="day-headline">' + (d.port || '미정') + (d.type === '출발' ? '에서 승선합니다.' : d.type === '도착' ? '에 도착합니다.' : '에 기항합니다.') + '</div>';
+        }
+
+        html += '</div>'; // end body
+        html += '</div>'; // end day-card
       });
-      html += '</div>';
+
       document.getElementById('cd-itinerary-detail').innerHTML = html;
-    } else {
-      // Fallback to ports array
-      var route = '📍 ' + (c.departurePort || '');
-      for (var i = 0; i < ports.length; i++) route += ' → ' + ports[i];
-      route += ' → ' + (c.departurePort || '');
-      document.getElementById('cd-route').textContent = route;
     }
 
     // Cabins
@@ -199,6 +327,7 @@ title: 크루즈 상세보기
         cabinHtml += '<div class="cabin-card' + (!avail ? ' unavailable' : '') + '">';
         cabinHtml += '<div class="cabin-type">' + (cab.type || cab.typeEn || '') + '</div>';
         if (cab.typeEn && cab.type) cabinHtml += '<div class="cabin-type-en">' + cab.typeEn + '</div>';
+        if (cab.desc) cabinHtml += '<div style="font-size:12px;color:#888;margin-top:4px;">' + cab.desc + '</div>';
         if (avail && cab.priceFrom) {
           cabinHtml += '<div class="cabin-price">' + csym + Number(cab.priceFrom).toLocaleString() + '~</div>';
         } else if (!avail) {
@@ -211,6 +340,18 @@ title: 크루즈 상세보기
       document.getElementById('cd-cabins').innerHTML = cabinHtml;
     }
 
+    // Included / Excluded
+    var included = c.included || ['크루즈 승선 (' + nights + '박)', '메인 다이닝 & 뷔페 식사', '선내 엔터테인먼트', '수영장 & 피트니스 이용', '기본 객실 서비스'];
+    var excluded = c.excluded || ['항공편', '스페셜티 레스토랑', '음료 패키지', '기항지 관광 (Shore Excursion)', '여행자보험'];
+    document.getElementById('cd-include-section').style.display = '';
+    document.getElementById('cd-include-grid').innerHTML =
+      '<div><h3 style="color:#2e7d32;margin-bottom:12px;">✅ 포함 사항</h3><ul class="include-list included">' +
+      included.map(function(i){ return '<li>' + i + '</li>'; }).join('') +
+      '</ul></div>' +
+      '<div><h3 style="color:#c62828;margin-bottom:12px;">❌ 불포함 사항</h3><ul class="include-list excluded">' +
+      excluded.map(function(i){ return '<li>' + i + '</li>'; }).join('') +
+      '</ul></div>';
+
     // Ship
     if (c.shipTonnage || c.shipPassengers || c.shipYear) {
       document.getElementById('cd-ship-section').style.display = '';
@@ -222,15 +363,7 @@ title: 크루즈 상세보기
       document.getElementById('cd-ship-specs').innerHTML = specs;
     }
 
-    // Tags
-    if (c.tags && c.tags.length) {
-      var tagHtml = '<div style="margin-top:12px;">';
-      c.tags.forEach(function(t){ tagHtml += '<span class="tag">' + t + '</span> '; });
-      tagHtml += '</div>';
-      document.getElementById('cd-meta').insertAdjacentHTML('afterend', tagHtml);
-    }
-
-    // Inquiry buttons
+    // Inquiry
     function doInquiry(){
       if (typeof openInquiry === 'function') {
         openInquiry(c.title, c.departureDate, c.priceFrom, c.cruiseLineName, c.ship, (ports.join(', ')));
@@ -240,9 +373,18 @@ title: 크루즈 상세보기
     document.getElementById('cd-inquiry-bottom').addEventListener('click', doInquiry);
 
     document.title = (c.title || '크루즈 상세') + ' | 크루즈링크';
-
     document.getElementById('cruise-detail-loading').style.display = 'none';
     document.getElementById('cruise-detail-content').style.display = '';
   }
 })();
+
+function toggleDayCard(btn) {
+  var card = btn.closest('.day-card');
+  var expandable = card.querySelector('.day-expandable');
+  if (expandable) {
+    var isOpen = expandable.classList.contains('open');
+    expandable.classList.toggle('open');
+    btn.innerHTML = isOpen ? '📋 기항지 투어·자유여행 보기 <span style="font-size:11px;">▼</span>' : '📋 접기 <span style="font-size:11px;">▲</span>';
+  }
+}
 </script>
