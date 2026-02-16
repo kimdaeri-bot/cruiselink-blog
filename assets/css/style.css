@@ -902,3 +902,35 @@ ul { list-style: none; }
   z-index: 2;
 }
 .dest-slider-btn:hover { background: white; box-shadow: 0 4px 10px rgba(0,0,0,.15); }
+
+/* === Cruise Line Filter Buttons === */
+.line-filter-bar {
+  display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; padding: 4px 0;
+}
+.line-filter-btn {
+  padding: 10px 20px; border-radius: 24px; border: 2px solid #cfd8dc;
+  background: var(--white); color: var(--navy); font-weight: 700; font-size: 14px;
+  cursor: pointer; transition: all .2s; white-space: nowrap;
+}
+.line-filter-btn:hover { border-color: var(--navy); background: #e8eaf6; }
+.line-filter-btn.active { background: var(--navy); color: var(--white); border-color: var(--navy); }
+
+/* === Pagination === */
+.pagination {
+  display: flex; justify-content: center; align-items: center;
+  gap: 4px; margin: 32px 0 16px; flex-wrap: wrap;
+}
+.pag-btn {
+  min-width: 40px; height: 40px; border-radius: 8px;
+  border: 1px solid #cfd8dc; background: var(--white);
+  color: var(--navy); font-weight: 600; font-size: 14px;
+  cursor: pointer; transition: all .15s; padding: 0 12px;
+}
+.pag-btn:hover { background: #e8eaf6; border-color: var(--navy); }
+.pag-btn.active { background: var(--navy); color: var(--white); border-color: var(--navy); }
+.pag-ellipsis { padding: 0 8px; color: var(--gray-500); }
+
+@media (max-width: 768px) {
+  .line-filter-bar { gap: 6px; }
+  .line-filter-btn { padding: 8px 14px; font-size: 12px; }
+}

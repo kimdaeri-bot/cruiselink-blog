@@ -12,51 +12,53 @@ description: "전 세계 크루즈 상품을 한눈에 비교하세요. 지중�
 
 <div class="section">
   <div class="container">
+    <!-- Cruise Line Filter Buttons -->
+    <div class="line-filter-bar" id="lineFilterBar">
+      <button class="line-filter-btn active" data-line="" onclick="setLineFilter(this)">전체</button>
+      <button class="line-filter-btn" data-line="royal-caribbean" onclick="setLineFilter(this)">🚢 로열캐리비안</button>
+      <button class="line-filter-btn" data-line="msc" onclick="setLineFilter(this)">🚢 MSC</button>
+      <button class="line-filter-btn" data-line="ncl" onclick="setLineFilter(this)">🚢 Norwegian</button>
+      <button class="line-filter-btn" data-line="celebrity" onclick="setLineFilter(this)">🚢 Celebrity</button>
+      <button class="line-filter-btn" data-line="princess" onclick="setLineFilter(this)">🚢 Princess</button>
+      <button class="line-filter-btn" data-line="carnival" onclick="setLineFilter(this)">🚢 Carnival</button>
+    </div>
+
     <!-- Filter Bar -->
     <div class="filter-bar" style="margin-top:0;box-shadow:none;border:1px solid var(--gray-200);">
       <div class="filter-group">
         <label>목적지</label>
-        <select id="f-dest" onchange="filterCruises()">
+        <select id="f-dest" onchange="applyFilters()">
           <option value="">전체</option>
-          <option value="mediterranean">지중해</option>
-          <option value="alaska">알래스카</option>
-          <option value="caribbean">카리브해</option>
-          <option value="northern-europe">북유럽</option>
-          <option value="southeast-asia">동남아</option>
-          <option value="hawaii">하와이</option>
-          <option value="japan">일본</option>
-        </select>
-      </div>
-      <div class="filter-group">
-        <label>출발항구</label>
-        <select id="f-port" onchange="filterCruises()">
-          <option value="">전체</option>
-          <option value="로마">로마</option>
-          <option value="바르셀로나">바르셀로나</option>
-          <option value="시애틀">시애틀</option>
-          <option value="마이애미">마이애미</option>
-          <option value="포트 로더데일">포트 로더데일</option>
-          <option value="사우스햄프턴">사우스햄프턴</option>
-          <option value="코펜하겐">코펜하겐</option>
-          <option value="싱가포르">싱가포르</option>
-          <option value="호놀룰루">호놀룰루</option>
-          <option value="요코하마">요코하마</option>
-        </select>
-      </div>
-      <div class="filter-group">
-        <label>선사</label>
-        <select id="f-line" onchange="filterCruises()">
-          <option value="">전체</option>
-          <option value="royal-caribbean">로열캐리비안</option>
-          <option value="msc">MSC</option>
-          <option value="ncl">NCL</option>
-          <option value="celebrity">셀러브리티</option>
+          <option value="japan">🇯🇵 일본</option>
+          <option value="mediterranean">🏛️ 지중해</option>
+          <option value="alaska">🏔️ 알래스카</option>
+          <option value="caribbean">🏝️ 카리브해</option>
+          <option value="northern-europe">⚓ 북유럽</option>
+          <option value="southeast-asia">🌴 동남아</option>
+          <option value="hawaii">🌺 하와이</option>
+          <option value="canary-islands">🏖️ 카나리아제도</option>
+          <option value="emirates">🕌 중동</option>
+          <option value="australia">🦘 호주</option>
+          <option value="mexico">🇲🇽 멕시코</option>
+          <option value="bermuda">🏝️ 버뮤다</option>
+          <option value="panama">⛵ 파나마운하</option>
+          <option value="transatlantic">🌊 대서양횡단</option>
+          <option value="south-america">🌎 남미</option>
+          <option value="canada">🍁 캐나다/뉴잉글랜드</option>
+          <option value="asia">🌏 아시아</option>
+          <option value="africa">🌍 아프리카</option>
+          <option value="pacific">🌊 태평양</option>
+          <option value="indian-ocean">🌊 인도양</option>
+          <option value="world-cruise">🌐 세계일주</option>
+          <option value="other">기타</option>
         </select>
       </div>
       <div class="filter-group">
         <label>출발월</label>
-        <select id="f-month" onchange="filterCruises()">
+        <select id="f-month" onchange="applyFilters()">
           <option value="">전체</option>
+          <option value="2026-02">2026년 2월</option>
+          <option value="2026-03">2026년 3월</option>
           <option value="2026-04">2026년 4월</option>
           <option value="2026-05">2026년 5월</option>
           <option value="2026-06">2026년 6월</option>
@@ -66,11 +68,15 @@ description: "전 세계 크루즈 상품을 한눈에 비교하세요. 지중�
           <option value="2026-10">2026년 10월</option>
           <option value="2026-11">2026년 11월</option>
           <option value="2026-12">2026년 12월</option>
+          <option value="2027-01">2027년 1월</option>
+          <option value="2027-02">2027년 2월</option>
+          <option value="2027-03">2027년 3월</option>
+          <option value="2027-04">2027년 4월</option>
         </select>
       </div>
       <div class="filter-group">
         <label>기간</label>
-        <select id="f-nights" onchange="filterCruises()">
+        <select id="f-nights" onchange="applyFilters()">
           <option value="">전체</option>
           <option value="short">7박 이하</option>
           <option value="medium">8~10박</option>
@@ -79,20 +85,28 @@ description: "전 세계 크루즈 상품을 한눈에 비교하세요. 지중�
       </div>
       <div class="filter-group">
         <label>가격대</label>
-        <select id="f-price" onchange="filterCruises()">
+        <select id="f-price" onchange="applyFilters()">
           <option value="">전체</option>
-          <option value="0-700">~$700</option>
-          <option value="700-1000">$700~$1,000</option>
-          <option value="1000-1500">$1,000~$1,500</option>
-          <option value="1500-9999">$1,500~</option>
+          <option value="0-500">~$500</option>
+          <option value="500-1000">$500~$1,000</option>
+          <option value="1000-2000">$1,000~$2,000</option>
+          <option value="2000-5000">$2,000~$5,000</option>
+          <option value="5000-99999">$5,000~</option>
         </select>
+      </div>
+      <div class="filter-group">
+        <label>검색</label>
+        <input type="text" id="f-search" placeholder="상품명, 항구, 선박..." oninput="onSearchInput()">
       </div>
     </div>
 
     <!-- Controls -->
     <div class="list-controls">
-      <div class="result-count"><span id="resultCount">{{ site.data.cruises.size }}</span>개 상품</div>
-      <select class="sort-select" id="sortSelect" onchange="filterCruises()">
+      <div class="result-count">
+        <span id="resultCount">0</span>개 상품
+        <span id="loadingIndicator" style="display:none;margin-left:8px;color:var(--orange);">로딩 중...</span>
+      </div>
+      <select class="sort-select" id="sortSelect" onchange="applyFilters()">
         <option value="featured">추천순</option>
         <option value="price-asc">가격 낮은순</option>
         <option value="price-desc">가격 높은순</option>
@@ -100,12 +114,11 @@ description: "전 세계 크루즈 상품을 한눈에 비교하세요. 지중�
       </select>
     </div>
 
-    <!-- Cruise List -->
-    <div class="cruise-list" id="cruiseList">
-      {% for cruise in site.data.cruises %}
-        {% include cruise-list-item.html cruise=cruise %}
-      {% endfor %}
-    </div>
+    <!-- Cruise List (client-side rendered) -->
+    <div class="cruise-list" id="cruiseList"></div>
+
+    <!-- Pagination -->
+    <div class="pagination" id="pagination"></div>
 
     <div class="no-results hidden" id="noResults">
       <div class="icon">🔍</div>
@@ -114,3 +127,5 @@ description: "전 세계 크루즈 상품을 한눈에 비교하세요. 지중�
     </div>
   </div>
 </div>
+
+<script src="{{ '/assets/js/cruise-list.js' | relative_url }}"></script>
