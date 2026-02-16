@@ -151,22 +151,81 @@ function filterCruises() {
 
 // --- Home Search Button ---
 document.addEventListener('DOMContentLoaded', function() {
-  const homeBtn = document.getElementById('homeSearchBtn');
+  var homeBtn = document.getElementById('homeSearchBtn');
+  var _homeData = null, _homeFiltered = [], _homePage = 0;
   if (homeBtn) {
     homeBtn.addEventListener('click', function(e) {
       e.preventDefault();
-      const dest = document.getElementById('hf-dest').value;
-      const line = document.getElementById('hf-line').value;
-      const month = document.getElementById('hf-month').value;
-      const nights = document.getElementById('hf-nights').value;
-      let url = '/cruises/';
-      const params = [];
-      if (dest) params.push('dest=' + dest);
-      if (line) params.push('line=' + line);
-      if (month) params.push('month=' + month);
-      if (nights) params.push('nights=' + nights);
-      if (params.length) url += '?' + params.join('&');
-      window.location.href = url;
+      var dest = document.getElementById('hf-dest').value;
+      var port = document.getElementById('hf-port').value;
+      var line = document.getElementById('hf-line').value;
+      var month = document.getElementById('hf-month').value;
+      var nights = document.getElementById('hf-nights').value;
+      function doFilter(data) {
+        var r = data;
+        if (dest) r = r.filter(function(c){ return c.destination === dest; });
+        if (port) r = r.filter(function(c){ return (c.departurePort||'').indexOf(port) >= 0; });
+        if (line) r = r.filter(function(c){ return c.cruiseLine === line; });
+        if (month) r = r.filter(function(c){ return (c.departureDate||'').substring(0,7) === month; });
+        if (nights === 'short') r = r.filter(function(c){ return c.nights <= 7; });
+        else if (nights === 'medium') r = r.filter(function(c){ return c.nights >= 8 && c.nights <= 10; });
+        else if (nights === 'long') r = r.filter(function(c){ return c.nights >= 11; });
+        r.sort(function(a,b){ return (a.departureDate||'').localeCompare(b.departureDate||''); });
+        return r;
+      }
+      function renderHome() {
+        var grid = document.getElementById('homeResultGrid');
+        var end = (_homePage + 1) * 24;
+        var items = _homeFiltered.slice(0, end);
+        var baseurl = '/cruiselink-blog';
+        grid.innerHTML = items.map(function(c){
+          var img = c.image && c.image !== 'default-cruise.jpg' ? (c.image.indexOf('http')===0 ? c.image : baseurl+'/assets/images/'+c.image) : '';
+          var href = baseurl + '/cruise-view/?id=' + c.id;
+          var cur = c.currency === 'EUR' ? '€' : '$';
+          var price = c.priceFrom ? cur + c.priceFrom + '~' : '문의';
+          var ports = (c.ports||[]).map(function(p){ return typeof p==='object'?p.name:p; }).filter(Boolean).slice(0,4).join(' → ');
+          var tags = (c.tags||[]).map(function(t){ return '<span class="tag tag-'+t+'">'+t+'</span>'; }).join('');
+          return '<div class="cruise-card"><a href="'+href+'" class="cruise-card-link">' +
+            '<div class="cruise-card-image">' + (img?'<img src="'+img+'" alt="" loading="lazy">':'<div class="placeholder">🚢</div>') +
+            '<div class="cruise-card-tags">'+tags+'</div></div>' +
+            '<div class="cruise-card-body">' +
+            '<div class="cruise-card-meta">'+(c.cruiseLineName||c.cruiseLine)+' · '+c.ship+'</div>' +
+            '<div class="cruise-card-title">'+c.title+'</div>' +
+            '<div class="cruise-card-ports">📍 '+ports+'</div>' +
+            '<div style="font-size:13px;color:#666;margin-bottom:12px;">📅 '+c.departureDate+' · 🌙 '+c.nights+'박</div>' +
+            '<div class="cruise-card-footer"><div class="cruise-card-price">'+price+' <small>/1인</small></div>' +
+            '<span class="btn btn-primary btn-sm">자세히 보기</span></div></div></a></div>';
+        }).join('');
+        document.getElementById('homeResultCount').textContent = '(' + _homeFiltered.length + '개)';
+        document.getElementById('homeResultMore').style.display = end < _homeFiltered.length ? '' : 'none';
+        document.getElementById('homeSearchResults').style.display = '';
+        document.getElementById('homeSearchResults').scrollIntoView({behavior:'smooth'});
+      }
+      if (_homeData) {
+        _homeFiltered = doFilter(_homeData);
+        _homePage = 0;
+        renderHome();
+      } else {
+        homeBtn.textContent = '로딩...';
+        fetch('/cruiselink-blog/assets/data/cruises.json').then(function(r){return r.json();}).then(function(data){
+          _homeData = data;
+          _homeFiltered = doFilter(data);
+          _homePage = 0;
+          homeBtn.textContent = '검색';
+          renderHome();
+        });
+      }
+      // Load more
+      var moreBtn = document.getElementById('homeLoadMore');
+      if (moreBtn) moreBtn.onclick = function(){ _homePage++; renderHome(); };
+    });
+    // Close results
+    var closeBtn = document.getElementById('homeResultClose');
+    if (closeBtn) closeBtn.addEventListener('click', function(){ document.getElementById('homeSearchResults').style.display='none'; });
+    // Also trigger search on any select change
+    ['hf-dest','hf-port','hf-line','hf-month','hf-nights'].forEach(function(id){
+      var el = document.getElementById(id);
+      if (el) el.addEventListener('change', function(){ homeBtn.click(); });
     });
   }
 
