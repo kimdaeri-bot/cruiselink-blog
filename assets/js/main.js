@@ -165,7 +165,10 @@ document.addEventListener('DOMContentLoaded', function() {
         var today = new Date().toISOString().slice(0,10);
         var r = data.filter(function(c){ return (c.departureDate||'') >= today; });
         if (dest) r = r.filter(function(c){ return c.destination === dest; });
-        if (port) r = r.filter(function(c){ return (c.departurePort||'').indexOf(port) >= 0; });
+        if (port) {
+          var portAliases = port.toLowerCase().split(',');
+          r = r.filter(function(c){ var dp=(c.departurePort||'').toLowerCase(); return portAliases.some(function(a){ return dp.indexOf(a.trim()) >= 0; }); });
+        }
         if (line) r = r.filter(function(c){ return c.cruiseLine === line; });
         if (month) r = r.filter(function(c){ return (c.departureDate||'').substring(0,7) === month; });
         if (nights === 'short') r = r.filter(function(c){ return c.nights <= 7; });
@@ -212,18 +215,30 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('homeSearchResults').style.display = '';
         document.getElementById('homeSearchResults').scrollIntoView({behavior:'smooth'});
       }
+      function showLoading() {
+        var res = document.getElementById('homeSearchResults');
+        res.style.display = '';
+        document.getElementById('homeResultGrid').innerHTML = '';
+        document.getElementById('homeResultMore').style.display = 'none';
+        document.getElementById('homeResultCount').textContent = '';
+        document.getElementById('homeResultGrid').innerHTML = '<div style="text-align:center;padding:60px 0;"><div class="search-spinner"></div><p style="margin-top:16px;color:#666;font-size:14px;">크루즈 상품을 검색하고 있습니다...</p></div>';
+        res.scrollIntoView({behavior:'smooth'});
+      }
+      function delayedRender() {
+        _homePage = 0;
+        showLoading();
+        setTimeout(function(){ renderHome(); }, 2000);
+      }
       if (_homeData) {
         _homeFiltered = doFilter(_homeData);
-        _homePage = 0;
-        renderHome();
+        delayedRender();
       } else {
-        homeBtn.textContent = '로딩...';
+        showLoading();
         fetch('/cruiselink-blog/assets/data/cruises.json').then(function(r){return r.json();}).then(function(data){
           _homeData = data;
           _homeFiltered = doFilter(data);
-          _homePage = 0;
           homeBtn.textContent = '검색';
-          renderHome();
+          setTimeout(function(){ renderHome(); }, 2000);
         });
       }
       // Load more
