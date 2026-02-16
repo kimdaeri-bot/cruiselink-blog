@@ -19,6 +19,46 @@
       "nameEn": "Suite",
       "desc": "거실과 침실이 분리된 넓은 객실, 32㎡ 이상. VIP 서비스와 우선 탑승 혜택이 포함됩니다.",
       "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=640"
+    },
+    "inside": {
+      "nameEn": "Inside",
+      "desc": "창문 없는 아늑한 내부 객실, 약 14~17㎡. 가성비 좋은 선택으로 수면의 질이 뛰어납니다.",
+      "image": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=640"
+    },
+    "oceanview": {
+      "nameEn": "Oceanview",
+      "desc": "바다 전망 창문이 있는 객실, 약 17~19㎡. 자연광이 들어와 밝고 쾌적합니다.",
+      "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=640"
+    },
+    "balcony": {
+      "nameEn": "Balcony",
+      "desc": "프라이빗 발코니가 있는 객실, 약 20~24㎡. 객실에서 바로 바다를 감상할 수 있습니다.",
+      "image": "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=640"
+    },
+    "suite": {
+      "nameEn": "Suite",
+      "desc": "거실과 침실이 분리된 넓은 객실, 32㎡ 이상. VIP 서비스와 우선 탑승 혜택이 포함됩니다.",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=640"
+    },
+    "Inside": {
+      "nameEn": "Inside",
+      "desc": "창문 없는 아늑한 내부 객실, 약 14~17㎡. 가성비 좋은 선택으로 수면의 질이 뛰어납니다.",
+      "image": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=640"
+    },
+    "Oceanview": {
+      "nameEn": "Oceanview",
+      "desc": "바다 전망 창문이 있는 객실, 약 17~19㎡. 자연광이 들어와 밝고 쾌적합니다.",
+      "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=640"
+    },
+    "Balcony": {
+      "nameEn": "Balcony",
+      "desc": "프라이빗 발코니가 있는 객실, 약 20~24㎡. 객실에서 바로 바다를 감상할 수 있습니다.",
+      "image": "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=640"
+    },
+    "Suite": {
+      "nameEn": "Suite",
+      "desc": "거실과 침실이 분리된 넓은 객실, 32㎡ 이상. VIP 서비스와 우선 탑승 혜택이 포함됩니다.",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=640"
     }
   },
   "msc": {
@@ -46,6 +86,56 @@
       "nameEn": "MSC Yacht Club",
       "desc": "선박 내 선박(ship-within-a-ship) 콘셉트의 최상위 등급. 전용 레스토랑, 라운지, 풀, 24시간 버틀러 서비스를 제공합니다.",
       "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=640"
+    },
+    "inside": {
+      "nameEn": "Inside",
+      "desc": "창문 없는 내부 객실, 약 13~16㎡. 모던한 인테리어로 편안한 휴식을 제공합니다.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/MSC_Opera_Cruise_cabin_%28July_2022%29.jpg/640px-MSC_Opera_Cruise_cabin_%28July_2022%29.jpg"
+    },
+    "oceanview": {
+      "nameEn": "Oceanview",
+      "desc": "원형 또는 사각 창문으로 바다를 볼 수 있는 객실, 약 16~18㎡.",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=640"
+    },
+    "balcony": {
+      "nameEn": "Balcony",
+      "desc": "프라이빗 발코니가 있는 객실, 약 18~22㎡. 지중해 항해에 최적의 선택입니다.",
+      "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=640"
+    },
+    "suite": {
+      "nameEn": "Suite",
+      "desc": "넓은 거실과 별도 침실이 있는 프리미엄 객실, 28㎡ 이상. 버틀러 서비스 포함.",
+      "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=640"
+    },
+    "yacht club": {
+      "nameEn": "MSC Yacht Club",
+      "desc": "선박 내 선박(ship-within-a-ship) 콘셉트의 최상위 등급. 전용 레스토랑, 라운지, 풀, 24시간 버틀러 서비스를 제공합니다.",
+      "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=640"
+    },
+    "msc yacht club": {
+      "nameEn": "MSC Yacht Club",
+      "desc": "선박 내 선박(ship-within-a-ship) 콘셉트의 최상위 등급. 전용 레스토랑, 라운지, 풀, 24시간 버틀러 서비스를 제공합니다.",
+      "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=640"
+    },
+    "Inside": {
+      "nameEn": "Inside",
+      "desc": "창문 없는 내부 객실, 약 13~16㎡. 모던한 인테리어로 편안한 휴식을 제공합니다.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/MSC_Opera_Cruise_cabin_%28July_2022%29.jpg/640px-MSC_Opera_Cruise_cabin_%28July_2022%29.jpg"
+    },
+    "Oceanview": {
+      "nameEn": "Oceanview",
+      "desc": "원형 또는 사각 창문으로 바다를 볼 수 있는 객실, 약 16~18㎡.",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=640"
+    },
+    "Balcony": {
+      "nameEn": "Balcony",
+      "desc": "프라이빗 발코니가 있는 객실, 약 18~22㎡. 지중해 항해에 최적의 선택입니다.",
+      "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=640"
+    },
+    "Suite": {
+      "nameEn": "Suite",
+      "desc": "넓은 거실과 별도 침실이 있는 프리미엄 객실, 28㎡ 이상. 버틀러 서비스 포함.",
+      "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=640"
     }
   },
   "ncl": {
@@ -83,6 +173,86 @@
       "nameEn": "The Haven",
       "desc": "NCL 최상위 등급의 선박 내 리조트. 전용 풀, 레스토랑, 라운지, 24시간 버틀러 서비스를 제공합니다.",
       "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=640"
+    },
+    "inside": {
+      "nameEn": "Inside",
+      "desc": "창문 없는 아늑한 내부 객실, 약 13~16㎡. 알뜰한 크루즈 여행에 적합합니다.",
+      "image": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=640"
+    },
+    "oceanview": {
+      "nameEn": "Oceanview",
+      "desc": "원형 창문으로 바다 전망을 즐기는 객실, 약 15~18㎡.",
+      "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=640"
+    },
+    "balcony": {
+      "nameEn": "Balcony",
+      "desc": "개인 발코니가 있는 객실, 약 18~22㎡. 프리스타일 크루징의 핵심 객실입니다.",
+      "image": "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=640"
+    },
+    "suite": {
+      "nameEn": "Suite",
+      "desc": "거실과 침실이 분리된 넓은 객실, 약 30㎡ 이상. 우선 승선과 전용 레스토랑 이용 가능.",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=640"
+    },
+    "mini-suite": {
+      "nameEn": "Mini Suite",
+      "desc": "발코니 객실보다 넓은 공간에 소파 좌석이 포함된 객실, 약 22~27㎡.",
+      "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=640"
+    },
+    "minisuite": {
+      "nameEn": "Mini Suite",
+      "desc": "발코니 객실보다 넓은 공간에 소파 좌석이 포함된 객실, 약 22~27㎡.",
+      "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=640"
+    },
+    "studio": {
+      "nameEn": "Studio",
+      "desc": "1인 여행자를 위한 소형 객실, 약 9~12㎡. 전용 스튜디오 라운지 이용이 가능합니다.",
+      "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=640"
+    },
+    "haven": {
+      "nameEn": "The Haven",
+      "desc": "NCL 최상위 등급의 선박 내 리조트. 전용 풀, 레스토랑, 라운지, 24시간 버틀러 서비스를 제공합니다.",
+      "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=640"
+    },
+    "the haven": {
+      "nameEn": "The Haven",
+      "desc": "NCL 최상위 등급의 선박 내 리조트. 전용 풀, 레스토랑, 라운지, 24시간 버틀러 서비스를 제공합니다.",
+      "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=640"
+    },
+    "Inside": {
+      "nameEn": "Inside",
+      "desc": "창문 없는 아늑한 내부 객실, 약 13~16㎡. 알뜰한 크루즈 여행에 적합합니다.",
+      "image": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=640"
+    },
+    "Oceanview": {
+      "nameEn": "Oceanview",
+      "desc": "원형 창문으로 바다 전망을 즐기는 객실, 약 15~18㎡.",
+      "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=640"
+    },
+    "Balcony": {
+      "nameEn": "Balcony",
+      "desc": "개인 발코니가 있는 객실, 약 18~22㎡. 프리스타일 크루징의 핵심 객실입니다.",
+      "image": "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=640"
+    },
+    "Suite": {
+      "nameEn": "Suite",
+      "desc": "거실과 침실이 분리된 넓은 객실, 약 30㎡ 이상. 우선 승선과 전용 레스토랑 이용 가능.",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=640"
+    },
+    "Minisuite": {
+      "nameEn": "Mini Suite",
+      "desc": "발코니 객실보다 넓은 공간에 소파 좌석이 포함된 객실, 약 22~27㎡.",
+      "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=640"
+    },
+    "Studio": {
+      "nameEn": "Studio",
+      "desc": "1인 여행자를 위한 소형 객실, 약 9~12㎡. 전용 스튜디오 라운지 이용이 가능합니다.",
+      "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=640"
+    },
+    "Haven": {
+      "nameEn": "The Haven",
+      "desc": "NCL 최상위 등급의 선박 내 리조트. 전용 풀, 레스토랑, 라운지, 24시간 버틀러 서비스를 제공합니다.",
+      "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=640"
     }
   },
   "princess": {
@@ -110,6 +280,61 @@
       "nameEn": "Suite",
       "desc": "별도 거실과 넓은 발코니가 있는 최고급 객실, 50㎡ 이상. 전용 라운지와 버틀러 서비스 제공.",
       "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=640"
+    },
+    "inside": {
+      "nameEn": "Inside",
+      "desc": "창문 없는 내부 객실, 약 15~17㎡. Princess 특유의 편안한 침구가 특징입니다.",
+      "image": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=640"
+    },
+    "oceanview": {
+      "nameEn": "Oceanview",
+      "desc": "바다 전망 창문이 있는 객실, 약 17~19㎡. 자연광이 들어오는 밝은 공간입니다.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Ocean_princess_balcony_cabin.jpg/640px-Ocean_princess_balcony_cabin.jpg"
+    },
+    "balcony": {
+      "nameEn": "Balcony",
+      "desc": "프라이빗 발코니가 있는 객실, 약 20~24㎡. 가장 인기 있는 객실 타입입니다.",
+      "image": "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=640"
+    },
+    "suite": {
+      "nameEn": "Suite",
+      "desc": "별도 거실과 넓은 발코니가 있는 최고급 객실, 50㎡ 이상. 전용 라운지와 버틀러 서비스 제공.",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=640"
+    },
+    "mini-suite": {
+      "nameEn": "Mini Suite",
+      "desc": "소파 공간과 넓은 발코니가 있는 객실, 약 25~30㎡. 클럽클래스 다이닝 포함.",
+      "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=640"
+    },
+    "minisuite": {
+      "nameEn": "Mini Suite",
+      "desc": "소파 공간과 넓은 발코니가 있는 객실, 약 25~30㎡. 클럽클래스 다이닝 포함.",
+      "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=640"
+    },
+    "Inside": {
+      "nameEn": "Inside",
+      "desc": "창문 없는 내부 객실, 약 15~17㎡. Princess 특유의 편안한 침구가 특징입니다.",
+      "image": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=640"
+    },
+    "Oceanview": {
+      "nameEn": "Oceanview",
+      "desc": "바다 전망 창문이 있는 객실, 약 17~19㎡. 자연광이 들어오는 밝은 공간입니다.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Ocean_princess_balcony_cabin.jpg/640px-Ocean_princess_balcony_cabin.jpg"
+    },
+    "Balcony": {
+      "nameEn": "Balcony",
+      "desc": "프라이빗 발코니가 있는 객실, 약 20~24㎡. 가장 인기 있는 객실 타입입니다.",
+      "image": "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=640"
+    },
+    "Suite": {
+      "nameEn": "Suite",
+      "desc": "별도 거실과 넓은 발코니가 있는 최고급 객실, 50㎡ 이상. 전용 라운지와 버틀러 서비스 제공.",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=640"
+    },
+    "Minisuite": {
+      "nameEn": "Mini Suite",
+      "desc": "소파 공간과 넓은 발코니가 있는 객실, 약 25~30㎡. 클럽클래스 다이닝 포함.",
+      "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=640"
     }
   },
   "celebrity": {
@@ -137,6 +362,56 @@
       "nameEn": "The Retreat",
       "desc": "Celebrity 최상위 스위트 전용 공간. 전용 라운지, 선데크, 레스토랑, 버틀러 서비스가 포함된 리조트 경험.",
       "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=640"
+    },
+    "inside": {
+      "nameEn": "Inside",
+      "desc": "창문 없는 내부 객실, 약 16~18㎡. 세련된 현대적 디자인이 특징입니다.",
+      "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=640"
+    },
+    "oceanview": {
+      "nameEn": "Oceanview",
+      "desc": "대형 창문으로 바다를 감상할 수 있는 객실, 약 17~19㎡.",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=640"
+    },
+    "balcony": {
+      "nameEn": "Balcony",
+      "desc": "인피닛 베란다 콘셉트의 발코니 객실, 약 20~24㎡. 버튼 하나로 발코니가 실내로 전환됩니다.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Celebrity_Apex%2C_%22infinite_veranda%22_balcony_staterooms_that_integrate_the_balcony_patios_into_the_cabins%27_structure.jpg/640px-Celebrity_Apex%2C_%22infinite_veranda%22_balcony_staterooms_that_integrate_the_balcony_patios_into_the_cabins%27_structure.jpg"
+    },
+    "suite": {
+      "nameEn": "Suite",
+      "desc": "넓은 거실과 침실이 분리된 고급 객실, 30㎡ 이상. 전용 레스토랑 럼바(Luminae) 이용 가능.",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=640"
+    },
+    "retreat": {
+      "nameEn": "The Retreat",
+      "desc": "Celebrity 최상위 스위트 전용 공간. 전용 라운지, 선데크, 레스토랑, 버틀러 서비스가 포함된 리조트 경험.",
+      "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=640"
+    },
+    "the retreat": {
+      "nameEn": "The Retreat",
+      "desc": "Celebrity 최상위 스위트 전용 공간. 전용 라운지, 선데크, 레스토랑, 버틀러 서비스가 포함된 리조트 경험.",
+      "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=640"
+    },
+    "Inside": {
+      "nameEn": "Inside",
+      "desc": "창문 없는 내부 객실, 약 16~18㎡. 세련된 현대적 디자인이 특징입니다.",
+      "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=640"
+    },
+    "Oceanview": {
+      "nameEn": "Oceanview",
+      "desc": "대형 창문으로 바다를 감상할 수 있는 객실, 약 17~19㎡.",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=640"
+    },
+    "Balcony": {
+      "nameEn": "Balcony",
+      "desc": "인피닛 베란다 콘셉트의 발코니 객실, 약 20~24㎡. 버튼 하나로 발코니가 실내로 전환됩니다.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Celebrity_Apex%2C_%22infinite_veranda%22_balcony_staterooms_that_integrate_the_balcony_patios_into_the_cabins%27_structure.jpg/640px-Celebrity_Apex%2C_%22infinite_veranda%22_balcony_staterooms_that_integrate_the_balcony_patios_into_the_cabins%27_structure.jpg"
+    },
+    "Suite": {
+      "nameEn": "Suite",
+      "desc": "넓은 거실과 침실이 분리된 고급 객실, 30㎡ 이상. 전용 레스토랑 럼바(Luminae) 이용 가능.",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=640"
     }
   },
   "carnival": {
@@ -159,6 +434,46 @@
       "nameEn": "Suite",
       "desc": "넓은 거실과 별도 침실이 있는 프리미엄 객실, 30㎡ 이상. 우선 승선과 VIP 체크인 포함.",
       "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=640"
+    },
+    "inside": {
+      "nameEn": "Inside",
+      "desc": "창문 없는 내부 객실, 약 13~16㎡. Fun Ship 분위기의 편안한 객실입니다.",
+      "image": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=640"
+    },
+    "oceanview": {
+      "nameEn": "Oceanview",
+      "desc": "원형 또는 사각 창문이 있는 객실, 약 16~19㎡. 자연광과 바다 풍경을 즐길 수 있습니다.",
+      "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=640"
+    },
+    "balcony": {
+      "nameEn": "Balcony",
+      "desc": "프라이빗 발코니가 있는 객실, 약 19~22㎡. Cove Balcony는 파도에 더 가까운 특별한 경험을 제공합니다.",
+      "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=640"
+    },
+    "suite": {
+      "nameEn": "Suite",
+      "desc": "넓은 거실과 별도 침실이 있는 프리미엄 객실, 30㎡ 이상. 우선 승선과 VIP 체크인 포함.",
+      "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=640"
+    },
+    "Inside": {
+      "nameEn": "Inside",
+      "desc": "창문 없는 내부 객실, 약 13~16㎡. Fun Ship 분위기의 편안한 객실입니다.",
+      "image": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=640"
+    },
+    "Oceanview": {
+      "nameEn": "Oceanview",
+      "desc": "원형 또는 사각 창문이 있는 객실, 약 16~19㎡. 자연광과 바다 풍경을 즐길 수 있습니다.",
+      "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=640"
+    },
+    "Balcony": {
+      "nameEn": "Balcony",
+      "desc": "프라이빗 발코니가 있는 객실, 약 19~22㎡. Cove Balcony는 파도에 더 가까운 특별한 경험을 제공합니다.",
+      "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=640"
+    },
+    "Suite": {
+      "nameEn": "Suite",
+      "desc": "넓은 거실과 별도 침실이 있는 프리미엄 객실, 30㎡ 이상. 우선 승선과 VIP 체크인 포함.",
+      "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=640"
     }
   },
   "disney": {
@@ -178,6 +493,46 @@
       "image": "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=640"
     },
     "스위트": {
+      "nameEn": "Suite",
+      "desc": "넓은 거실과 별도 침실, 대형 베란다가 있는 최고급 객실, 50㎡ 이상. 콘시어지 서비스와 전용 라운지 이용 가능.",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=640"
+    },
+    "inside": {
+      "nameEn": "Inside",
+      "desc": "창문 없는 내부 객실, 약 16~18㎡. 매직 포트홀(가상 창문)로 디즈니 캐릭터가 등장합니다.",
+      "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=640"
+    },
+    "oceanview": {
+      "nameEn": "Oceanview",
+      "desc": "원형 창문(포트홀)이 있는 객실, 약 18~20㎡. 디즈니 특유의 디테일한 인테리어가 매력적입니다.",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=640"
+    },
+    "suite": {
+      "nameEn": "Suite",
+      "desc": "넓은 거실과 별도 침실, 대형 베란다가 있는 최고급 객실, 50㎡ 이상. 콘시어지 서비스와 전용 라운지 이용 가능.",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=640"
+    },
+    "balcony/veranda": {
+      "nameEn": "Balcony/Verandah",
+      "desc": "프라이빗 베란다가 있는 객실, 약 24~27㎡. 분리형 욕실과 넓은 수납공간이 특징입니다.",
+      "image": "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=640"
+    },
+    "veranda": {
+      "nameEn": "Balcony/Verandah",
+      "desc": "프라이빗 베란다가 있는 객실, 약 24~27㎡. 분리형 욕실과 넓은 수납공간이 특징입니다.",
+      "image": "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=640"
+    },
+    "Inside": {
+      "nameEn": "Inside",
+      "desc": "창문 없는 내부 객실, 약 16~18㎡. 매직 포트홀(가상 창문)로 디즈니 캐릭터가 등장합니다.",
+      "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=640"
+    },
+    "Oceanview": {
+      "nameEn": "Oceanview",
+      "desc": "원형 창문(포트홀)이 있는 객실, 약 18~20㎡. 디즈니 특유의 디테일한 인테리어가 매력적입니다.",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=640"
+    },
+    "Suite": {
       "nameEn": "Suite",
       "desc": "넓은 거실과 별도 침실, 대형 베란다가 있는 최고급 객실, 50㎡ 이상. 콘시어지 서비스와 전용 라운지 이용 가능.",
       "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=640"
