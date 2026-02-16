@@ -33,7 +33,8 @@
       "구항구 근처 소매치기 주의, 귀중품은 호텔에 보관하세요",
       "크루즈 터미널에서 구항구까지 무료 셔틀버스 운행 확인"
     ],
-    "dining": "부야베스(bouillabaisse)는 마르세유의 대표 음식. 구항구 레스토랑에서 정통 해물 스튜를 맛보세요."
+    "dining": "부야베스(bouillabaisse)는 마르세유의 대표 음식. 구항구 레스토랑에서 정통 해물 스튜를 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Notre-Dame_de_la_Garde_aerial_view_2020.jpeg"
   },
   "미코노스": {
     "nameEn": "Mykonos",
@@ -63,7 +64,8 @@
       "텐더보트 하선이므로 파도 상황에 따라 기항 취소될 수 있어요",
       "여름 성수기 물가가 매우 비싸니 간식과 물은 미리 준비"
     ],
-    "dining": "수블라키와 그릭 샐러드가 기본. 타운 골목 안쪽 로컬 식당이 가성비 좋습니다."
+    "dining": "수블라키와 그릭 샐러드가 기본. 타운 골목 안쪽 로컬 식당이 가성비 좋습니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/2011_Dimos_Mykonou.png"
   },
   "두브로브니크": {
     "nameEn": "Dubrovnik",
@@ -99,7 +101,8 @@
       "성벽 입장료 약 €35, 오전 일찍 가야 덜 붐빕니다",
       "구시가 내 레스토랑은 관광지 가격이니 골목 안쪽 로컬 식당 추천"
     ],
-    "dining": "신선한 해산물 리조또와 오징어 구이가 대표 메뉴. 검은 리조또(crni rižot)도 꼭 맛보세요."
+    "dining": "신선한 해산물 리조또와 오징어 구이가 대표 메뉴. 검은 리조또(crni rižot)도 꼭 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/The_walls_of_the_fortress_and_View_of_the_old_city._panorama.jpg"
   },
   "코토르": {
     "nameEn": "Kotor",
@@ -135,7 +138,8 @@
       "성벽 하이킹은 약 1시간 소요, 미끄러운 돌계단이니 운동화 필수",
       "크루즈 선박 2~3척 동시 기항 시 구시가가 매우 혼잡합니다"
     ],
-    "dining": "체바피(ćevapi)와 해산물 리조또가 인기. 니크시치코 맥주와 함께 즐기세요."
+    "dining": "체바피(ćevapi)와 해산물 리조또가 인기. 니크시치코 맥주와 함께 즐기세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/20090719_Crkva_Gospa_od_Zdravlja_Kotor_Bay_Montenegro.jpg"
   },
   "나소": {
     "nameEn": "Nassau",
@@ -171,7 +175,8 @@
       "다운타운 밖 치안이 좋지 않으니 관광 구역 내에서 활동하세요",
       "택시 미터기가 없으니 탑승 전 가격을 반드시 협상하세요"
     ],
-    "dining": "컨크 프리터(conch fritter)와 컨크 샐러드가 바하마의 대표 음식입니다."
+    "dining": "컨크 프리터(conch fritter)와 컨크 샐러드가 바하마의 대표 음식입니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Nassau_-_panoramio_%284%29.jpg"
   },
   "코주멜": {
     "nameEn": "Cozumel",
@@ -207,7 +212,8 @@
       "멕시코 페소가 유리하지만 달러도 대부분 통용됩니다",
       "항구에서 시내까지 택시 약 $5~10, 가격 흥정 필수"
     ],
-    "dining": "타코 알 파스토르와 세비체가 대표 메뉴. 항구 밖 로컬 식당이 훨씬 저렴합니다."
+    "dining": "타코 알 파스토르와 세비체가 대표 메뉴. 항구 밖 로컬 식당이 훨씬 저렴합니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Isla_cozumel_April17-2001-crop.jpg"
   },
   "세인트토마스": {
     "nameEn": "St. Thomas",
@@ -243,7 +249,8 @@
       "미국령이라 달러 사용, 미국 시민은 여권 불필요",
       "해변 선베드 대여 약 $20~30, 현금 준비하세요"
     ],
-    "dining": "저크치킨과 컨크 프리터가 인기. 럼 칵테일 파인킬러(Painkiller)도 꼭 맛보세요."
+    "dining": "저크치킨과 컨크 프리터가 인기. 럼 칵테일 파인킬러(Painkiller)도 꼭 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/View_of_St._Thomas.jpg"
   },
   "로아탄": {
     "nameEn": "Roatán",
@@ -279,7 +286,8 @@
       "물가가 매우 저렴하니 로컬 투어를 항구 밖에서 직접 예약하면 절약됩니다",
       "모기가 많으니 방충제 필수"
     ],
-    "dining": "발레아다(baleada, 토르티야에 콩·치즈)와 신선한 해산물 구이가 대표 메뉴."
+    "dining": "발레아다(baleada, 토르티야에 콩·치즈)와 신선한 해산물 구이가 대표 메뉴.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Westbay2106.jpg"
   },
   "마이애미": {
     "nameEn": "Miami",
@@ -315,7 +323,8 @@
       "승선 전날 도착 추천, 항공 지연 시 배를 놓칠 수 있어요",
       "우버/리프트가 택시보다 저렴하고 편리합니다"
     ],
-    "dining": "쿠바 샌드위치와 카페시토(쿠바 에스프레소)가 마이애미 필수 음식입니다."
+    "dining": "쿠바 샌드위치와 카페시토(쿠바 에스프레소)가 마이애미 필수 음식입니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Villa_Vizcaya_20110228.jpg"
   },
   "코코케이": {
     "nameEn": "CocoCay (Perfect Day)",
@@ -351,7 +360,8 @@
       "스릴 워터파크와 카바나는 사전 예약 필수, 빨리 매진됩니다",
       "무료 해변과 BBQ 뷔페만으로도 충분히 즐길 수 있어요"
     ],
-    "dining": "섬 내 무료 BBQ 뷔페 제공. 유료 스낵바에서 칵테일과 간식도 구매 가능."
+    "dining": "섬 내 무료 BBQ 뷔페 제공. 유료 스낵바에서 칵테일과 간식도 구매 가능.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Perfect_Day_Coco_Cay_PANO.jpg"
   },
   "그랜드 케이맨": {
     "nameEn": "Grand Cayman",
@@ -387,7 +397,8 @@
       "텐더보트 기항지이므로 파도에 따라 대기 시간이 길 수 있어요",
       "물가가 매우 비싸니 예산을 넉넉히 준비하세요"
     ],
-    "dining": "컨크 프리터와 저크치킨이 인기. 럼 케이크는 기념품으로도 좋습니다."
+    "dining": "컨크 프리터와 저크치킨이 인기. 럼 케이크는 기념품으로도 좋습니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Grand_cayman.jpg"
   },
   "바르셀로나": {
     "nameEn": "Barcelona",
@@ -423,7 +434,8 @@
       "사그라다 파밀리아는 사전 온라인 예약 필수, 당일 매진 빈번",
       "소매치기 주의! 람블라스와 지하철에서 가방을 앞으로 메세요"
     ],
-    "dining": "타파스와 빠에야가 기본. 보케리아 시장에서 하몬, 해산물 타파스를 맛보세요."
+    "dining": "타파스와 빠에야가 기본. 보케리아 시장에서 하몬, 해산물 타파스를 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Aerial_view_of_Barcelona%2C_Spain_%2851227309370%29_edited.jpg"
   },
   "탈린": {
     "nameEn": "Tallinn",
@@ -459,7 +471,8 @@
       "크루즈 터미널에서 구시가까지 도보 15분, 택시 불필요",
       "여름에도 바람이 차니 가벼운 겉옷 준비"
     ],
-    "dining": "검은빵과 훈제 생선, 혈소시지가 전통 음식. 중세 테마 레스토랑 올데 한자(Olde Hansa)도 체험 추천."
+    "dining": "검은빵과 훈제 생선, 혈소시지가 전통 음식. 중세 테마 레스토랑 올데 한자(Olde Hansa)도 체험 추천.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Raekoja_plats_at_night.jpg"
   },
   "주노": {
     "nameEn": "Juneau",
@@ -495,7 +508,8 @@
       "비가 자주 오니 방수 재킷과 레이어링 필수",
       "고래 관찰 투어는 인기가 매우 높아 사전 예약 권장"
     ],
-    "dining": "킹크랩 레그와 훈제 연어가 대표 메뉴. 트레이시스 킹크랩 셰크에서 맛보세요."
+    "dining": "킹크랩 레그와 훈제 연어가 대표 메뉴. 트레이시스 킹크랩 셰크에서 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Queen_Elizabeth_%28ship%2C_2010%29_in_Juneau%2C_Alaska_2024-08-15.jpg"
   },
   "헬싱키": {
     "nameEn": "Helsinki",
@@ -531,7 +545,8 @@
       "마켓광장 페리 선착장에서 수오멘린나행 페리 편도 €3.5",
       "여름에도 15~20°C 정도이니 가벼운 겉옷 준비"
     ],
-    "dining": "연어 스프(lohikeitto)와 카렐리안 파이가 대표 음식. 마켓광장 노점에서 맛보세요."
+    "dining": "연어 스프(lohikeitto)와 카렐리안 파이가 대표 음식. 마켓광장 노점에서 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Suomenlinna_%28cropped%29.jpg"
   },
   "제노바": {
     "nameEn": "Genoa",
@@ -567,7 +582,8 @@
       "승하선 항구로 이용 시 전날/당일 제노바 반나절 관광 추천",
       "구시가 골목은 밤에 어두우니 낮에 관광하세요"
     ],
-    "dining": "페스토 제노베제 파스타와 포카치아 디 레코가 제노바의 자랑. 꼭 맛보세요."
+    "dining": "페스토 제노베제 파스타와 포카치아 디 레코가 제노바의 자랑. 꼭 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Piazza_de_Ferrari%2C_Genoa.jpg"
   },
   "케치칸": {
     "nameEn": "Ketchikan",
@@ -603,7 +619,8 @@
       "케치칸은 미국 최다 강우 도시이니 우비/방수 재킷 필수",
       "크루즈 선박에서 다운타운까지 도보 가능"
     ],
-    "dining": "훈제 연어와 할리벗 피시앤칩스가 대표 메뉴. 크릭 스트리트 근처에서 맛보세요."
+    "dining": "훈제 연어와 할리벗 피시앤칩스가 대표 메뉴. 크릭 스트리트 근처에서 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Downtown_Ketchikan_-_panoramio.jpg"
   },
   "스캐그웨이": {
     "nameEn": "Skagway",
@@ -639,7 +656,8 @@
       "화이트패스 철도는 매우 인기 있어 크루즈 사전 예약 필수",
       "마을이 작아서 도보로 충분히 둘러볼 수 있어요"
     ],
-    "dining": "연어 베이크와 클램 차우더가 인기. 레드오니언 살룬에서 골드러시 분위기 속 한잔 추천."
+    "dining": "연어 베이크와 클램 차우더가 인기. 레드오니언 살룬에서 골드러시 분위기 속 한잔 추천.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Skagway_aerial_view.jpg"
   },
   "밴쿠버": {
     "nameEn": "Vancouver",
@@ -675,7 +693,8 @@
       "승선 전 하루 일찍 도착해 시내 관광 추천",
       "캐나다 플레이스 크루즈 터미널이 다운타운에 있어 접근 편리"
     ],
-    "dining": "연어와 스시가 유명. 그랜빌 아일랜드 마켓의 해산물 차우더도 추천합니다."
+    "dining": "연어와 스시가 유명. 그랜빌 아일랜드 마켓의 해산물 차우더도 추천합니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Concord_Pacific_Master_Plan_Area.jpg"
   },
   "코펜하겐": {
     "nameEn": "Copenhagen",
@@ -711,7 +730,8 @@
       "코펜하겐 카드 구매 시 대중교통+주요 관광지 무료 입장 가능",
       "물가가 비싸니 핫도그 포장마차가 가성비 좋은 식사 옵션"
     ],
-    "dining": "스뫼레브뢰드(오픈 샌드위치)가 덴마크 대표 음식. 현지 핫도그도 간식으로 추천."
+    "dining": "스뫼레브뢰드(오픈 샌드위치)가 덴마크 대표 음식. 현지 핫도그도 간식으로 추천.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Christiansborg_fra_Nikolaj_Kirken.jpg"
   },
   "나폴리": {
     "nameEn": "Naples",
@@ -747,7 +767,8 @@
       "나폴리 구시가 소매치기 주의, 귀중품 최소화",
       "폼페이는 햇볕이 강하니 모자, 선크림, 물 필수"
     ],
-    "dining": "마르게리타 피자 원조의 도시! 다 미켈레(L'Antica Pizzeria da Michele)가 전설적 명소."
+    "dining": "마르게리타 피자 원조의 도시! 다 미켈레(L'Antica Pizzeria da Michele)가 전설적 명소.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Napoli_-_Maschio_Angioino_-_202209302342_3.jpg"
   },
   "포트로더데일": {
     "nameEn": "Fort Lauderdale",
@@ -783,7 +804,8 @@
       "승선 전날 도착 시 해변 근처 호텔 추천, 공항에서 15분 거리",
       "크루즈 터미널 주차 1일 약 $20, 사전 예약 가능"
     ],
-    "dining": "해산물이 주력. 클램 차우더와 스톤크랩(시즌)이 플로리다 대표 음식입니다."
+    "dining": "해산물이 주력. 클램 차우더와 스톤크랩(시즌)이 플로리다 대표 음식입니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Skyline_of_Fort_Lauderdale%2C_Nov-15.jpg"
   },
   "산토리니": {
     "nameEn": "Santorini",
@@ -819,7 +841,8 @@
       "텐더보트 기항지, 바람이 강하면 기항 취소 가능",
       "케이블카 대기줄이 길어요, 하선 즉시 이동 추천"
     ],
-    "dining": "토마토 케프테데스(토마토 튀김)와 파바(렌틸콩 퓌레)가 산토리니 특산. 칼데라 뷰 레스토랑 추천."
+    "dining": "토마토 케프테데스(토마토 튀김)와 파바(렌틸콩 퓌레)가 산토리니 특산. 칼데라 뷰 레스토랑 추천.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/2011_Dimos_Thiras.png"
   },
   "산후안": {
     "nameEn": "San Juan",
@@ -855,7 +878,8 @@
       "미국령이라 달러 사용, 미국 시민은 여권 불필요",
       "크루즈 터미널이 올드산후안 안에 있어 도보 관광 최적"
     ],
-    "dining": "모퐁고(으깬 플랜틴)가 푸에르토리코의 대표 음식. 피냐콜라다 발상지이니 한잔 필수!"
+    "dining": "모퐁고(으깬 플랜틴)가 푸에르토리코의 대표 음식. 피냐콜라다 발상지이니 한잔 필수!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/2013_Old_San_Juan_01.JPG"
   },
   "그레이트스터럽케이": {
     "nameEn": "Great Stirrup Cay",
@@ -891,7 +915,8 @@
       "텐더보트로 이동하므로 방수 가방 준비",
       "해변 의자와 선베드는 무료, 일찍 가서 자리 확보"
     ],
-    "dining": "섬 내 무료 BBQ 뷔페와 바 운영. 추가 유료 메뉴도 있습니다."
+    "dining": "섬 내 무료 BBQ 뷔페와 바 운영. 추가 유료 메뉴도 있습니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Greatstrirrupcay.jpg"
   },
   "로마(치비타베키아)": {
     "nameEn": "Rome (Civitavecchia)",
@@ -927,7 +952,8 @@
       "로마 종일 투어 시 교통 체증으로 귀환 시간 넉넉히 계산",
       "로마 기차 자유여행 시 마지막 기차 시간 반드시 확인"
     ],
-    "dining": "로마에서 카초에페페, 카르보나라, 아마트리치아나 파스타를 맛보세요."
+    "dining": "로마에서 카초에페페, 카르보나라, 아마트리치아나 파스타를 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Forte_Michelangelo_2014.jpg"
   },
   "파나마운하": {
     "nameEn": "Panama Canal",
@@ -963,7 +989,8 @@
       "운하 통과 시 일찍 일어나 데크 좋은 자리를 확보하세요",
       "파나마시티는 습하고 더우니 가벼운 옷과 물 준비"
     ],
-    "dining": "세비체와 산코초(닭고기 스튜)가 파나마 대표 음식. 카스코 비에호의 루프탑 레스토랑 추천."
+    "dining": "세비체와 산코초(닭고기 스튜)가 파나마 대표 음식. 카스코 비에호의 루프탑 레스토랑 추천.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Panama_Canal_Map_EN.svg/640px-Panama_Canal_Map_EN.svg.png"
   },
   "상트페테르부르크": {
     "nameEn": "St. Petersburg",
@@ -999,7 +1026,8 @@
       "크루즈 72시간 무비자 입국 가능하나 반드시 크루즈사 투어 이용 조건 확인",
       "에르미타주는 줄이 매우 길어 가이드 투어로 빠른 입장 추천"
     ],
-    "dining": "보르시, 블리니(메밀 팬케이크), 비프 스트로가노프가 러시아 대표 음식입니다."
+    "dining": "보르시, 블리니(메밀 팬케이크), 비프 스트로가노프가 러시아 대표 음식입니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Spb_06-2017_img20_StMichael_Castle_%28cropped%29.jpg"
   },
   "게이랑에르": {
     "nameEn": "Geiranger",
@@ -1035,7 +1063,8 @@
       "텐더보트 기항지이며 날씨에 따라 일정 변경 가능",
       "마을이 매우 작으니 투어 사전 예약 필수"
     ],
-    "dining": "훈제 연어와 브루노스트(갈색 치즈)가 노르웨이 대표. 마을 카페에서 와플도 맛보세요."
+    "dining": "훈제 연어와 브루노스트(갈색 치즈)가 노르웨이 대표. 마을 카페에서 와플도 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f3/View_to_Geiranger_from_Flydalsjuvet%2C_2013_June.jpg"
   },
   "플롬": {
     "nameEn": "Flåm",
@@ -1071,7 +1100,8 @@
       "플롬 철도 티켓은 사전 예약 강력 추천, 매진 빈번",
       "여름에도 산 위는 쌀쌀하니 겉옷 준비"
     ],
-    "dining": "연어 수프와 현지 맥주 에기르(Ægir)가 인기. 에기르 브루어리펍은 바이킹 테마입니다."
+    "dining": "연어 수프와 현지 맥주 에기르(Ægir)가 인기. 에기르 브루어리펍은 바이킹 테마입니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Aurlandsfjorden_fr%C3%A5_Sn%C3%B8vegen.jpg"
   },
   "시드니": {
     "nameEn": "Sydney",
@@ -1107,7 +1137,8 @@
       "크루즈 터미널이 서큘러키에 있어 오페라하우스 도보 5분",
       "호주 달러 준비, 대부분 카드 결제 가능"
     ],
-    "dining": "미트파이와 피시앤칩스가 호주 캐주얼 푸드. 시드니 록 오이스터도 꼭 맛보세요."
+    "dining": "미트파이와 피시앤칩스가 호주 캐주얼 푸드. 시드니 록 오이스터도 꼭 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg"
   },
   "시애틀": {
     "nameEn": "Seattle",
@@ -1143,7 +1174,8 @@
       "승선 전 하루 일찍 도착해 시내 관광 추천",
       "시애틀은 비가 자주 오니 가벼운 방수 재킷 준비"
     ],
-    "dining": "클램 차우더와 던지니스 크랩이 시애틀 대표 해산물. 파이크플레이스 차우더가 유명합니다."
+    "dining": "클램 차우더와 던지니스 크랩이 시애틀 대표 해산물. 파이크플레이스 차우더가 유명합니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Seattle_Center_as_night_falls.jpg"
   },
   "호놀룰루": {
     "nameEn": "Honolulu",
@@ -1179,7 +1211,8 @@
       "진주만은 가방 반입 불가, 소지품 보관함 이용 필요",
       "크루즈 터미널에서 와이키키까지 버스 약 30분"
     ],
-    "dining": "포케 보울(참치 회덮밥)과 플레이트런치가 하와이 대표 음식. 새우 트럭도 필수!"
+    "dining": "포케 보울(참치 회덮밥)과 플레이트런치가 하와이 대표 음식. 새우 트럭도 필수!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/2022_Views_from_Diamond_Head_02.jpg"
   },
   "베르겐": {
     "nameEn": "Bergen",
@@ -1215,7 +1248,8 @@
       "1년 중 200일 이상 비가 오니 우산/방수재킷 필수",
       "크루즈 터미널에서 브뤼겐까지 도보 가능"
     ],
-    "dining": "피스케수페(생선 수프)와 훈제 연어가 대표. 어시장에서 킹크랩도 맛볼 수 있어요."
+    "dining": "피스케수페(생선 수프)와 훈제 연어가 대표. 어시장에서 킹크랩도 맛볼 수 있어요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Bergen_panorama_at_night_-_panoramio_%281%29.jpg"
   },
   "스톡홀름": {
     "nameEn": "Stockholm",
@@ -1251,7 +1285,8 @@
       "크루즈 터미널 위치(Stadsgården/Frihamnen) 확인 후 교통편 계획",
       "스웨덴은 거의 현금 불요, 카드만으로 OK"
     ],
-    "dining": "미트볼(쇠트불라르)과 청어절임(sill)이 스웨덴 대표 음식. 피카(커피+시나몬빵) 문화도 체험하세요."
+    "dining": "미트볼(쇠트불라르)과 청어절임(sill)이 스웨덴 대표 음식. 피카(커피+시나몬빵) 문화도 체험하세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Royal_Dramatic_Theatre_Stockholm.jpg"
   },
   "빙하만": {
     "nameEn": "Glacier Bay",
@@ -1287,7 +1322,8 @@
       "하선하지 않는 시닉 크루징이므로 따뜻하게 입고 일찍 데크 자리 확보",
       "쌍안경을 가져가면 야생동물 관찰에 좋아요"
     ],
-    "dining": "선상 식사만 가능. 대부분 크루즈사가 빙하 관람 특별 이벤트(핫초코, 아이스 칵테일)를 제공합니다."
+    "dining": "선상 식사만 가능. 대부분 크루즈사가 빙하 관람 특별 이벤트(핫초코, 아이스 칵테일)를 제공합니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Glacier-bay-map.jpg"
   },
   "빅토리아": {
     "nameEn": "Victoria",
@@ -1323,7 +1359,8 @@
       "크루즈 터미널에서 이너하버까지 도보 가능",
       "부차트 가든은 시내에서 약 30분, 셔틀버스 이용 추천"
     ],
-    "dining": "피시앤칩스와 클램 차우더가 인기. 엠프레스 호텔 애프터눈 티(사전 예약 필요)도 추천."
+    "dining": "피시앤칩스와 클램 차우더가 인기. 엠프레스 호텔 애프터눈 티(사전 예약 필요)도 추천.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Victoria_Montage_2020.jpg"
   },
   "로스앤젤레스": {
     "nameEn": "Los Angeles",
@@ -1359,7 +1396,8 @@
       "LA는 넓고 교통 체증이 심하니 시간 여유를 두세요",
       "크루즈 터미널(산페드로)에서 할리우드까지 우버로 약 40분~1시간"
     ],
-    "dining": "타코 트럭의 멕시칸 타코와 인앤아웃 버거가 LA의 소울푸드입니다."
+    "dining": "타코 트럭의 멕시칸 타코와 인앤아웃 버거가 LA의 소울푸드입니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Hollywood_Sign_%28Zuschnitt%29.jpg"
   },
   "사우샘프턴": {
     "nameEn": "Southampton",
@@ -1395,7 +1433,8 @@
       "런던 자유여행 시 사우샘프턴역에서 워털루역까지 기차 이용",
       "승하선 항구로 이용 시 전날 도착해 시내 관광 추천"
     ],
-    "dining": "피시앤칩스와 에일 맥주가 영국의 정석. 항구 근처 펍에서 선데이 로스트도 추천."
+    "dining": "피시앤칩스와 에일 맥주가 영국의 정석. 항구 근처 펍에서 선데이 로스트도 추천.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/View_across_Ocean_Village_Marina_%28geograph_5432669%29.jpg"
   },
   "세인트마틴": {
     "nameEn": "St. Maarten / St. Martin",
@@ -1431,7 +1470,8 @@
       "네덜란드령은 달러, 프랑스령은 유로 사용(달러도 통용)",
       "마호비치에서 제트 블래스트 주의, 안전선 뒤에서 관람하세요"
     ],
-    "dining": "네덜란드령에서 BBQ 립, 프랑스령 마리곳에서 크레이프와 프랑스 요리를 즐기세요."
+    "dining": "네덜란드령에서 BBQ 립, 프랑스령 마리곳에서 크레이프와 프랑스 요리를 즐기세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Sint_Maarten.svg/640px-Flag_of_Sint_Maarten.svg.png"
   },
   "아이시스트레이트포인트": {
     "nameEn": "Icy Strait Point",
@@ -1467,7 +1507,8 @@
       "기항지 시설이 원주민 소유로 투어 수익이 지역사회에 환원됩니다",
       "곰 관찰 투어는 인기 최고, 조기 예약 필수"
     ],
-    "dining": "던지니스 크랩 페스트와 훈제 연어가 현지 별미. 크랩 셰크에서 맛보세요."
+    "dining": "던지니스 크랩 페스트와 훈제 연어가 현지 별미. 크랩 셰크에서 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Cruise_ship_passengers_arrive_at_Icy_Strait_Point_2009.jpg"
   },
   "싱가포르": {
     "nameEn": "Singapore",
@@ -1503,7 +1544,8 @@
       "크루즈 터미널(마리나베이)이 시내 중심이라 접근 편리",
       "껌 반입 금지, 쓰레기 투기 벌금 등 규정 주의"
     ],
-    "dining": "칠리크랩, 치킨라이스, 락사가 3대 국민음식. 호커센터에서 $3~5에 맛볼 수 있어요."
+    "dining": "칠리크랩, 치킨라이스, 락사가 3대 국민음식. 호커센터에서 $3~5에 맛볼 수 있어요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/640px-Flag_of_Singapore.svg.png"
   },
   "카보산루카스": {
     "nameEn": "Cabo San Lucas",
@@ -1539,7 +1581,8 @@
       "텐더보트 기항지, 파도에 따라 대기 시간 발생 가능",
       "러버스비치(연인의 해변)는 수영 금지 구역, 관람만 가능"
     ],
-    "dining": "피시 타코와 마가리타가 카보의 필수 메뉴. 마리나 근처 레스토랑에서 즐기세요."
+    "dining": "피시 타코와 마가리타가 카보의 필수 메뉴. 마리나 근처 레스토랑에서 즐기세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Collage_Cabo_San_Lucas.jpg"
   },
   "푸에르토플라타": {
     "nameEn": "Puerto Plata",
@@ -1575,7 +1618,8 @@
       "앰버코브 터미널이 시내와 떨어져 있어 시내 방문 시 투어 이용 추천",
       "27 폭포 투어는 체력 필요, 미끄러운 바위 주의"
     ],
-    "dining": "라반데라(도미니카 국민 음식: 밥, 콩, 고기)와 모퐁고가 대표. 현지 맥주 프레시던테도 추천."
+    "dining": "라반데라(도미니카 국민 음식: 밥, 콩, 고기)와 모퐁고가 대표. 현지 맥주 프레시던테도 추천.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Downtown_Puerto_Plata_Dominican_Republic_Architecture.jpg"
   },
   "리버풀": {
     "nameEn": "Liverpool",
@@ -1611,7 +1655,8 @@
       "크루즈 터미널이 시내 중심이라 도보 관광 최적",
       "비틀즈 스토리 뮤지엄은 알버트독 내, 입장료 약 £18"
     ],
-    "dining": "스카우스(고기·채소 스튜)가 리버풀 대표 음식. 펍에서 에일과 파이도 추천합니다."
+    "dining": "스카우스(고기·채소 스튜)가 리버풀 대표 음식. 펍에서 에일과 파이도 추천합니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/Pier_Head%2C_Liverpool_-_geograph.org.uk_-_3059094.jpg"
   },
   "바리": {
     "nameEn": "Bari",
@@ -1647,7 +1692,8 @@
       "알베로벨로는 바리에서 차로 약 1시간, 투어 이용이 편리",
       "구시가에서 할머니들이 문 앞에서 파스타 만드는 모습을 볼 수 있어요"
     ],
-    "dining": "오레키에테 파스타(귀 모양)와 포카치아 바레세가 풀리아 대표. 꼭 맛보세요."
+    "dining": "오레키에테 파스타(귀 모양)와 포카치아 바레세가 풀리아 대표. 꼭 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Bari_-_Lungomare_Imperatore_Augusto_%26_Mare.jpg"
   },
   "마사틀란": {
     "nameEn": "Mazatlán",
@@ -1683,7 +1729,8 @@
       "크루즈 터미널에서 구시가까지 풀모니아(오픈 택시) 이용 약 $5",
       "시내 물가가 저렴하니 현지 식당에서 식사 추천"
     ],
-    "dining": "마린 토스타다(해산물 토스타다)와 세비체가 마사틀란의 대표. 코코넛 새우도 인기."
+    "dining": "마린 토스타다(해산물 토스타다)와 세비체가 마사틀란의 대표. 코코넛 새우도 인기.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/97/Mazatl%C3%A1nCollage.png"
   },
   "케이프타운": {
     "nameEn": "Cape Town",
@@ -1719,7 +1766,8 @@
       "테이블마운틴 케이블카는 바람에 따라 운행 중단 빈번, 유연한 일정으로",
       "우버가 안전하고 저렴한 교통수단, 택시보다 추천"
     ],
-    "dining": "보보티(케이프 말레이 커리 요리)와 빌통(육포)이 남아공 대표. 와인도 세계적 수준!"
+    "dining": "보보티(케이프 말레이 커리 요리)와 빌통(육포)이 남아공 대표. 와인도 세계적 수준!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Camps_bay_%2853460319478%29_%28cropped%29.jpg"
   },
   "푸에르토바야르타": {
     "nameEn": "Puerto Vallarta",
@@ -1755,7 +1803,8 @@
       "크루즈 터미널에서 말레콘까지 택시 약 $5, 도보는 약 20분",
       "12~4월이 건기로 날씨가 가장 좋아요"
     ],
-    "dining": "페스카도 사라데아도(통 생선 구이)와 세비체가 대표. 말레콘 해변 레스토랑에서 석양과 함께!"
+    "dining": "페스카도 사라데아도(통 생선 구이)와 세비체가 대표. 말레콘 해변 레스토랑에서 석양과 함께!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Collage_Puerto_Vallarta.jpg"
   },
   "엔세나다": {
     "nameEn": "Ensenada",
@@ -1791,7 +1840,8 @@
       "LA 출발 3~4일 단기 크루즈의 유일한 기항지인 경우가 많아요",
       "항구에서 시내까지 도보 가능, 택시 불필요"
     ],
-    "dining": "피시 타코의 원조! 어시장에서 갓 만든 피시 타코와 세비체를 꼭 맛보세요."
+    "dining": "피시 타코의 원조! 어시장에서 갓 만든 피시 타코와 세비체를 꼭 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Baja09flickr-05_%284258690724%29.jpg"
   },
   "코르푸": {
     "nameEn": "Corfu",
@@ -1827,7 +1877,8 @@
       "항구에서 구시가까지 도보 15분. 택시 불필요.",
       "코르푸 진저비어(tsitsibira)를 꼭 맛보세요 — 영국 식민 시대의 유산."
     ],
-    "dining": "소프리토(송아지 스튜), 파스티차다(토마토 소스 고기 파스타) — 이탈리아 영향 받은 코르푸 전통 요리"
+    "dining": "소프리토(송아지 스튜), 파스티차다(토마토 소스 고기 파스타) — 이탈리아 영향 받은 코르푸 전통 요리",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Pontikonisi.jpg"
   },
   "무스카트": {
     "nameEn": "Muscat",
@@ -1863,7 +1914,8 @@
       "금요일은 대부분 상점 휴무. 모스크 방문 시 긴팔·긴바지 필수.",
       "오만 리알(OMR)은 비싼 통화 — 1OMR ≈ $2.6. 미리 환전하세요."
     ],
-    "dining": "슈와(전통 바베큐 양고기), 할와(오만식 디저트) — 무트라 수크 근처 현지 식당에서"
+    "dining": "슈와(전통 바베큐 양고기), 할와(오만식 디저트) — 무트라 수크 근처 현지 식당에서",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Al_Alam_Palace.jpg"
   },
   "토르톨라": {
     "nameEn": "Tortola",
@@ -1899,7 +1951,8 @@
       "항구에서 해변까지 택시 약 $5~15, 가격 흥정 필수",
       "BVI는 미국 달러를 사용합니다"
     ],
-    "dining": "저크치킨과 로티(카레 랩)가 현지 대표 음식. 페인킬러 칵테일의 발상지이니 꼭 한잔!"
+    "dining": "저크치킨과 로티(카레 랩)가 현지 대표 음식. 페인킬러 칵테일의 발상지이니 꼭 한잔!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Roadtown%2C_Tortola.jpg"
   },
   "더반": {
     "nameEn": "Durban",
@@ -1935,7 +1988,8 @@
       "우버가 안전하고 편리한 이동수단",
       "해변에서 귀중품 관리 주의"
     ],
-    "dining": "바니차우(빵 속 카레)가 더반의 소울푸드. 인도계 카레 레스토랑도 훌륭합니다."
+    "dining": "바니차우(빵 속 카레)가 더반의 소울푸드. 인도계 카레 레스토랑도 훌륭합니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Durban_TownHall.jpg"
   },
   "포트엘리자베스": {
     "nameEn": "Port Elizabeth (Gqeberha)",
@@ -1965,7 +2019,8 @@
       "가든루트 투어는 종일이므로 일찍 출발 필수",
       "선크림과 모자 꼭 챙기세요"
     ],
-    "dining": "브라이(남아공식 바베큐)와 빌통이 필수. 해산물도 신선합니다."
+    "dining": "브라이(남아공식 바베큐)와 빌통이 필수. 해산물도 신선합니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/City_Hall_Port_Elizabeth-003.jpg"
   },
   "모셀베이": {
     "nameEn": "Mossel Bay",
@@ -2001,7 +2056,8 @@
       "상어 다이빙은 사전 예약 필수, 시즌에 따라 상어 출현율 차이",
       "바람이 강한 날이 많으니 방풍 재킷 준비"
     ],
-    "dining": "신선한 굴과 해산물이 특산. 모셀베이 굴은 남아공 최고로 꼽힙니다."
+    "dining": "신선한 굴과 해산물이 특산. 모셀베이 굴은 남아공 최고로 꼽힙니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Mossel_Bay_%2815412141375%29.jpg"
   },
   "더니든": {
     "nameEn": "Dunedin",
@@ -2037,7 +2093,8 @@
       "날씨가 변덕스러우니 레이어링 필수",
       "펭귄 관찰 시 일정 거리 유지 — 야생동물 보호"
     ],
-    "dining": "뉴질랜드 미트파이와 피시앤칩스가 기본. 스페이츠(Speight's) 맥주 양조장도 추천."
+    "dining": "뉴질랜드 미트파이와 피시앤칩스가 기본. 스페이츠(Speight's) 맥주 양조장도 추천.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Dunedin-Nueva_Zelanda01.JPG"
   },
   "워프": {
     "nameEn": "Wharf (Tauranga)",
@@ -2073,7 +2130,8 @@
       "로토루아는 타우랑가에서 차로 약 1시간, 투어 이용이 편리",
       "로토루아의 유황 냄새에 대비하세요"
     ],
-    "dining": "마오리 전통 항이(hangi, 땅속 찜 요리)를 로토루아에서 체험. 뉴질랜드 미트파이도 추천."
+    "dining": "마오리 전통 항이(hangi, 땅속 찜 요리)를 로토루아에서 체험. 뉴질랜드 미트파이도 추천.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Tauranga_Harbour_and_City.jpg"
   },
   "뉴욕": {
     "nameEn": "New York",
@@ -2109,7 +2167,8 @@
       "크루즈 터미널이 맨해튼 미드타운에 있어 접근 편리",
       "지하철 메트로카드로 이동하면 저렴하고 빠릅니다"
     ],
-    "dining": "뉴욕 피자 한 조각과 베이글이 필수. 할랄가이즈 푸드트럭도 뉴욕 명물입니다."
+    "dining": "뉴욕 피자 한 조각과 베이글이 필수. 할랄가이즈 푸드트럭도 뉴욕 명물입니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg"
   },
   "아테네(피레우스)": {
     "nameEn": "Athens (Piraeus)",
@@ -2145,7 +2204,8 @@
       "피레우스에서 아테네 시내까지 지하철 약 30분",
       "여름 아크로폴리스는 매우 덥고 미끄러우니 모자·물·운동화 필수"
     ],
-    "dining": "수블라키, 무사카, 그릭 샐러드가 그리스 3대 음식. 플라카 골목 타베르나에서 맛보세요."
+    "dining": "수블라키, 무사카, 그릭 샐러드가 그리스 3대 음식. 플라카 골목 타베르나에서 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Piraeus-collage-c.jpg"
   },
   "발렌시아": {
     "nameEn": "Valencia",
@@ -2181,7 +2241,8 @@
       "크루즈 터미널에서 시내까지 버스 약 20분",
       "오렌지 나무 가로수가 아름답지만 열매는 쓴 맛이니 따먹지 마세요"
     ],
-    "dining": "발렌시아 오리지널 빠에야(해산물이 아닌 토끼·닭·콩 버전)를 꼭 맛보세요."
+    "dining": "발렌시아 오리지널 빠에야(해산물이 아닌 토끼·닭·콩 버전)를 꼭 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Malvarrosa_Beach%2C_Valencia%2C_Spain_%2829812271043%29.jpg"
   },
   "마우이(카훌루이)": {
     "nameEn": "Maui (Kahului)",
@@ -2217,7 +2278,8 @@
       "할레아칼라 일출은 사전 예약 필수(국립공원 예약제)",
       "자외선이 매우 강하니 선크림 필수"
     ],
-    "dining": "포케 보울과 플레이트런치가 하와이 기본. 셰이브드 아이스도 더위에 최고."
+    "dining": "포케 보울과 플레이트런치가 하와이 기본. 셰이브드 아이스도 더위에 최고.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/AirViewKahului.jpg"
   },
   "힐로": {
     "nameEn": "Hilo",
@@ -2253,7 +2315,8 @@
       "힐로는 비가 많으니 우산과 방수 재킷 필수",
       "화산공원은 힐로에서 약 45분 거리"
     ],
-    "dining": "로코모코(밥 위 햄버그 스테이크, 달걀, 그레이비)가 힐로 대표 음식. 카페100이 원조."
+    "dining": "로코모코(밥 위 햄버그 스테이크, 달걀, 그레이비)가 힐로 대표 음식. 카페100이 원조.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Hawaii_County_Hawaii_Incorporated_and_Unincorporated_areas_Hilo_Highlighted.svg/640px-Hawaii_County_Hawaii_Incorporated_and_Unincorporated_areas_Hilo_Highlighted.svg.png"
   },
   "코나": {
     "nameEn": "Kona",
@@ -2289,7 +2352,8 @@
       "텐더보트 기항지, 파도에 따라 하선 지연 가능",
       "코나 커피는 현지 농장 직구가 가장 신선하고 저렴"
     ],
-    "dining": "코나 커피 한잔과 하와이안 플레이트런치가 기본. 아히(참치) 포케도 신선합니다."
+    "dining": "코나 커피 한잔과 하와이안 플레이트런치가 기본. 아히(참치) 포케도 신선합니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Kona_Mauka.jpg"
   },
   "부에노스아이레스": {
     "nameEn": "Buenos Aires",
@@ -2325,7 +2389,8 @@
       "크루즈 터미널에서 시내까지 택시 약 15분",
       "아르헨티나 페소 환율 변동이 크니 현지 환전소 이용 추천"
     ],
-    "dining": "아사도(숯불 바비큐)와 엠파나다가 아르헨티나의 자랑. 말벡 와인과 함께!"
+    "dining": "아사도(숯불 바비큐)와 엠파나다가 아르헨티나의 자랑. 말벡 와인과 함께!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/92/Puerto_Madero_-_Puente_de_la_mujer_%2844673627614%29.jpg"
   },
   "멜버른": {
     "nameEn": "Melbourne",
@@ -2361,7 +2426,8 @@
       "크루즈 터미널(스테이션피어)에서 시내까지 트램 약 30분",
       "멜버른 날씨는 '하루에 사계절', 레이어링 필수"
     ],
-    "dining": "멜버른 플랫화이트 커피는 세계 최고 수준. 미트파이와 아보카도 토스트도 추천."
+    "dining": "멜버른 플랫화이트 커피는 세계 최고 수준. 미트파이와 아보카도 토스트도 추천.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Melburnian_Skyline.jpg"
   },
   "탬파": {
     "nameEn": "Tampa",
@@ -2397,7 +2463,8 @@
       "승선 전날 탬파 도착 시 이보르시티 숙박 추천",
       "여름은 매우 덥고 습하니 수분 보충 필수"
     ],
-    "dining": "쿠바 샌드위치가 탬파의 소울푸드. 이보르시티 콜롬비아 레스토랑이 유명합니다."
+    "dining": "쿠바 샌드위치가 탬파의 소울푸드. 이보르시티 콜롬비아 레스토랑이 유명합니다.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Downtown_Tampa%2C_Florida.jpg"
   },
   "푸켓": {
     "nameEn": "Phuket",
@@ -2433,7 +2500,8 @@
       "흥정 문화가 당연하니 첫 가격 그대로 지불하지 마세요",
       "우기(5~10월)에도 스콜 후 맑아지니 일정에 큰 지장 없어요"
     ],
-    "dining": "팟타이, 똠양꿍, 망고 스티키라이스가 태국 필수 3종. 로컬 식당이 가성비 최고."
+    "dining": "팟타이, 똠양꿍, 망고 스티키라이스가 태국 필수 3종. 로컬 식당이 가성비 최고.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Phuket_Aerial.jpg"
   },
   "몰타(발레타)": {
     "nameEn": "Malta (Valletta)",
@@ -2469,7 +2537,8 @@
       "발레타는 매우 작아서 도보로 충분히 관광 가능",
       "정오에 어퍼바라카 정원에서 대포 발사 이벤트가 있어요"
     ],
-    "dining": "파스티치(리코타 또는 완두콩 파이)가 몰타 국민 간식. 토끼 스튜도 전통 요리."
+    "dining": "파스티치(리코타 또는 완두콩 파이)가 몰타 국민 간식. 토끼 스튜도 전통 요리.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/St_Sebastian_Curtain_%28cropped%29.jpg"
   },
   "이스탄불": {
     "nameEn": "Istanbul",
@@ -2505,7 +2574,8 @@
       "크루즈 터미널에서 구시가까지 택시 약 15분",
       "그랜드바자르 흥정은 반값에서 시작하세요"
     ],
-    "dining": "케밥, 피데(터키 피자), 바클라바가 터키 3대 음식. 이스탄불 차이(홍차)도 필수."
+    "dining": "케밥, 피데(터키 피자), 바클라바가 터키 3대 음식. 이스탄불 차이(홍차)도 필수.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Historical_peninsula_and_modern_skyline_of_Istanbul.jpg"
   },
   "호바트": {
     "nameEn": "Hobart",
@@ -2541,7 +2611,8 @@
       "토요일이면 살라만카 마켓(주말 장터) 꼭 방문",
       "태즈메이니아 날씨는 변덕스러우니 레이어링 필수"
     ],
-    "dining": "태즈메이니아 생굴과 연어가 최고 품질. 현지 크래프트 맥주(캐스케이드)도 추천."
+    "dining": "태즈메이니아 생굴과 연어가 최고 품질. 현지 크래프트 맥주(캐스케이드)도 추천.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Franklin_Wharf_2015_b.jpg"
   },
   "페낭": {
     "nameEn": "Penang",
@@ -2577,7 +2648,8 @@
       "크루즈 터미널에서 조지타운까지 택시 약 15분",
       "호커 음식은 $1~3로 매우 저렴"
     ],
-    "dining": "차르퀴테오(볶음 국수), 아삼락사, 나시르막이 페낭 3대 음식. 세계 미식 수도!"
+    "dining": "차르퀴테오(볶음 국수), 아삼락사, 나시르막이 페낭 3대 음식. 세계 미식 수도!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Penang_in_Malaysia.svg/640px-Penang_in_Malaysia.svg.png"
   },
   "랑카위": {
     "nameEn": "Langkawi",
@@ -2613,7 +2685,8 @@
       "면세 섬이라 초콜릿, 주류가 매우 저렴",
       "택시 미터기 없으니 가격 미리 협상"
     ],
-    "dining": "나시고렝, 미고렝, 사테이가 말레이시아 기본. 해산물 BBQ도 저렴하고 맛있어요."
+    "dining": "나시고렝, 미고렝, 사테이가 말레이시아 기본. 해산물 BBQ도 저렴하고 맛있어요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Eagle_square_at_Kuah_Langkawi.jpg"
   },
   "몬테비데오": {
     "nameEn": "Montevideo",
@@ -2649,7 +2722,8 @@
       "치안이 남미에서 비교적 양호하지만 구시가 야간은 주의",
       "우루과이 페소 또는 달러 모두 사용 가능"
     ],
-    "dining": "치비토(우루과이식 스테이크 샌드위치)와 아사도가 대표. 메르카도 델 푸에르토에서!"
+    "dining": "치비토(우루과이식 스테이크 샌드위치)와 아사도가 대표. 메르카도 델 푸에르토에서!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/PALACIO_LEGISLATIVO_01.JPG"
   },
   "산투스": {
     "nameEn": "Santos",
@@ -2685,7 +2759,8 @@
       "상파울루는 산투스에서 차로 약 1시간, 교통 체증 감안",
       "브라질 헤알 환율을 미리 확인하세요"
     ],
-    "dining": "코싱냐(크로켓), 파스텔(튀김만두)이 브라질 간식. 페이조아다(검은콩 스튜)도 대표 음식."
+    "dining": "코싱냐(크로켓), 파스텔(튀김만두)이 브라질 간식. 페이조아다(검은콩 스튜)도 대표 음식.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/At_Santos%2C_Brazil_2018_480_%28cropped%29.jpg"
   },
   "글래스고": {
     "nameEn": "Glasgow",
@@ -2721,7 +2796,8 @@
       "날씨가 변덕스러우니 항상 우산 준비",
       "크루즈 터미널(그리녹)에서 글래스고 시내까지 기차 약 40분"
     ],
-    "dining": "해기스(양의 내장 요리)와 피시앤칩스가 스코틀랜드 전통. 스카치위스키 한잔도 필수."
+    "dining": "해기스(양의 내장 요리)와 피시앤칩스가 스코틀랜드 전통. 스카치위스키 한잔도 필수.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Glasgow_-_aerial_-_2025-04-17_10.jpg"
   },
   "산티아고(발파라이소)": {
     "nameEn": "Santiago (Valparaíso)",
@@ -2757,7 +2833,8 @@
       "발파라이소 언덕은 가파르니 편한 신발 필수",
       "소매치기 주의, 카메라 목에 걸고 다니세요"
     ],
-    "dining": "엠파나다 데 피노(소고기 파이)와 세비체가 칠레 대표. 칠레 와인(까르미네르)도 꼭!"
+    "dining": "엠파나다 데 피노(소고기 파이)와 세비체가 칠레 대표. 칠레 와인(까르미네르)도 꼭!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Historic_Quarter_of_the_Seaport_City_of_Valpara%C3%ADso_04.jpg"
   },
   "팔마데마요르카": {
     "nameEn": "Palma de Mallorca",
@@ -2793,7 +2870,8 @@
       "크루즈 터미널에서 구시가까지 도보 약 15분",
       "여름 성수기 해변이 매우 붐비니 오전 일찍 방문"
     ],
-    "dining": "엔사이마다(달팽이 모양 빵)와 소브라사다(훈제 소시지)가 마요르카 특산."
+    "dining": "엔사이마다(달팽이 모양 빵)와 소브라사다(훈제 소시지)가 마요르카 특산.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Kathedrale_von_Palma.jpg"
   },
   "호치민(푸미)": {
     "nameEn": "Ho Chi Minh City (Phu My)",
@@ -2829,7 +2907,8 @@
       "푸미에서 호치민까지 약 2시간, 투어 이용이 필수",
       "길 건너기 요령: 일정 속도로 걸으면 오토바이가 피해갑니다"
     ],
-    "dining": "퍼(쌀국수), 반미(바게트 샌드위치), 고이꾸온(스프링롤)이 베트남 3대 음식."
+    "dining": "퍼(쌀국수), 반미(바게트 샌드위치), 고이꾸온(스프링롤)이 베트남 3대 음식.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%C4%90%E1%BA%A1i_T%C3%B2ng_L%C3%A2m_T%E1%BB%B1.jpg"
   },
   "스플리트": {
     "nameEn": "Split",
@@ -2865,7 +2944,8 @@
       "크루즈 터미널에서 궁전까지 도보 10분",
       "왕좌의 게임 지하감옥 씬이 궁전 지하에서 촬영됐어요"
     ],
-    "dining": "페카(뚜껑 덮어 구운 고기·채소)와 달마시아 해산물 리조또가 스플리트 대표."
+    "dining": "페카(뚜껑 덮어 구운 고기·채소)와 달마시아 해산물 리조또가 스플리트 대표.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Split_080620-133710-IMG_0968x.jpg"
   },
   "이스퀴멀": {
     "nameEn": "Ísafjörður",
@@ -2901,7 +2981,8 @@
       "날씨가 매우 변덕스러우니 방수·방풍 장비 필수",
       "상점이 적으니 필요한 물품은 미리 준비"
     ],
-    "dining": "플뢰트쾨쿠르(팬케이크)와 훈제 북극곤들매기가 현지 별미. 스키르(요거트)도 꼭 맛보세요."
+    "dining": "플뢰트쾨쿠르(팬케이크)와 훈제 북극곤들매기가 현지 별미. 스키르(요거트)도 꼭 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/%C3%8Dsafj%C3%B6r%C3%B0ur_12_June_2019.jpg"
   },
   "라로마나": {
     "nameEn": "La Romana",
@@ -2937,7 +3018,8 @@
       "사오나 섬 투어는 보트 이동 시간이 길어 멀미약 준비",
       "도미니카 페소보다 달러가 편리"
     ],
-    "dining": "라반데라(밥, 콩, 고기)와 프리토스(튀김 플랜틴)가 대표. 마마후아나 술도 독특해요."
+    "dining": "라반데라(밥, 콩, 고기)와 프리토스(튀김 플랜틴)가 대표. 마마후아나 술도 독특해요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Dominicana-Altos_de_Chavon.jpg"
   },
   "다낭": {
     "nameEn": "Da Nang",
@@ -2973,7 +3055,8 @@
       "호이안은 다낭에서 약 30분, 택시 이용 저렴",
       "호이안에서 맞춤 옷(원피스, 정장 등)을 24시간 내 제작 가능"
     ],
-    "dining": "반미, 까오라우(호이안 국수), 미꽝(비빔국수)이 다낭·호이안 대표 음식."
+    "dining": "반미, 까오라우(호이안 국수), 미꽝(비빔국수)이 다낭·호이안 대표 음식.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Dragon_Bridge%2C_Da_Nang_during_day_-_20230819_%28cropped%29.jpg"
   },
   "푼타아레나스": {
     "nameEn": "Punta Arenas",
@@ -3009,7 +3092,8 @@
       "파타고니아 바람이 매우 강하니 방풍 재킷 필수",
       "토레스 델 파이네는 편도 4시간이니 종일 여유 필요"
     ],
-    "dining": "양고기 아사도(바비큐)가 파타고니아 대표. 킹크랩(센토야)도 시즌에 맛볼 수 있어요."
+    "dining": "양고기 아사도(바비큐)가 파타고니아 대표. 킹크랩(센토야)도 시즌에 맛볼 수 있어요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Montaje_Punta_Arenas.png"
   },
   "코스타마야": {
     "nameEn": "Costa Maya",
@@ -3045,7 +3129,8 @@
       "포트 밖 관광지가 멀어 투어 이용이 편리",
       "멕시코 페소와 달러 모두 통용"
     ],
-    "dining": "세비체와 피시타코가 카리브 멕시칸 기본. 포트 내 레스토랑에서도 맛볼 수 있어요."
+    "dining": "세비체와 피시타코가 카리브 멕시칸 기본. 포트 내 레스토랑에서도 맛볼 수 있어요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/00/Costa_maya_beach.jpg"
   },
   "보스턴": {
     "nameEn": "Boston",
@@ -3081,7 +3166,8 @@
       "크루즈 터미널이 시내 중심이라 도보 관광 최적",
       "지하철(T) 찰리카드로 이동하면 편리"
     ],
-    "dining": "클램 차우더와 랍스터 롤이 보스턴의 자랑. 퀸시마켓 푸드코트에서 맛보세요."
+    "dining": "클램 차우더와 랍스터 롤이 보스턴의 자랑. 퀸시마켓 푸드코트에서 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/ISH_WC_Boston4.jpg"
   },
   "월비스베이": {
     "nameEn": "Walvis Bay",
@@ -3117,7 +3203,8 @@
       "사막 투어는 체력 소모가 크니 물과 선크림 필수",
       "소수스블레이는 편도 약 5시간, 종일 여유 필요"
     ],
-    "dining": "오릭스(겜스복) 스테이크와 카파나(바비큐) — 나미비아 고유의 야생 미식 체험."
+    "dining": "오릭스(겜스복) 스테이크와 카파나(바비큐) — 나미비아 고유의 야생 미식 체험.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Walvis_Bay_aerial.jpg"
   },
   "마데이라": {
     "nameEn": "Madeira (Funchal)",
@@ -3153,7 +3240,8 @@
       "레바다 하이킹 시 미끄러운 구간이 있으니 트레킹화 필수",
       "마데이라 와인 시음은 무료인 곳이 많아요"
     ],
-    "dining": "에스페타다(월계수 꼬치 소고기)와 보루두멜(꿀빵)이 마데이라 특산. 마데이라 와인 필수!"
+    "dining": "에스페타다(월계수 꼬치 소고기)와 보루두멜(꿀빵)이 마데이라 특산. 마데이라 와인 필수!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Funchal%2C_Jardins_da_Quinta_Vigia_%28lookout%29.jpg"
   },
   "란사로테": {
     "nameEn": "Lanzarote",
@@ -3189,7 +3277,8 @@
       "자외선이 매우 강하니 선크림과 모자 필수",
       "렌터카로 섬 일주가 가장 효율적(국제면허 필요)"
     ],
-    "dining": "파파스 아루가다스(주름 감자)와 모호 소스가 카나리아 대표. 현지 말바시아 와인도 추천."
+    "dining": "파파스 아루가다스(주름 감자)와 모호 소스가 카나리아 대표. 현지 말바시아 와인도 추천.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Lanzarote%27s_Lunar-Like_Landscape.jpg"
   },
   "요코하마": {
     "nameEn": "Yokohama",
@@ -3225,7 +3314,8 @@
       "도쿄까지 전철 30분, 스이카/파스모 카드 구입 추천",
       "크루즈 터미널(오산바시)이 시내 중심이라 접근 편리"
     ],
-    "dining": "요코하마 이에게이 라멘과 차이나타운 샤오롱바오가 필수. 슈마이(소고기 만두)도 명물."
+    "dining": "요코하마 이에게이 라멘과 차이나타운 샤오롱바오가 필수. 슈마이(소고기 만두)도 명물.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Minato_Mirai_In_Blue.jpg"
   },
   "푸에르테벤투라": {
     "nameEn": "Fuerteventura",
@@ -3261,7 +3351,8 @@
       "바람이 매우 강한 섬이니 비치타월 무거운 것으로 준비",
       "렌터카가 가장 효율적인 이동수단"
     ],
-    "dining": "마호레로 치즈(염소 치즈)가 세계적 명성. 파파스 아루가다스와 함께 맛보세요."
+    "dining": "마호레로 치즈(염소 치즈)가 세계적 명성. 파파스 아루가다스와 함께 맛보세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/92/Fuerteventura_from_space.jpg"
   },
   "테네리페": {
     "nameEn": "Tenerife",
@@ -3297,7 +3388,8 @@
       "테이데산 정상 케이블카는 사전 예약 필수",
       "고도에 따라 기온차가 크니 레이어링 필수"
     ],
-    "dining": "파파스 아루가다스와 모호 소스, 비에하(현지 생선 구이)가 테네리페 특산."
+    "dining": "파파스 아루가다스와 모호 소스, 비에하(현지 생선 구이)가 테네리페 특산.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Tenerife%2C_Canary_Islands_ESA23970088.jpeg"
   },
   "라벤나": {
     "nameEn": "Ravenna",
@@ -3333,7 +3425,8 @@
       "크루즈 터미널에서 시내까지 셔틀버스 약 15분",
       "모자이크 감상 시 쌍안경이 있으면 천장 디테일을 더 잘 볼 수 있어요"
     ],
-    "dining": "피아디나(얇은 빵에 치즈·햄)가 로마냐 지역 대표 간식. 라구 파스타도 추천."
+    "dining": "피아디나(얇은 빵에 치즈·햄)가 로마냐 지역 대표 간식. 라구 파스타도 추천.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Ravenna_Cattedrale_Metropolitana_della_Risurrezione_di_Nostro_Signore_Ges%C3%B9_Cristo_Esterno_Lato_Nord_1.jpg"
   },
   "필라델피아": {
     "nameEn": "Philadelphia",
@@ -3369,7 +3462,8 @@
       "크루즈 터미널에서 구시가까지 우버로 약 10분",
       "필리 치즈스테이크 명가 팻스 vs 제노스 논쟁에 참여해보세요"
     ],
-    "dining": "필리 치즈스테이크가 필라델피아의 상징. '위트 위즈'(양파+치즈위즈)로 주문하세요."
+    "dining": "필리 치즈스테이크가 필라델피아의 상징. '위트 위즈'(양파+치즈위즈)로 주문하세요.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Silverliner_V_SEPTA-811-philadelphia-22-6-2012-fws.jpg"
   },
   "방콕(람차방)": {
     "nameEn": "Bangkok (Laem Chabang)",
@@ -3405,7 +3499,8 @@
       "람차방에서 방콕까지 약 2시간, 투어 이용 필수",
       "왕궁 방문 시 긴바지·긴팔 필수(반바지 입장 불가)"
     ],
-    "dining": "팟타이, 쏨땀(파파야 샐러드), 카오만가이(치킨라이스)가 태국 3대 음식. 길거리에서 $1로!"
+    "dining": "팟타이, 쏨땀(파파야 샐러드), 카오만가이(치킨라이스)가 태국 3대 음식. 길거리에서 $1로!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/Laem_Chabang.jpg"
   },
   "하코다테": {
     "nameEn": "Hakodate",
@@ -3441,7 +3536,8 @@
       "하코다테산 야경은 날씨에 따라 안개가 낄 수 있어요",
       "아사이치는 오전 5시부터 — 일찍 방문할수록 신선"
     ],
-    "dining": "이카소멘(오징어 회 국수), 우니(성게)동, 카이센동(해산물 덮밥)이 하코다테 3대 미식."
+    "dining": "이카소멘(오징어 회 국수), 우니(성게)동, 카이센동(해산물 덮밥)이 하코다테 3대 미식.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Hakodate_montage.jpg"
   },
   "칼리아리": {
     "nameEn": "Cagliari",
@@ -3477,7 +3573,8 @@
       "크루즈 터미널에서 구시가까지 도보 약 15분",
       "여름 사르데냐는 매우 더우니 수분 보충 필수"
     ],
-    "dining": "쿨루르조네스(사르데냐식 라비올리)와 포르체두(새끼돼지 구이)가 사르데냐 대표."
+    "dining": "쿨루르조네스(사르데냐식 라비올리)와 포르체두(새끼돼지 구이)가 사르데냐 대표.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Cagliari_collage.png"
   },
   "뉴올리언스": {
     "nameEn": "New Orleans",
@@ -3513,7 +3610,8 @@
       "크루즈 터미널이 프렌치쿼터 바로 옆이라 도보 관광 최적",
       "버번스트리트 밤은 활기차지만 소매치기 주의"
     ],
-    "dining": "검보, 잠발라야, 베녜(사각 도넛)가 뉴올리언스 3대 음식. 카페뒤몽드 베녜는 필수!"
+    "dining": "검보, 잠발라야, 베녜(사각 도넛)가 뉴올리언스 3대 음식. 카페뒤몽드 베녜는 필수!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/New_Orleans_from_the_Air_September_2019_-_Central_Business_District_Skyline_%28cropped%29.jpg"
   },
   "리우데자네이루": {
     "nameEn": "Rio de Janeiro",
@@ -3549,7 +3647,8 @@
       "치안에 주의, 고가 장비는 가급적 호텔에 보관",
       "우버가 택시보다 안전하고 저렴"
     ],
-    "dining": "슈하스코(브라질 바비큐), 페이조아다(검은콩 스튜), 아사이 보울이 리우 필수 음식."
+    "dining": "슈하스코(브라질 바비큐), 페이조아다(검은콩 스튜), 아사이 보울이 리우 필수 음식.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/98/Cidade_Maravilhosa.jpg"
   },
   "오키나와": {
     "nameEn": "Okinawa",
@@ -3585,6 +3684,7 @@
       "나하 크루즈 터미널에서 국제거리까지 모노레일 이용 가능",
       "자외선이 매우 강하니 선크림 필수"
     ],
-    "dining": "소키소바(돼지갈비 국수), 타코라이스, 고야참프루(여주 볶음)가 오키나와 3대 음식."
+    "dining": "소키소바(돼지갈비 국수), 타코라이스, 고야참프루(여주 볶음)가 오키나와 3대 음식.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Map-okinawa-pref.png"
   }
 }
