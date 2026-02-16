@@ -1,0 +1,24 @@
+---
+layout: default
+title: "🇰🇷 한국출발 크루즈 | 크루즈링크"
+description: "부산, 인천, 제주에서 출발하는 크루즈 상품"
+permalink: /destinations/korea/
+---
+<div class="page-header" style="background:linear-gradient(rgba(26,35,126,0.6),rgba(26,35,126,0.6)),url('{{ '/assets/images/destinations/korea.jpg' | relative_url }}') center/cover no-repeat;padding:80px 0;"><div class="container"><h1>🇰🇷 한국출발 크루즈</h1></div></div>
+<div class="section"><div class="container">
+<p style="font-size:16px;line-height:1.8;margin-bottom:32px;">부산, 인천, 제주에서 출발하는 크루즈 상품. 가까운 항구에서 바로 승선하세요!</p>
+<h2 class="section-title">한국출발 크루즈 상품</h2>
+<div id="cruise-container"></div>
+</div></div>
+<script src="{{ '/assets/js/destination-cruises.js' | relative_url }}"></script>
+<script>
+loadDestinationCruises({
+  containerId: 'cruise-container',
+  filterFn: function(c) {
+    var port = (c.departurePort || '').toLowerCase();
+    return port.indexOf('부산') >= 0 || port.indexOf('인천') >= 0 || port.indexOf('제주') >= 0 ||
+           port.indexOf('busan') >= 0 || port.indexOf('incheon') >= 0 || port.indexOf('jeju') >= 0;
+  },
+  linePriority: { msc: 0 }
+});
+</script>

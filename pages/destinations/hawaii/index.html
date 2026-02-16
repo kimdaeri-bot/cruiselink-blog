@@ -8,6 +8,13 @@ permalink: /destinations/hawaii/
 <div class="section"><div class="container">
 <p style="font-size:16px;line-height:1.8;margin-bottom:32px;">태평양의 보석 하와이 제도를 크루즈로 여행합니다. 마우이, 빅아일랜드, 카우아이 등 여러 섬을 한 번에!</p>
 <h2 class="section-title">하와이 크루즈 상품</h2>
-<div class="cruise-list">
-{% for cruise in site.data.cruises %}{% if cruise.destination == "hawaii" %}{% include cruise-list-item.html cruise=cruise %}{% endif %}{% endfor %}
-</div></div></div>
+<div id="cruise-container"></div>
+</div></div>
+<script src="{{ '/assets/js/destination-cruises.js' | relative_url }}"></script>
+<script>
+loadDestinationCruises({
+  containerId: 'cruise-container',
+  destinations: ['hawaii'],
+  linePriority: { carnival: 0, 'royal-caribbean': 1, princess: 2 }
+});
+</script>

@@ -8,6 +8,13 @@ permalink: /destinations/japan/
 <div class="section"><div class="container">
 <p style="font-size:16px;line-height:1.8;margin-bottom:32px;">벚꽃, 온천, 미식의 나라 일본을 크루즈로 여행하세요. 도쿄, 오사카, 오키나와, 홋카이도 등 다양한 기항지를 만날 수 있습니다.</p>
 <h2 class="section-title">일본 크루즈 상품</h2>
-<div class="cruise-list">
-{% for cruise in site.data.cruises %}{% if cruise.destination == "japan" %}{% include cruise-list-item.html cruise=cruise %}{% endif %}{% endfor %}
-</div></div></div>
+<div id="cruise-container"></div>
+</div></div>
+<script src="{{ '/assets/js/destination-cruises.js' | relative_url }}"></script>
+<script>
+loadDestinationCruises({
+  containerId: 'cruise-container',
+  destinations: ['japan'],
+  linePriority: { msc: 0 }
+});
+</script>
