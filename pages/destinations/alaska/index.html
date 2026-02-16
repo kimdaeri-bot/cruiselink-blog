@@ -4,10 +4,10 @@ title: "알래스카 크루즈 | 크루즈링크"
 description: "알래스카 크루즈 상품을 비교하고 최적의 일정을 찾아보세요."
 permalink: /destinations/alaska/
 ---
-<div class="page-header" style="background:linear-gradient(rgba(26,35,126,0.6),rgba(26,35,126,0.6)),url('{{ '/assets/images/destinations/alaska.jpg' | relative_url }}') center/cover no-repeat;padding:80px 0;"><div class="container"><h1>🏔️ 알래스카 크루즈</h1></div></div>
+<div class="page-header" style="background:linear-gradient(rgba(26,35,126,0.6),rgba(26,35,126,0.6)),url('{{ '/assets/images/destinations/alaska.jpg' | relative_url }}') center/cover no-repeat;padding:80px 0;"><div class="container"><h1>🏔️ 알래스카 추천 크루즈</h1></div></div>
 <div class="section"><div class="container">
 <p style="font-size:16px;line-height:1.8;margin-bottom:32px;">거대한 빙하, 야생 동물, 울창한 숲이 펼쳐진 알래스카의 대자연을 크루즈로 만끽하세요. 5~9월이 최적의 시즌입니다.</p>
-<h2 class="section-title">알래스카 크루즈 상품</h2>
+<h2 class="section-title">알래스카 추천 크루즈</h2>
 <div id="cruise-container"></div>
 </div></div>
 <script src="{{ '/assets/js/destination-cruises.js' | relative_url }}"></script>
@@ -15,6 +15,9 @@ permalink: /destinations/alaska/
 loadDestinationCruises({
   containerId: 'cruise-container',
   destinations: ['alaska'],
-  linePriority: { ncl: 0, princess: 1, 'royal-caribbean': 2 }
+  allowedLines: ['ncl', 'royal-caribbean', 'princess'],
+  linePriority: { ncl: 0, princess: 1, 'royal-caribbean': 2 },
+  maxResults: 24,
+  perPage: 24
 });
 </script>

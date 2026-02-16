@@ -7,6 +7,8 @@ function loadDestinationCruises(config) {
     destinations = [],
     filterFn = null,
     linePriority = {},
+    allowedLines = null,
+    maxResults = 0,
     perPage = 24
   } = config;
 
@@ -25,6 +27,11 @@ function loadDestinationCruises(config) {
         filtered = cruises.filter(c => destinations.includes(c.destination));
       }
 
+      // Filter by allowed cruise lines
+      if (allowedLines && allowedLines.length) {
+        filtered = filtered.filter(c => allowedLines.includes(c.cruiseLine));
+      }
+
       // Sort: departureDate asc, then linePriority
       filtered.sort((a, b) => {
         const da = a.departureDate || '';
@@ -35,6 +42,11 @@ function loadDestinationCruises(config) {
         const pb = linePriority[b.cruiseLine] ?? 99;
         return pa - pb;
       });
+
+      // Limit results
+      if (maxResults > 0 && filtered.length > maxResults) {
+        filtered = filtered.slice(0, maxResults);
+      }
 
       if (filtered.length === 0) {
         container.innerHTML = '<p style="text-align:center;padding:40px;">해당 크루즈 상품이 없습니다.</p>';

@@ -4,10 +4,10 @@ title: "지중해 크루즈 | 크루즈링크"
 description: "지중해 크루즈 상품을 비교하고 최적의 일정을 찾아보세요."
 permalink: /destinations/mediterranean/
 ---
-<div class="page-header" style="background:linear-gradient(rgba(26,35,126,0.6),rgba(26,35,126,0.6)),url('{{ '/assets/images/destinations/mediterranean.jpg' | relative_url }}') center/cover no-repeat;padding:80px 0;"><div class="container"><h1>🏛️ 지중해 크루즈</h1></div></div>
+<div class="page-header" style="background:linear-gradient(rgba(26,35,126,0.6),rgba(26,35,126,0.6)),url('{{ '/assets/images/destinations/mediterranean.jpg' | relative_url }}') center/cover no-repeat;padding:80px 0;"><div class="container"><h1>🏛️ 지중해 추천 크루즈</h1></div></div>
 <div class="section"><div class="container">
 <p style="font-size:16px;line-height:1.8;margin-bottom:32px;">이탈리아, 그리스, 스페인, 크로아티아 등 유럽의 아름다운 해안 도시들을 방문하는 지중해 크루즈. 고대 유적, 맛있는 음식, 아름다운 해변이 기다립니다.</p>
-<h2 class="section-title">지중해 크루즈 상품</h2>
+<h2 class="section-title">지중해 추천 크루즈</h2>
 <div id="cruise-container"></div>
 </div></div>
 <script src="{{ '/assets/js/destination-cruises.js' | relative_url }}"></script>
@@ -15,6 +15,16 @@ permalink: /destinations/mediterranean/
 loadDestinationCruises({
   containerId: 'cruise-container',
   destinations: ['mediterranean'],
-  linePriority: { msc: 0 }
+  allowedLines: ['msc'],
+  linePriority: { msc: 0 },
+  filterFn: function(c) {
+    if (c.destination !== 'mediterranean') return false;
+    if (c.cruiseLine !== 'msc') return false;
+    var ports = ['Rome','Civitavecchia','Barcelona','Naples','Venice','Marseille','제노바','Genoa','Piraeus','Athens','피레우스','바르셀로나','나폴리','베네치아','마르세유'];
+    var dp = c.departurePort || '';
+    return ports.some(function(p){ return dp.indexOf(p) >= 0; });
+  },
+  maxResults: 20,
+  perPage: 20
 });
 </script>

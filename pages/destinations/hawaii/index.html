@@ -4,10 +4,10 @@ title: "하와이 크루즈 | 크루즈링크"
 description: "하와이 크루즈 상품을 비교하고 최적의 일정을 찾아보세요."
 permalink: /destinations/hawaii/
 ---
-<div class="page-header" style="background:linear-gradient(rgba(26,35,126,0.6),rgba(26,35,126,0.6)),url('{{ '/assets/images/destinations/hawaii.jpg' | relative_url }}') center/cover no-repeat;padding:80px 0;"><div class="container"><h1>🌺 하와이 크루즈</h1></div></div>
+<div class="page-header" style="background:linear-gradient(rgba(26,35,126,0.6),rgba(26,35,126,0.6)),url('{{ '/assets/images/destinations/hawaii.jpg' | relative_url }}') center/cover no-repeat;padding:80px 0;"><div class="container"><h1>🌺 하와이 추천 크루즈</h1></div></div>
 <div class="section"><div class="container">
-<p style="font-size:16px;line-height:1.8;margin-bottom:32px;">태평양의 보석 하와이 제도를 크루즈로 여행합니다. 마우이, 빅아일랜드, 카우아이 등 여러 섬을 한 번에!</p>
-<h2 class="section-title">하와이 크루즈 상품</h2>
+<p style="font-size:16px;line-height:1.8;margin-bottom:32px;">하와이 4개 섬을 크루즈로 돌아보는 환상적인 여행. 와이키키 해변, 화산 국립공원, 나팔리 코스트까지 하와이의 모든 것을 만끽하세요.</p>
+<h2 class="section-title">하와이 추천 크루즈</h2>
 <div id="cruise-container"></div>
 </div></div>
 <script src="{{ '/assets/js/destination-cruises.js' | relative_url }}"></script>
@@ -15,6 +15,9 @@ permalink: /destinations/hawaii/
 loadDestinationCruises({
   containerId: 'cruise-container',
   destinations: ['hawaii'],
-  linePriority: { carnival: 0, 'royal-caribbean': 1, princess: 2 }
+  allowedLines: ['ncl', 'carnival', 'royal-caribbean', 'princess'],
+  linePriority: { carnival: 0, 'royal-caribbean': 1, princess: 2, ncl: 3 },
+  maxResults: 20,
+  perPage: 20
 });
 </script>

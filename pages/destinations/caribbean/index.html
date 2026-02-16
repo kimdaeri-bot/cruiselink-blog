@@ -4,10 +4,10 @@ title: "카리브해 크루즈 | 크루즈링크"
 description: "카리브해 크루즈 상품을 비교하고 최적의 일정을 찾아보세요."
 permalink: /destinations/caribbean/
 ---
-<div class="page-header" style="background:linear-gradient(rgba(26,35,126,0.6),rgba(26,35,126,0.6)),url('{{ '/assets/images/destinations/caribbean.jpg' | relative_url }}') center/cover no-repeat;padding:80px 0;"><div class="container"><h1>🏖️ 카리브해 크루즈</h1></div></div>
+<div class="page-header" style="background:linear-gradient(rgba(26,35,126,0.6),rgba(26,35,126,0.6)),url('{{ '/assets/images/destinations/caribbean.jpg' | relative_url }}') center/cover no-repeat;padding:80px 0;"><div class="container"><h1>🏖️ 카리브해 추천 크루즈</h1></div></div>
 <div class="section"><div class="container">
-<p style="font-size:16px;line-height:1.8;margin-bottom:32px;">에메랄드빛 바다와 하얀 모래사장, 열대 파라다이스 카리브해. 연중 따뜻한 날씨로 사계절 크루즈가 가능합니다.</p>
-<h2 class="section-title">카리브해 크루즈 상품</h2>
+<p style="font-size:16px;line-height:1.8;margin-bottom:32px;">에메랄드빛 바다, 백사장, 열대 분위기가 가득한 카리브해 크루즈. 마이애미, 포트로더데일에서 출발하는 다양한 일정이 준비되어 있습니다.</p>
+<h2 class="section-title">카리브해 추천 크루즈</h2>
 <div id="cruise-container"></div>
 </div></div>
 <script src="{{ '/assets/js/destination-cruises.js' | relative_url }}"></script>
@@ -15,6 +15,9 @@ permalink: /destinations/caribbean/
 loadDestinationCruises({
   containerId: 'cruise-container',
   destinations: ['caribbean'],
-  linePriority: { ncl: 0, princess: 1, 'royal-caribbean': 2 }
+  allowedLines: ['ncl', 'royal-caribbean', 'princess'],
+  linePriority: { ncl: 0, princess: 1, 'royal-caribbean': 2 },
+  maxResults: 24,
+  perPage: 24
 });
 </script>

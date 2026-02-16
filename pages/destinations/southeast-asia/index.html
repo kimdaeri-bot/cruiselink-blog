@@ -4,10 +4,10 @@ title: "동남아 크루즈 | 크루즈링크"
 description: "동남아 크루즈 상품을 비교하고 최적의 일정을 찾아보세요."
 permalink: /destinations/southeast-asia/
 ---
-<div class="page-header" style="background:linear-gradient(rgba(26,35,126,0.6),rgba(26,35,126,0.6)),url('{{ '/assets/images/destinations/southeast-asia.jpg' | relative_url }}') center/cover no-repeat;padding:80px 0;"><div class="container"><h1>🌴 동남아 크루즈</h1></div></div>
+<div class="page-header" style="background:linear-gradient(rgba(26,35,126,0.6),rgba(26,35,126,0.6)),url('{{ '/assets/images/destinations/southeast-asia.jpg' | relative_url }}') center/cover no-repeat;padding:80px 0;"><div class="container"><h1>🌴 동남아 추천 크루즈</h1></div></div>
 <div class="section"><div class="container">
-<p style="font-size:16px;line-height:1.8;margin-bottom:32px;">싱가포르, 태국, 베트남, 말레이시아 등 다양한 문화와 열대 해변을 만끽하는 동남아 크루즈. 합리적인 가격이 매력적입니다.</p>
-<h2 class="section-title">동남아 크루즈 상품</h2>
+<p style="font-size:16px;line-height:1.8;margin-bottom:32px;">싱가포르, 태국, 베트남, 말레이시아 등 다채로운 동남아시아를 크루즈로 만끽하세요. 이국적인 문화와 열대 해변이 기다립니다.</p>
+<h2 class="section-title">동남아 추천 크루즈</h2>
 <div id="cruise-container"></div>
 </div></div>
 <script src="{{ '/assets/js/destination-cruises.js' | relative_url }}"></script>
@@ -15,6 +15,9 @@ permalink: /destinations/southeast-asia/
 loadDestinationCruises({
   containerId: 'cruise-container',
   destinations: ['southeast-asia', 'asia'],
-  linePriority: { msc: 0, 'royal-caribbean': 1 }
+  allowedLines: ['msc', 'royal-caribbean'],
+  linePriority: { msc: 0, 'royal-caribbean': 1 },
+  maxResults: 20,
+  perPage: 20
 });
 </script>
