@@ -166,7 +166,8 @@
 
     var imgHtml;
     if (c.image && c.image !== 'default-cruise.jpg') {
-      imgHtml = '<img src="/cruiselink-blog/assets/images/' + c.image + '" alt="' + (c.title || '') + '" loading="lazy">';
+      var imgSrc = (c.image.indexOf('http') === 0) ? c.image : '/cruiselink-blog/assets/images/' + c.image;
+      imgHtml = '<img src="' + imgSrc + '" alt="' + (c.title || '') + '" loading="lazy">';
     } else {
       imgHtml = '<div class="placeholder">🚢</div>';
     }
