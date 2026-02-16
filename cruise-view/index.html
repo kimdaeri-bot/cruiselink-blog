@@ -160,9 +160,9 @@ title: 크루즈 상세보기
 }
 
 /* Include/Exclude */
-.include-list { list-style:none; padding:0; }
-.include-list li { padding:6px 0; font-size:14px; }
-.include-list li::before { margin-right:8px; }
+.include-list { list-style:none; padding-left:28px; margin:0; }
+.include-list li { padding:6px 0; font-size:14px; position:relative; }
+.include-list li::before { position:absolute; left:-28px; }
 .include-list.included li::before { content:'✅'; }
 .include-list.excluded li::before { content:'❌'; }
 
