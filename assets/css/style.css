@@ -221,7 +221,9 @@ ul { list-style: none; }
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
   color: var(--white); font-size: 48px;
 }
-.cruise-card-tags { position: absolute; top: 12px; left: 12px; display: flex; gap: 4px; }
+.cruise-card-tags { position: absolute; top: 12px; left: 12px; display: flex; gap: 4px; flex-wrap: wrap; }
+.cruise-card-tags .tag { font-size: 11px; font-weight: 700; padding: 4px 8px; border-radius: 4px; text-shadow: 0 1px 2px rgba(0,0,0,0.3); }
+.tag-한국출발 { background: #1a237e; color: #fff; }
 .cruise-card-body { padding: 20px; }
 .cruise-card-meta { font-size: 12px; color: var(--gray-700); margin-bottom: 4px; }
 .cruise-card-title { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
