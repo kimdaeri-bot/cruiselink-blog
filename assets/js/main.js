@@ -184,18 +184,28 @@ document.addEventListener('DOMContentLoaded', function() {
           var href = baseurl + '/cruise-view/?id=' + c.id;
           var cur = c.currency === 'EUR' ? '€' : '$';
           var price = c.priceFrom ? cur + c.priceFrom + '~' : '문의';
-          var ports = (c.ports||[]).map(function(p){ return typeof p==='object'?p.name:p; }).filter(Boolean).slice(0,4).join(' → ');
+          var ports = (c.ports||[]).map(function(p){ return typeof p==='object'?p.name:p; }).filter(Boolean).slice(0,5).join(' → ');
           var tags = (c.tags||[]).map(function(t){ return '<span class="tag tag-'+t+'">'+t+'</span>'; }).join('');
-          return '<div class="cruise-card"><a href="'+href+'" class="cruise-card-link">' +
-            '<div class="cruise-card-image">' + (img?'<img src="'+img+'" alt="" loading="lazy">':'<div class="placeholder">🚢</div>') +
-            '<div class="cruise-card-tags">'+tags+'</div></div>' +
-            '<div class="cruise-card-body">' +
-            '<div class="cruise-card-meta">'+(c.cruiseLineName||c.cruiseLine)+' · '+c.ship+'</div>' +
-            '<div class="cruise-card-title">'+c.title+'</div>' +
-            '<div class="cruise-card-ports">📍 '+ports+'</div>' +
-            '<div style="font-size:13px;color:#666;margin-bottom:12px;">📅 '+c.departureDate+' · 🌙 '+c.nights+'박</div>' +
-            '<div class="cruise-card-footer"><div class="cruise-card-price">'+price+' <small>/1인</small></div>' +
-            '<span class="btn btn-primary btn-sm">자세히 보기</span></div></div></a></div>';
+          var hashtags = (c.hashtags||[]).map(function(h){ return '<span class="hashtag">'+h+'</span>'; }).join('');
+          var lineName = c.cruiseLineName || c.cruiseLine || '';
+          return '<div class="cruise-item">' +
+            '<div class="cruise-item-image">' + (img?'<img src="'+img+'" alt="" loading="lazy">':'<div class="placeholder">🚢</div>') + '</div>' +
+            '<div class="cruise-item-body"><div>' +
+            '<div style="margin-bottom:6px;">'+tags+'</div>' +
+            '<div class="cruise-item-meta">'+lineName+' · '+c.ship+'</div>' +
+            '<div class="cruise-item-title"><a href="'+href+'">'+c.title+'</a></div>' +
+            '<div class="cruise-item-ports">📍 '+ports+'</div>' +
+            (hashtags?'<div class="cruise-item-hashtags">'+hashtags+'</div>':'') +
+            '</div>' +
+            '<div class="cruise-item-footer">' +
+            '<div class="cruise-item-row">' +
+            '<div class="cruise-item-info"><span>📅 '+c.departureDate+' ~ '+(c.returnDate||'')+'</span><span>🌙 '+c.nights+'박</span></div>' +
+            '<div class="cruise-item-price">'+price+' <small>/1인</small></div>' +
+            '</div>' +
+            '<div class="cruise-item-actions">' +
+            '<a href="'+href+'" class="btn btn-outline btn-sm">상세보기</a>' +
+            '<button class="btn btn-primary btn-sm" onclick="openInquiry(\''+c.title+'\',\''+c.departureDate+'\',\''+(c.priceFrom||'')+'\',\''+lineName+'\',\''+c.ship+'\',\''+ports+'\')">문의하기</button>' +
+            '</div></div></div></div>';
         }).join('');
         document.getElementById('homeResultCount').textContent = '(' + _homeFiltered.length + '개)';
         document.getElementById('homeResultMore').style.display = end < _homeFiltered.length ? '' : 'none';
@@ -223,11 +233,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Close results
     var closeBtn = document.getElementById('homeResultClose');
     if (closeBtn) closeBtn.addEventListener('click', function(){ document.getElementById('homeSearchResults').style.display='none'; });
-    // Also trigger search on any select change
-    ['hf-dest','hf-port','hf-line','hf-month','hf-nights'].forEach(function(id){
-      var el = document.getElementById(id);
-      if (el) el.addEventListener('change', function(){ homeBtn.click(); });
-    });
+    // Search only on button click (no auto-trigger on select change)
   }
 
   // Apply URL params on cruise list page
