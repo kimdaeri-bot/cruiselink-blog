@@ -192,7 +192,7 @@
             '<div class="cruise-item-price">' + priceHtml + '</div>' +
           '</div>' +
           '<div class="cruise-item-actions">' +
-            '<button class="btn btn-outline btn-sm" onclick="openInquiry(' + inquiryArgs + ')">상세보기</button>' +
+            '<a href="/cruiselink-blog/cruise-view/?id=' + encodeURIComponent(c.id) + '" class="btn btn-outline btn-sm">상세보기</a>' +
             '<button class="btn btn-primary btn-sm" onclick="openInquiry(' + inquiryArgs + ')">문의하기</button>' +
           '</div>' +
         '</div>' +

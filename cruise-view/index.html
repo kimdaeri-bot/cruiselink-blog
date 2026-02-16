@@ -1,0 +1,170 @@
+---
+layout: default
+title: 크루즈 상세보기
+---
+
+<div id="cruise-detail-loading" style="text-align:center;padding:80px 20px;">
+  <p style="font-size:18px;">크루즈 정보를 불러오는 중...</p>
+</div>
+
+<div id="cruise-detail-content" style="display:none;">
+
+<!-- Hero -->
+<div class="detail-hero">
+  <div class="container">
+    <p style="font-size:14px;opacity:0.8;margin-bottom:8px;" id="cd-hero-sub"></p>
+    <h1 id="cd-title"></h1>
+    <div class="meta" id="cd-meta"></div>
+    <div style="margin-top:20px;">
+      <span style="font-size:32px;font-weight:900;" id="cd-price-hero"></span>
+      <span style="opacity:0.8;">/1인</span>
+    </div>
+    <div class="cta-buttons" style="margin-top:20px;justify-content:flex-start;">
+      <button class="btn btn-primary btn-lg" id="cd-inquiry-hero">📞 문의하기</button>
+      <a href="https://pf.kakao.com/_xgYbJG" target="_blank" class="btn btn-kakao btn-lg">💬 카카오톡 상담</a>
+      <a href="tel:02-3788-9119" class="btn btn-outline btn-lg" style="border-color:white;color:white;">☎️ 02-3788-9119</a>
+    </div>
+  </div>
+</div>
+
+<!-- Info Bar -->
+<div class="container">
+  <div class="info-bar" id="cd-info-bar"></div>
+</div>
+
+<!-- Itinerary -->
+<div class="section">
+  <div class="container">
+    <h2 class="section-title">🗓️ 상세 일정</h2>
+    <p class="section-subtitle" id="cd-itin-sub"></p>
+    <div class="itinerary-summary">
+      <div class="itinerary-summary-inner">
+        <span class="itinerary-route" id="cd-route"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ship Info -->
+<div class="section section-alt" id="cd-ship-section" style="display:none;">
+  <div class="container">
+    <h2 class="section-title" id="cd-ship-title"></h2>
+    <div class="ship-specs" id="cd-ship-specs"></div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="container">
+    <h2>이 크루즈가 마음에 드셨나요?</h2>
+    <p>크루즈링크 전문 상담원이 최적의 객실과 가격을 안내해드립니다.</p>
+    <div class="cta-buttons">
+      <button class="btn btn-primary btn-lg" id="cd-inquiry-bottom">📞 문의하기</button>
+      <a href="https://pf.kakao.com/_xgYbJG" target="_blank" class="btn btn-kakao btn-lg">💬 카카오톡 상담</a>
+      <a href="tel:02-3788-9119" class="btn btn-outline btn-lg" style="border-color:white;color:white;">☎️ 02-3788-9119</a>
+    </div>
+  </div>
+</div>
+
+</div><!-- /cruise-detail-content -->
+
+<div id="cruise-detail-error" style="display:none;text-align:center;padding:80px 20px;">
+  <h2>크루즈를 찾을 수 없습니다</h2>
+  <p>요청하신 크루즈 정보가 없습니다.</p>
+  <a href="/cruiselink-blog/" class="btn btn-primary" style="margin-top:20px;">목록으로 돌아가기</a>
+</div>
+
+<script>
+(function(){
+  var params = new URLSearchParams(window.location.search);
+  var cruiseId = params.get('id');
+  if (!cruiseId) { showError(); return; }
+
+  fetch('/cruiselink-blog/assets/data/cruises.json')
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      var c = null;
+      for (var i = 0; i < data.length; i++) {
+        if (data[i].id === cruiseId) { c = data[i]; break; }
+      }
+      if (!c) { showError(); return; }
+      render(c);
+    })
+    .catch(function(){ showError(); });
+
+  function showError(){
+    document.getElementById('cruise-detail-loading').style.display = 'none';
+    document.getElementById('cruise-detail-error').style.display = 'block';
+  }
+
+  function render(c){
+    var sym = c.currency === 'EUR' ? '€' : '$';
+    var ports = c.ports || [];
+    var portsStr = ports.join(', ');
+    var nights = c.nights || 0;
+    var days = nights + 1;
+
+    // Hero
+    document.getElementById('cd-hero-sub').textContent = (c.cruiseLineName || '') + ' · ' + (c.ship || '');
+    document.getElementById('cd-title').textContent = c.title || '';
+    document.getElementById('cd-meta').innerHTML = '📅 ' + (c.departureDate || '') + ' 출발 · 🌙 ' + nights + '박 · 📍 ' + (c.departurePort || '') + ' 출발';
+    document.getElementById('cd-price-hero').textContent = c.priceFrom ? sym + Number(c.priceFrom).toLocaleString() + '~' : '가격문의';
+
+    // Hero image bg
+    if (c.image && c.image !== 'default-cruise.jpg') {
+      var hero = document.querySelector('.detail-hero');
+      if (hero) hero.style.backgroundImage = 'linear-gradient(rgba(0,20,60,0.55),rgba(0,20,60,0.75)), url(/cruiselink-blog/assets/images/' + c.image + ')';
+    }
+
+    // Info bar
+    document.getElementById('cd-info-bar').innerHTML =
+      '<div class="info-bar-item"><div class="label">선사</div><div class="value">' + (c.cruiseLineName||'') + '</div></div>' +
+      '<div class="info-bar-item"><div class="label">선박</div><div class="value">' + (c.ship||'') + '</div></div>' +
+      '<div class="info-bar-item"><div class="label">출발항</div><div class="value">' + (c.departurePort||'') + '</div></div>' +
+      '<div class="info-bar-item"><div class="label">기간</div><div class="value">' + nights + '박 ' + days + '일</div></div>' +
+      '<div class="info-bar-item"><div class="label">가격</div><div class="value" style="color:var(--orange);">' + (c.priceFrom ? sym + Number(c.priceFrom).toLocaleString() + '~' : '문의') + '</div></div>';
+
+    // Itinerary
+    document.getElementById('cd-itin-sub').textContent = nights + '박 ' + days + '일 크루즈 여정';
+    var route = '📍 ' + (c.departurePort || '');
+    for (var i = 0; i < ports.length; i++) route += ' → ' + ports[i];
+    route += ' → ' + (c.departurePort || '');
+    document.getElementById('cd-route').textContent = route;
+
+    // Ship
+    if (c.shipTonnage || c.shipPassengers || c.shipYear) {
+      document.getElementById('cd-ship-section').style.display = '';
+      document.getElementById('cd-ship-title').textContent = '🚢 선박 소개 - ' + (c.ship || '');
+      var specs = '';
+      if (c.shipTonnage) specs += '<div class="ship-spec"><div class="label">톤수</div><div class="value">' + c.shipTonnage + '</div></div>';
+      if (c.shipPassengers) specs += '<div class="ship-spec"><div class="label">승객 수</div><div class="value">' + c.shipPassengers + '</div></div>';
+      if (c.shipYear) specs += '<div class="ship-spec"><div class="label">취항년도</div><div class="value">' + c.shipYear + '</div></div>';
+      document.getElementById('cd-ship-specs').innerHTML = specs;
+    }
+
+    // Tags
+    if (c.tags && c.tags.length) {
+      var tagHtml = '<div style="margin-top:12px;">';
+      c.tags.forEach(function(t){ tagHtml += '<span class="tag">' + t + '</span> '; });
+      tagHtml += '</div>';
+      document.getElementById('cd-meta').insertAdjacentHTML('afterend', tagHtml);
+    }
+
+    // Inquiry buttons
+    function doInquiry(){
+      if (typeof openInquiry === 'function') {
+        openInquiry(c.title, c.departureDate, c.priceFrom, c.cruiseLineName, c.ship, portsStr);
+      }
+    }
+    document.getElementById('cd-inquiry-hero').addEventListener('click', doInquiry);
+    document.getElementById('cd-inquiry-bottom').addEventListener('click', doInquiry);
+
+    // Page title
+    document.title = (c.title || '크루즈 상세') + ' | 크루즈링크';
+
+    // Show
+    document.getElementById('cruise-detail-loading').style.display = 'none';
+    document.getElementById('cruise-detail-content').style.display = '';
+  }
+})();
+</script>
