@@ -162,7 +162,8 @@ document.addEventListener('DOMContentLoaded', function() {
       var month = document.getElementById('hf-month').value;
       var nights = document.getElementById('hf-nights').value;
       function doFilter(data) {
-        var r = data;
+        var today = new Date().toISOString().slice(0,10);
+        var r = data.filter(function(c){ return (c.departureDate||'') >= today; });
         if (dest) r = r.filter(function(c){ return c.destination === dest; });
         if (port) r = r.filter(function(c){ return (c.departurePort||'').indexOf(port) >= 0; });
         if (line) r = r.filter(function(c){ return c.cruiseLine === line; });
